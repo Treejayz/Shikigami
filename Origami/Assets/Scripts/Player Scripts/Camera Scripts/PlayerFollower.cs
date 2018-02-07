@@ -8,6 +8,6 @@ public class PlayerFollower : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        transform.position = Vector3.Lerp(transform.position, target.position, 0.5f);
+        transform.position = Vector3.Lerp(transform.position, target.position, 0.2f);
     }
 }

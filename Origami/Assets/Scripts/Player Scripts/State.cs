@@ -7,6 +7,7 @@ public abstract class State {
     protected Character character;
 
     public abstract void Tick();
+	public abstract void PhysicsTick();
 
     public virtual void OnStateEnter() { }
     public virtual void OnStateExit() { }

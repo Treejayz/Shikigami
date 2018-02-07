@@ -5,7 +5,7 @@ using UnityEngine;
 public class MovingState : State {
 
 
-    private Rigidbody rb;
+	private CharacterController player;
 
     public MovingState(Character character) : base(character)
     {
@@ -14,17 +14,34 @@ public class MovingState : State {
     public override void OnStateEnter()
     {
         MonoBehaviour.print("entering move state");
-        rb = character.GetComponent<Rigidbody>();
+		player = character.GetComponent<CharacterController>();
     }
+
+	public override void PhysicsTick() {
+
+	}
 
     public override void Tick()
     {
-        MonoBehaviour.print("moving");
-        rb.AddForce(character.transform.forward * 15f);
 
-        if (Input.GetAxis("Vertical") == 0.0f)
-        {
+		Vector3 direction = ((character.transform.forward * Input.GetAxis("Vertical")) 
+			+ (character.transform.right * Input.GetAxis("Horizontal")));
+		direction.Normalize();
+
+		player.Move(direction * Time.deltaTime * 10f);
+
+		player.Move(Vector3.down * .01f);
+
+		if (!player.isGrounded) {
+			character.SetState(new FallingState(character));
+		}
+
+		if (Input.GetAxis("Vertical") == 0.0f && Input.GetAxis("Horizontal") == 0.0f)  {
             character.SetState(new IdleState(character));
         }
+
+		if (Input.GetAxis("Jump") != 0.0f) {
+			character.SetState(new JumpState(character));
+		}
     }
 }

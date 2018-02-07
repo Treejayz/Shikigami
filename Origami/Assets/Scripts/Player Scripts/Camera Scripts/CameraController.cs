@@ -9,7 +9,7 @@ public class CameraController : MonoBehaviour {
 
     public Transform target;
 
-    private Camera cam;
+    //private Camera cam;
     private float maxDistance = 10.0f;
     private float currentX = 0.0f;
     private float currentY = 0.0f;
@@ -18,7 +18,7 @@ public class CameraController : MonoBehaviour {
 
     // Use this for initialization
     private void Start () {
-        cam = Camera.main;
+        //cam = Camera.main;
 	}
 	
 	// Update is called once per frame

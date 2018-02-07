@@ -18,6 +18,10 @@ public class Character : MonoBehaviour {
     {
         currentState.Tick();
     }
+	private void FixedUpdate()
+	{
+		currentState.PhysicsTick();
+	}
 
     public void SetState(State state)
     {
