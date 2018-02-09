@@ -11,6 +11,7 @@ public class CameraController : MonoBehaviour {
 
     //private Camera cam;
     private float maxDistance = 10.0f;
+    private float currentDistance;
     private float currentX = 0.0f;
     private float currentY = 0.0f;
     private float sensX = 4.0f;
@@ -29,11 +30,23 @@ public class CameraController : MonoBehaviour {
         currentY = Mathf.Clamp(currentY, Y_ANGLE_MIN, Y_ANGLE_MAX);
         if (currentX < 0.0f) { currentX += 360; }
         if (currentX > 360.0f) { currentX -= 360; }
+
+        RaycastHit hit;
+        int layerMask = 1 << 8;
+        layerMask = ~layerMask;
+        if (Physics.Raycast(target.position, (transform.position - target.position), out hit, maxDistance, layerMask))
+        {
+            currentDistance = hit.distance;
+        } else
+        {
+            currentDistance = maxDistance;
+        }
+
 	}
 
     private void LateUpdate()
     {
-        Vector3 dir = new Vector3(0, 0, -maxDistance);
+        Vector3 dir = new Vector3(0, 0, -currentDistance);
         Quaternion rotation = Quaternion.Euler(currentY, currentX, 0);
         this.transform.position = target.position + rotation * dir;
         this.transform.LookAt(target.position);

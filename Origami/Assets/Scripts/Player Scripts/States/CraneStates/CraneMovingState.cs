@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovingState : State {
+public class CraneMovingState : State {
 
 
 	private CharacterController player;
 
-    public MovingState(Character character) : base(character)
+    public CraneMovingState(Character character) : base(character)
     {
     }
 
@@ -16,10 +16,6 @@ public class MovingState : State {
         MonoBehaviour.print("entering move state");
 		player = character.GetComponent<CharacterController>();
     }
-
-	public override void PhysicsTick() {
-
-	}
 
     public override void Tick()
     {
@@ -33,15 +29,15 @@ public class MovingState : State {
 		player.Move(Vector3.down * .01f);
 
 		if (!player.isGrounded) {
-			character.SetState(new FallingState(character));
+			character.SetState(new CraneFallingState(character));
 		}
 
 		if (Input.GetAxis("Vertical") == 0.0f && Input.GetAxis("Horizontal") == 0.0f)  {
-            character.SetState(new IdleState(character));
+            character.SetState(new CraneIdleState(character));
         }
 
 		if (Input.GetAxis("Jump") != 0.0f) {
-			character.SetState(new JumpState(character));
+			character.SetState(new CraneJumpState(character));
 		}
     }
 }

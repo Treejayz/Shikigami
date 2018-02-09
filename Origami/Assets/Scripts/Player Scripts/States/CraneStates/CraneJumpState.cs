@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JumpState : State {
+public class CraneJumpState : State {
 
 	private CharacterController player;
 
 
 	private float Gravity = 20f;
 	private float slowGravity = 10f;
-	private float jumpSpeed = 10f;
+	private float jumpSpeed = 13f;
 	private float currentSpeed;
 
-	public JumpState (Character character) : base(character)
+	public CraneJumpState(Character character) : base(character)
 	{
 	}
 
@@ -20,10 +20,6 @@ public class JumpState : State {
 	{
 		player = character.GetComponent<CharacterController>();
 		currentSpeed = jumpSpeed;
-	}
-
-	public override void PhysicsTick() {
-
 	}
 
 	public override void Tick() {
@@ -35,9 +31,9 @@ public class JumpState : State {
 		player.Move(direction * Time.deltaTime * 10f);
 
 		if (currentSpeed > 0.0f) {
-			currentSpeed -= slowGravity * Time.deltaTime;
+			currentSpeed -= Gravity * Time.deltaTime;
 		} else {
-			character.SetState(new FallingState(character));
+			character.SetState(new CraneFallingState(character));
 		}
 		player.Move(Vector3.up * currentSpeed * Time.deltaTime);
 

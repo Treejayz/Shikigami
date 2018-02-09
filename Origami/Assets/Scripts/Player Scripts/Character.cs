@@ -11,7 +11,7 @@ public class Character : MonoBehaviour {
 
     private void Start()
     {
-        SetState(new IdleState(this));
+        SetState(new CraneIdleState(this));
     }
 
     private void Update()
@@ -22,6 +22,11 @@ public class Character : MonoBehaviour {
 	{
 		currentState.PhysicsTick();
 	}
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        currentState.OnColliderHit(hit);
+    }
 
     public void SetState(State state)
     {

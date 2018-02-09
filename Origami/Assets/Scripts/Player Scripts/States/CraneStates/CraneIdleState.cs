@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IdleState : State {
+public class CraneIdleState : State {
 
 	private CharacterController player;
 
-    public IdleState(Character character) : base(character)
+    public CraneIdleState(Character character) : base(character)
     {
     }
 
@@ -21,22 +21,19 @@ public class IdleState : State {
 		player.Move(Vector3.down * .01f);
 
 		if (!player.isGrounded) {
-			character.SetState(new FallingState(character));
+			character.SetState(new CraneFallingState(character));
 		}
 
 
         //Do idle stuff
 		if (Input.GetAxis("Vertical") != 0.0f || Input.GetAxis("Horizontal") != 0.0f)
         {
-            character.SetState(new MovingState(character));
+            character.SetState(new CraneMovingState(character));
 
         } 
 		if (Input.GetAxis("Jump") != 0.0f) {
-			character.SetState(new JumpState(character));
+			character.SetState(new CraneJumpState(character));
 		}
 
     }
-
-	public override void PhysicsTick() {
-	}
 }
