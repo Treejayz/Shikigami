@@ -36,6 +36,19 @@ public class CraneJumpState : State {
 			character.SetState(new CraneFallingState(character));
 		}
 		player.Move(Vector3.up * currentSpeed * Time.deltaTime);
-
 	}
+
+    public override void OnColliderHit(ControllerColliderHit hit)
+    {
+        Vector3 hitNormal = hit.normal;
+        bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= player.slopeLimit);
+        if (!isGrounded)
+        {
+            
+        }
+        else
+        {
+            character.SetState(new CraneIdleState(character));
+        }
+    }
 }

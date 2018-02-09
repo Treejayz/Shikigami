@@ -78,5 +78,4 @@ public class CraneFallingState : State {
             character.SetState(new CraneIdleState(character));
         }
     }
-
 }
