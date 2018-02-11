@@ -49,7 +49,6 @@ public class CraneJumpState : State {
         else
         {
             player.Move(Vector3.up * Time.deltaTime);
-            //character.SetState(new CraneIdleState(character));
         }
     }
 }

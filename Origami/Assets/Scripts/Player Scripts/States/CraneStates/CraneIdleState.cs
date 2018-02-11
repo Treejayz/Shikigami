@@ -14,7 +14,9 @@ public class CraneIdleState : State {
 	{
 		MonoBehaviour.print("entering idle state");
 		player = character.GetComponent<CharacterController>();
-	}
+        character.gameObject.transform.GetChild(1).gameObject.SetActive(false);
+        character.gameObject.transform.GetChild(0).gameObject.SetActive(true);
+    }
 
     public override void Tick() {
 
@@ -34,6 +36,11 @@ public class CraneIdleState : State {
 		if (Input.GetAxis("Jump") != 0.0f) {
 			character.SetState(new CraneJumpState(character));
 		}
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            character.SetState(new FrogIdleState(character));
+        }
 
     }
 }
