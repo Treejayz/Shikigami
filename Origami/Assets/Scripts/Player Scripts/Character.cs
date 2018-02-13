@@ -7,6 +7,9 @@ public class Character : MonoBehaviour {
     [SerializeField]
     private float moveSpeed = 1f;
 
+	public float xSpeed = 0f;
+	public float zSpeed = 0f;
+
     private State currentState;
 
     private void Start()

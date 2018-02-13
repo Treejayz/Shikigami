@@ -27,7 +27,7 @@ public class FrogMoveState : State {
 
         player.Move(direction * Time.deltaTime * 10f);
 
-        player.Move(Vector3.down * .01f);
+        player.Move(Vector3.down * .1f);
 
         if (!player.isGrounded)
         {
