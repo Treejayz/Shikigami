@@ -32,7 +32,8 @@ public class CraneFallingState : State {
 			+ (character.transform.right * Input.GetAxis("Horizontal")));
 		direction.Normalize();
 
-		player.Move(direction * Time.deltaTime * 10f);
+        character.momentum = Vector3.Lerp(character.momentum, direction * 10f, 0.015f);
+        player.Move(character.momentum * Time.deltaTime);
 
         if (Input.GetAxis("Jump") != 0.0f)
         {

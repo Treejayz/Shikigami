@@ -25,9 +25,10 @@ public class FrogMoveState : State {
             + (character.transform.right * Input.GetAxis("Horizontal")));
         direction.Normalize();
 
-        player.Move(direction * Time.deltaTime * 10f);
+        character.momentum = Vector3.Lerp(character.momentum, direction * 10f, 0.08f);
+        player.Move(character.momentum * Time.deltaTime);
 
-        player.Move(Vector3.down * .1f);
+        player.Move(Vector3.down * 10f * Time.deltaTime);
 
         if (!player.isGrounded)
         {

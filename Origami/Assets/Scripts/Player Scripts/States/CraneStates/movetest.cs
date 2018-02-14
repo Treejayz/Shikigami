@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class CraneMovingState : State {
+public class CCraneMovingState : State {
 
 
 	private CharacterController player;
@@ -8,7 +8,7 @@ public class CraneMovingState : State {
 	private float maxSpeed = 10f;
 	private float acceleration = 30f;
 
-	public CraneMovingState(Character character) : base(character)
+	public CCraneMovingState(Character character) : base(character)
 	{
 	}
 

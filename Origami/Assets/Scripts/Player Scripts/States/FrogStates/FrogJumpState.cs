@@ -8,7 +8,7 @@ public class FrogJumpState : State {
 
     private float Gravity = 20f;
     private float slowGravity = 10f;
-    private float jumpSpeed = 20f;
+    private float jumpSpeed = 18f;
     private float currentSpeed;
 
     public FrogJumpState(Character character) : base(character)
@@ -28,7 +28,8 @@ public class FrogJumpState : State {
             + (character.transform.right * Input.GetAxis("Horizontal")));
         direction.Normalize();
 
-        player.Move(direction * Time.deltaTime * 10f);
+        character.momentum = Vector3.Lerp(character.momentum, direction * 10f, 0.015f);
+        player.Move(character.momentum * Time.deltaTime);
 
         if (currentSpeed > 0.0f)
         {

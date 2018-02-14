@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CraneIdleState : State {
+public class CCraneIdleState : State {
 
 	private CharacterController player;
 
 	private float drag = 30f;
 
-	public CraneIdleState(Character character) : base(character)
+	public CCraneIdleState(Character character) : base(character)
 	{
 	}
 

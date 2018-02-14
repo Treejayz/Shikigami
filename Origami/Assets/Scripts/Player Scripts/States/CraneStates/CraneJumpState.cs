@@ -9,7 +9,7 @@ public class CraneJumpState : State {
 
 	private float Gravity = 20f;
 	private float slowGravity = 10f;
-	private float jumpSpeed = 13f;
+	private float jumpSpeed = 11f;
 	private float currentSpeed;
 
 	public CraneJumpState(Character character) : base(character)
@@ -28,9 +28,10 @@ public class CraneJumpState : State {
 			+ (character.transform.right * Input.GetAxis("Horizontal")));
 		direction.Normalize();
 
-		player.Move(direction * Time.deltaTime * 10f);
+        character.momentum = Vector3.Lerp(character.momentum, direction * 10f, 0.015f);
+        player.Move(character.momentum * Time.deltaTime);
 
-		if (currentSpeed > 0.0f) {
+        if (currentSpeed > 0.0f) {
 			currentSpeed -= Gravity * Time.deltaTime;
 		} else {
 			character.SetState(new CraneFallingState(character));

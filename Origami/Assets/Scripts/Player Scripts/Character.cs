@@ -9,6 +9,7 @@ public class Character : MonoBehaviour {
 
 	public float xSpeed = 0f;
 	public float zSpeed = 0f;
+    public Vector3 momentum;
 
     private State currentState;
 

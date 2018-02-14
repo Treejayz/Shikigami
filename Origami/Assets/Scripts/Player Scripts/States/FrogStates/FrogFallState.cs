@@ -27,12 +27,12 @@ public class FrogFallState : State {
 
     public override void Tick()
     {
-
         Vector3 direction = ((character.transform.forward * Input.GetAxis("Vertical"))
             + (character.transform.right * Input.GetAxis("Horizontal")));
         direction.Normalize();
 
-        player.Move(direction * Time.deltaTime * 10f);
+        character.momentum = Vector3.Lerp(character.momentum, direction * 10f, 0.015f);
+        player.Move(character.momentum * Time.deltaTime);
 
         if (fallSpeed < maxFallSpeed)
         {
