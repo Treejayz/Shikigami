@@ -7,6 +7,7 @@ public class FrogMoveState : State {
 
 
     private CharacterController player;
+	private Vector3 direction;
 
     public FrogMoveState(Character character) : base(character)
     {
@@ -21,14 +22,9 @@ public class FrogMoveState : State {
     public override void Tick()
     {
 
-        Vector3 direction = ((character.transform.forward * Input.GetAxis("Vertical"))
+        direction = ((character.transform.forward * Input.GetAxis("Vertical"))
             + (character.transform.right * Input.GetAxis("Horizontal")));
         direction.Normalize();
-
-        character.momentum = Vector3.Lerp(character.momentum, direction * 10f, 0.08f);
-        player.Move(character.momentum * Time.deltaTime);
-
-        player.Move(Vector3.down * 10f * Time.deltaTime);
 
         if (!player.isGrounded)
         {
@@ -45,6 +41,13 @@ public class FrogMoveState : State {
             character.SetState(new FrogJumpState(character));
         }
     }
+
+	public override void PhysicsTick() {
+		character.momentum = Vector3.Lerp(character.momentum, direction * 10f, 0.08f);
+		player.Move(character.momentum * Time.fixedDeltaTime);
+
+		player.Move(Vector3.down *10f * Time.fixedDeltaTime);
+	}
 
     public override void OnColliderHit(ControllerColliderHit hit)
     {

@@ -11,6 +11,7 @@ public class CraneJumpState : State {
 	private float slowGravity = 10f;
 	private float jumpSpeed = 11f;
 	private float currentSpeed;
+	private Vector3 direction;
 
 	public CraneJumpState(Character character) : base(character)
 	{
@@ -24,19 +25,22 @@ public class CraneJumpState : State {
 
 	public override void Tick() {
 
-		Vector3 direction = ((character.transform.forward * Input.GetAxis("Vertical")) 
+		direction = ((character.transform.forward * Input.GetAxis("Vertical")) 
 			+ (character.transform.right * Input.GetAxis("Horizontal")));
 		direction.Normalize();
-
-        character.momentum = Vector3.Lerp(character.momentum, direction * 10f, 0.015f);
-        player.Move(character.momentum * Time.deltaTime);
 
         if (currentSpeed > 0.0f) {
 			currentSpeed -= Gravity * Time.deltaTime;
 		} else {
 			character.SetState(new CraneFallingState(character));
 		}
-		player.Move(Vector3.up * currentSpeed * Time.deltaTime);
+
+	}
+
+	public override void PhysicsTick() {
+		character.momentum = Vector3.Lerp(character.momentum, direction * 10f, 0.015f);
+		player.Move(character.momentum * Time.fixedDeltaTime);
+		player.Move(Vector3.up * currentSpeed * Time.fixedDeltaTime);
 	}
 
     public override void OnColliderHit(ControllerColliderHit hit)
