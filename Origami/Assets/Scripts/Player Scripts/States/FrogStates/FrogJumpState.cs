@@ -7,7 +7,7 @@ public class FrogJumpState : State {
     private CharacterController player;
 
     private float Gravity = 20f;
-    private float slowGravity = 10f;
+    private float fastGravity = 40f;
     private float jumpSpeed = 18f;
     private float currentSpeed;
 
@@ -49,7 +49,12 @@ public class FrogJumpState : State {
 
         if (currentSpeed > 0.0f)
         {
-            currentSpeed -= Gravity * Time.deltaTime;
+			if (Input.GetAxis("Jump") != 0f || fromWall) {
+				currentSpeed -= Gravity * Time.deltaTime;
+			} else {
+				currentSpeed -= fastGravity * Time.deltaTime;
+			}
+            
         }
         else
         {

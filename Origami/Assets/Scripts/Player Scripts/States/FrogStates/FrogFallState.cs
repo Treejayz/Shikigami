@@ -31,7 +31,6 @@ public class FrogFallState : State {
 
     public override void OnStateEnter()
     {
-        MonoBehaviour.print("entering falling state");
         player = character.GetComponent<CharacterController>();
         fallSpeed = 0.0f;
     }

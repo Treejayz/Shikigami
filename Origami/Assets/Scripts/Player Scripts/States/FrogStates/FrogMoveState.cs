@@ -15,7 +15,6 @@ public class FrogMoveState : State {
 
     public override void OnStateEnter()
     {
-        MonoBehaviour.print("entering frog move state");
         player = character.GetComponent<CharacterController>();
     }
 

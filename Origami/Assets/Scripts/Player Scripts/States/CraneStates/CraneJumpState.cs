@@ -8,7 +8,7 @@ public class CraneJumpState : State {
 
 
 	private float Gravity = 20f;
-	private float slowGravity = 10f;
+	private float fastGravity = 40f;
 	private float jumpSpeed = 11f;
 	private float currentSpeed;
 	private Vector3 direction;
@@ -29,8 +29,14 @@ public class CraneJumpState : State {
 			+ (character.transform.right * Input.GetAxis("Horizontal")));
 		direction.Normalize();
 
-        if (currentSpeed > 0.0f) {
-			currentSpeed -= Gravity * Time.deltaTime;
+		if (currentSpeed > 0.0f)
+		{
+			if (Input.GetAxis("Jump") != 0f) {
+				currentSpeed -= Gravity * Time.deltaTime;
+			} else {
+				currentSpeed -= fastGravity * Time.deltaTime;
+			}
+
 		} else {
 			character.SetState(new CraneFallingState(character));
 		}

@@ -12,7 +12,6 @@ public class FrogIdleState : State {
 
     public override void OnStateEnter()
     {
-        MonoBehaviour.print("entering Frog idle state");
         player = character.GetComponent<CharacterController>();
         character.gameObject.transform.GetChild(0).gameObject.SetActive(false);
         character.gameObject.transform.GetChild(1).gameObject.SetActive(true);

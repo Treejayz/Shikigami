@@ -14,7 +14,6 @@ public class CraneMovingState : State {
 
     public override void OnStateEnter()
     {
-        MonoBehaviour.print("entering move state");
 		player = character.GetComponent<CharacterController>();
     }
 

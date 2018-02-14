@@ -21,7 +21,6 @@ public class FrogWallState : State {
 
 	public override void OnStateEnter()
 	{
-		MonoBehaviour.print("entering wall state");
 		player = character.GetComponent<CharacterController>();
 		character.momentum = new Vector3(0f,0f,0f);
 		currentTime = 0f;

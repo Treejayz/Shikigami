@@ -12,7 +12,6 @@ public class CraneIdleState : State {
 
 	public override void OnStateEnter()
 	{
-		MonoBehaviour.print("entering idle state");
 		player = character.GetComponent<CharacterController>();
         character.gameObject.transform.GetChild(1).gameObject.SetActive(false);
         character.gameObject.transform.GetChild(0).gameObject.SetActive(true);
@@ -50,4 +49,18 @@ public class CraneIdleState : State {
 		player.Move(Vector3.down * 10f * Time.fixedDeltaTime);
 	}
 
+	public override void OnColliderHit(ControllerColliderHit hit)
+	{
+		Vector3 hitNormal = hit.normal;
+		bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= player.slopeLimit);
+		if (!isGrounded)
+		{
+			float slideX = (1f - hitNormal.y) * hitNormal.x * (.7f);
+			float slideZ = (1f - hitNormal.y) * hitNormal.z * (.7f);
+			player.Move(new Vector3(slideX, 0f, slideZ) * Time.deltaTime);
+		} else
+		{
+			character.SetState(new CraneIdleState(character));
+		}
+	}
 }
