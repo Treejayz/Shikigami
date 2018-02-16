@@ -66,7 +66,7 @@ public class CraneFallingState : State {
     public override void OnColliderHit(ControllerColliderHit hit)
     {
         Vector3 hitNormal = hit.normal;
-        bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= player.slopeLimit);
+        bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= (90 - player.slopeLimit));
         if (!isGrounded)
         {
             float slideX = (1f - hitNormal.y) * hitNormal.x * (1f - slideFriction);

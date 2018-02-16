@@ -37,7 +37,7 @@ public class CameraController : MonoBehaviour {
 	// Update is called once per frame
 	private void Update () {
         currentX += Input.GetAxis("Mouse X") * sensX;
-        currentY += Input.GetAxis("Mouse Y") * sensY;
+        currentY += Input.GetAxis("Mouse Y") * sensY * -1f;
 
         currentY = Mathf.Clamp(currentY, Y_ANGLE_MIN, Y_ANGLE_MAX);
         if (currentX < 0.0f) { currentX += 360; }

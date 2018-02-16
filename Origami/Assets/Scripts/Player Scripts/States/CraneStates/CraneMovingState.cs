@@ -48,7 +48,7 @@ public class CraneMovingState : State {
     {
         Vector3 hitNormal = hit.normal;
         bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= player.slopeLimit);
-        if (!isGrounded)
+        if (!isGrounded && !player.isGrounded)
         {
             character.SetState(new CraneFallingState(character));
         }

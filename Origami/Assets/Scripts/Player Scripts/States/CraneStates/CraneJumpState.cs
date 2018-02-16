@@ -52,14 +52,13 @@ public class CraneJumpState : State {
     public override void OnColliderHit(ControllerColliderHit hit)
     {
         Vector3 hitNormal = hit.normal;
-        bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= player.slopeLimit);
+        bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= (90 - player.slopeLimit));
         if (!isGrounded)
         {
-            
+            player.Move(Vector3.up * Time.deltaTime);
         }
         else
         {
-            player.Move(Vector3.up * Time.deltaTime);
         }
     }
 }

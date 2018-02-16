@@ -92,11 +92,11 @@ public class FrogJumpState : State {
         bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= player.slopeLimit);
         if (!isGrounded)
         {
-
+            player.Move(Vector3.up * Time.fixedDeltaTime);
         }
         else
         {
-            player.Move(Vector3.up * Time.deltaTime);
+            
         }
     }
 }
