@@ -50,15 +50,6 @@ public class FrogFallState : State {
             fallSpeed = maxFallSpeed;
         }
 
-        if (!player.isGrounded)
-        {
-            // idk
-        }
-        else
-        {
-            character.SetState(new FrogIdleState(character));
-        }
-
     }
 
 	public override void PhysicsTick() {
@@ -89,7 +80,7 @@ public class FrogFallState : State {
         {
             float slideX = (1f - hitNormal.y) * hitNormal.x * (1f - slideFriction);
             float slideZ = (1f - hitNormal.y) * hitNormal.z * (1f - slideFriction);
-            player.Move(new Vector3(slideX, 0f, slideZ) * Time.deltaTime);
+			player.Move(new Vector3(slideX, 0f, slideZ) * Time.fixedDeltaTime);
         }
         else
         {

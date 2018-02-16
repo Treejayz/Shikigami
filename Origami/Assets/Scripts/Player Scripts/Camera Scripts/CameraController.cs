@@ -4,22 +4,34 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour {
 
-    private const float Y_ANGLE_MIN = 0.0f;
-    private const float Y_ANGLE_MAX = 70.0f;
+    private const float Y_ANGLE_MIN = -25.0f;
+    private const float Y_ANGLE_MAX = 80.0f;
 
     public Transform target;
 
-    //private Camera cam;
+    private Camera cam;
     private float maxDistance = 10.0f;
     private float currentDistance;
     private float currentX = 0.0f;
     private float currentY = 0.0f;
     private float sensX = 4.0f;
     private float sensY = 1.0f;
+	private int layerMask;
+
+	private Vector3[] targetArray = new [] 
+	{ new Vector3(0f, 0f, 0f),
+		new Vector3(1f, 0f, 0f),
+		new Vector3(0f, 1f, 0f),
+		new Vector3(1f, 1f, 0f) };
 
     // Use this for initialization
     private void Start () {
-        //cam = Camera.main;
+        cam = Camera.main;
+		layerMask = 1 << 8;
+		layerMask = ~layerMask;
+		for (int i = 0; i < 4; i++) {
+			targetArray[i].z = cam.nearClipPlane;
+		}
 	}
 	
 	// Update is called once per frame
@@ -32,15 +44,18 @@ public class CameraController : MonoBehaviour {
         if (currentX > 360.0f) { currentX -= 360; }
 
         RaycastHit hit;
-        int layerMask = 1 << 8;
-        layerMask = ~layerMask;
-        if (Physics.Raycast(target.position, (transform.position - target.position), out hit, maxDistance, layerMask))
-        {
-            currentDistance = hit.distance - 0.3f;
-        } else
-        {
-            currentDistance = maxDistance;
-        }
+
+		currentDistance = maxDistance;
+		for (int i = 0; i < 4; i++) {
+			Vector3 currentPos = cam.ViewportToWorldPoint(targetArray[i]);
+			if (Physics.Raycast(target.position, (currentPos - target.position), out hit, maxDistance, layerMask))
+			{
+				if (currentDistance > hit.distance) {
+					currentDistance = hit.distance;
+				}
+			} 
+		}
+        
 
 	}
 

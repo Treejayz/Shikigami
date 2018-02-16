@@ -5,7 +5,7 @@ using UnityEngine;
 public class FrogWallState : State {
 
 	private CharacterController player;
-	private float wallTime = 1f;
+	private float wallTime = .4f;
 	private float currentTime;
 
 	private bool jumpHeld;

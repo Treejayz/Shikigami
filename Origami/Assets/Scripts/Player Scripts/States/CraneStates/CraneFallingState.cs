@@ -10,7 +10,7 @@ public class CraneFallingState : State {
 	private float Gravity = 30f;
 	private float maxFallSpeed = 20f;
     private float glideSpeed = 4f;
-    private float slideFriction = 0.3f;
+    private float slideFriction = 0.1f;
 
     private float fallSpeed;
 	private Vector3 direction;
@@ -54,12 +54,6 @@ public class CraneFallingState : State {
             }
         }
 
-		if (!player.isGrounded) {
-			//player.Move(Vector3.down * fallSpeed * Time.deltaTime);
-		} else {
-			character.SetState(new CraneIdleState(character));
-		}
-
 	}
 
 	public override void PhysicsTick() {
@@ -77,10 +71,10 @@ public class CraneFallingState : State {
         {
             float slideX = (1f - hitNormal.y) * hitNormal.x * (1f - slideFriction);
             float slideZ = (1f - hitNormal.y) * hitNormal.z * (1f - slideFriction);
-            player.Move(new Vector3(slideX, 0f, slideZ) * Time.deltaTime);
+			player.Move(new Vector3(slideX, 0f, slideZ) * Time.fixedDeltaTime);
         } else
         {
-            //character.SetState(new CraneIdleState(character));
+            character.SetState(new CraneIdleState(character));
         }
     }
 }
