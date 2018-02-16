@@ -55,12 +55,10 @@ public class CraneIdleState : State {
 		bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= player.slopeLimit);
 		if (!isGrounded)
 		{
-			float slideX = (1f - hitNormal.y) * hitNormal.x * (.7f);
-			float slideZ = (1f - hitNormal.y) * hitNormal.z * (.7f);
-			player.Move(new Vector3(slideX, 0f, slideZ) * Time.deltaTime);
-		} else
+            character.SetState(new CraneFallingState(character));
+        } else
 		{
-			character.SetState(new CraneIdleState(character));
+			//character.SetState(new CraneIdleState(character));
 		}
 	}
 }

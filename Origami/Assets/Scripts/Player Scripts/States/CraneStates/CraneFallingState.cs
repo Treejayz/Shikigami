@@ -80,7 +80,7 @@ public class CraneFallingState : State {
             player.Move(new Vector3(slideX, 0f, slideZ) * Time.deltaTime);
         } else
         {
-            character.SetState(new CraneIdleState(character));
+            //character.SetState(new CraneIdleState(character));
         }
     }
 }
