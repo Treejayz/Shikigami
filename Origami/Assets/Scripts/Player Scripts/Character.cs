@@ -32,11 +32,6 @@ public class Character : MonoBehaviour {
         currentState.OnColliderHit(hit);
     }
 
-    private void OnCollisionStay(ControllerColliderHit collision)
-    {
-        currentState.OnColliderHit(collision);
-    }
-
     public void SetState(State state)
     {
         if (currentState != null)
