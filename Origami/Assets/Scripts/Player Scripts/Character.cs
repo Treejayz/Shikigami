@@ -5,10 +5,8 @@ using UnityEngine;
 public class Character : MonoBehaviour {
 
     [SerializeField]
-    private float moveSpeed = 1f;
-
-	public float xSpeed = 0f;
-	public float zSpeed = 0f;
+    public float moveSpeed = 15f;
+    public float gravity = 10f;
     public Vector3 momentum;
 
     private State currentState;

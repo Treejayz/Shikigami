@@ -36,7 +36,7 @@ public class CameraController : MonoBehaviour {
         layerMask = ~layerMask;
         if (Physics.Raycast(target.position, (transform.position - target.position), out hit, maxDistance, layerMask))
         {
-            currentDistance = hit.distance;
+            currentDistance = hit.distance - 0.3f;
         } else
         {
             currentDistance = maxDistance;

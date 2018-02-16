@@ -67,7 +67,7 @@ public class FrogJumpState : State {
     }
 
 	public override void PhysicsTick() {
-		character.momentum = Vector3.Lerp(character.momentum, direction * 10f, 0.015f);
+		character.momentum = Vector3.Lerp(character.momentum, direction * character.moveSpeed, 0.015f);
 		player.Move(character.momentum * Time.fixedDeltaTime);
 		player.Move(Vector3.up * currentSpeed * Time.fixedDeltaTime);
 	}
@@ -82,7 +82,7 @@ public class FrogJumpState : State {
 			if (!fromWall) {
 				//character.SetState(new FrogWallState(character, hitNormal));
 			} else {
-				bool diffWall = (Vector3.Angle(wallJump, hitNormal) >= 70f);
+				bool diffWall = (Vector3.Angle(wallJump, hitNormal) >= 100f);
 				if (diffWall) {
 					character.SetState(new FrogWallState(character, hitNormal));
 				}

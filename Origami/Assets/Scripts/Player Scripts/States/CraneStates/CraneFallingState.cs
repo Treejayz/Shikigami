@@ -63,7 +63,7 @@ public class CraneFallingState : State {
 	}
 
 	public override void PhysicsTick() {
-		character.momentum = Vector3.Lerp(character.momentum, direction * 10f, 0.015f);
+		character.momentum = Vector3.Lerp(character.momentum, direction * character.moveSpeed, 0.015f);
 		player.Move(character.momentum * Time.fixedDeltaTime);
 
 		player.Move(Vector3.down * fallSpeed * Time.fixedDeltaTime);

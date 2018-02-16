@@ -269,9 +269,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9e4b4e8fd23c364c9e92431ae78de4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
-  xSpeed: 0
-  zSpeed: 0
+  moveSpeed: 15
+  gravity: 10
   momentum: {x: 10, y: 0, z: 10}
 --- !u!114 &114152884601096246
 MonoBehaviour:

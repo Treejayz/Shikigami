@@ -42,10 +42,10 @@ public class FrogMoveState : State {
     }
 
 	public override void PhysicsTick() {
-		character.momentum = Vector3.Lerp(character.momentum, direction * 10f, 0.08f);
+		character.momentum = Vector3.Lerp(character.momentum, direction * character.moveSpeed, 0.08f);
 		player.Move(character.momentum * Time.fixedDeltaTime);
 
-		player.Move(Vector3.down *10f * Time.fixedDeltaTime);
+		player.Move(Vector3.down * character.gravity * Time.fixedDeltaTime);
 	}
 
     public override void OnColliderHit(ControllerColliderHit hit)

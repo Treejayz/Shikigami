@@ -41,8 +41,10 @@ public class FrogIdleState : State {
 	public override void PhysicsTick() {
 		Vector3 target = new Vector3(0f, 0f, 0f);
 		character.momentum = Vector3.Lerp(character.momentum, target, 0.05f);
+        if (character.momentum.x < 0.001f && character.momentum.x > -0.001f) { character.momentum.x = 0f; }
+        if (character.momentum.z < 0.001f && character.momentum.z > -0.001f) { character.momentum.z = 0f; }
 
-		player.Move(character.momentum * Time.fixedDeltaTime);
-		player.Move(Vector3.down * 10f * Time.fixedDeltaTime);
+        player.Move(character.momentum * Time.fixedDeltaTime);
+		player.Move(Vector3.down * character.gravity * Time.fixedDeltaTime);
 	}
 }
