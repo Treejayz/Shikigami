@@ -18,6 +18,6 @@ public class forwardtest : MonoBehaviour {
         Vector3 camDir = camTargetTrans.position- camTrans.position;
         camDir = new Vector3(camDir.x, 0.0f, camDir.z);
         camDir = camDir / camDir.magnitude;
-        this.transform.rotation = Quaternion.LookRotation(Vector3.Slerp(this.transform.forward, camDir, 0.5f));
+        this.transform.rotation = Quaternion.LookRotation(Vector3.Slerp(this.transform.forward, camDir, 0.1f));
 	}
 }
