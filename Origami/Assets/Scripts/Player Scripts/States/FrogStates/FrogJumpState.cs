@@ -15,7 +15,7 @@ public class FrogJumpState : State {
 	private Vector3 direction;
 
 	private float wallJumpLimit = 85f;
-	private float wallJumpSpeed = 14f;
+	private float wallJumpSpeed = 12.5f;
 	private Vector3 wallJump;
 	private bool fromWall;
 
@@ -67,7 +67,7 @@ public class FrogJumpState : State {
     }
 
 	public override void PhysicsTick() {
-		character.momentum = Vector3.Lerp(character.momentum, direction * character.moveSpeed, 0.015f);
+		character.momentum = Vector3.Lerp(character.momentum, direction * character.moveSpeed, 0.01f);
 		player.Move(character.momentum * Time.fixedDeltaTime);
 		player.Move(Vector3.up * currentSpeed * Time.fixedDeltaTime);
 	}
@@ -92,7 +92,7 @@ public class FrogJumpState : State {
         bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= player.slopeLimit);
         if (!isGrounded)
         {
-            player.Move(Vector3.up * Time.fixedDeltaTime);
+            //player.Move(Vector3.up * Time.fixedDeltaTime);
         }
         else
         {

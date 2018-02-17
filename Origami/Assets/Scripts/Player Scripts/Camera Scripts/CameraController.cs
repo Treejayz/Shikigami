@@ -8,12 +8,14 @@ public class CameraController : MonoBehaviour {
     private const float Y_ANGLE_MAX = 80.0f;
 
     public Transform target;
+    [SerializeField]
+    private float currentX = 0.0f;
+    [SerializeField]
+    private float currentY = 0.0f;
 
     private Camera cam;
     private float maxDistance = 10.0f;
     private float currentDistance;
-    private float currentX = 0.0f;
-    private float currentY = 0.0f;
     private float sensX = 4.0f;
     private float sensY = 1.0f;
 	private int layerMask;
