@@ -13,4 +13,13 @@ public class FrogPage : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            other.gameObject.GetComponent<Character>().canFrog = true;
+            Destroy(this.gameObject);
+        }
+    }
 }

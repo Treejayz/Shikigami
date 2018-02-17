@@ -19,10 +19,6 @@ public class CraneIdleState : State {
 
     public override void Tick() {
 
-		
-
-        
-
         if (!player.isGrounded) {
 			character.SetState(new CraneFallingState(character));
 		}
@@ -35,7 +31,7 @@ public class CraneIdleState : State {
 			character.SetState(new CraneJumpState(character));
 		}
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && character.canFrog)
         {
             character.SetState(new FrogIdleState(character));
         }

@@ -7,7 +7,11 @@ public class Character : MonoBehaviour {
     [SerializeField]
     public float moveSpeed = 15f;
     public float gravity = 10f;
+
+    [HideInInspector]
     public Vector3 momentum;
+    public bool canFrog = false;
+    public bool canFox = false;
 
     private State currentState;
 

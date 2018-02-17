@@ -15,7 +15,7 @@ public class FrogJumpState : State {
 	private Vector3 direction;
 
 	private float wallJumpLimit = 85f;
-	private float wallJumpSpeed = 12f;
+	private float wallJumpSpeed = 14f;
 	private Vector3 wallJump;
 	private bool fromWall;
 

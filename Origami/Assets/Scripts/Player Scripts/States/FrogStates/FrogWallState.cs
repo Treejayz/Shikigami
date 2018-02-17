@@ -33,7 +33,8 @@ public class FrogWallState : State {
 
 	public override void Tick() {
 		currentTime += Time.deltaTime;
-		if (currentTime > wallTime) {
+		//if (currentTime > wallTime) {
+        if (currentTime > wallTime && (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)) {
 			character.momentum = wallHit * 4f;
 			character.SetState(new FrogFallState(character, wallHit));
 		}
