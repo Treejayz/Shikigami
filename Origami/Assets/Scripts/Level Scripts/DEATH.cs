@@ -5,11 +5,12 @@ using UnityEngine;
 public class DEATH : MonoBehaviour {
 
 
-    private void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision other)
     {
-        if (other.tag == "Player")
+        print("hi");
+        if (other.gameObject.tag == "Player")
         {
-            other.GetComponent<Character>().SetState(new DeathState(other.GetComponent<Character>()));
+            other.gameObject.GetComponent<Character>().SetState(new DeathState(other.gameObject.GetComponent<Character>()));
         }
     }
 }
