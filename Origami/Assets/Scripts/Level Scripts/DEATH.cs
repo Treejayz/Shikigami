@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class DEATH : MonoBehaviour {
 
-
-    void OnCollisionEnter(Collision other)
+    void OnControllerColliderHit(ControllerColliderHit hit)
     {
         print("hi");
-        if (other.gameObject.tag == "Player")
+        if (hit.gameObject.tag == "Player")
         {
-            other.gameObject.GetComponent<Character>().SetState(new DeathState(other.gameObject.GetComponent<Character>()));
+            hit.gameObject.GetComponent<Character>().SetState(new DeathState(hit.gameObject.GetComponent<Character>()));
         }
     }
 }

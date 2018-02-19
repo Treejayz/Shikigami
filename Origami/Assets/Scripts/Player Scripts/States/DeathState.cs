@@ -19,6 +19,7 @@ public class DeathState : State
     {
         player = character.GetComponent<CharacterController>();
         currentTime = 0f;
+        character.dead = true;
     }
     public override void Tick()
     {
@@ -27,6 +28,7 @@ public class DeathState : State
             currentTime += Time.deltaTime;
         } else
         {
+            character.dead = false;
             character.transform.position = Checkpoint.GetPoint();
             character.SetState(new CraneIdleState(character));
         }

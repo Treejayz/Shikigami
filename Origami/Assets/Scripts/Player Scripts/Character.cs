@@ -13,11 +13,15 @@ public class Character : MonoBehaviour {
     public bool canFrog = false;
     public bool canFox = false;
 
+    [HideInInspector]
+    public bool dead;
+
     private State currentState;
 
     private void Start()
     {
         SetState(new CraneIdleState(this));
+        dead = false;
     }
 
     private void Update()
@@ -31,6 +35,10 @@ public class Character : MonoBehaviour {
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
+        if (hit.gameObject.tag == "Respawn" && !dead)
+        {
+            SetState(new DeathState(this));
+        }
         currentState.OnColliderHit(hit);
     }
 
