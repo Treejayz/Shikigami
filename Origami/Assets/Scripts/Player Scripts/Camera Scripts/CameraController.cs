@@ -12,6 +12,7 @@ public class CameraController : MonoBehaviour {
     private float currentX = 0.0f;
     [SerializeField]
     private float currentY = 0.0f;
+	public GameObject pause;
 
     private Camera cam;
     private float maxDistance = 10.0f;
@@ -38,8 +39,10 @@ public class CameraController : MonoBehaviour {
 	
 	// Update is called once per frame
 	private void Update () {
-        currentX += Input.GetAxis("Mouse X") * sensX;
-        currentY += Input.GetAxis("Mouse Y") * sensY * -1f;
+		if (!pause.GetComponent<Canvas> ().enabled) {
+			currentX += Input.GetAxis ("Mouse X") * sensX;
+			currentY += Input.GetAxis ("Mouse Y") * sensY * -1f;
+		}
 
         currentY = Mathf.Clamp(currentY, Y_ANGLE_MIN, Y_ANGLE_MAX);
         if (currentX < 0.0f) { currentX += 360; }
@@ -63,9 +66,9 @@ public class CameraController : MonoBehaviour {
 
     private void LateUpdate()
     {
-        Vector3 dir = new Vector3(0, 0, -currentDistance);
-        Quaternion rotation = Quaternion.Euler(currentY, currentX, 0);
-        this.transform.position = target.position + rotation * dir;
-        this.transform.LookAt(target.position);
+			Vector3 dir = new Vector3 (0, 0, -currentDistance);
+			Quaternion rotation = Quaternion.Euler (currentY, currentX, 0);
+			this.transform.position = target.position + rotation * dir;
+			this.transform.LookAt (target.position);
     }
 }

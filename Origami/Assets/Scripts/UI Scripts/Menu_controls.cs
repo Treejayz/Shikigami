@@ -22,6 +22,9 @@ public class Menu_controls : MonoBehaviour {
 		this.GetComponent<Canvas> ().enabled = false;
 		canvasName.GetComponent<Canvas> ().enabled = true;
 	}
+	public void unPause(){
+		this.GetComponent<Canvas> ().enabled = false;
+	}
 	public void quit(){
 		Application.Quit();
 	}
