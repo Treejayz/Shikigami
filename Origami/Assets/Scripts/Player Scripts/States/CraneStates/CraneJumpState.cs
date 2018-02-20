@@ -21,6 +21,7 @@ public class CraneJumpState : State {
 	{
 		player = character.GetComponent<CharacterController>();
 		currentSpeed = jumpSpeed;
+        character.craneAnimator.SetBool("Jumping", true);
 	}
 
 	public override void Tick() {
@@ -51,6 +52,11 @@ public class CraneJumpState : State {
 		player.Move(character.momentum * Time.fixedDeltaTime);
 		player.Move(Vector3.up * currentSpeed * Time.fixedDeltaTime);
 	}
+
+    public override void OnStateExit()
+    {
+        character.craneAnimator.SetBool("Jumping", false);
+    }
 
     public override void OnColliderHit(ControllerColliderHit hit)
     {

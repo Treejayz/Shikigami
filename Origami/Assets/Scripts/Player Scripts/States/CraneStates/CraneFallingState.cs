@@ -24,7 +24,8 @@ public class CraneFallingState : State {
 	{
 		player = character.GetComponent<CharacterController>();
 		fallSpeed = 0.0f;
-	}
+        character.craneAnimator.SetBool("Falling", true);
+    }
 
 	public override void Tick() {
 
@@ -67,6 +68,11 @@ public class CraneFallingState : State {
 
 		player.Move(Vector3.down * fallSpeed * Time.fixedDeltaTime);
 	}
+
+    public override void OnStateExit()
+    {
+        character.craneAnimator.SetBool("Falling", false);
+    }
 
     public override void OnColliderHit(ControllerColliderHit hit)
     {
