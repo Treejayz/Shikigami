@@ -22,6 +22,7 @@ public class CraneJumpState : State {
 		player = character.GetComponent<CharacterController>();
 		currentSpeed = jumpSpeed;
         character.craneAnimator.SetBool("Jumping", true);
+        AkSoundEngine.PostEvent("WingJump", character.gameObject);
 	}
 
 	public override void Tick() {

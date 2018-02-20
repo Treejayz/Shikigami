@@ -25,6 +25,7 @@ public class CraneFallingState : State {
 		player = character.GetComponent<CharacterController>();
 		fallSpeed = 0.0f;
         character.craneAnimator.SetBool("Falling", true);
+        AkSoundEngine.PostEvent("WindBegin", character.gameObject);
     }
 
 	public override void Tick() {
@@ -72,6 +73,7 @@ public class CraneFallingState : State {
     public override void OnStateExit()
     {
         character.craneAnimator.SetBool("Falling", false);
+        AkSoundEngine.PostEvent("WindStop", character.gameObject);
     }
 
     public override void OnColliderHit(ControllerColliderHit hit)

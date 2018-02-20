@@ -40,6 +40,7 @@ public class FrogJumpState : State {
 		}
 
         character.frogAnimator.SetBool("Jumping", true);
+        AkSoundEngine.PostEvent("FrogJump", character.gameObject);
     }
 
     public override void Tick()

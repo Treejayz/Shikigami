@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3838D55C-4A81-4825-8DB4-A33597820612}" SchemaVersion="85">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{3838D55C-4A81-4825-8DB4-A33597820612}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="WingJump" ID="{DDFEB236-29F6-46B0-96D4-8DD54FCC1DAD}">
+					<ChildrenList>
+						<Action Name="" ID="{586EA014-34F2-4834-AF9C-7B2F93A05248}" ShortID="911581846">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WingJump01" ID="{8684A3A1-3D55-4A15-A8D7-DED63EE6812F}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FrogJump" ID="{B26E24F4-DACE-437B-992F-B84D711BA154}">
+					<ChildrenList>
+						<Action Name="" ID="{28282BC3-CDA0-4337-ADB0-3B7F7053471E}" ShortID="248891050">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jump01" ID="{4234C997-F9A4-4AB3-9310-728409AF7E86}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Death" ID="{E326C055-9827-49BF-95C1-D65CC31E464C}">
+					<ChildrenList>
+						<Action Name="" ID="{1DE52A0D-AADE-4D7D-BA79-2BF752A76DD3}" ShortID="935526461">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RandomRip" ID="{FEB3E9DD-762C-4745-AE7E-656F17A0CDA9}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Splash" ID="{037D6415-D390-4CF3-801C-806F3D9A4332}">
+					<ChildrenList>
+						<Action Name="" ID="{C3BDB0B2-0C23-49A8-AA4E-F46AF6AFE2E5}" ShortID="172491136">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RandomSplash" ID="{60421BFD-4593-4622-95FF-33D2B198F46A}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="WindBegin" ID="{CE7F98F0-1688-48D6-8217-39451F98F2D4}">
+					<ChildrenList>
+						<Action Name="" ID="{83D03FFD-3860-4A61-AC53-28020E80FCBB}" ShortID="248973654">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Windloop" ID="{35CA7AD7-E248-416F-B626-A0C4FAF5ADD1}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="WindStop" ID="{B944F94E-E789-4730-83ED-FCDD96E9B978}">
+					<ChildrenList>
+						<Action Name="" ID="{9388F34B-B32E-4490-A056-31008BC4FB3C}" ShortID="189464996">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Windloop" ID="{35CA7AD7-E248-416F-B626-A0C4FAF5ADD1}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
