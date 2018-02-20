@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cefc446a369855a4297f2ea1db0d2295
+guid: 5c7b8b06600374d4389a89c8490af78f
 timeCreated: 1519074774
 licenseType: Free
 ModelImporter:
@@ -57,7 +57,7 @@ ModelImporter:
     400048: torso_osGRP
     2100000: frog_aiStandardSurface1
     4300000: frog:dat_boi
-    7400000: Frog_PressJump
+    7400000: Frog_Idle
     9500000: //RootNode
     13700000: frog:dat_boi
   externalObjects: {}
@@ -86,7 +86,35 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Frog_Idle
+      takeName: Frog_Idle
+      firstFrame: 1
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

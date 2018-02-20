@@ -13,6 +13,9 @@ public class Character : MonoBehaviour {
     public bool canFrog = false;
     public bool canFox = false;
 
+    public Animator craneAnimator;
+    public Animator frogAnimator;
+
     [HideInInspector]
     public bool dead;
 
@@ -22,6 +25,14 @@ public class Character : MonoBehaviour {
     {
         SetState(new CraneIdleState(this));
         dead = false;
+        if (craneAnimator == null)
+        {
+            craneAnimator = transform.GetChild(0).gameObject.GetComponent<Animator>();
+        }
+        if (frogAnimator == null)
+        {
+            frogAnimator = transform.GetChild(1).gameObject.GetComponent<Animator>();
+        }
     }
 
     private void Update()

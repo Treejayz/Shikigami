@@ -38,6 +38,8 @@ public class FrogJumpState : State {
 		} else {
 		currentSpeed = jumpSpeed;
 		}
+
+        character.frogAnimator.SetBool("Jumping", true);
     }
 
     public override void Tick()
