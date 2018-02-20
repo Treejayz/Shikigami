@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Checkpoint : MonoBehaviour {
 
@@ -10,6 +11,8 @@ public class Checkpoint : MonoBehaviour {
 
 	public static GameObject[] CheckPointList;
 
+    public static Text checkPointText;
+
 	// Use this for initialization
 	void Start () {
 		CheckPointList = GameObject.FindGameObjectsWithTag("Checkpoint");
@@ -17,6 +20,8 @@ public class Checkpoint : MonoBehaviour {
         {
             pos = this.transform;
         }
+        checkPointText = GameObject.Find("CheckPointText").GetComponent<Text>();
+        checkPointText.color = new Color(checkPointText.color.r, checkPointText.color.g, checkPointText.color.b, 0f);
 	}
 
     private void OnTriggerEnter(Collider other)
@@ -40,6 +45,7 @@ public class Checkpoint : MonoBehaviour {
             // We activate the current checkpoint
             activated = true;
             hasBeen = true;
+            StartCoroutine("DisplayText");
         }
     }
 
@@ -58,5 +64,19 @@ public class Checkpoint : MonoBehaviour {
             }
         }
         return result;
+    }
+
+    private IEnumerator DisplayText()
+    {
+        print("triggered");
+        checkPointText.color = new Color(checkPointText.color.r, checkPointText.color.g, checkPointText.color.b, 1f);
+        yield return new WaitForSeconds(3f);
+        while (checkPointText.color.a > 0f)
+        {
+            float newAlpha = checkPointText.color.a - Time.fixedDeltaTime;
+            if (newAlpha < 0f) { newAlpha = 0f; }
+            checkPointText.color = new Color(checkPointText.color.r, checkPointText.color.g, checkPointText.color.b, newAlpha);
+            yield return new WaitForFixedUpdate();
+        }
     }
 }
