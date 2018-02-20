@@ -2,7 +2,7 @@
 using UnityEngine;
 
 public class Pause : MonoBehaviour {
-
+	public GameObject eventSystem;
 	// Use this for initialization
 	void Start () {
 		
@@ -17,6 +17,7 @@ public class Pause : MonoBehaviour {
 			Time.timeScale = 0.0F;
 		} else {
 			Time.timeScale = 1.0F;
+			eventSystem.GetComponent<UnityEngine.EventSystems.EventSystem> ().SetSelectedGameObject (null);
 		}
 	}
 }
