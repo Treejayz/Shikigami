@@ -12,6 +12,7 @@ public class Checkpoint : MonoBehaviour {
 	public static GameObject[] CheckPointList;
 
     public static Text checkPointText;
+    private static float fadeTime = 2f;
 
 	// Use this for initialization
 	void Start () {
@@ -68,12 +69,11 @@ public class Checkpoint : MonoBehaviour {
 
     private IEnumerator DisplayText()
     {
-        print("triggered");
         checkPointText.color = new Color(checkPointText.color.r, checkPointText.color.g, checkPointText.color.b, 1f);
         yield return new WaitForSeconds(3f);
         while (checkPointText.color.a > 0f)
         {
-            float newAlpha = checkPointText.color.a - Time.fixedDeltaTime;
+            float newAlpha = checkPointText.color.a - (Time.fixedDeltaTime * (1f/fadeTime));
             if (newAlpha < 0f) { newAlpha = 0f; }
             checkPointText.color = new Color(checkPointText.color.r, checkPointText.color.g, checkPointText.color.b, newAlpha);
             yield return new WaitForFixedUpdate();
