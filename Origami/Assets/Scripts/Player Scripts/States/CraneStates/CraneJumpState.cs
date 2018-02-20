@@ -28,6 +28,9 @@ public class CraneJumpState : State {
         if (Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f)
         {
             direction = character.transform.forward;
+        } else
+        {
+            direction = new Vector3 (0f, 0f, 0f);
         }
 		if (currentSpeed > 0.0f)
 		{

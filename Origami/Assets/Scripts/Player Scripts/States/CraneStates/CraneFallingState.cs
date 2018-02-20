@@ -32,6 +32,10 @@ public class CraneFallingState : State {
         {
             direction = character.transform.forward;
         }
+        else
+        {
+            direction = new Vector3(0f, 0f, 0f);
+        }
 
         if (Input.GetAxis("Jump") != 0.0f)
         {

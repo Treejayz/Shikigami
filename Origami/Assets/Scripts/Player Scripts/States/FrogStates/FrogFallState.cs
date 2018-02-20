@@ -41,6 +41,10 @@ public class FrogFallState : State {
         {
             direction = character.transform.forward;
         }
+        else
+        {
+            direction = new Vector3(0f, 0f, 0f);
+        }
 
         if (fallSpeed < maxFallSpeed)
         {
