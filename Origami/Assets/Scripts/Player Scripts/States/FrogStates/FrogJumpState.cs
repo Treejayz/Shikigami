@@ -15,7 +15,7 @@ public class FrogJumpState : State {
 	private Vector3 direction;
 
 	private float wallJumpLimit = 85f;
-	private float wallJumpSpeed = 12f;
+	private float wallJumpSpeed = 12.5f;
 	private Vector3 wallJump;
 	private bool fromWall;
 
@@ -38,14 +38,20 @@ public class FrogJumpState : State {
 		} else {
 		currentSpeed = jumpSpeed;
 		}
+
+        character.frogAnimator.SetBool("Jumping", true);
     }
 
     public override void Tick()
     {
-
-        direction = ((character.transform.forward * Input.GetAxis("Vertical"))
-            + (character.transform.right * Input.GetAxis("Horizontal")));
-        direction.Normalize();
+        if (Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f)
+        {
+            direction = character.transform.forward;
+        }
+        else
+        {
+            direction = new Vector3(0f, 0f, 0f);
+        }
 
         if (currentSpeed > 0.0f)
         {
@@ -67,7 +73,7 @@ public class FrogJumpState : State {
     }
 
 	public override void PhysicsTick() {
-		character.momentum = Vector3.Lerp(character.momentum, direction * character.moveSpeed, 0.015f);
+		character.momentum = Vector3.Lerp(character.momentum, direction * character.moveSpeed, 0.01f);
 		player.Move(character.momentum * Time.fixedDeltaTime);
 		player.Move(Vector3.up * currentSpeed * Time.fixedDeltaTime);
 	}
@@ -92,11 +98,11 @@ public class FrogJumpState : State {
         bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= player.slopeLimit);
         if (!isGrounded)
         {
-
+            //player.Move(Vector3.up * Time.fixedDeltaTime);
         }
         else
         {
-            player.Move(Vector3.up * Time.deltaTime);
+            
         }
     }
 }

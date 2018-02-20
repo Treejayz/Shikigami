@@ -15,6 +15,8 @@ public class FrogIdleState : State {
         player = character.GetComponent<CharacterController>();
         character.gameObject.transform.GetChild(0).gameObject.SetActive(false);
         character.gameObject.transform.GetChild(1).gameObject.SetActive(true);
+        character.frogAnimator.SetBool("Moving", false);
+        character.frogAnimator.SetBool("Jumping", false);
     }
 
     public override void Tick()
@@ -34,6 +36,7 @@ public class FrogIdleState : State {
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
+            character.SetForm("Crane");
             character.SetState(new CraneIdleState(character));
         }
     }
@@ -47,4 +50,9 @@ public class FrogIdleState : State {
         player.Move(character.momentum * Time.fixedDeltaTime);
 		player.Move(Vector3.down * character.gravity * Time.fixedDeltaTime);
 	}
+
+    public override void OnStateExit()
+    {
+        character.frogAnimator.SetBool("Moving", true);
+    }
 }

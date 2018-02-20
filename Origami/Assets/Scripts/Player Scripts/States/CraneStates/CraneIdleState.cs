@@ -15,13 +15,10 @@ public class CraneIdleState : State {
 		player = character.GetComponent<CharacterController>();
         character.gameObject.transform.GetChild(1).gameObject.SetActive(false);
         character.gameObject.transform.GetChild(0).gameObject.SetActive(true);
+        character.craneAnimator.SetBool("Moving", false);
     }
 
     public override void Tick() {
-
-		
-
-        
 
         if (!player.isGrounded) {
 			character.SetState(new CraneFallingState(character));
@@ -35,8 +32,9 @@ public class CraneIdleState : State {
 			character.SetState(new CraneJumpState(character));
 		}
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && character.canFrog)
         {
+            character.SetForm("Frog");
             character.SetState(new FrogIdleState(character));
         }
     }
@@ -51,7 +49,12 @@ public class CraneIdleState : State {
 		player.Move(Vector3.down * character.gravity * Time.fixedDeltaTime);
 	}
 
-	public override void OnColliderHit(ControllerColliderHit hit)
+    public override void OnStateExit()
+    {
+        character.craneAnimator.SetBool("Moving", true);
+    }
+
+    public override void OnColliderHit(ControllerColliderHit hit)
 	{
 		Vector3 hitNormal = hit.normal;
 		bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= player.slopeLimit);

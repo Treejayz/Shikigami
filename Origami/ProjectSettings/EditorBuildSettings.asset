@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Kalvin's UI Corner of fun and excitement.unity
+    guid: bd2e102c2798c534d9379559bac67d85
+  - enabled: 1
+    path: Assets/Scenes/CJ Test Scene.unity
+    guid: e5ac1e039d172de47a7081b0f7028c52

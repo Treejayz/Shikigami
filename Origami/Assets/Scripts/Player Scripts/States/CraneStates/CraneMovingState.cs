@@ -20,8 +20,7 @@ public class CraneMovingState : State {
     public override void Tick()
     {
 
-		direction = ((character.transform.forward * Input.GetAxis("Vertical")) 
-			+ (character.transform.right * Input.GetAxis("Horizontal")));
+        direction = character.transform.forward;
 		direction.Normalize();
 
 		if (!player.isGrounded) {
@@ -48,7 +47,7 @@ public class CraneMovingState : State {
     {
         Vector3 hitNormal = hit.normal;
         bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= player.slopeLimit);
-        if (!isGrounded)
+        if (!isGrounded && !player.isGrounded)
         {
             character.SetState(new CraneFallingState(character));
         }

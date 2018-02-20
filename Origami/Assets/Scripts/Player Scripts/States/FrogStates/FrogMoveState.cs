@@ -21,9 +21,7 @@ public class FrogMoveState : State {
     public override void Tick()
     {
 
-        direction = ((character.transform.forward * Input.GetAxis("Vertical"))
-            + (character.transform.right * Input.GetAxis("Horizontal")));
-        direction.Normalize();
+        direction = character.transform.forward;
 
         if (!player.isGrounded)
         {

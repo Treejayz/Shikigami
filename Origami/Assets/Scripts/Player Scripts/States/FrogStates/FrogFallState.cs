@@ -37,9 +37,14 @@ public class FrogFallState : State {
 
     public override void Tick()
     {
-        direction = ((character.transform.forward * Input.GetAxis("Vertical"))
-            + (character.transform.right * Input.GetAxis("Horizontal")));
-        direction.Normalize();
+        if (Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f)
+        {
+            direction = character.transform.forward;
+        }
+        else
+        {
+            direction = new Vector3(0f, 0f, 0f);
+        }
 
         if (fallSpeed < maxFallSpeed)
         {
