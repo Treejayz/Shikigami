@@ -22,5 +22,20 @@ public class Tform_Icon_Mangement : MonoBehaviour {
 		if (!player.GetComponent<Character>().canFrog) {
 			this.GetComponent<Canvas> ().enabled = false;
 		}
+		/*if (player.GetComponent<Character> ().canFox) {
+			if (player.GetComponent<Character> ().GetForm () == "Frog") {
+				// show crane in q and fox in e
+			} else if (player.GetComponent<Character> ().GetForm () == "Fox") {
+				//show crane in q and frog in e
+			} else {
+				//show frog in q and fox in e
+			}
+		} else {
+			if (player.GetComponent<Character> ().GetForm () == "Frog") {
+				//code to show crane in both q and e
+			}  else {
+				//code to show crane in both q and e
+			}
+		} */
 	}
 }
