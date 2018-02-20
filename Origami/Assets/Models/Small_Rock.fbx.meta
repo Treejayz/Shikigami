@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: fc6c445c37184f7418b5f99fdfa2f944
-timeCreated: 1519161551
+guid: dadbe4494f858b3429e4bf0ebf246619
+timeCreated: 1519160209
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: stem_texture
-    2100002: flower_purple
-    2100004: inny_bits_orange
-    2100006: inny_bits_green
+    2100000: rock
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Flower
+    4300000: shard1
   externalObjects: {}
   materials:
     importMaterials: 1

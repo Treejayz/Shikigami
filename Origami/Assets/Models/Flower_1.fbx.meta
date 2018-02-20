@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 655815d71bf24c242915866c19e8f23a
-timeCreated: 1519158241
+timeCreated: 1519161455
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -13,7 +13,7 @@ ModelImporter:
     2100006: inny_bits_purple
     2300000: //RootNode
     3300000: //RootNode
-    4300000: stem1
+    4300000: Flower
   externalObjects: {}
   materials:
     importMaterials: 1
