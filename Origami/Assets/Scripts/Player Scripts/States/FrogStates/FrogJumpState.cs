@@ -44,10 +44,10 @@ public class FrogJumpState : State {
 
     public override void Tick()
     {
-
-        direction = ((character.transform.forward * Input.GetAxis("Vertical"))
-            + (character.transform.right * Input.GetAxis("Horizontal")));
-        direction.Normalize();
+        if (Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f)
+        {
+            direction = character.transform.forward;
+        }
 
         if (currentSpeed > 0.0f)
         {

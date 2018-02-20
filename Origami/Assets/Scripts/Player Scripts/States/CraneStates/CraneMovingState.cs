@@ -20,8 +20,7 @@ public class CraneMovingState : State {
     public override void Tick()
     {
 
-		direction = ((character.transform.forward * Input.GetAxis("Vertical")) 
-			+ (character.transform.right * Input.GetAxis("Horizontal")));
+        direction = character.transform.forward;
 		direction.Normalize();
 
 		if (!player.isGrounded) {
