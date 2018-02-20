@@ -10,6 +10,7 @@ public class DeathState : State
     private float deathTimer = 2f;
 
     private float currentTime;
+    //private ParticleEmitter[] particles;
 
     public DeathState(Character character) : base(character)
     {
@@ -20,6 +21,10 @@ public class DeathState : State
         player = character.GetComponent<CharacterController>();
         currentTime = 0f;
         character.dead = true;
+        character.GetComponentsInChildren<ParticleSystem>()[0].Play();
+        character.gameObject.transform.GetChild(1).gameObject.SetActive(false);
+        character.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+
     }
     public override void Tick()
     {

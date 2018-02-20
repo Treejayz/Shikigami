@@ -5311,46 +5311,6 @@ Prefab:
       propertyPath: camTargetTrans
       value: 
       objectReference: {fileID: 1104206614}
-    - target: {fileID: 114056693430919006, guid: 45b80ecd4e0c7cd4d9d50d587a9067d2,
-        type: 2}
-      propertyPath: moveSpeed
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4781314465951890, guid: 45b80ecd4e0c7cd4d9d50d587a9067d2, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.7249022
-      objectReference: {fileID: 0}
-    - target: {fileID: 4781314465951890, guid: 45b80ecd4e0c7cd4d9d50d587a9067d2, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.084439
-      objectReference: {fileID: 0}
-    - target: {fileID: 4781314465951890, guid: 45b80ecd4e0c7cd4d9d50d587a9067d2, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.8334315
-      objectReference: {fileID: 0}
-    - target: {fileID: 4781314465951890, guid: 45b80ecd4e0c7cd4d9d50d587a9067d2, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1.8149171
-      objectReference: {fileID: 0}
-    - target: {fileID: 143922735604387792, guid: 45b80ecd4e0c7cd4d9d50d587a9067d2,
-        type: 2}
-      propertyPath: m_SlopeLimit
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 143922735604387792, guid: 45b80ecd4e0c7cd4d9d50d587a9067d2,
-        type: 2}
-      propertyPath: m_StepOffset
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 143922735604387792, guid: 45b80ecd4e0c7cd4d9d50d587a9067d2,
-        type: 2}
-      propertyPath: m_SkinWidth
-      value: 0.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 4181072171578106, guid: 45b80ecd4e0c7cd4d9d50d587a9067d2, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 45b80ecd4e0c7cd4d9d50d587a9067d2, type: 2}
   m_IsPrefabParent: 0
