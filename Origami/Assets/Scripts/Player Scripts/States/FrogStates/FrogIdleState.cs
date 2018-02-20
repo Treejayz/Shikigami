@@ -36,6 +36,7 @@ public class FrogIdleState : State {
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
+            character.SetForm("Crane");
             character.SetState(new CraneIdleState(character));
         }
     }

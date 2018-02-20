@@ -13,6 +13,9 @@ public class Character : MonoBehaviour {
     public bool canFrog = false;
     public bool canFox = false;
 
+    public enum CurrentForm { CRANE, FROG, FOX };
+    public CurrentForm Form;
+
     public Animator craneAnimator;
     public Animator frogAnimator;
 
@@ -24,6 +27,7 @@ public class Character : MonoBehaviour {
     private void Start()
     {
         SetState(new CraneIdleState(this));
+        Form = CurrentForm.CRANE;
         dead = false;
         if (craneAnimator == null)
         {
@@ -63,5 +67,23 @@ public class Character : MonoBehaviour {
 
         if (currentState != null)
             currentState.OnStateEnter();
+    }
+
+    public void SetForm(System.String next)
+    {
+        if (next == "Frog")
+        {
+            Form = CurrentForm.FROG;
+        } else if (next == "Crane")
+        {
+            Form = CurrentForm.CRANE;
+        } else if (next == "Fox")
+        {
+            Form = CurrentForm.FOX;
+        }
+    }
+    public CurrentForm GetForm()
+    {
+        return Form;
     }
 }
