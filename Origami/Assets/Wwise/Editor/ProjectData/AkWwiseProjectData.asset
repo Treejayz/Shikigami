@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7f870f2b0420e64e90fd4399b884d81, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  CurrentPluginConfig: 
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{625F5381-8BD3-4877-9B74-E049A50E6311}'
+    m_lastTimePsrt1: -336211268
+    m_lastTimePart2: -1999275953
+    List:
+    - Name: BirdJump
+      Path: Default Work Unit\BirdJump
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: BirdJump
+        ObjectType: 3
+      ID: 282783632
+      Guid: 903bcab14f85554a978a23d8165d3831
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Flap
+      Path: Default Work Unit\Flap
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Flap
+        ObjectType: 3
+      ID: -1363583668
+      Guid: 9bb06f3b54e7ef4eb7ef4c00a517a21c
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{AA901C8B-D3AA-4733-A42E-55F81E12807E}'
+    m_lastTimePsrt1: -1639519637
+    m_lastTimePart2: -1999275958
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{E49C90B7-1F78-421B-B7BF-4951911DF84C}'
+    m_lastTimePsrt1: -1638948309
+    m_lastTimePart2: -1999275958
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{4007C12B-B44E-4921-B744-7CCB97174FBA}'
+    m_lastTimePsrt1: -1639359631
+    m_lastTimePart2: -1999275958
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{193271B6-52E5-4769-A429-91E80156ABC9}'
+    m_lastTimePsrt1: -336171285
+    m_lastTimePart2: -1999275953
+    List:
+    - Name: PlayerSounds
+      Path: Default Work Unit\PlayerSounds
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PlayerSounds
+        ObjectType: 7
+      ID: 1327972334
+      Guid: b6c29b791defb144a60f624889aab0eb
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{2EBBEC07-BE6A-4EFC-9D6D-0196EB6D4383}'
+    m_lastTimePsrt1: -1639639648
+    m_lastTimePart2: -1999275958
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{612D8368-3CE1-402B-9A19-1E0524DEF3E1}'
+    m_lastTimePsrt1: -1639359631
+    m_lastTimePart2: -1999275958
+    List: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{777BC1D3-FC1C-41B6-B82B-BE00FE58CCD5}'
+    m_lastTimePsrt1: -1638878262
+    m_lastTimePart2: -1999275958
+    List: []
+  ExpandedItems:
+  - /Origami_WwiseProject
+  - /Origami_WwiseProject/SoundBanks
+  - /Origami_WwiseProject/SoundBanks/Default Work Unit
+  m_lastPopulateTimePsrt1: 0
+  m_lastPopulateTimePart2: 0
+  autoPopulateEnabled: 1
+  basePath: Audio\GeneratedSoundBanks
+  language: English(US)
+  defaultPoolSize: 4096
+  lowerPoolSize: 2048
+  streamingPoolSize: 1024
+  preparePoolSize: 0
+  memoryCutoffThreshold: 0.95
+  callbackManagerBufferSize: 4

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{625F5381-8BD3-4877-9B74-E049A50E6311}" SchemaVersion="85">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{625F5381-8BD3-4877-9B74-E049A50E6311}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="BirdJump" ID="{B1CA3B90-854F-4A55-978A-23D8165D3831}">
+					<ChildrenList>
+						<Action Name="" ID="{126B5DBF-FB73-4AE2-8FDA-2D4004AC094E}" ShortID="941165753">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WingJump01" ID="{B38BD140-9138-4CFE-9A88-60DFB327EC1C}" WorkUnitID="{7565D8D9-C801-4D5C-B311-22F0B03C4984}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Flap" ID="{3B6FB09B-E754-4EEF-B7EF-4C00A517A21C}">
+					<ChildrenList>
+						<Action Name="" ID="{61F2C1BE-5E50-4CB4-A7FB-AFA83F49E837}" ShortID="1057338263">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Flaps" ID="{BEFF3D07-1EAD-4505-B7DB-581ADA726860}" WorkUnitID="{7565D8D9-C801-4D5C-B311-22F0B03C4984}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="128">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\GeneratedSoundBanks\Mac\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1327972334" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\PlayerSounds</ObjectPath>
+			<ShortName>PlayerSounds</ShortName>
+			<Path>PlayerSounds.bnk</Path>
+			<IncludedEvents>
+				<Event Id="282783632" Name="BirdJump" ObjectPath="\Events\Default Work Unit\BirdJump"/>
+				<Event Id="2931383628" Name="Flap" ObjectPath="\Events\Default Work Unit\Flap"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="75779827" Language="SFX">
+					<ShortName>GenFlap1.wav</ShortName>
+					<Path>SFX\GenFlap1_1C9C67B2.wem</Path>
+				</File>
+				<File Id="103896812" Language="SFX">
+					<ShortName>Wingflap02.wav</ShortName>
+					<Path>SFX\Wingflap02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="130535979" Language="SFX">
+					<ShortName>WaterHit01.wav</ShortName>
+					<Path>SFX\WaterHit01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="146319218" Language="SFX">
+					<ShortName>WingJump01.wav</ShortName>
+					<Path>SFX\WingJump01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="348397843" Language="SFX">
+					<ShortName>Splash5.wav</ShortName>
+					<Path>SFX\Splash5_1C9C67B2.wem</Path>
+				</File>
+				<File Id="381915616" Language="SFX">
+					<ShortName>Splash2.wav</ShortName>
+					<Path>SFX\Splash2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="401086479" Language="SFX">
+					<ShortName>Rip02.wav</ShortName>
+					<Path>SFX\Rip02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="444516162" Language="SFX">
+					<ShortName>Splash6.wav</ShortName>
+					<Path>SFX\Splash6_1C9C67B2.wem</Path>
+				</File>
+				<File Id="523148091" Language="SFX">
+					<ShortName>Jump01.wav</ShortName>
+					<Path>SFX\Jump01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="590914833" Language="SFX">
+					<ShortName>Wingflap01.wav</ShortName>
+					<Path>SFX\Wingflap01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="703562215" Language="SFX">
+					<ShortName>GenFlap2.wav</ShortName>
+					<Path>SFX\GenFlap2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="739649467" Language="SFX">
+					<ShortName>GenFlap3.wav</ShortName>
+					<Path>SFX\GenFlap3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="850693002" Language="SFX">
+					<ShortName>Rip03.wav</ShortName>
+					<Path>SFX\Rip03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="882537431" Language="SFX">
+					<ShortName>GenFlap4.wav</ShortName>
+					<Path>SFX\GenFlap4_1C9C67B2.wem</Path>
+				</File>
+				<File Id="909215467" Language="SFX">
+					<ShortName>Splash3.wav</ShortName>
+					<Path>SFX\Splash3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="974109953" Language="SFX">
+					<ShortName>Rip01.wav</ShortName>
+					<Path>SFX\Rip01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="982715466" Language="SFX">
+					<ShortName>Splash1.wav</ShortName>
+					<Path>SFX\Splash1_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1014847841" Language="SFX">
+					<ShortName>Splash7.wav</ShortName>
+					<Path>SFX\Splash7_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1032535049" Language="SFX">
+					<ShortName>Splash4.wav</ShortName>
+					<Path>SFX\Splash4_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1037359009" Language="SFX">
+					<ShortName>Wingflap03.wav</ShortName>
+					<Path>SFX\Wingflap03_1C9C67B2.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
