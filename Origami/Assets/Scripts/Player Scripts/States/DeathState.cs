@@ -22,6 +22,7 @@ public class DeathState : State
         currentTime = 0f;
         character.dead = true;
         character.GetComponentsInChildren<ParticleSystem>()[0].Play();
+        character.GetComponentsInChildren<ParticleSystem>()[1].Stop();
         character.gameObject.transform.GetChild(1).gameObject.SetActive(false);
         character.gameObject.transform.GetChild(0).gameObject.SetActive(false);
 
@@ -34,6 +35,7 @@ public class DeathState : State
         } else
         {
             character.dead = false;
+            character.GetComponentsInChildren<ParticleSystem>()[1].Play();
             character.transform.position = Checkpoint.GetPoint();
             character.SetState(new CraneIdleState(character));
         }
