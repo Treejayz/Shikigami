@@ -5,6 +5,7 @@ using UnityEngine;
 public class Checkpoint : MonoBehaviour {
 
 	public bool activated = false;
+    private bool hasBeen = false;
     public Transform pos;
 
 	public static GameObject[] CheckPointList;
@@ -28,14 +29,18 @@ public class Checkpoint : MonoBehaviour {
 
     private void ActivateCheckPoint()
     {
-        // We deactive all checkpoints in the scene
-        foreach (GameObject cp in CheckPointList)
+        if (!hasBeen)
         {
-            cp.GetComponent<Checkpoint>().activated = false;
-        }
+            // We deactive all checkpoints in the scene
+            foreach (GameObject cp in CheckPointList)
+            {
+                cp.GetComponent<Checkpoint>().activated = false;
+            }
 
-        // We activate the current checkpoint
-        activated = true;
+            // We activate the current checkpoint
+            activated = true;
+            hasBeen = true;
+        }
     }
 
     public static Vector3 GetPoint()

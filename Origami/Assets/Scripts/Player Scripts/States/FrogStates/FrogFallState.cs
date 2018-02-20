@@ -8,7 +8,7 @@ public class FrogFallState : State {
 
 
     private float Gravity = 30f;
-    private float maxFallSpeed = 20f;
+    private float maxFallSpeed = 30f;
     private float slideFriction = 0.3f;
 
     private float fallSpeed;
