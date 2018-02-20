@@ -1,13 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Checkpoint : MonoBehaviour {
 
 	public bool activated = false;
+    private bool hasBeen = false;
     public Transform pos;
 
 	public static GameObject[] CheckPointList;
+
+    public static Text checkPointText;
+    private static float fadeTime = 2f;
 
 	// Use this for initialization
 	void Start () {
@@ -16,6 +21,8 @@ public class Checkpoint : MonoBehaviour {
         {
             pos = this.transform;
         }
+        checkPointText = GameObject.Find("CheckPointText").GetComponent<Text>();
+        checkPointText.color = new Color(checkPointText.color.r, checkPointText.color.g, checkPointText.color.b, 0f);
 	}
 
     private void OnTriggerEnter(Collider other)
@@ -28,14 +35,19 @@ public class Checkpoint : MonoBehaviour {
 
     private void ActivateCheckPoint()
     {
-        // We deactive all checkpoints in the scene
-        foreach (GameObject cp in CheckPointList)
+        if (!hasBeen)
         {
-            cp.GetComponent<Checkpoint>().activated = false;
-        }
+            // We deactive all checkpoints in the scene
+            foreach (GameObject cp in CheckPointList)
+            {
+                cp.GetComponent<Checkpoint>().activated = false;
+            }
 
-        // We activate the current checkpoint
-        activated = true;
+            // We activate the current checkpoint
+            activated = true;
+            hasBeen = true;
+            StartCoroutine("DisplayText");
+        }
     }
 
     public static Vector3 GetPoint()
@@ -53,5 +65,18 @@ public class Checkpoint : MonoBehaviour {
             }
         }
         return result;
+    }
+
+    private IEnumerator DisplayText()
+    {
+        checkPointText.color = new Color(checkPointText.color.r, checkPointText.color.g, checkPointText.color.b, 1f);
+        yield return new WaitForSeconds(3f);
+        while (checkPointText.color.a > 0f)
+        {
+            float newAlpha = checkPointText.color.a - (Time.fixedDeltaTime * (1f/fadeTime));
+            if (newAlpha < 0f) { newAlpha = 0f; }
+            checkPointText.color = new Color(checkPointText.color.r, checkPointText.color.g, checkPointText.color.b, newAlpha);
+            yield return new WaitForFixedUpdate();
+        }
     }
 }

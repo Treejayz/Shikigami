@@ -81,6 +81,8 @@ public class FrogJumpState : State {
 
     public override void OnColliderHit(ControllerColliderHit hit)
     {
+        if (hit.gameObject.tag == "MovingPlatform") { return; }
+
         Vector3 hitNormal = hit.normal;
 		bool wall = (Vector3.Angle(Vector3.up, hitNormal) <= wallJumpLimit);
 

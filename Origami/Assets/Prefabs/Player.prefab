@@ -405,7 +405,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1456641752579720
 GameObject:
   m_ObjectHideFlags: 1
@@ -662,7 +662,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1736681311413254
 GameObject:
   m_ObjectHideFlags: 1
@@ -894,8 +894,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1726054707772514}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.32986, y: 0.42598, z: 0.71085}
-  m_LocalScale: {x: 93.0943, y: 93.094475, z: 93.094475}
+  m_LocalPosition: {x: -0.251, y: 0.24, z: 0.68062}
+  m_LocalScale: {x: 71.03353, y: 71.03365, z: 71.03365}
   m_Children:
   - {fileID: 4342029280040564}
   - {fileID: 4425121906613228}
@@ -992,7 +992,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1118020109444334}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 70.93, y: 9.59, z: 76.87}
+  m_LocalPosition: {x: 342.2, y: 60.33, z: 447.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4044943241029050}
@@ -1351,8 +1351,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1381327607034908}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.016179, y: -0.14, z: -0.31786}
-  m_LocalScale: {x: 207.18237, y: 207.18233, z: 207.18233}
+  m_LocalPosition: {x: -0.03, y: -0.31426, z: -0.06}
+  m_LocalScale: {x: 136.74039, y: 136.74036, z: 136.74036}
   m_Children:
   - {fileID: 4328482628234772}
   - {fileID: 4842331035615318}
@@ -1688,11 +1688,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9e4b4e8fd23c364c9e92431ae78de4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 15
+  moveSpeed: 12
   gravity: 10
   momentum: {x: 10, y: 0, z: 10}
   canFrog: 1
   canFox: 0
+  Form: 0
   craneAnimator: {fileID: 95713904129578012}
   frogAnimator: {fileID: 95991126540854374}
   dead: 0

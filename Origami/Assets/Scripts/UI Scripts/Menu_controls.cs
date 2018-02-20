@@ -28,4 +28,8 @@ public class Menu_controls : MonoBehaviour {
 	public void quit(){
 		Application.Quit();
 	}
+	public void restart(GameObject player){
+		player.GetComponent<Character> ().SetState (new DeathState(player.GetComponent<Character>()));
+		this.GetComponent<Canvas> ().enabled = false;
+	}
 }

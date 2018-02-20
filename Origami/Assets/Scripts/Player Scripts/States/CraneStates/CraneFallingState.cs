@@ -8,7 +8,7 @@ public class CraneFallingState : State {
 
 
 	private float Gravity = 30f;
-	private float maxFallSpeed = 20f;
+	private float maxFallSpeed = 30f;
     private float glideSpeed = 4f;
     private float slideFriction = 0.1f;
 

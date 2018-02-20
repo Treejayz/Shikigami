@@ -8,7 +8,7 @@ public class FrogFallState : State {
 
 
     private float Gravity = 30f;
-    private float maxFallSpeed = 20f;
+    private float maxFallSpeed = 30f;
     private float slideFriction = 0.3f;
 
     private float fallSpeed;
@@ -66,11 +66,14 @@ public class FrogFallState : State {
 
     public override void OnColliderHit(ControllerColliderHit hit)
     {
+        
+
         Vector3 hitNormal = hit.normal;
 		bool wall = (Vector3.Angle(Vector3.up, hitNormal) <= wallJumpLimit);
 
 		if (!wall) {
-			if (!fromWall) {
+            if (hit.gameObject.tag == "MovingPlatform") { return; }
+            if (!fromWall) {
 				character.SetState(new FrogWallState(character, hitNormal));
 			} else {
 				bool diffWall = (Vector3.Angle(wallJump, hitNormal) >= 100f);
