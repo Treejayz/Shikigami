@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3838D55C-4A81-4825-8DB4-A33597820612}'
-    m_lastTimePsrt1: -1770008349
-    m_lastTimePart2: -1999275848
+    m_lastTimePsrt1: 1173814724
+    m_lastTimePart2: -1999275845
     List:
     - Name: Death
       Path: Default Work Unit\Death
@@ -95,29 +95,29 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}'
-    m_lastTimePsrt1: -1198199491
-    m_lastTimePart2: -1999275852
+    m_lastTimePsrt1: 1175025576
+    m_lastTimePart2: -1999275845
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8D621B80-F254-43D1-8472-3699A245E539}'
-    m_lastTimePsrt1: -1197859251
-    m_lastTimePart2: -1999275852
+    m_lastTimePsrt1: 1175706064
+    m_lastTimePart2: -1999275845
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{70DFAA7E-A926-41F3-B3EC-9EDEDC5BD535}'
-    m_lastTimePsrt1: -1198109425
-    m_lastTimePart2: -1999275852
+    m_lastTimePsrt1: 1175706064
+    m_lastTimePart2: -1999275845
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{090E2BE1-C110-4C48-8EE1-99814A8166EB}'
-    m_lastTimePsrt1: 1663932687
-    m_lastTimePart2: -1999275849
+    m_lastTimePsrt1: 1175696063
+    m_lastTimePart2: -1999275845
     List:
     - Name: PlayerSound
       Path: Default Work Unit\PlayerSound
@@ -132,22 +132,22 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{294866E5-205C-4CEF-A167-22F1B02116B6}'
-    m_lastTimePsrt1: -1198229510
-    m_lastTimePart2: -1999275852
+    m_lastTimePsrt1: 1173824742
+    m_lastTimePart2: -1999275845
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{AAFD3342-11BC-416B-ACB8-0E400F3AA5C7}'
-    m_lastTimePsrt1: -1198139444
-    m_lastTimePart2: -1999275852
+    m_lastTimePsrt1: 1175716065
+    m_lastTimePart2: -1999275845
     List: []
   AcousticTextureWwu:
   - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8D14AE7B-F1F7-4613-9AF7-6BF7C07FB64D}'
-    m_lastTimePsrt1: -1197849242
-    m_lastTimePart2: -1999275852
+    m_lastTimePsrt1: 1175716065
+    m_lastTimePart2: -1999275845
     List: []
   ExpandedItems:
   - /Origami_WwiseProject
