@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3838D55C-4A81-4825-8DB4-A33597820612}'
-    m_lastTimePsrt1: 1773400298
-    m_lastTimePart2: -1999275791
+    m_lastTimePsrt1: 625941514
+    m_lastTimePart2: -1999275761
     List:
     - Name: Death
       Path: Default Work Unit\Death
@@ -43,6 +43,18 @@ MonoBehaviour:
       minDuration: 0
       maxDuration: 0
       maxAttenuation: 0
+    - Name: HPMusic
+      Path: Default Work Unit\HPMusic
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: HPMusic
+        ObjectType: 3
+      ID: 26407862
+      Guid: 28221d1a99e40743b859f269dd74700c
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
     - Name: Pickup
       Path: Default Work Unit\Pickup
       PathAndIcons:
@@ -55,6 +67,18 @@ MonoBehaviour:
       minDuration: 0
       maxDuration: 0
       maxAttenuation: 0
+    - Name: ResetHPMusic
+      Path: Default Work Unit\ResetHPMusic
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ResetHPMusic
+        ObjectType: 3
+      ID: -1294346897
+      Guid: e321be60204ebe4885a503078f6c0524
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
     - Name: Splash
       Path: Default Work Unit\Splash
       PathAndIcons:
@@ -64,6 +88,30 @@ MonoBehaviour:
         ObjectType: 3
       ID: 160038168
       Guid: 15647d0390d3f34c801c806f3d9a4332
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: StartMusic
+      Path: Default Work Unit\StartMusic
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: StartMusic
+        ObjectType: 3
+      ID: -467908628
+      Guid: 00ef7b9b98426149a320200c84b71b88
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: StopMusic
+      Path: Default Work Unit\StopMusic
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: StopMusic
+        ObjectType: 3
+      ID: 1917263390
+      Guid: 79aafabbf99f7b43bc9a364e8d0731d3
       minDuration: 0
       maxDuration: 0
       maxAttenuation: 0
@@ -107,29 +155,29 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}'
-    m_lastTimePsrt1: 1175025576
-    m_lastTimePart2: -1999275845
+    m_lastTimePsrt1: -1328671291
+    m_lastTimePart2: -1999275788
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8D621B80-F254-43D1-8472-3699A245E539}'
-    m_lastTimePsrt1: 1175706064
-    m_lastTimePart2: -1999275845
+    m_lastTimePsrt1: -1325181162
+    m_lastTimePart2: -1999275788
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{70DFAA7E-A926-41F3-B3EC-9EDEDC5BD535}'
-    m_lastTimePsrt1: 1175706064
-    m_lastTimePart2: -1999275845
+    m_lastTimePsrt1: -1325161147
+    m_lastTimePart2: -1999275788
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{090E2BE1-C110-4C48-8EE1-99814A8166EB}'
-    m_lastTimePsrt1: 1774621159
-    m_lastTimePart2: -1999275791
+    m_lastTimePsrt1: -175259527
+    m_lastTimePart2: -1999275767
     List:
     - Name: PlayerSound
       Path: Default Work Unit\PlayerSound
@@ -144,22 +192,22 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{294866E5-205C-4CEF-A167-22F1B02116B6}'
-    m_lastTimePsrt1: 1173824742
-    m_lastTimePart2: -1999275845
+    m_lastTimePsrt1: -1329980620
+    m_lastTimePart2: -1999275788
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{AAFD3342-11BC-416B-ACB8-0E400F3AA5C7}'
-    m_lastTimePsrt1: 1175716065
-    m_lastTimePart2: -1999275845
+    m_lastTimePsrt1: -1325141129
+    m_lastTimePart2: -1999275788
     List: []
   AcousticTextureWwu:
   - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8D14AE7B-F1F7-4613-9AF7-6BF7C07FB64D}'
-    m_lastTimePsrt1: 1175716065
-    m_lastTimePart2: -1999275845
+    m_lastTimePsrt1: -1325121115
+    m_lastTimePart2: -1999275788
     List: []
   ExpandedItems:
   - /Origami_WwiseProject

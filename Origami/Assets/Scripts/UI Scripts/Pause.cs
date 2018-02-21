@@ -12,7 +12,7 @@ public class Pause : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.Escape)){
 			this.GetComponent<Canvas> ().enabled = !this.GetComponent<Canvas> ().enabled;
-		}
+        }
 		if (this.GetComponent<Canvas> ().enabled) {
 			Time.timeScale = 0.0F;
 		} else {

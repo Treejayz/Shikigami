@@ -15,8 +15,12 @@ namespace AK
     {
         static const AkUniqueID DEATH = 779278001U;
         static const AkUniqueID FROGJUMP = 2432329107U;
+        static const AkUniqueID HPMUSIC = 26407862U;
         static const AkUniqueID PICKUP = 3978245845U;
+        static const AkUniqueID RESETHPMUSIC = 3000620399U;
         static const AkUniqueID SPLASH = 160038168U;
+        static const AkUniqueID STARTMUSIC = 3827058668U;
+        static const AkUniqueID STOPMUSIC = 1917263390U;
         static const AkUniqueID WINDBEGIN = 1021800662U;
         static const AkUniqueID WINDSTOP = 1571412035U;
         static const AkUniqueID WINGJUMP = 3191917460U;

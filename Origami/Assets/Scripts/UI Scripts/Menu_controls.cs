@@ -21,10 +21,12 @@ public class Menu_controls : MonoBehaviour {
 	public void loadCanvas(GameObject canvasName){
 		this.GetComponent<Canvas> ().enabled = false;
 		canvasName.GetComponent<Canvas> ().enabled = true;
-	}
+        // AkSoundEngine.PostEvent("HPMusic", gameObject);
+    }
 	public void unPause(){
 		this.GetComponent<Canvas> ().enabled = false;
-	}
+        // AkSoundEngine.PostEvent("ResetHPMusic", gameObject);
+    }
 	public void quit(){
 		Application.Quit();
 	}

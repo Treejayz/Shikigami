@@ -3,11 +3,15 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{0083A858-593D-4404-B58E-25D75EC7F022}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Katadeus\Documents\OrigamiSounds\PlayerSounds\Undecided"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Katadeus\Documents\OrigamiSounds\Music"/>
 				<Property Name="Event Action List\{037D6415-D390-4CF3-801C-806F3D9A4332}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{1A1D2228-E499-4307-B859-F269DD74700C}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{60BE21E3-4E20-48BE-85A5-03078F6C0524}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{947EEC9C-E58C-48B3-A731-04A5112EC800}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{9B7BEF00-4298-4961-A320-200C84B71B88}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B26E24F4-DACE-437B-992F-B84D711BA154}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B944F94E-E789-4730-83ED-FCDD96E9B978}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{BBFAAA79-9FF9-437B-BC9A-364E8D0731D3}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{CE7F98F0-1688-48D6-8217-39451F98F2D4}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{DDFEB236-29F6-46B0-96D4-8DD54FCC1DAD}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E326C055-9827-49BF-95C1-D65CC31E464C}\x64_Expand States" Type="string" Value=""/>
@@ -30,7 +34,7 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value=""/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value=""/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="VfTPkeVsskOMlucdTkma2wH/////////pytNOYuRWUG0Iw5xpnvjfgH/////////"/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="pytNOYuRWUG0Iw5xpnvjfgH/////////VfTPkeVsskOMlucdTkma2wH/////////"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>

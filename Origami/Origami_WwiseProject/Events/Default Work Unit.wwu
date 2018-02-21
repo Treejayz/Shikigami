@@ -64,7 +64,7 @@
 						<Action Name="" ID="{83D03FFD-3860-4A61-AC53-28020E80FCBB}" ShortID="248973654">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
-								<Property Name="FadeTime" Type="Real64" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -98,6 +98,67 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="02" ID="{BC96E305-5974-43B4-A653-33A36DB09045}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StartMusic" ID="{9B7BEF00-4298-4961-A320-200C84B71B88}">
+					<ChildrenList>
+						<Action Name="" ID="{F01CC7AF-8DB9-4B55-9A99-DE22BFAA354A}" ShortID="94422796">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MenuThemeWIP" ID="{641BCFE3-C6E5-4A11-98E0-DD99044ACA3F}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopMusic" ID="{BBFAAA79-9FF9-437B-BC9A-364E8D0731D3}">
+					<ChildrenList>
+						<Action Name="" ID="{766A1729-4555-4DF4-8803-A63CBCF5A600}" ShortID="644446013">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MenuThemeWIP" ID="{641BCFE3-C6E5-4A11-98E0-DD99044ACA3F}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HPMusic" ID="{1A1D2228-E499-4307-B859-F269DD74700C}">
+					<ChildrenList>
+						<Action Name="" ID="{9AC0D980-43A9-4EDF-AD57-FCAFEB8B03A1}" ShortID="137478172">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="29"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Highpass" Type="int16" Value="50"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MenuThemeWIP" ID="{641BCFE3-C6E5-4A11-98E0-DD99044ACA3F}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ResetHPMusic" ID="{60BE21E3-4E20-48BE-85A5-03078F6C0524}">
+					<ChildrenList>
+						<Action Name="" ID="{8BDDE6EC-1579-4A81-A5A5-006E6A5C52D1}" ShortID="133603824">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="30"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MenuThemeWIP" ID="{641BCFE3-C6E5-4A11-98E0-DD99044ACA3F}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
