@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 97f216ff49983e541ac56c7cb78a9c72, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44116667, g: 0.4899376, b: 0.5700074, a: 1}
+  m_IndirectSpecularColor: {r: 0.39217648, g: 0.65196973, b: 0.62499976, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -9220,6 +9220,7 @@ GameObject:
   - component: {fileID: 1293770356}
   - component: {fileID: 1293770351}
   - component: {fileID: 1293770358}
+  - component: {fileID: 1293770359}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -9372,6 +9373,14 @@ MonoBehaviour:
   transitionDuration: 0
   m_callbackData: {fileID: 0}
   playingId: 0
+--- !u!45 &1293770359
+Skybox:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1293770350}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 97f216ff49983e541ac56c7cb78a9c72, type: 2}
 --- !u!1001 &1300494678
 Prefab:
   m_ObjectHideFlags: 0
@@ -12532,15 +12541,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4181072171578106, guid: 45b80ecd4e0c7cd4d9d50d587a9067d2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 305.8
+      value: 65.7
       objectReference: {fileID: 0}
     - target: {fileID: 4181072171578106, guid: 45b80ecd4e0c7cd4d9d50d587a9067d2, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 50.22
+      value: 9.44
       objectReference: {fileID: 0}
     - target: {fileID: 4181072171578106, guid: 45b80ecd4e0c7cd4d9d50d587a9067d2, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 672
+      value: 67.8
       objectReference: {fileID: 0}
     - target: {fileID: 4181072171578106, guid: 45b80ecd4e0c7cd4d9d50d587a9067d2, type: 2}
       propertyPath: m_LocalRotation.x
@@ -12575,7 +12584,7 @@ Prefab:
     - target: {fileID: 114056693430919006, guid: 45b80ecd4e0c7cd4d9d50d587a9067d2,
         type: 2}
       propertyPath: canFrog
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 95991126540854374, guid: 45b80ecd4e0c7cd4d9d50d587a9067d2,
         type: 2}
