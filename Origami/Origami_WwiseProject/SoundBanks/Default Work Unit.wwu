@@ -6,6 +6,7 @@
 				<SoundBank Name="PlayerSound" ID="{DB1E0133-8DCC-495A-B34F-236BC536C51F}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Windloop" ID="{35CA7AD7-E248-416F-B626-A0C4FAF5ADD1}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="02" ID="{BC96E305-5974-43B4-A653-33A36DB09045}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="RandomSplash" ID="{60421BFD-4593-4622-95FF-33D2B198F46A}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="RandomRip" ID="{FEB3E9DD-762C-4745-AE7E-656F17A0CDA9}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="WingJump01" ID="{8684A3A1-3D55-4A15-A8D7-DED63EE6812F}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>

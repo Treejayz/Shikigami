@@ -5,6 +5,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1571412035	WindStop			\Default Work Unit\WindStop	
 	2432329107	FrogJump			\Default Work Unit\FrogJump	
 	3191917460	WingJump			\Default Work Unit\WingJump	
+	3978245845	Pickup			\Default Work Unit\Pickup	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	4082871	Wingflap03	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Mac\SFX\Wingflap03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFlap\Wingflap03		29074
@@ -27,5 +28,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	788334081	GenFlap4	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Mac\SFX\GenFlap4_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFlap\GenFlap4		1447780
 	832236322	Splash1	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Mac\SFX\Splash1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomSplash\Splash1		131204
 	853212425	Splash4	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Mac\SFX\Splash4_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomSplash\Splash4		111920
+	880608621	02	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Mac\SFX\02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\02		53658
 	1030449657	Rip01	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Mac\SFX\Rip01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomRip\Rip01		23616
 

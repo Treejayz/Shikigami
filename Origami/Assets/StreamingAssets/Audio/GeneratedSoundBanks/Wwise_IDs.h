@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID DEATH = 779278001U;
         static const AkUniqueID FROGJUMP = 2432329107U;
+        static const AkUniqueID PICKUP = 3978245845U;
         static const AkUniqueID SPLASH = 160038168U;
         static const AkUniqueID WINDBEGIN = 1021800662U;
         static const AkUniqueID WINDSTOP = 1571412035U;

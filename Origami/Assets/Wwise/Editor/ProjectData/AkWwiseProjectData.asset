@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3838D55C-4A81-4825-8DB4-A33597820612}'
-    m_lastTimePsrt1: 1173814724
-    m_lastTimePart2: -1999275845
+    m_lastTimePsrt1: 647079172
+    m_lastTimePart2: -1999275792
     List:
     - Name: Death
       Path: Default Work Unit\Death
@@ -40,6 +40,18 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1862638189
       Guid: f4246eb2ceda7b43992fb84d711ba154
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Pickup
+      Path: Default Work Unit\Pickup
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Pickup
+        ObjectType: 3
+      ID: -316721451
+      Guid: 9cec7e948ce5b348a73104a5112ec800
       minDuration: 0
       maxDuration: 0
       maxAttenuation: 0
@@ -116,8 +128,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{090E2BE1-C110-4C48-8EE1-99814A8166EB}'
-    m_lastTimePsrt1: 1175696063
-    m_lastTimePart2: -1999275845
+    m_lastTimePsrt1: 646909037
+    m_lastTimePart2: -1999275792
     List:
     - Name: PlayerSound
       Path: Default Work Unit\PlayerSound

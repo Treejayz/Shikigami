@@ -31,6 +31,7 @@ public class Collectable : MonoBehaviour {
             halo.GetType().GetProperty("enabled").SetValue(halo, false, null);
             StartCoroutine("Kill");
         }
+        AkSoundEngine.PostEvent("Pickup", gameObject);
     }
 
     IEnumerator Kill()

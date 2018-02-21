@@ -23,6 +23,7 @@
 			<IncludedEvents>
 				<Event Id="779278001" Name="Death" ObjectPath="\Events\Default Work Unit\Death"/>
 				<Event Id="2432329107" Name="FrogJump" ObjectPath="\Events\Default Work Unit\FrogJump"/>
+				<Event Id="3978245845" Name="Pickup" ObjectPath="\Events\Default Work Unit\Pickup"/>
 				<Event Id="160038168" Name="Splash" ObjectPath="\Events\Default Work Unit\Splash"/>
 				<Event Id="1021800662" Name="WindBegin" ObjectPath="\Events\Default Work Unit\WindBegin"/>
 				<Event Id="1571412035" Name="WindStop" ObjectPath="\Events\Default Work Unit\WindStop" MaxAttenuation="0.000000"/>
@@ -108,6 +109,10 @@
 				<File Id="853212425" Language="SFX">
 					<ShortName>Splash4.wav</ShortName>
 					<Path>SFX\Splash4_1C9C67B2.wem</Path>
+				</File>
+				<File Id="880608621" Language="SFX">
+					<ShortName>02.wav</ShortName>
+					<Path>SFX\02_1C9C67B2.wem</Path>
 				</File>
 				<File Id="1030449657" Language="SFX">
 					<ShortName>Rip01.wav</ShortName>
