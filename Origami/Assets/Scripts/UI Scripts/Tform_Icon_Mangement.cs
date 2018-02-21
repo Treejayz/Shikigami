@@ -6,7 +6,7 @@ public class Tform_Icon_Mangement : MonoBehaviour {
 	
 	public GameObject pause;
 	public GameObject player;
-
+	Component[] renderers;
 	// Use this for initialization
 	void Start () {
 		
@@ -32,10 +32,10 @@ public class Tform_Icon_Mangement : MonoBehaviour {
 			}
 		} else {
 			if (player.GetComponent<Character> ().GetForm() == Character.CurrentForm.FROG) {
-				
+
 			}  else {
 				
 			}
-		}
+		} 	
 	}
 }
