@@ -29,18 +29,31 @@ public class FrogWallState : State {
 		} else {
 			jumpHeld = false;
 		}
-	}
+        forwardtest.wall = true;
+        character.transform.forward = wallHit;
+        character.transform.GetChild(1).transform.forward = Vector3.down;
+        character.transform.GetChild(1).transform.up = wallHit;
+    }
 
 	public override void Tick() {
-		currentTime += Time.deltaTime;
-		//if (currentTime > wallTime) {
-        if (currentTime > wallTime && (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)) {
+
+        //if (currentTime > wallTime) {
+        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+        {
+            currentTime += Time.deltaTime;
+        } else
+        {
+            currentTime = 0f;
+        }
+            
+        if (currentTime > wallTime) {
+
 			character.momentum = wallHit * 4f;
 			character.SetState(new FrogFallState(character, wallHit));
 		}
 
 		if (Input.GetAxis("Jump") != 0f && !jumpHeld) {
-			character.momentum = wallHit * 10f;
+			character.momentum = wallHit * character.moveSpeed;
 			character.SetState(new FrogJumpState(character, wallHit));
 		}
 
@@ -48,4 +61,11 @@ public class FrogWallState : State {
 			jumpHeld = false;
 		}
 	}
+
+    public override void OnStateExit()
+    {
+        forwardtest.wall = false;
+        character.transform.forward = wallHit;
+        character.transform.GetChild(1).transform.forward = wallHit;
+    }
 }

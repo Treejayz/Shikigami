@@ -64,6 +64,11 @@ public class FrogFallState : State {
 		player.Move(Vector3.down * fallSpeed * Time.fixedDeltaTime);
 	}
 
+    public override void OnStateExit()
+    {
+        character.frogAnimator.SetBool("Jumping", false);
+    }
+
     public override void OnColliderHit(ControllerColliderHit hit)
     {
         

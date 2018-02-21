@@ -8,16 +8,19 @@ public class forwardtest : MonoBehaviour {
     public Transform camTargetTrans;
 
     private bool moving;
+    [HideInInspector]
+    public static bool wall;
 
 	// Use this for initialization
 	void Start () {
         moving = false;
+        wall = false;
 	}
 	
 	// Update is called once per frame
 	void FixedUpdate () {
 
-        if (Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f)
+        if (!wall && (Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f))
         {
             Vector3 camDir = camTargetTrans.position - camTrans.position;
             camDir = new Vector3(camDir.x, 0.0f, camDir.z);
@@ -38,4 +41,5 @@ public class forwardtest : MonoBehaviour {
             moving = false;
         }
 	}
+    
 }
