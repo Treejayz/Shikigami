@@ -14,9 +14,11 @@ public class Pause : MonoBehaviour {
 			this.GetComponent<Canvas> ().enabled = !this.GetComponent<Canvas> ().enabled;
         }
 		if (this.GetComponent<Canvas> ().enabled) {
+			Cursor.visible = true;
 			Time.timeScale = 0.0F;
 		} else {
 			Time.timeScale = 1.0F;
+			Cursor.visible = false;
 			eventSystem.GetComponent<UnityEngine.EventSystems.EventSystem> ().SetSelectedGameObject (null);
 		}
 	}
