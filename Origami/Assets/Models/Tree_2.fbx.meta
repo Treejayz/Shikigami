@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 9947778182e2f46419ec80195f899ba0
-timeCreated: 1519175206
+timeCreated: 1519179231
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -14,6 +14,7 @@ ModelImporter:
     400004: //RootNode
     400006: Tree_2_Main
     2100000: bark
+    2100002: cut_bark
     2300000: root_1
     2300002: root_2
     2300004: Tree_2_Main
