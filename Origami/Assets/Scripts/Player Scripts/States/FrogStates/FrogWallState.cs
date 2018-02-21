@@ -29,6 +29,9 @@ public class FrogWallState : State {
 		} else {
 			jumpHeld = false;
 		}
+        character.frogAnimator.SetBool("Moving", false);
+        character.frogAnimator.SetBool("Jumping", false);
+
         forwardtest.wall = true;
         character.transform.forward = wallHit;
         character.transform.GetChild(1).transform.forward = Vector3.down;
@@ -66,6 +69,6 @@ public class FrogWallState : State {
     {
         forwardtest.wall = false;
         character.transform.forward = wallHit;
-        character.transform.GetChild(1).transform.forward = wallHit;
+        character.transform.GetChild(1).transform.forward = -1f * character.transform.forward;
     }
 }

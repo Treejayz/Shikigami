@@ -38,8 +38,8 @@ public class FrogJumpState : State {
 		} else {
 		currentSpeed = jumpSpeed;
 		}
-
         character.frogAnimator.SetBool("Jumping", true);
+        character.frogAnimator.Play("Frog_FullJump", -1, 0f);
         AkSoundEngine.PostEvent("FrogJump", character.gameObject);
     }
 

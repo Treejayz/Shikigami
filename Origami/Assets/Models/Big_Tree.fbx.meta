@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d0089068f87db014bb3dbc847ac89696
-timeCreated: 1519095180
+timeCreated: 1519185419
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -8,9 +8,10 @@ ModelImporter:
     100000: //RootNode
     400000: //RootNode
     2100000: bark
+    2100002: bark1
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Big_Tree
+    4300000: pCylinder4
   externalObjects: {}
   materials:
     importMaterials: 1

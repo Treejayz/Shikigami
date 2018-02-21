@@ -35,6 +35,7 @@ public class CraneIdleState : State {
         if (Input.GetKeyDown(KeyCode.E) && character.canFrog)
         {
             character.SetForm("Frog");
+            character.GetComponentsInChildren<ParticleSystem>()[3].Play();
             character.SetState(new FrogIdleState(character));
         }
     }
