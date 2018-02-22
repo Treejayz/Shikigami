@@ -62,8 +62,14 @@ public class CraneJumpState : State {
     public override void OnColliderHit(ControllerColliderHit hit)
     {
         Vector3 hitNormal = hit.normal;
-        bool isRoof = (Vector3.Angle(Vector3.up, hitNormal) > 90);
-        if (isRoof) { return; }
+        if (hit.normal.y < 0f)
+        {
+            if (currentSpeed > 2f)
+            {
+                currentSpeed = 2f;
+            }
+            return;
+        }
         bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= (90 - player.slopeLimit));
         if (!isGrounded)
         {

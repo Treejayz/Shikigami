@@ -34,14 +34,13 @@ public class FrogWallState : State {
 
         forwardtest.wall = true;
         character.transform.forward = wallHit;
-        character.transform.GetChild(1).transform.forward = Vector3.down;
-        character.transform.GetChild(1).transform.up = wallHit;
+        character.transform.GetChild(1).transform.rotation = Quaternion.LookRotation(Vector3.down, wallHit);
     }
 
 	public override void Tick() {
 
         //if (currentTime > wallTime) {
-        if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+        if ((Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0) && Vector3.Angle(forwardtest.forward, wallHit) < 100f)
         {
             currentTime += Time.deltaTime;
         } else

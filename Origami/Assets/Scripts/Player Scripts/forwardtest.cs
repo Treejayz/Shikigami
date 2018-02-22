@@ -10,9 +10,11 @@ public class forwardtest : MonoBehaviour {
     private bool moving;
     [HideInInspector]
     public static bool wall;
+    [HideInInspector]
+    public static Vector3 forward;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         moving = false;
         wall = false;
 	}
@@ -20,13 +22,18 @@ public class forwardtest : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 
-        if (!wall && (Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f))
+        Vector3 camDir = camTargetTrans.position - camTrans.position;
+        camDir = new Vector3(camDir.x, 0.0f, camDir.z);
+        camDir = camDir / camDir.magnitude;
+        camDir = camDir * Input.GetAxis("Vertical") + Quaternion.Euler(0f, 90f, 0f) * camDir * Input.GetAxis("Horizontal");
+        camDir.Normalize();
+
+        if (wall)
         {
-            Vector3 camDir = camTargetTrans.position - camTrans.position;
-            camDir = new Vector3(camDir.x, 0.0f, camDir.z);
-            camDir = camDir / camDir.magnitude;
-            camDir = camDir * Input.GetAxis("Vertical") + Quaternion.Euler(0f, 90f, 0f) * camDir * Input.GetAxis("Horizontal");
-            camDir.Normalize();
+            forward = camDir;
+        }
+        else if (Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f)
+        {
             if (!moving)
             {
                 this.transform.rotation = Quaternion.LookRotation(camDir);

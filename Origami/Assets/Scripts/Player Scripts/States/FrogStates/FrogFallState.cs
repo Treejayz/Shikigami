@@ -74,14 +74,15 @@ public class FrogFallState : State {
         
 
         Vector3 hitNormal = hit.normal;
-		bool wall = (Vector3.Angle(Vector3.up, hitNormal) <= wallJumpLimit);
+        if (hit.normal.y < -0.1f) { return; }
+        bool wall = (Vector3.Angle(Vector3.up, hitNormal) <= wallJumpLimit);
 
 		if (!wall) {
             if (hit.gameObject.tag == "MovingPlatform") { return; }
             if (!fromWall) {
 				character.SetState(new FrogWallState(character, hitNormal));
 			} else {
-				bool diffWall = (Vector3.Angle(wallJump, hitNormal) >= 100f);
+				bool diffWall = (Vector3.Angle(wallJump, hitNormal) >= 120f);
 				if (diffWall) {
 					character.SetState(new FrogWallState(character, hitNormal));
 				}

@@ -85,8 +85,13 @@ public class FrogJumpState : State {
         if (hit.gameObject.tag == "MovingPlatform") { return; }
 
         Vector3 hitNormal = hit.normal;
-        bool isRoof = (Vector3.Angle(Vector3.up, hitNormal) > 90);
-        if (isRoof) { return; }
+        if (hit.normal.y < -0.1f) {
+            if (currentSpeed > 2f)
+            {
+                currentSpeed = 2f;
+            }
+            return;
+        }
 
         bool wall = (Vector3.Angle(Vector3.up, hitNormal) <= wallJumpLimit);
 
@@ -94,7 +99,7 @@ public class FrogJumpState : State {
 			if (!fromWall) {
 				//character.SetState(new FrogWallState(character, hitNormal));
 			} else {
-				bool diffWall = (Vector3.Angle(wallJump, hitNormal) >= 100f);
+				bool diffWall = (Vector3.Angle(wallJump, hitNormal) >= 120f);
 				if (diffWall) {
 					character.SetState(new FrogWallState(character, hitNormal));
 				}
