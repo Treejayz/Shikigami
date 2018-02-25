@@ -62,8 +62,8 @@ public class FoxSneakState : State {
         character.momentum = Vector3.Lerp(character.momentum, direction * sneakSpeed, 0.08f);
 
         RaycastHit hit;
-        Vector3 newpos = (character.transform.position + (character.momentum.normalized * player.radius));
-        if (Physics.SphereCast(newpos, player.radius, Vector3.down, out hit, 1.5f))
+        Vector3 newpos = (character.transform.position + (character.momentum.normalized * (player.radius/2)));
+        if (Physics.SphereCast(newpos, player.radius / 2, Vector3.down, out hit, 1.5f))
         {
             Vector3 direction = hit.point - character.transform.position;
             direction.y = 0;
