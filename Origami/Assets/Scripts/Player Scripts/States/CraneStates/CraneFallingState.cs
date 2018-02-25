@@ -73,6 +73,7 @@ public class CraneFallingState : State {
     public override void OnStateExit()
     {
         character.craneAnimator.SetBool("Falling", false);
+        character.jumped = true;
         AkSoundEngine.PostEvent("WindStop", character.gameObject);
     }
 

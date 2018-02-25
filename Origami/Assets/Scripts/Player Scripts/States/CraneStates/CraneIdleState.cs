@@ -28,7 +28,7 @@ public class CraneIdleState : State {
             character.SetState(new CraneMovingState(character));
 
         } 
-		if (Input.GetAxis("Jump") != 0.0f) {
+		if (Input.GetAxis("Jump") != 0.0f && !character.jumped) {
 			character.SetState(new CraneJumpState(character));
 		}
 

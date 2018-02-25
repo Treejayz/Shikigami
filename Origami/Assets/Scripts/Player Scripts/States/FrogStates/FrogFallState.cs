@@ -67,6 +67,7 @@ public class FrogFallState : State {
     public override void OnStateExit()
     {
         character.frogAnimator.SetBool("Jumping", false);
+        character.jumped = true;
     }
 
     public override void OnColliderHit(ControllerColliderHit hit)

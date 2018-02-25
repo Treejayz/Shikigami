@@ -21,6 +21,8 @@ public class Character : MonoBehaviour {
 
     [HideInInspector]
     public bool dead;
+    [HideInInspector]
+    public bool jumped;
 
     private State currentState;
 
@@ -29,6 +31,7 @@ public class Character : MonoBehaviour {
         SetState(new CraneIdleState(this));
         Form = CurrentForm.CRANE;
         dead = false;
+        jumped = false;
         if (craneAnimator == null)
         {
             craneAnimator = transform.GetChild(0).gameObject.GetComponent<Animator>();
@@ -42,6 +45,7 @@ public class Character : MonoBehaviour {
     private void Update()
     {
         currentState.Tick();
+        if (jumped && Input.GetAxis("Jump") == 0f) { jumped = false; }
     }
 	private void FixedUpdate()
 	{

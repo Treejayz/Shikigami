@@ -33,7 +33,7 @@ public class FrogMoveState : State {
             character.SetState(new FrogIdleState(character));
         }
 
-        if (Input.GetAxis("Jump") != 0.0f)
+        if (Input.GetAxis("Jump") != 0.0f && !character.jumped)
         {
             character.SetState(new FrogJumpState(character));
         }
