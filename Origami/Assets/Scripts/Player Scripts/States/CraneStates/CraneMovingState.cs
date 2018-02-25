@@ -45,7 +45,7 @@ public class CraneMovingState : State {
         {
             character.SetForm("Fox");
             character.GetComponentsInChildren<ParticleSystem>()[3].Play();
-            character.SetState(new FrogIdleState(character));
+            character.SetState(new FoxMoveState(character));
         }
     }
 

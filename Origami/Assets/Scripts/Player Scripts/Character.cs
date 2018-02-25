@@ -44,7 +44,7 @@ public class Character : MonoBehaviour {
                 SetForm("Frog");
                 break;
             case CurrentForm.FOX:
-                SetState(new CraneIdleState(this));
+                SetState(new FoxIdleState(this));
                 SetForm("Fox");
                 break;
         };

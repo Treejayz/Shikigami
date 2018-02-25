@@ -25,6 +25,7 @@ public class DeathState : State
         character.GetComponentsInChildren<ParticleSystem>()[1].Stop();
         character.gameObject.transform.GetChild(1).gameObject.SetActive(false);
         character.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+        character.gameObject.transform.GetChild(2).gameObject.SetActive(false);
         AkSoundEngine.PostEvent("Death", character.gameObject);
         AkSoundEngine.PostEvent("Splash", character.gameObject);
 
@@ -52,7 +53,7 @@ public class DeathState : State
                     character.SetForm("Frog");
                     break;
                 case Character.CurrentForm.FOX:
-                    character.SetState(new CraneIdleState(character));
+                    character.SetState(new FoxIdleState(character));
                     character.SetForm("Fox");
                     break;
             };
