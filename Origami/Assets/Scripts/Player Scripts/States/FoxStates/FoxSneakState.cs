@@ -2,75 +2,76 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FoxMoveState : State {
+public class FoxSneakState : State {
 
     private CharacterController player;
     private Vector3 direction;
+    private float sneakSpeed = 6f;
 
-    public FoxMoveState(Character character) : base(character)
+    public FoxSneakState(Character character) : base(character)
     {
     }
 
     public override void OnStateEnter()
     {
         player = character.GetComponent<CharacterController>();
+        character.frogAnimator.SetBool("Moving", true);
     }
 
     public override void Tick()
     {
 
         direction = forwardtest.forward;
-        direction.Normalize();
 
         if (!player.isGrounded)
         {
             character.SetState(new FoxFallState(character));
         }
-
-        if (Input.GetAxis("Vertical") == 0.0f && Input.GetAxis("Horizontal") == 0.0f)
+        if (Input.GetKeyUp(KeyCode.LeftControl))
         {
-            character.SetState(new FoxIdleState(character));
+            if (Input.GetAxis("Vertical") == 0.0f && Input.GetAxis("Horizontal") == 0.0f)
+            {
+                character.SetState(new FoxIdleState(character));
+            } else
+            {
+                character.SetState(new FoxMoveState(character));
+            }
         }
 
         if (Input.GetAxis("Jump") != 0.0f && !character.jumped)
         {
             character.SetState(new FoxJumpState(character));
         }
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            character.SetState(new FoxSprintState(character));
-        }
-        if (Input.GetKey(KeyCode.LeftControl))
-        {
-            character.SetState(new FoxSneakState(character));
-        }
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             character.SetForm("Crane");
             character.GetComponentsInChildren<ParticleSystem>()[3].Play();
             character.SetState(new CraneMovingState(character));
         }
-        else if (Input.GetKeyDown(KeyCode.Q))
+        else if (Input.GetKeyDown(KeyCode.E) && character.canFox)
         {
-            character.SetForm("Frog");
+            character.SetForm("Fox");
             character.GetComponentsInChildren<ParticleSystem>()[3].Play();
-            character.SetState(new FrogMoveState(character));
+            character.SetState(new FoxMoveState(character));
         }
 
     }
 
     public override void PhysicsTick()
     {
-        character.momentum = Vector3.Lerp(character.momentum, direction * character.moveSpeed, 0.08f);
-        player.Move(character.momentum * Time.fixedDeltaTime);
-        player.Move(Vector3.down * character.gravity * Time.fixedDeltaTime);
+        character.momentum = Vector3.Lerp(character.momentum, direction * sneakSpeed, 0.08f);
+        Vector3 newpos = (character.transform.position + (character.momentum * Time.fixedDeltaTime * 5f));
+        if (Physics.Raycast(newpos, Vector3.down, 1.2f)) {
+            player.Move(character.momentum * Time.fixedDeltaTime);
+            player.Move(Vector3.down * character.gravity * Time.fixedDeltaTime);
+        }
     }
 
     public override void OnColliderHit(ControllerColliderHit hit)
     {
         Vector3 hitNormal = hit.normal;
         bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= player.slopeLimit);
-        if (!isGrounded && !player.isGrounded)
+        if (!isGrounded)
         {
             character.SetState(new FoxFallState(character));
         }
