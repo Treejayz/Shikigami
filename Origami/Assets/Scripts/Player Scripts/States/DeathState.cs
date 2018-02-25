@@ -39,7 +39,8 @@ public class DeathState : State
             character.dead = false;
             character.GetComponentsInChildren<ParticleSystem>()[1].Play();
             character.transform.position = Checkpoint.GetPoint();
-
+            CameraController.SetAngle();
+            forwardtest.respawn = true;
             switch (character.Form)
             {
                 case Character.CurrentForm.CRANE:

@@ -67,6 +67,24 @@ public class Checkpoint : MonoBehaviour {
         return result;
     }
 
+    public static Vector2 GetAngle()
+    {
+        Vector3 result = new Vector2(0f, 0f);
+        if (CheckPointList != null)
+        {
+            foreach (GameObject point in CheckPointList)
+            {
+                if (point.GetComponent<Checkpoint>().activated)
+                {
+                    result.x = point.GetComponent<Checkpoint>().pos.rotation.eulerAngles.x;
+                    result.y = point.GetComponent<Checkpoint>().pos.rotation.eulerAngles.y;
+                }
+            }
+        }
+        return result;
+    }
+
+
     private IEnumerator DisplayText()
     {
         checkPointText.color = new Color(checkPointText.color.r, checkPointText.color.g, checkPointText.color.b, 1f);

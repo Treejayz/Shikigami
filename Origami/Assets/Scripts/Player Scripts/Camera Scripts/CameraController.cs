@@ -9,9 +9,9 @@ public class CameraController : MonoBehaviour {
 
     public Transform target;
     [SerializeField]
-    private float currentX = 0.0f;
+    private static float currentX = 0.0f;
     [SerializeField]
-    private float currentY = 0.0f;
+    private static float currentY = 0.0f;
 	public GameObject pause;
 
     private Camera cam;
@@ -70,5 +70,12 @@ public class CameraController : MonoBehaviour {
 			Quaternion rotation = Quaternion.Euler (currentY, currentX, 0);
 			this.transform.position = target.position + rotation * dir;
 			this.transform.LookAt (target.position);
+    }
+
+    public static void SetAngle()
+    {
+        Vector2 target = Checkpoint.GetAngle();
+        currentX = target.y;
+        currentY = target.x + 20f;
     }
 }
