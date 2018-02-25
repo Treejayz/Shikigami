@@ -27,13 +27,16 @@ public class forwardtest : MonoBehaviour {
         camDir = camDir / camDir.magnitude;
         camDir = camDir * Input.GetAxis("Vertical") + Quaternion.Euler(0f, 90f, 0f) * camDir * Input.GetAxis("Horizontal");
         camDir.Normalize();
-
+        forward = camDir;
         if (wall)
         {
-            forward = camDir;
+            // Do nuthin
         }
         else if (Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f)
         {
+
+            this.transform.rotation = Quaternion.LookRotation(Vector3.Slerp(this.transform.forward, camDir, 0.05f));
+            /*
             if (!moving)
             {
                 this.transform.rotation = Quaternion.LookRotation(camDir);
@@ -42,7 +45,7 @@ public class forwardtest : MonoBehaviour {
             else
             {
                 this.transform.rotation = Quaternion.LookRotation(Vector3.Slerp(this.transform.forward, camDir, 0.05f));
-            }
+            } */
         } else if (moving)
         {
             moving = false;

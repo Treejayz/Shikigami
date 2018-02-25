@@ -20,7 +20,7 @@ public class CraneMovingState : State {
     public override void Tick()
     {
 
-        direction = character.transform.forward;
+        direction = forwardtest.forward;
 		direction.Normalize();
 
 		if (!player.isGrounded) {
@@ -34,6 +34,19 @@ public class CraneMovingState : State {
 		if (Input.GetAxis("Jump") != 0.0f && !character.jumped) {
 			character.SetState(new CraneJumpState(character));
 		}
+
+        if (Input.GetKeyDown(KeyCode.E) && character.canFrog)
+        {
+            character.SetForm("Frog");
+            character.GetComponentsInChildren<ParticleSystem>()[3].Play();
+            character.SetState(new FrogMoveState(character));
+        }
+        else if (Input.GetKeyDown(KeyCode.Q) && character.canFox)
+        {
+            character.SetForm("Fox");
+            character.GetComponentsInChildren<ParticleSystem>()[3].Play();
+            character.SetState(new FrogIdleState(character));
+        }
     }
 
 	public override void PhysicsTick() {
@@ -53,8 +66,6 @@ public class CraneMovingState : State {
         }
         else
         {
-            //player.Move(Vector3.up * Time.deltaTime);
-            
         }
     }
 }

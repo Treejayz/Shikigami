@@ -13,8 +13,6 @@ public class CraneIdleState : State {
 	public override void OnStateEnter()
 	{
 		player = character.GetComponent<CharacterController>();
-        character.gameObject.transform.GetChild(1).gameObject.SetActive(false);
-        character.gameObject.transform.GetChild(0).gameObject.SetActive(true);
         character.craneAnimator.SetBool("Moving", false);
     }
 
@@ -37,6 +35,11 @@ public class CraneIdleState : State {
             character.SetForm("Frog");
             character.GetComponentsInChildren<ParticleSystem>()[3].Play();
             character.SetState(new FrogIdleState(character));
+        } else if (Input.GetKeyDown(KeyCode.Q) && character.canFox)
+        {
+            character.SetForm("Fox");
+            character.GetComponentsInChildren<ParticleSystem>()[3].Play();
+            character.SetState(new FoxIdleState(character));
         }
     }
 

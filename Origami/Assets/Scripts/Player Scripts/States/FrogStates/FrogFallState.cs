@@ -39,7 +39,7 @@ public class FrogFallState : State {
     {
         if (Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f)
         {
-            direction = character.transform.forward;
+            direction = forwardtest.forward;
         }
         else
         {

@@ -24,14 +24,33 @@ public class Character : MonoBehaviour {
     [HideInInspector]
     public bool jumped;
 
+    private GameObject CraneMesh, FrogMesh, FoxMesh;
+
     private State currentState;
 
     private void Start()
     {
-        SetState(new CraneIdleState(this));
-        Form = CurrentForm.CRANE;
+        CraneMesh = transform.GetChild(0).gameObject;
+        FrogMesh = transform.GetChild(1).gameObject;
+        FoxMesh = transform.GetChild(2).gameObject;
+        switch (Form)
+        {
+            case CurrentForm.CRANE:
+                SetState(new CraneIdleState(this));
+                SetForm("Crane");
+                break;
+            case CurrentForm.FROG:
+                SetState(new FrogIdleState(this));
+                SetForm("Frog");
+                break;
+            case CurrentForm.FOX:
+                SetState(new CraneIdleState(this));
+                SetForm("Fox");
+                break;
+        };
         dead = false;
         jumped = false;
+
         if (craneAnimator == null)
         {
             craneAnimator = transform.GetChild(0).gameObject.GetComponent<Animator>();
@@ -75,15 +94,31 @@ public class Character : MonoBehaviour {
 
     public void SetForm(System.String next)
     {
+
         if (next == "Frog")
         {
             Form = CurrentForm.FROG;
+            CraneMesh.SetActive(false);
+            FrogMesh.SetActive(true);
+            FoxMesh.SetActive(false);
+            craneAnimator.enabled = false;
+            frogAnimator.enabled = true;
         } else if (next == "Crane")
         {
             Form = CurrentForm.CRANE;
+            CraneMesh.SetActive(true);
+            FrogMesh.SetActive(false);
+            FoxMesh.SetActive(false);
+            craneAnimator.enabled = true;
+            frogAnimator.enabled = false;
         } else if (next == "Fox")
         {
             Form = CurrentForm.FOX;
+            CraneMesh.SetActive(false);
+            FrogMesh.SetActive(false);
+            FoxMesh.SetActive(true);
+            craneAnimator.enabled = false;
+            frogAnimator.enabled = false;
         }
     }
     public CurrentForm GetForm()

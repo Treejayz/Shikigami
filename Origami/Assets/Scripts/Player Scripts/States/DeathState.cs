@@ -39,7 +39,22 @@ public class DeathState : State
             character.dead = false;
             character.GetComponentsInChildren<ParticleSystem>()[1].Play();
             character.transform.position = Checkpoint.GetPoint();
-            character.SetState(new CraneIdleState(character));
+
+            switch (character.Form)
+            {
+                case Character.CurrentForm.CRANE:
+                    character.SetState(new CraneIdleState(character));
+                    character.SetForm("Crane");
+                    break;
+                case Character.CurrentForm.FROG:
+                    character.SetState(new FrogIdleState(character));
+                    character.SetForm("Frog");
+                    break;
+                case Character.CurrentForm.FOX:
+                    character.SetState(new CraneIdleState(character));
+                    character.SetForm("Fox");
+                    break;
+            };
         }
 
     }

@@ -6,7 +6,6 @@ public class CraneFallingState : State {
 
 	private CharacterController player;
 
-
 	private float Gravity = 30f;
 	private float maxFallSpeed = 30f;
     private float glideSpeed = 4f;
@@ -32,7 +31,7 @@ public class CraneFallingState : State {
 
         if (Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f)
         {
-            direction = character.transform.forward;
+            direction = forwardtest.forward;
         }
         else
         {
