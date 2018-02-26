@@ -7,10 +7,18 @@ public class FoxSprintState : State {
     private CharacterController player;
     private Vector3 direction;
 
-    private float sprintSpeed = 18f;
+    private float sprintSpeed = 19f;
 
     public FoxSprintState(Character character) : base(character)
     {
+        direction = forwardtest.forward;
+        direction.Normalize();
+        character.momentum = direction * sprintSpeed;
+    }
+
+    public FoxSprintState(Character character, Vector3 moveDirection) : base(character)
+    {
+        direction = moveDirection.normalized;
     }
 
     public override void OnStateEnter()
@@ -59,7 +67,7 @@ public class FoxSprintState : State {
 
     public override void PhysicsTick()
     {
-        character.momentum = Vector3.Lerp(character.momentum, direction * sprintSpeed, 0.03f);
+        character.momentum = Vector3.Lerp(character.momentum, direction * sprintSpeed, Time.fixedDeltaTime * 3f);
         player.Move(character.momentum * Time.fixedDeltaTime);
         player.Move(Vector3.down * character.gravity * Time.fixedDeltaTime);
     }

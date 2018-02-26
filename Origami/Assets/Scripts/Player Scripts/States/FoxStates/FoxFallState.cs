@@ -70,7 +70,13 @@ public class FoxFallState : State {
         }
         else
         {
-            character.SetState(new FoxIdleState(character));
+            if (Input.GetKey(KeyCode.LeftShift) && (Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f))
+            {
+                character.SetState(new FoxSprintState(character, character.momentum));
+            } else
+            {
+                character.SetState(new FoxIdleState(character));
+            }
         }
     }
 }
