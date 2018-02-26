@@ -13,6 +13,8 @@ public class CraneDashState : State {
     private float currentFall;
     private float currentTime;
 
+    private bool ground;
+
     public CraneDashState(Character character) : base(character)
     {
     }
@@ -25,9 +27,10 @@ public class CraneDashState : State {
         currentSpeed = dashStartSpeed;
         currentTime = 0f;
         currentFall = 0f;
-
+        dashEndSpeed = character.moveSpeed;
         character.canDash = false;
         character.isDashing = true;
+        ground = player.isGrounded;
     }
 
     public override void Tick()
@@ -55,6 +58,11 @@ public class CraneDashState : State {
     {
         character.momentum = direction * currentSpeed;
         player.Move(character.momentum * Time.fixedDeltaTime);
+        
+         if (ground)
+        {
+            player.Move(Vector3.down * character.gravity * Time.fixedDeltaTime);
+        }
     }
 
     public override void OnStateExit()

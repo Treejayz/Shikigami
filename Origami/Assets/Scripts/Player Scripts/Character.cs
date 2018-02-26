@@ -139,11 +139,14 @@ public class Character : MonoBehaviour {
 
     IEnumerator DashCooldown()
     {
-        yield return new WaitForSeconds(0.3f);
-        while (!GetComponent<CharacterController>().isGrounded)
+        yield return new WaitForSeconds(0.5f);
+        if (!isDashing)
         {
-            yield return new WaitForEndOfFrame();
-        }
-        canDash = true;
+            while (!GetComponent<CharacterController>().isGrounded)
+            {
+                yield return new WaitForEndOfFrame();
+            }
+            canDash = true;
+        } 
     }
 }
