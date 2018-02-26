@@ -16,6 +16,7 @@ public class FoxSneakState : State {
     {
         player = character.GetComponent<CharacterController>();
         character.frogAnimator.SetBool("Moving", true);
+        character.sneaking = true;
     }
 
     public override void Tick()
@@ -63,22 +64,34 @@ public class FoxSneakState : State {
 
         RaycastHit hit;
         Vector3 newpos = (character.transform.position + (character.momentum.normalized * (player.radius/2)));
-        if (Physics.SphereCast(newpos, player.radius / 2, Vector3.down, out hit, 1.5f))
+
+        if (Physics.Raycast(newpos, Vector3.down, 1.5f))
+        {
+            player.Move(character.momentum * Time.fixedDeltaTime);
+        }
+
+        else if (Physics.SphereCast(newpos, player.radius / 2, Vector3.down, out hit, 1.5f))
         {
             Vector3 direction = hit.point - character.transform.position;
             direction.y = 0;
             direction.Normalize();
             Vector3 heading = Vector3.Project(character.momentum.normalized, direction) * character.momentum.magnitude;
             player.Move(heading * Time.fixedDeltaTime);
-            player.Move(Vector3.down * character.gravity * Time.fixedDeltaTime);
+            
         }
+        player.Move(Vector3.down * character.gravity * Time.fixedDeltaTime);
+    }
+
+    public override void OnStateExit()
+    {
+        character.sneaking = false;
     }
 
     public override void OnColliderHit(ControllerColliderHit hit)
     {
         Vector3 hitNormal = hit.normal;
         bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= player.slopeLimit);
-        if (!isGrounded)
+        if (!isGrounded && !player.isGrounded)
         {
             character.SetState(new FoxFallState(character));
         }

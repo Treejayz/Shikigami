@@ -65,7 +65,7 @@ public class FoxJumpState : State {
     public override void OnColliderHit(ControllerColliderHit hit)
     {
         Vector3 hitNormal = hit.normal;
-        if (hit.normal.y < 0f)
+        if (hit.normal.y < -0.1f)
         {
             if (currentSpeed > 2f)
             {

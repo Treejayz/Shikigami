@@ -24,6 +24,13 @@ public class Character : MonoBehaviour {
     [HideInInspector]
     public bool jumped;
 
+    [HideInInspector]
+    public bool canDash;
+    [HideInInspector]
+    public bool isDashing;
+    [HideInInspector]
+    public bool sneaking;
+
     private GameObject CraneMesh, FrogMesh, FoxMesh;
 
     private State currentState;
@@ -50,6 +57,9 @@ public class Character : MonoBehaviour {
         };
         dead = false;
         jumped = false;
+        canDash = true;
+        isDashing = false;
+        sneaking = false;
 
         if (craneAnimator == null)
         {
@@ -65,6 +75,7 @@ public class Character : MonoBehaviour {
     {
         currentState.Tick();
         if (jumped && Input.GetAxis("Jump") == 0f) { jumped = false; }
+        if (!canDash && !isDashing) { StartCoroutine("DashCooldown"); }
     }
 	private void FixedUpdate()
 	{
@@ -124,5 +135,15 @@ public class Character : MonoBehaviour {
     public CurrentForm GetForm()
     {
         return Form;
+    }
+
+    IEnumerator DashCooldown()
+    {
+        yield return new WaitForSeconds(0.3f);
+        while (!GetComponent<CharacterController>().isGrounded)
+        {
+            yield return new WaitForEndOfFrame();
+        }
+        canDash = true;
     }
 }

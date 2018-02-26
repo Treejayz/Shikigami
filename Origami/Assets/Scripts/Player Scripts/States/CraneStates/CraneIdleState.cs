@@ -30,6 +30,10 @@ public class CraneIdleState : State {
 			character.SetState(new CraneJumpState(character));
 		}
 
+        if (Input.GetKeyDown(KeyCode.LeftShift) && character.canDash)
+        {
+            character.SetState(new CraneDashState(character));
+        }
         if (Input.GetKeyDown(KeyCode.E) && character.canFrog)
         {
             character.SetForm("Frog");

@@ -60,7 +60,11 @@ public class CraneFallingState : State {
             }
         }
 
-	}
+        if (Input.GetKeyDown(KeyCode.LeftShift) && character.canDash)
+        {
+            character.SetState(new CraneDashState(character));
+        }
+    }
 
 	public override void PhysicsTick() {
 		character.momentum = Vector3.Lerp(character.momentum, direction * character.moveSpeed, 0.015f);

@@ -46,7 +46,12 @@ public class CraneJumpState : State {
 			character.SetState(new CraneFallingState(character));
 		}
 
-	}
+        if (Input.GetKeyDown(KeyCode.LeftShift) && character.canDash)
+        {
+            character.SetState(new CraneDashState(character));
+        }
+
+    }
 
 	public override void PhysicsTick() {
 		character.momentum = Vector3.Lerp(character.momentum, direction * character.moveSpeed, 0.015f);
@@ -62,7 +67,7 @@ public class CraneJumpState : State {
     public override void OnColliderHit(ControllerColliderHit hit)
     {
         Vector3 hitNormal = hit.normal;
-        if (hit.normal.y < 0f)
+        if (hit.normal.y < -0.1f)
         {
             if (currentSpeed > 2f)
             {
