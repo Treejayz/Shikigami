@@ -87,6 +87,11 @@ public class Character : MonoBehaviour {
         if (hit.gameObject.tag == "Respawn" && !dead)
         {
             SetState(new DeathState(this));
+        } else if (hit.gameObject.tag == "Pushable" && isDashing)
+        {
+            hit.transform.SendMessage("Hit", hit, SendMessageOptions.DontRequireReceiver);
+            SetState(new CraneIdleState(this));
+            momentum = new Vector3(0f, 0f, 0f);
         }
         currentState.OnColliderHit(hit);
     }
