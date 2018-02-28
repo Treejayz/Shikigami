@@ -15,11 +15,15 @@ public class Pause : MonoBehaviour {
         }
 		if (this.GetComponent<Canvas> ().enabled) {
 			Cursor.visible = true;
-			Time.timeScale = 0.0F;
+            Time.timeScale = 0.0F;
+
+            AkSoundEngine.SetRTPCValue("MenuUp", 1.0f, null);
 		} else {
 			Time.timeScale = 1.0F;
 			Cursor.visible = false;
 			eventSystem.GetComponent<UnityEngine.EventSystems.EventSystem> ().SetSelectedGameObject (null);
+
+            AkSoundEngine.SetRTPCValue("MenuUp", 0.0f, null);
 		}
 	}
 }

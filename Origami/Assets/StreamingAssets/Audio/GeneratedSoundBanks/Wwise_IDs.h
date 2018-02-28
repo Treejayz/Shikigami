@@ -27,6 +27,26 @@ namespace AK
         static const AkUniqueID WINGJUMP = 3191917460U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace MENUHP
+        {
+            static const AkUniqueID GROUP = 491768280U;
+
+            namespace STATE
+            {
+                static const AkUniqueID INMENU = 3374585465U;
+                static const AkUniqueID NORMAL = 1160234136U;
+            } // namespace STATE
+        } // namespace MENUHP
+
+    } // namespace STATES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID MENUUP = 172993487U;
+    } // namespace GAME_PARAMETERS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;

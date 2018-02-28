@@ -167,16 +167,41 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}'
-    m_lastTimePsrt1: -1087518662
-    m_lastTimePart2: -1999275705
+    m_lastTimePsrt1: -1206538608
+    m_lastTimePart2: -1999274271
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8D621B80-F254-43D1-8472-3699A245E539}'
-    m_lastTimePsrt1: -1084344996
-    m_lastTimePart2: -1999275705
-    List: []
+    m_lastTimePsrt1: -1240772514
+    m_lastTimePart2: -1999274275
+    List:
+    - Name: MenuHP
+      Path: Default Work Unit\MenuHP
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MenuHP
+        ObjectType: 9
+      ID: 491768280
+      Guid: 4aea679ec6a3014082b0174a787bb28f
+      values:
+      - InMenu
+      - None
+      - Normal
+      ValueIcons:
+      - ElementName: InMenu
+        ObjectType: 8
+      - ElementName: None
+        ObjectType: 8
+      - ElementName: Normal
+        ObjectType: 8
+      valueIDs: 791624c9db3ba32c98c42745
+      ValueGuids:
+      - bytes: 382433ac477c2e4196a64ffcf0bdfef1
+      - bytes: a7df0f2f43167f4cab19cb1cc471fa7d
+      - bytes: 2286186eefd617458e7335bedd55a96f
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -188,8 +213,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{090E2BE1-C110-4C48-8EE1-99814A8166EB}'
-    m_lastTimePsrt1: 110418636
-    m_lastTimePart2: -1999274278
+    m_lastTimePsrt1: 70264658
+    m_lastTimePart2: -1999274273
     List:
     - Name: PlayerSound
       Path: Default Work Unit\PlayerSound
@@ -204,9 +229,18 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{294866E5-205C-4CEF-A167-22F1B02116B6}'
-    m_lastTimePsrt1: -1090346400
-    m_lastTimePart2: -1999275705
-    List: []
+    m_lastTimePsrt1: 321366532
+    m_lastTimePart2: -1999274270
+    List:
+    - Name: MenuUp
+      Path: Default Work Unit\MenuUp
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MenuUp
+        ObjectType: 13
+      ID: 172993487
+      Guid: 91cac312a8141f4eb490490225992db2
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 

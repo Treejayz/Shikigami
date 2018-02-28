@@ -4,11 +4,62 @@
 		<WorkUnit Name="Default Work Unit" ID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<RTPCList>
+								<RTPC Name="" ID="{E587418B-21F3-4376-B1EA-3798E4704AAB}" ShortID="346562607">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="MenuUp" ID="{12C3CA91-14A8-4E1F-B490-490225992DB2}" WorkUnitID="{294866E5-205C-4CEF-A167-22F1B02116B6}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{4DC45948-79B2-4162-8870-4F594B981E84}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>0</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>50</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{37885113-A784-4338-9BF2-DEE4339BACF7}" WorkUnitID="{1DA33AAF-5EE8-4534-81C1-8BC1A8A8991A}"/>
 						</Reference>
 					</ReferenceList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="MenuHP" ID="{9E67EA4A-A3C6-4001-82B0-174A787BB28F}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="InMenu" ID="{AC332438-7C47-412E-96A6-4FFCF0BDFEF1}"/>
+								<State Name="" ID="{C8A135F5-29F4-4DA1-B2FB-7C7A3F5A765E}" ShortID="1028455302">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16" Value="50"/>
+									</PropertyList>
+								</State>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Normal" ID="{6E188622-D6EF-4517-8E73-35BEDD55A96F}"/>
+								<State Name="" ID="{65646F17-C5E1-4C33-A1EE-DD55BFE97C8E}" ShortID="452234563"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>
