@@ -283,6 +283,15 @@
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="RandomSplash" ID="{60421BFD-4593-4622-95FF-33D2B198F46A}" ShortID="274362393">
+					<PropertyList>
+						<Property Name="PlayMechanismLoopCount" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{3BB22FC8-7999-4BA9-8CEE-6C0A429E8C40}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
@@ -292,25 +301,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Splash2" ID="{10FFDF5B-4962-4E40-8F8A-A1762F72430D}" ShortID="992319211">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Splash2" ID="{0D21AA0F-1C2C-4B14-8276-90004070F28C}" ShortID="410684181">
-									<Language>SFX</Language>
-									<AudioFile>Splash2.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Splash2" ID="{0D21AA0F-1C2C-4B14-8276-90004070F28C}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="Splash1" ID="{2D2E7332-8AF6-4403-9670-297786083D1D}" ShortID="85353436">
 							<ReferenceList>
 								<Reference Name="Conversion">

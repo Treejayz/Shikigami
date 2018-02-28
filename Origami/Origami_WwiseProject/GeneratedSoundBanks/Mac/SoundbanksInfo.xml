@@ -75,10 +75,6 @@
 					<ShortName>Splash7.wav</ShortName>
 					<Path>SFX\Splash7_1C9C67B2.wem</Path>
 				</File>
-				<File Id="410684181" Language="SFX">
-					<ShortName>Splash2.wav</ShortName>
-					<Path>SFX\Splash2_1C9C67B2.wem</Path>
-				</File>
 				<File Id="422246823" Language="SFX">
 					<ShortName>Windloop.wav</ShortName>
 					<Path>SFX\Windloop_F17FB28C.wem</Path>
