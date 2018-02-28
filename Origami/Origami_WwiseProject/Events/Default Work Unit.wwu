@@ -164,6 +164,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Dash" ID="{3634A491-0A2A-463A-A09E-1B2130E688A5}">
+					<ChildrenList>
+						<Action Name="" ID="{C721BAA4-413D-4AFA-BD8F-CC0827E7F049}" ShortID="170908513">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dash02" ID="{D356CFD5-1341-49C5-A6AE-BB46B8101009}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -31,6 +31,7 @@ public class CraneDashState : State {
         character.canDash = false;
         character.isDashing = true;
         ground = player.isGrounded;
+        AkSoundEngine.PostEvent("Dash", character.gameObject);
     }
 
     public override void Tick()

@@ -21,6 +21,7 @@
 			<ShortName>PlayerSound</ShortName>
 			<Path>PlayerSound.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1942692385" Name="Dash" ObjectPath="\Events\Default Work Unit\Dash"/>
 				<Event Id="779278001" Name="Death" ObjectPath="\Events\Default Work Unit\Death"/>
 				<Event Id="2432329107" Name="FrogJump" ObjectPath="\Events\Default Work Unit\FrogJump"/>
 				<Event Id="26407862" Name="HPMusic" ObjectPath="\Events\Default Work Unit\HPMusic" MaxAttenuation="0.000000"/>
@@ -45,6 +46,10 @@
 				<File Id="127240437" Language="SFX">
 					<ShortName>GenFlap2.wav</ShortName>
 					<Path>SFX\GenFlap2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="164196824" Language="SFX">
+					<ShortName>Pickup2.wav</ShortName>
+					<Path>SFX\Pickup2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="184370491" Language="SFX">
 					<ShortName>GenFlap3.wav</ShortName>
@@ -121,6 +126,10 @@
 				<File Id="880608621" Language="SFX">
 					<ShortName>02.wav</ShortName>
 					<Path>SFX\02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="896591778" Language="SFX">
+					<ShortName>Dash02.wav</ShortName>
+					<Path>SFX\Dash02_1C9C67B2.wem</Path>
 				</File>
 				<File Id="1030449657" Language="SFX">
 					<ShortName>Rip01.wav</ShortName>

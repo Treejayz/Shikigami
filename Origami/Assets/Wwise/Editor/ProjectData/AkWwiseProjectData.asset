@@ -16,9 +16,21 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3838D55C-4A81-4825-8DB4-A33597820612}'
-    m_lastTimePsrt1: -839913289
-    m_lastTimePart2: -1999274303
+    m_lastTimePsrt1: 110358590
+    m_lastTimePart2: -1999274278
     List:
+    - Name: Dash
+      Path: Default Work Unit\Dash
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Dash
+        ObjectType: 3
+      ID: 1942692385
+      Guid: 91a434362a0a3a46a09e1b2130e688a5
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
     - Name: Death
       Path: Default Work Unit\Death
       PathAndIcons:
@@ -176,8 +188,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{090E2BE1-C110-4C48-8EE1-99814A8166EB}'
-    m_lastTimePsrt1: -839863251
-    m_lastTimePart2: -1999274303
+    m_lastTimePsrt1: 110418636
+    m_lastTimePart2: -1999274278
     List:
     - Name: PlayerSound
       Path: Default Work Unit\PlayerSound
