@@ -46,10 +46,6 @@
 					<ShortName>GenFlap2.wav</ShortName>
 					<Path>SFX\GenFlap2_1C9C67B2.wem</Path>
 				</File>
-				<File Id="167629390" Language="SFX">
-					<ShortName>MenuThemeWIP.wav</ShortName>
-					<Path>SFX\MenuThemeWIP_F17FB28C.wem</Path>
-				</File>
 				<File Id="184370491" Language="SFX">
 					<ShortName>GenFlap3.wav</ShortName>
 					<Path>SFX\GenFlap3_1C9C67B2.wem</Path>
@@ -117,6 +113,10 @@
 				<File Id="853212425" Language="SFX">
 					<ShortName>Splash4.wav</ShortName>
 					<Path>SFX\Splash4_1C9C67B2.wem</Path>
+				</File>
+				<File Id="876606834" Language="SFX">
+					<ShortName>MenuTheme.wav</ShortName>
+					<Path>SFX\MenuTheme_F17FB28C.wem</Path>
 				</File>
 				<File Id="880608621" Language="SFX">
 					<ShortName>02.wav</ShortName>

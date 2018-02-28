@@ -522,7 +522,7 @@
 						<ActiveSource Name="02" ID="{4CCF4935-84B7-4122-B490-E61625196FBD}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="MenuThemeWIP" ID="{641BCFE3-C6E5-4A11-98E0-DD99044ACA3F}" ShortID="155520835">
+				<Sound Name="MenuTheme" ID="{9A649B17-B8BE-43A2-9D07-A0900F5BC9E9}" ShortID="159909869">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 					</PropertyList>
@@ -535,13 +535,13 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="MenuThemeWIP" ID="{8B26BE60-F1FE-495A-9ADE-351949EEFC29}" ShortID="167629390">
+						<AudioFileSource Name="MenuTheme" ID="{7331448F-9546-410C-BAC4-3A3C7ED47225}" ShortID="876606834">
 							<Language>SFX</Language>
-							<AudioFile>MenuThemeWIP.wav</AudioFile>
+							<AudioFile>MenuTheme.wav</AudioFile>
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="MenuThemeWIP" ID="{8B26BE60-F1FE-495A-9ADE-351949EEFC29}" Platform="Linked"/>
+						<ActiveSource Name="MenuTheme" ID="{7331448F-9546-410C-BAC4-3A3C7ED47225}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>
