@@ -7,6 +7,7 @@ public class Collectable : MonoBehaviour {
 	public enum CollectableType
     {
         PIECE,
+        SCRAP,
         PAGE
     };
 
@@ -23,15 +24,32 @@ public class Collectable : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            CollectableManager.Collect();
-            GetComponent<ParticleSystem>().Play();
-            GetComponent<Collider>().enabled = false;
-            GetComponent<SpriteRenderer>().enabled = false;
-            Component halo = GetComponent("Halo");
-            halo.GetType().GetProperty("enabled").SetValue(halo, false, null);
-            StartCoroutine("Kill");
+            switch(Type)
+            {
+                case (CollectableType.PIECE):
+                    CollectableManager.Collect(Type);
+                    GetComponent<ParticleSystem>().Play();
+                    GetComponent<Collider>().enabled = false;
+                    GetComponent<SpriteRenderer>().enabled = false;
+                    Component halo = GetComponent("Halo");
+                    halo.GetType().GetProperty("enabled").SetValue(halo, false, null);
+                    StartCoroutine("Kill");
+                    AkSoundEngine.PostEvent("Pickup", gameObject);
+                    break;
+
+                case (CollectableType.SCRAP):
+                    CollectableManager.Collect(Type);
+                    GetComponent<Collider>().enabled = false;
+                    GetComponent<MeshRenderer>().enabled = false;
+                    StartCoroutine("Kill");
+                    break;
+
+            };
+
+
+            
         }
-        AkSoundEngine.PostEvent("Pickup", gameObject);
+       
     }
 
     IEnumerator Kill()

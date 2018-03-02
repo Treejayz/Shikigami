@@ -2,23 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollectableManager : MonoBehaviour {
+public static class CollectableManager {
 
     public static int paperPieces;
+    public static int scrapPieces;
 
-	// Use this for initialization
-	void Start () {
-        paperPieces = 0;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-    public static void Collect()
+    public static void Reset()
     {
-        paperPieces += 1;
-        print(paperPieces);
+        paperPieces = 0;
+        scrapPieces = 0;
+    }
+
+    public static void Collect(Collectable.CollectableType type)
+    {
+        switch(type)
+        {
+            case Collectable.CollectableType.PIECE:
+                paperPieces += 1;
+                MonoBehaviour.print(paperPieces);
+                break;
+            case Collectable.CollectableType.SCRAP:
+                scrapPieces += 1;
+                MonoBehaviour.print(scrapPieces);
+                break;
+        };     
     }
 }

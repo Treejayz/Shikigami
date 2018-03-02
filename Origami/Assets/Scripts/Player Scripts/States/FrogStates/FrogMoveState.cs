@@ -38,17 +38,29 @@ public class FrogMoveState : State {
         {
             character.SetState(new FrogJumpState(character));
         }
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (!character.switching)
         {
-            character.SetForm("Crane");
-            character.GetComponentsInChildren<ParticleSystem>()[3].Play();
-            character.SetState(new CraneMovingState(character));
-        }
-        else if (Input.GetKeyDown(KeyCode.E) && character.canFox)
-        {
-            character.SetForm("Fox");
-            character.GetComponentsInChildren<ParticleSystem>()[3].Play();
-            character.SetState(new FoxMoveState(character));
+            if (Input.GetAxis("Switch1") != 0.0f)
+            {
+                character.SetForm("Crane");
+                character.GetComponentsInChildren<ParticleSystem>()[3].Play();
+                character.SetState(new CraneMovingState(character));
+            }
+            else if (Input.GetAxis("Switch2") != 0.0f)
+            {
+                if (character.canFox)
+                {
+                    character.SetForm("Fox");
+                    character.GetComponentsInChildren<ParticleSystem>()[3].Play();
+                    character.SetState(new FoxMoveState(character));
+                }
+                else
+                {
+                    character.SetForm("Crane");
+                    character.GetComponentsInChildren<ParticleSystem>()[3].Play();
+                    character.SetState(new CraneMovingState(character));
+                }
+            }
         }
 
     }

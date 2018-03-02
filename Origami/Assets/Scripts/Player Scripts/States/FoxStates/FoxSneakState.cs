@@ -28,7 +28,7 @@ public class FoxSneakState : State {
         {
             character.SetState(new FoxFallState(character));
         }
-        if (Input.GetKeyUp(KeyCode.LeftControl))
+        if (Input.GetAxis("Ability2") == 0f)
         {
             if (Input.GetAxis("Vertical") == 0.0f && Input.GetAxis("Horizontal") == 0.0f)
             {
@@ -43,19 +43,6 @@ public class FoxSneakState : State {
         {
             character.SetState(new FoxJumpState(character));
         }
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            character.SetForm("Crane");
-            character.GetComponentsInChildren<ParticleSystem>()[3].Play();
-            character.SetState(new CraneMovingState(character));
-        }
-        else if (Input.GetKeyDown(KeyCode.E) && character.canFox)
-        {
-            character.SetForm("Fox");
-            character.GetComponentsInChildren<ParticleSystem>()[3].Play();
-            character.SetState(new FoxMoveState(character));
-        }
-
     }
 
     public override void PhysicsTick()

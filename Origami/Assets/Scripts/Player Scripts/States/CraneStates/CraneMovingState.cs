@@ -34,21 +34,33 @@ public class CraneMovingState : State {
 		if (Input.GetAxis("Jump") != 0.0f && !character.jumped) {
 			character.SetState(new CraneJumpState(character));
 		}
-        if (Input.GetKeyDown(KeyCode.LeftShift) && character.canDash)
+        if (Input.GetAxis("Ability1") != 0.0f && character.canDash)
         {
             character.SetState(new CraneDashState(character));
         }
-        if (Input.GetKeyDown(KeyCode.E) && character.canFrog)
+        if (!character.switching)
         {
-            character.SetForm("Frog");
-            character.GetComponentsInChildren<ParticleSystem>()[3].Play();
-            character.SetState(new FrogMoveState(character));
-        }
-        else if (Input.GetKeyDown(KeyCode.Q) && character.canFox)
-        {
-            character.SetForm("Fox");
-            character.GetComponentsInChildren<ParticleSystem>()[3].Play();
-            character.SetState(new FoxMoveState(character));
+            if (Input.GetAxis("Switch2") != 0.0f && character.canFrog)
+            {
+                character.SetForm("Frog");
+                character.GetComponentsInChildren<ParticleSystem>()[3].Play();
+                character.SetState(new FrogMoveState(character));
+            }
+            else if (Input.GetAxis("Switch1") != 0.0f && character.canFrog)
+            {
+                if (character.canFox)
+                {
+                    character.SetForm("Fox");
+                    character.GetComponentsInChildren<ParticleSystem>()[3].Play();
+                    character.SetState(new FoxMoveState(character));
+                }
+                else
+                {
+                    character.SetForm("Frog");
+                    character.GetComponentsInChildren<ParticleSystem>()[3].Play();
+                    character.SetState(new FrogMoveState(character));
+                }
+            }
         }
     }
 

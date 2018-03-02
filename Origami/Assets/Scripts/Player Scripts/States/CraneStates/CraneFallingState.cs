@@ -14,6 +14,7 @@ public class CraneFallingState : State {
     private float fallSpeed;
 	private Vector3 direction;
 
+    private bool shiftHeld;
 
     public CraneFallingState(Character character) : base(character)
 	{
@@ -24,6 +25,11 @@ public class CraneFallingState : State {
 		player = character.GetComponent<CharacterController>();
 		fallSpeed = 0.0f;
         character.craneAnimator.SetBool("Falling", true);
+        if (Input.GetAxis("Ability1") != 0.0f)
+        {
+            shiftHeld = true;
+        } else { shiftHeld = false; }
+
         AkSoundEngine.PostEvent("WindBegin", character.gameObject);
     }
 
@@ -60,10 +66,17 @@ public class CraneFallingState : State {
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) && character.canDash)
+        if (shiftHeld && Input.GetAxis("Ability1") == 0.0f)
         {
+            MonoBehaviour.print("shift unheld");
+            shiftHeld = false;
+        }
+        if (Input.GetAxis("Ability1") != 0.0f && character.canDash && !shiftHeld)
+        {
+            //MonoBehaviour.print("woosh");
             character.SetState(new CraneDashState(character));
         }
+        
     }
 
 	public override void PhysicsTick() {
@@ -78,6 +91,10 @@ public class CraneFallingState : State {
         character.craneAnimator.SetBool("Falling", false);
         character.jumped = true;
         AkSoundEngine.PostEvent("WindStop", character.gameObject);
+        if (shiftHeld)
+        {
+            character.canDash = false;
+        }
     }
 
     public override void OnColliderHit(ControllerColliderHit hit)

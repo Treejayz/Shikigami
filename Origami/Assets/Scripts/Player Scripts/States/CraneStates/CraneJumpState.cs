@@ -13,6 +13,8 @@ public class CraneJumpState : State {
 	private float currentSpeed;
 	private Vector3 direction;
 
+    private bool shiftHeld;
+
 	public CraneJumpState(Character character) : base(character)
 	{
 	}
@@ -23,7 +25,14 @@ public class CraneJumpState : State {
 		currentSpeed = jumpSpeed;
         character.craneAnimator.SetBool("Jumping", true);
         AkSoundEngine.PostEvent("WingJump", character.gameObject);
-        character.canDash = true;
+        if (Input.GetAxis("Ability1") != 0.0f)
+        {
+            character.canDash = false;
+            shiftHeld = true;
+        } else
+        {
+            character.canDash = true;
+        }
 	}
 
 	public override void Tick() {
@@ -47,7 +56,13 @@ public class CraneJumpState : State {
 			character.SetState(new CraneFallingState(character));
 		}
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) && character.canDash)
+        if (shiftHeld && Input.GetAxis("Ability1") == 0.0f)
+        {
+            shiftHeld = false;
+            character.canDash = true;
+        }
+
+        if (Input.GetAxis("Ability1") != 0.0f && character.canDash && !shiftHeld)
         {
             character.SetState(new CraneDashState(character));
         }
@@ -63,6 +78,10 @@ public class CraneJumpState : State {
     public override void OnStateExit()
     {
         character.craneAnimator.SetBool("Jumping", false);
+        if (shiftHeld)
+        {
+            character.canDash = true;
+        }
     }
 
     public override void OnColliderHit(ControllerColliderHit hit)

@@ -36,27 +36,29 @@ public class FoxMoveState : State {
         {
             character.SetState(new FoxJumpState(character));
         }
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetAxis("Ability1") != 0f)
         {
             character.SetState(new FoxSprintState(character));
         }
-        if (Input.GetKey(KeyCode.LeftControl))
+        if (Input.GetAxis("Ability2") != 0f)
         {
             character.SetState(new FoxSneakState(character));
         }
-        if (Input.GetKeyDown(KeyCode.E))
+        if (!character.switching)
         {
-            character.SetForm("Crane");
-            character.GetComponentsInChildren<ParticleSystem>()[3].Play();
-            character.SetState(new CraneMovingState(character));
+            if (Input.GetAxis("Switch2") != 0.0f)
+            {
+                character.SetForm("Crane");
+                character.GetComponentsInChildren<ParticleSystem>()[3].Play();
+                character.SetState(new CraneMovingState(character));
+            }
+            else if (Input.GetAxis("Switch1") != 0.0f)
+            {
+                character.SetForm("Frog");
+                character.GetComponentsInChildren<ParticleSystem>()[3].Play();
+                character.SetState(new FrogMoveState(character));
+            }
         }
-        else if (Input.GetKeyDown(KeyCode.Q))
-        {
-            character.SetForm("Frog");
-            character.GetComponentsInChildren<ParticleSystem>()[3].Play();
-            character.SetState(new FrogMoveState(character));
-        }
-
     }
 
     public override void PhysicsTick()

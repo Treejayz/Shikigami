@@ -70,7 +70,7 @@ public class FoxFallState : State {
         }
         else
         {
-            if (Input.GetKey(KeyCode.LeftShift) && (Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f))
+            if (Input.GetAxis("Ability1") != 0f && (Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f))
             {
                 character.SetState(new FoxSprintState(character, character.momentum));
             } else
