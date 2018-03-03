@@ -34,7 +34,7 @@ public class MovingPlatform : MonoBehaviour {
     {
         float distance = Vector3.Distance(platform.position, targets[currentTarget].position);
 
-        if (distance < 0.05f)
+        if (distance < 0.05f || currentSpeed < 0f)
         {
             currentSpeed = 0f;
 
