@@ -42,6 +42,7 @@ public class Collectable : MonoBehaviour {
                     GetComponent<Collider>().enabled = false;
                     GetComponent<MeshRenderer>().enabled = false;
                     StartCoroutine("Kill");
+                    AkSoundEngine.PostEvent("PickupCoin", gameObject);
                     break;
 
             };

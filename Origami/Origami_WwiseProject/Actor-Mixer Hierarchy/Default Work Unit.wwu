@@ -589,6 +589,25 @@
 						<ActiveSource Name="Dash02" ID="{F62E2A23-AD01-4BB5-9B4C-84B00F78A133}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="Coin01" ID="{FB927FDD-3D27-4F5E-87ED-88A171D43C28}" ShortID="168300879">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Coin01" ID="{4E140AC2-DD90-4334-AF91-67589EDDE0A9}" ShortID="446796122">
+							<Language>SFX</Language>
+							<AudioFile>Coin01.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Coin01" ID="{4E140AC2-DD90-4334-AF91-67589EDDE0A9}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

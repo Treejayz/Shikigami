@@ -26,6 +26,7 @@
 				<Event Id="2432329107" Name="FrogJump" ObjectPath="\Events\Default Work Unit\FrogJump"/>
 				<Event Id="26407862" Name="HPMusic" ObjectPath="\Events\Default Work Unit\HPMusic" MaxAttenuation="0.000000"/>
 				<Event Id="3978245845" Name="Pickup" ObjectPath="\Events\Default Work Unit\Pickup"/>
+				<Event Id="1097127270" Name="PickupCoin" ObjectPath="\Events\Default Work Unit\PickupCoin"/>
 				<Event Id="3000620399" Name="ResetHPMusic" ObjectPath="\Events\Default Work Unit\ResetHPMusic" MaxAttenuation="0.000000"/>
 				<Event Id="160038168" Name="Splash" ObjectPath="\Events\Default Work Unit\Splash"/>
 				<Event Id="3827058668" Name="StartMusic" ObjectPath="\Events\Default Work Unit\StartMusic"/>
@@ -78,6 +79,10 @@
 				<File Id="422246823" Language="SFX">
 					<ShortName>Windloop.wav</ShortName>
 					<Path>SFX\Windloop_F17FB28C.wem</Path>
+				</File>
+				<File Id="446796122" Language="SFX">
+					<ShortName>Coin01.wav</ShortName>
+					<Path>SFX\Coin01_1C9C67B2.wem</Path>
 				</File>
 				<File Id="451997213" Language="SFX">
 					<ShortName>Rip03.wav</ShortName>

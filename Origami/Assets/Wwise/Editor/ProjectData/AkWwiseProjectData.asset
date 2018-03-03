@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3838D55C-4A81-4825-8DB4-A33597820612}'
-    m_lastTimePsrt1: 3639473
-    m_lastTimePart2: -1999273651
+    m_lastTimePsrt1: -829988529
+    m_lastTimePart2: -1999273646
     List:
     - Name: Dash
       Path: Default Work Unit\Dash
@@ -76,6 +76,18 @@ MonoBehaviour:
         ObjectType: 3
       ID: -316721451
       Guid: 9cec7e948ce5b348a73104a5112ec800
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: PickupCoin
+      Path: Default Work Unit\PickupCoin
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PickupCoin
+        ObjectType: 3
+      ID: 1097127270
+      Guid: 28feb98436a20743b247147a798d86ab
       minDuration: 0
       maxDuration: 0
       maxAttenuation: 0
@@ -213,8 +225,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{090E2BE1-C110-4C48-8EE1-99814A8166EB}'
-    m_lastTimePsrt1: 8637765
-    m_lastTimePart2: -1999273651
+    m_lastTimePsrt1: -830058708
+    m_lastTimePart2: -1999273646
     List:
     - Name: PlayerSound
       Path: Default Work Unit\PlayerSound
