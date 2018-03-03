@@ -14,7 +14,7 @@ public class Tform_Icon_Mangement : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (pause.GetComponent<Canvas> ().enabled) {
+		if (pause.GetComponent<PauseSystem> ().pause) {
 			this.GetComponent<Canvas> ().enabled = false;
 		} else {
 			this.GetComponent<Canvas> ().enabled = true;
