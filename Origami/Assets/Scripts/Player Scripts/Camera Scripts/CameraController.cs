@@ -39,7 +39,7 @@ public class CameraController : MonoBehaviour {
 	
 	// Update is called once per frame
 	private void Update () {
-		if (!pause.GetComponent<Canvas> ().enabled) {
+		if (!pause.GetComponent<PauseSystem> ().pause) {
 			currentX += Input.GetAxis ("Mouse X") * sensX;
 			currentY += Input.GetAxis ("Mouse Y") * sensY * -1f;
 		}
