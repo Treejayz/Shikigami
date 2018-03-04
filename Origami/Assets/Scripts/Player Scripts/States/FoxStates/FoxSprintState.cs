@@ -13,7 +13,7 @@ public class FoxSprintState : State {
     {
         direction = forwardtest.forward;
         direction.Normalize();
-        character.momentum = direction * sprintSpeed;
+        //character.momentum = direction * sprintSpeed;
     }
 
     public FoxSprintState(Character character, Vector3 moveDirection) : base(character)
