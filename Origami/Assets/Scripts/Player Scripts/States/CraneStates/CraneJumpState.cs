@@ -24,6 +24,7 @@ public class CraneJumpState : State {
 		player = character.GetComponent<CharacterController>();
 		currentSpeed = jumpSpeed;
         character.craneAnimator.SetBool("Jumping", true);
+        character.craneAnimator.Play("Crane_Jump", -1, .1f);
         AkSoundEngine.PostEvent("WingJump", character.gameObject);
         if (Input.GetAxis("Ability1") != 0.0f)
         {
