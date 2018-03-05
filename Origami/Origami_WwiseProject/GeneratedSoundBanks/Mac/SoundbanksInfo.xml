@@ -60,6 +60,10 @@
 					<ShortName>Splash5.wav</ShortName>
 					<Path>SFX\Splash5_1C9C67B2.wem</Path>
 				</File>
+				<File Id="211510730" Language="SFX">
+					<ShortName>Coin02.wav</ShortName>
+					<Path>SFX\Coin02_1C9C67B2.wem</Path>
+				</File>
 				<File Id="263556889" Language="SFX">
 					<ShortName>Wingflap02.wav</ShortName>
 					<Path>SFX\Wingflap02_1C9C67B2.wem</Path>
@@ -96,6 +100,10 @@
 					<ShortName>Jump01.wav</ShortName>
 					<Path>SFX\Jump01_1C9C67B2.wem</Path>
 				</File>
+				<File Id="658586597" Language="SFX">
+					<ShortName>Coin03.wav</ShortName>
+					<Path>SFX\Coin03_1C9C67B2.wem</Path>
+				</File>
 				<File Id="688422283" Language="SFX">
 					<ShortName>WaterHit01.wav</ShortName>
 					<Path>SFX\WaterHit01_1C9C67B2.wem</Path>
@@ -119,6 +127,10 @@
 				<File Id="853212425" Language="SFX">
 					<ShortName>Splash4.wav</ShortName>
 					<Path>SFX\Splash4_1C9C67B2.wem</Path>
+				</File>
+				<File Id="876069845" Language="SFX">
+					<ShortName>Pickup3.wav</ShortName>
+					<Path>SFX\Pickup3_1C9C67B2.wem</Path>
 				</File>
 				<File Id="876606834" Language="SFX">
 					<ShortName>MenuTheme.wav</ShortName>

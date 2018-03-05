@@ -97,7 +97,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Pickup2" ID="{60F84DBF-1A68-49A0-A5C1-39D6BF7992DA}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+									<ObjectRef Name="Pickup3" ID="{7B397E1F-BD40-4301-914F-CF7E7FB1228B}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -186,7 +186,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Coin01" ID="{FB927FDD-3D27-4F5E-87ED-88A171D43C28}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+									<ObjectRef Name="Coin03" ID="{0528F194-45DD-41E4-97E0-39AB098DEFAC}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

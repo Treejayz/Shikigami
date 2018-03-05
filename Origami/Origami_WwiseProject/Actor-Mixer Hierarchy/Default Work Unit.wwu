@@ -608,6 +608,63 @@
 						<ActiveSource Name="Coin01" ID="{4E140AC2-DD90-4334-AF91-67589EDDE0A9}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="Pickup3" ID="{7B397E1F-BD40-4301-914F-CF7E7FB1228B}" ShortID="900820812">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Pickup3" ID="{67432035-EB62-46AD-9E65-61AF8B9DD7B3}" ShortID="876069845">
+							<Language>SFX</Language>
+							<AudioFile>Pickup3.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Pickup3" ID="{67432035-EB62-46AD-9E65-61AF8B9DD7B3}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Coin02" ID="{A86F6870-365F-46AF-821F-5B486985271A}" ShortID="571150544">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Coin02" ID="{533660A4-6FCB-4C1A-A222-399858F882BE}" ShortID="211510730">
+							<Language>SFX</Language>
+							<AudioFile>Coin02.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Coin02" ID="{533660A4-6FCB-4C1A-A222-399858F882BE}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Coin03" ID="{0528F194-45DD-41E4-97E0-39AB098DEFAC}" ShortID="914095609">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Coin03" ID="{12C060B2-0780-4590-9704-26B62958749A}" ShortID="658586597">
+							<Language>SFX</Language>
+							<AudioFile>Coin03.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Coin03" ID="{12C060B2-0780-4590-9704-26B62958749A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
