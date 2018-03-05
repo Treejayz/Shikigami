@@ -108,22 +108,21 @@ public class Checkpoint : MonoBehaviour {
     private IEnumerator CollectPage()
     {
         float currentspeed = 0f;
-        float acceleration = 30f;
+        float acceleration = 200f;
         Vector3 startPos = Page.transform.position;
         Vector3 startScale = Page.transform.localScale;
-        yield return new WaitForSeconds(0.2f);
         while (Vector3.Distance(Page.transform.position, player.position) > 0.3f)
         {
-            if (currentspeed < 40f)
+            if (currentspeed < 150f)
             {
-                currentspeed += acceleration * Time.deltaTime;
+                currentspeed += acceleration * Time.fixedDeltaTime;
             }
-            Page.transform.Translate((player.position - Page.transform.position).normalized * currentspeed * Time.deltaTime);
+            Page.transform.Translate((player.position - Page.transform.position).normalized * currentspeed * Time.fixedDeltaTime);
 
             float currentDistance = Vector3.Distance(Page.transform.position, player.position) / Vector3.Distance(startPos, player.position);
             Page.transform.localScale = startScale * currentDistance;
 
-            yield return new WaitForSeconds(Time.deltaTime);
+            yield return new WaitForSeconds(Time.fixedDeltaTime);
         }
         Destroy(Page);
     }

@@ -28,8 +28,11 @@ public class Character : MonoBehaviour {
     public bool canDash;
     [HideInInspector]
     public bool isDashing;
+
+    private bool incooldown;
+
     [HideInInspector]
-    public bool sneaking;
+    public static bool sneaking;
 
     [HideInInspector]
     public bool switching;
@@ -78,7 +81,10 @@ public class Character : MonoBehaviour {
     {
         currentState.Tick();
         if (jumped && Input.GetAxis("Jump") == 0f) { jumped = false; }
-        if (!canDash && !isDashing) { StartCoroutine("DashCooldown"); }
+        if (!canDash && !isDashing && !incooldown) {
+            StartCoroutine("DashCooldown");
+            incooldown = true;
+        }
         
         if (switching && Input.GetAxis("Switch2") == 0.0f && Input.GetAxis("Switch1") == 0.0f) { switching = false; }
     }
@@ -157,11 +163,12 @@ public class Character : MonoBehaviour {
             {
                 yield return new WaitForEndOfFrame();
             }
-            while (Input.GetAxis("Ability1") != 0.0f)
-            {
-                yield return new WaitForEndOfFrame();
-            }
+            //while (Input.GetAxis("Ability1") != 0.0f)
+            //{
+                //yield return new WaitForEndOfFrame();
+            //}
             canDash = true;
+            incooldown = false;
         } 
     }
 }

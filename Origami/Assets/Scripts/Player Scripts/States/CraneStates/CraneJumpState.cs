@@ -33,6 +33,7 @@ public class CraneJumpState : State {
         } else
         {
             character.canDash = true;
+            shiftHeld = false;
         }
 	}
 
@@ -79,10 +80,7 @@ public class CraneJumpState : State {
     public override void OnStateExit()
     {
         character.craneAnimator.SetBool("Jumping", false);
-        if (shiftHeld)
-        {
-            character.canDash = true;
-        }
+        character.canDash = true;
     }
 
     public override void OnColliderHit(ControllerColliderHit hit)

@@ -91,10 +91,7 @@ public class CraneFallingState : State {
         character.craneAnimator.SetBool("Falling", false);
         character.jumped = true;
         AkSoundEngine.PostEvent("WindStop", character.gameObject);
-        if (shiftHeld)
-        {
-            character.canDash = false;
-        }
+        character.canDash = true;
     }
 
     public override void OnColliderHit(ControllerColliderHit hit)
