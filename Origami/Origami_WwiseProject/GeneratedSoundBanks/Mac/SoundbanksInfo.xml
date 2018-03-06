@@ -109,6 +109,10 @@
 					<ShortName>Jump01.wav</ShortName>
 					<Path>SFX\Jump01_1C9C67B2.wem</Path>
 				</File>
+				<File Id="613255974" Language="SFX">
+					<ShortName>WingJump04.wav</ShortName>
+					<Path>SFX\WingJump04_1C9C67B2.wem</Path>
+				</File>
 				<File Id="658586597" Language="SFX">
 					<ShortName>Coin03.wav</ShortName>
 					<Path>SFX\Coin03_1C9C67B2.wem</Path>
@@ -124,10 +128,6 @@
 				<File Id="785646735" Language="SFX">
 					<ShortName>Splash6.wav</ShortName>
 					<Path>SFX\Splash6_1C9C67B2.wem</Path>
-				</File>
-				<File Id="788334081" Language="SFX">
-					<ShortName>GenFlap4.wav</ShortName>
-					<Path>SFX\GenFlap4_1C9C67B2.wem</Path>
 				</File>
 				<File Id="832236322" Language="SFX">
 					<ShortName>Splash1.wav</ShortName>
@@ -149,9 +149,17 @@
 					<ShortName>02.wav</ShortName>
 					<Path>SFX\02_1C9C67B2.wem</Path>
 				</File>
+				<File Id="893646190" Language="SFX">
+					<ShortName>WingJump02.wav</ShortName>
+					<Path>SFX\WingJump02_1C9C67B2.wem</Path>
+				</File>
 				<File Id="896591778" Language="SFX">
 					<ShortName>Dash02.wav</ShortName>
 					<Path>SFX\Dash02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="924005826" Language="SFX">
+					<ShortName>WingJump03.wav</ShortName>
+					<Path>SFX\WingJump03_1C9C67B2.wem</Path>
 				</File>
 				<File Id="1030449657" Language="SFX">
 					<ShortName>Rip01.wav</ShortName>

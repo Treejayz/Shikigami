@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3838D55C-4A81-4825-8DB4-A33597820612}'
-    m_lastTimePsrt1: 98243477
-    m_lastTimePart2: -1999273179
+    m_lastTimePsrt1: 2070119251
+    m_lastTimePart2: -1999273169
     List:
     - Name: Dash
       Path: Default Work Unit\Dash
@@ -52,6 +52,18 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1862638189
       Guid: f4246eb2ceda7b43992fb84d711ba154
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: FrogStick
+      Path: Default Work Unit\FrogStick
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: FrogStick
+        ObjectType: 3
+      ID: 1880194273
+      Guid: 88da4d99d89784498781a60e80a25d01
       minDuration: 0
       maxDuration: 0
       maxAttenuation: 0
@@ -225,8 +237,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{090E2BE1-C110-4C48-8EE1-99814A8166EB}'
-    m_lastTimePsrt1: 100924160
-    m_lastTimePart2: -1999273179
+    m_lastTimePsrt1: 2070299259
+    m_lastTimePart2: -1999273169
     List:
     - Name: PlayerSound
       Path: Default Work Unit\PlayerSound
