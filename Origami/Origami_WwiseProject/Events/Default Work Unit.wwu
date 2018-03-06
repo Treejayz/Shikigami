@@ -25,7 +25,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Jump01" ID="{4234C997-F9A4-4AB3-9310-728409AF7E86}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+									<ObjectRef Name="Jump02" ID="{1B5ABF07-928C-4626-AB33-24BA90E32107}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -187,6 +187,20 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Coin03" ID="{0528F194-45DD-41E4-97E0-39AB098DEFAC}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FrogStick" ID="{994DDA88-97D8-4984-8781-A60E80A25D01}">
+					<ChildrenList>
+						<Action Name="" ID="{F06A6CE6-DAFF-44E5-91E5-346317402802}" ShortID="379594903">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Stick" ID="{E77B55F5-B095-4B78-889D-760030E70E02}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

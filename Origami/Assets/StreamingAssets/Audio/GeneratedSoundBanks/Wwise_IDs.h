@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID DASH = 1942692385U;
         static const AkUniqueID DEATH = 779278001U;
         static const AkUniqueID FROGJUMP = 2432329107U;
+        static const AkUniqueID FROGSTICK = 1880194273U;
         static const AkUniqueID HPMUSIC = 26407862U;
         static const AkUniqueID PICKUP = 3978245845U;
         static const AkUniqueID PICKUPCOIN = 1097127270U;

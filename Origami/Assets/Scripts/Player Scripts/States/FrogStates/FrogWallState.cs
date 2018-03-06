@@ -36,6 +36,9 @@ public class FrogWallState : State {
         //CameraController.Wall(wallHit);
         character.transform.forward = wallHit;
         character.transform.GetChild(1).transform.rotation = Quaternion.LookRotation(Vector3.down, wallHit);
+
+        // New - make a sound when you stick to the wall.
+        AkSoundEngine.PostEvent("FrogStick", character.gameObject);
     }
 
 	public override void Tick() {
