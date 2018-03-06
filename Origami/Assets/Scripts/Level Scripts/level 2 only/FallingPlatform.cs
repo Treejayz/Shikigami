@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FallingPlatform : MonoBehaviour {
 
-    float shakeTime = .7f;
+    float shakeTime = .4f;
     float fallTime = 1f;
     float shakeAmount = 0.2f;
     float fallAcceleration = 30f;

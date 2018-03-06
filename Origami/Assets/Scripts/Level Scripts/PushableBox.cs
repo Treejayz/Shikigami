@@ -65,7 +65,9 @@ public class PushableBox : MonoBehaviour {
             }
             targetpos = transform.position + direction * 4f;
             initialpos = transform.position;
-            moving = true;
+            if (!Physics.BoxCast(transform.position, new Vector3(1.95f, 1.95f, 1.95f), direction, Quaternion.identity, 4f)) {
+                moving = true;
+            }
         }
           
     }
@@ -80,9 +82,8 @@ public class PushableBox : MonoBehaviour {
             initialpos = transform.position;
             returning = true;
         }
-        if(collision.other.tag == "Player")
+        if(collision.collider.tag == "Player")
         {
-
         }        
     }
 }

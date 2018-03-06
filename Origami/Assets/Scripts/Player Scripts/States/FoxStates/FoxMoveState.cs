@@ -14,6 +14,7 @@ public class FoxMoveState : State {
     public override void OnStateEnter()
     {
         player = character.GetComponent<CharacterController>();
+        character.foxAnimator.SetBool("Moving", true);
     }
 
     public override void Tick()

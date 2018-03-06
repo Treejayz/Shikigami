@@ -18,6 +18,7 @@ public class Character : MonoBehaviour {
 
     public Animator craneAnimator;
     public Animator frogAnimator;
+    public Animator foxAnimator;
 
     [HideInInspector]
     public bool dead;
@@ -75,6 +76,10 @@ public class Character : MonoBehaviour {
         {
             frogAnimator = transform.GetChild(1).gameObject.GetComponent<Animator>();
         }
+        if (foxAnimator == null)
+        {
+            foxAnimator = transform.GetChild(2).gameObject.GetComponent<Animator>();
+        }
     }
 
     private void Update()
@@ -102,6 +107,10 @@ public class Character : MonoBehaviour {
         {
             hit.transform.SendMessage("Hit", hit, SendMessageOptions.DontRequireReceiver);
             SetState(new CraneIdleState(this));
+            isDashing = false;
+            canDash = false;
+            incooldown = true;
+            StartCoroutine("DashCooldown");
             momentum = new Vector3(0f, 0f, 0f);
         }
         currentState.OnColliderHit(hit);
@@ -130,6 +139,7 @@ public class Character : MonoBehaviour {
             FoxMesh.SetActive(false);
             craneAnimator.enabled = false;
             frogAnimator.enabled = true;
+            foxAnimator.enabled = false;
         } else if (next == "Crane")
         {
             Form = CurrentForm.CRANE;
@@ -138,6 +148,7 @@ public class Character : MonoBehaviour {
             FoxMesh.SetActive(false);
             craneAnimator.enabled = true;
             frogAnimator.enabled = false;
+            foxAnimator.enabled = false;
         } else if (next == "Fox")
         {
             Form = CurrentForm.FOX;
@@ -146,6 +157,7 @@ public class Character : MonoBehaviour {
             FoxMesh.SetActive(true);
             craneAnimator.enabled = false;
             frogAnimator.enabled = false;
+            foxAnimator.enabled = true;
         }
         switching = true;
     }
@@ -156,6 +168,7 @@ public class Character : MonoBehaviour {
 
     IEnumerator DashCooldown()
     {
+        MonoBehaviour.print("cooling down");
         yield return new WaitForSeconds(0.5f);
         if (!isDashing)
         {

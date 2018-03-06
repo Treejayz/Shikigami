@@ -13,6 +13,7 @@ public class FoxIdleState : State {
     public override void OnStateEnter()
     {
         player = character.GetComponent<CharacterController>();
+        character.foxAnimator.SetBool("Moving", false);
     }
 
     public override void Tick()

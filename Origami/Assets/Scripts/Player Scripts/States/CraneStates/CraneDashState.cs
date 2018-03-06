@@ -69,6 +69,7 @@ public class CraneDashState : State {
     public override void OnStateExit()
     {
         character.isDashing = false;
+        character.canDash = false;
     }
 
     public override void OnColliderHit(ControllerColliderHit hit)

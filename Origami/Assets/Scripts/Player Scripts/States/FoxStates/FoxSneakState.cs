@@ -17,6 +17,7 @@ public class FoxSneakState : State {
         player = character.GetComponent<CharacterController>();
         character.frogAnimator.SetBool("Moving", true);
         Character.sneaking = true;
+        character.foxAnimator.SetBool("Sneaking", true);
     }
 
     public override void Tick()
@@ -72,6 +73,7 @@ public class FoxSneakState : State {
     public override void OnStateExit()
     {
         Character.sneaking = false;
+        character.foxAnimator.SetBool("Sneaking", false);
     }
 
     public override void OnColliderHit(ControllerColliderHit hit)
