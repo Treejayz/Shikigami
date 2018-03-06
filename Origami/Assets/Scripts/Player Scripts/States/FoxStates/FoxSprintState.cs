@@ -24,6 +24,7 @@ public class FoxSprintState : State {
     public override void OnStateEnter()
     {
         player = character.GetComponent<CharacterController>();
+        character.foxAnimator.speed = 1.58333f;
     }
 
     public override void Tick()
@@ -57,6 +58,11 @@ public class FoxSprintState : State {
         character.momentum = Vector3.Lerp(character.momentum, direction * sprintSpeed, Time.fixedDeltaTime * 3f);
         player.Move(character.momentum * Time.fixedDeltaTime);
         player.Move(Vector3.down * character.gravity * Time.fixedDeltaTime);
+    }
+
+    public override void OnStateExit()
+    {
+        character.foxAnimator.speed = 1f;
     }
 
     public override void OnColliderHit(ControllerColliderHit hit)

@@ -18,12 +18,21 @@ public class FoxSneakState : State {
         character.frogAnimator.SetBool("Moving", true);
         Character.sneaking = true;
         character.foxAnimator.SetBool("Sneaking", true);
+        character.craneAnimator.Play("Fox_Sneak", -1, 0.1f);
+
     }
 
     public override void Tick()
     {
 
         direction = forwardtest.forward;
+        if (direction == Vector3.zero)
+        {
+            character.foxAnimator.speed = 0f;
+        } else
+        {
+            character.foxAnimator.speed = 1f;
+        }
 
         if (!player.isGrounded)
         {
@@ -74,6 +83,7 @@ public class FoxSneakState : State {
     {
         Character.sneaking = false;
         character.foxAnimator.SetBool("Sneaking", false);
+        character.foxAnimator.speed = 1f;
     }
 
     public override void OnColliderHit(ControllerColliderHit hit)
