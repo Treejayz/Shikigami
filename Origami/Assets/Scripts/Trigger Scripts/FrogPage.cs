@@ -8,6 +8,8 @@ public class FrogPage : MonoBehaviour {
     public float frequency;
     public float amplitude;
 
+    public bool isFox = false;
+
     private float startY;
 
     private void Start()
@@ -29,7 +31,14 @@ public class FrogPage : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
-            other.gameObject.GetComponent<Character>().canFrog = true;
+            if (!isFox)
+            {
+                other.gameObject.GetComponent<Character>().canFrog = true;
+            }
+            else
+            {
+                other.gameObject.GetComponent<Character>().canFox = true;
+            }
             Destroy(this.gameObject);
         }
     }

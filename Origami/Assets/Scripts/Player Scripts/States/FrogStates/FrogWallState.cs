@@ -33,6 +33,7 @@ public class FrogWallState : State {
         character.frogAnimator.SetBool("Jumping", false);
 
         forwardtest.wall = true;
+        //CameraController.Wall(wallHit);
         character.transform.forward = wallHit;
         character.transform.GetChild(1).transform.rotation = Quaternion.LookRotation(Vector3.down, wallHit);
     }
@@ -69,5 +70,6 @@ public class FrogWallState : State {
         forwardtest.wall = false;
         character.transform.forward = wallHit;
         character.transform.GetChild(1).transform.forward = -1f * character.transform.forward;
+        //CameraController.OffWall();
     }
 }

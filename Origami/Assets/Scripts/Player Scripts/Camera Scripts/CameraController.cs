@@ -27,6 +27,11 @@ public class CameraController : MonoBehaviour {
 		new Vector3(0f, 1f, 0f),
 		new Vector3(1f, 1f, 0f) };
 
+    private static bool onWall;
+    private static float wallAngle;
+    private static float wallMin;
+    private static float wallMax;
+
     // Use this for initialization
     private void Start () {
         cam = Camera.main;
@@ -45,8 +50,18 @@ public class CameraController : MonoBehaviour {
 		}
 
         currentY = Mathf.Clamp(currentY, Y_ANGLE_MIN, Y_ANGLE_MAX);
-        if (currentX < 0.0f) { currentX += 360; }
-        if (currentX > 360.0f) { currentX -= 360; }
+
+        if (onWall)
+        {
+            currentX = Mathf.Clamp(currentX, wallMin, wallMax);
+            
+        }
+        else
+        {
+            print(currentX);
+            if (currentX < 0.0f) { currentX += 360; }
+            if (currentX > 360.0f) { currentX -= 360; }
+        }
 
         RaycastHit hit;
 
@@ -78,4 +93,33 @@ public class CameraController : MonoBehaviour {
         currentX = target.y;
         currentY = target.x + 20f;
     }
+    /*
+    public static void Wall(Vector3 wallNormal)
+    {
+        wallAngle = Vector3.Angle(Vector3.forward, wallNormal);
+        if (wallNormal.x < 0f) {
+            wallAngle += 180;
+        }
+        wallMin = wallAngle - 90f;
+        if (wallMin < 0 && (currentX > 360 + wallMin))
+        {
+            currentX -= 360f;
+        }
+
+        wallMax = wallAngle + 90f;
+        if (wallMin < 360 && (currentX < wallMin - 360))
+        {
+            currentX += 360f;
+        }
+
+        MonoBehaviour.print(wallAngle);
+        //MonoBehaviour.print(wallMax);
+        onWall = true;
+    }
+
+    public static void OffWall()
+    {
+        onWall = false;
+    }
+    */
 }

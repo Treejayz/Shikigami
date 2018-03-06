@@ -7,7 +7,7 @@ public class FallingPlatform : MonoBehaviour {
     float shakeTime = .4f;
     float fallTime = 1f;
     float shakeAmount = 0.2f;
-    float fallAcceleration = 30f;
+    float fallAcceleration = 15f;
 
     float respawntime = .5f;
     public AnimationCurve popIn;
@@ -58,7 +58,7 @@ public class FallingPlatform : MonoBehaviour {
 
     IEnumerator Fall()
     {
-        float currentSpeed = 0f;
+        float currentSpeed = 5f;
         float currentTime = 0f;
         while (currentTime < fallTime)
         {
