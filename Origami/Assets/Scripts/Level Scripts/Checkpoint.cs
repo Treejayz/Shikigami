@@ -107,6 +107,10 @@ public class Checkpoint : MonoBehaviour {
 
     private IEnumerator CollectPage()
     {
+        if (Page.GetComponent<Page>() != null)
+        {
+            Page.GetComponent<Page>().enabled = false;
+        }
         float currentspeed = 0f;
         float acceleration = 200f;
         Vector3 startPos = Page.transform.position;

@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FrogPage : MonoBehaviour {
+public class Page : MonoBehaviour {
 
     public float spinSpeed;
     public float frequency;
     public float amplitude;
 
+    public bool isFrog = false;
     public bool isFox = false;
 
     private float startY;
@@ -31,11 +32,11 @@ public class FrogPage : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
-            if (!isFox)
+            if (isFrog)
             {
                 other.gameObject.GetComponent<Character>().canFrog = true;
             }
-            else
+            else if (isFox)
             {
                 other.gameObject.GetComponent<Character>().canFox = true;
             }
