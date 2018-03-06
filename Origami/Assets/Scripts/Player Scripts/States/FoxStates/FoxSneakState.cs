@@ -8,6 +8,8 @@ public class FoxSneakState : State {
     private Vector3 direction;
     private float sneakSpeed = 6f;
 
+    private float start;
+
     public FoxSneakState(Character character) : base(character)
     {
     }
@@ -18,7 +20,8 @@ public class FoxSneakState : State {
         character.frogAnimator.SetBool("Moving", true);
         Character.sneaking = true;
         character.foxAnimator.SetBool("Sneaking", true);
-        character.craneAnimator.Play("Fox_Sneak", -1, 0.1f);
+        //character.foxAnimator.Play("Fox_Sneak_NRM", -1, 0.1f);
+        start = Time.time;
 
     }
 
@@ -26,7 +29,7 @@ public class FoxSneakState : State {
     {
 
         direction = forwardtest.forward;
-        if (direction == Vector3.zero)
+        if (direction == Vector3.zero && Time.time - start > 0.3f)
         {
             character.foxAnimator.speed = 0f;
         } else

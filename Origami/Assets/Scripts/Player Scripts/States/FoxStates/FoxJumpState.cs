@@ -22,6 +22,7 @@ public class FoxJumpState : State {
         player = character.GetComponent<CharacterController>();
         currentSpeed = jumpSpeed;
         character.foxAnimator.SetBool("Jumping", true);
+        character.foxAnimator.Play("Fox_Jump_NRM", -1, .1f);
     }
 
     public override void Tick()
