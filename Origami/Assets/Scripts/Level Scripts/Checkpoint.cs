@@ -121,7 +121,7 @@ public class Checkpoint : MonoBehaviour {
             {
                 currentspeed += acceleration * Time.fixedDeltaTime;
             }
-            Page.transform.Translate((player.position - Page.transform.position).normalized * currentspeed * Time.fixedDeltaTime);
+            Page.transform.position += ((player.position - Page.transform.position).normalized * currentspeed * Time.fixedDeltaTime);
 
             float currentDistance = Vector3.Distance(Page.transform.position, player.position) / Vector3.Distance(startPos, player.position);
             Page.transform.localScale = startScale * currentDistance;
