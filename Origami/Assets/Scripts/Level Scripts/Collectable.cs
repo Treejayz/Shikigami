@@ -40,7 +40,7 @@ public class Collectable : MonoBehaviour {
                 case (CollectableType.SCRAP):
                     CollectableManager.Collect(Type);
                     GetComponent<Collider>().enabled = false;
-                    GetComponent<MeshRenderer>().enabled = false;
+                    GetComponent<SpriteRenderer>().enabled = false;
                     StartCoroutine("Kill");
                     AkSoundEngine.PostEvent("PickupCoin", gameObject);
                     break;

@@ -502,6 +502,10 @@ Prefab:
       propertyPath: m_Name
       value: Moving Platform (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4272184256145084, guid: cb9c783929258ac4c973ad1cbaeb02fe, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb9c783929258ac4c973ad1cbaeb02fe, type: 2}
   m_IsPrefabParent: 0
@@ -15376,10 +15380,6 @@ Prefab:
     - target: {fileID: 4658300057981218, guid: cb9c783929258ac4c973ad1cbaeb02fe, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4272184256145084, guid: cb9c783929258ac4c973ad1cbaeb02fe, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 24.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb9c783929258ac4c973ad1cbaeb02fe, type: 2}
