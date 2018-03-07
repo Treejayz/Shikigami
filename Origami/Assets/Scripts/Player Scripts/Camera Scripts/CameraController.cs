@@ -58,7 +58,6 @@ public class CameraController : MonoBehaviour {
         }
         else
         {
-            print(currentX);
             if (currentX < 0.0f) { currentX += 360; }
             if (currentX > 360.0f) { currentX -= 360; }
         }
