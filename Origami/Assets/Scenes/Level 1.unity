@@ -27810,7 +27810,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4586413789640760, guid: d7147872aa3b2f848b741ee64d2b7502, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 68.5
+      value: 63.33
       objectReference: {fileID: 0}
     - target: {fileID: 4586413789640760, guid: d7147872aa3b2f848b741ee64d2b7502, type: 2}
       propertyPath: m_LocalPosition.z
@@ -27872,6 +27872,38 @@ Prefab:
       propertyPath: checkPointText
       value: 
       objectReference: {fileID: 828533254}
+    - target: {fileID: 4492855062129068, guid: d7147872aa3b2f848b741ee64d2b7502, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492855062129068, guid: d7147872aa3b2f848b741ee64d2b7502, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492855062129068, guid: d7147872aa3b2f848b741ee64d2b7502, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0.45997128
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492855062129068, guid: d7147872aa3b2f848b741ee64d2b7502, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492855062129068, guid: d7147872aa3b2f848b741ee64d2b7502, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.8879338
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492855062129068, guid: d7147872aa3b2f848b741ee64d2b7502, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -54.770004
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492855062129068, guid: d7147872aa3b2f848b741ee64d2b7502, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -3.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492855062129068, guid: d7147872aa3b2f848b741ee64d2b7502, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 3.97
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7147872aa3b2f848b741ee64d2b7502, type: 2}
   m_IsPrefabParent: 0
