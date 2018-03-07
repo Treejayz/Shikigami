@@ -30,8 +30,9 @@
 				<Event Id="1097127270" Name="PickupCoin" ObjectPath="\Events\Default Work Unit\PickupCoin"/>
 				<Event Id="3000620399" Name="ResetHPMusic" ObjectPath="\Events\Default Work Unit\ResetHPMusic" MaxAttenuation="0.000000"/>
 				<Event Id="160038168" Name="Splash" ObjectPath="\Events\Default Work Unit\Splash"/>
+				<Event Id="298361094" Name="StartLv1" ObjectPath="\Events\Default Work Unit\StartLv1"/>
+				<Event Id="298361093" Name="StartLv2" ObjectPath="\Events\Default Work Unit\StartLv2"/>
 				<Event Id="3827058668" Name="StartMusic" ObjectPath="\Events\Default Work Unit\StartMusic"/>
-				<Event Id="1917263390" Name="StopMusic" ObjectPath="\Events\Default Work Unit\StopMusic" MaxAttenuation="0.000000"/>
 				<Event Id="1021800662" Name="WindBegin" ObjectPath="\Events\Default Work Unit\WindBegin"/>
 				<Event Id="1571412035" Name="WindStop" ObjectPath="\Events\Default Work Unit\WindStop" MaxAttenuation="0.000000"/>
 				<Event Id="3191917460" Name="WingJump" ObjectPath="\Events\Default Work Unit\WingJump"/>
@@ -64,6 +65,14 @@
 				<File Id="211510730" Language="SFX">
 					<ShortName>Coin02.wav</ShortName>
 					<Path>SFX\Coin02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="239304637" Language="SFX">
+					<ShortName>Level1.wav</ShortName>
+					<Path>SFX\Level1_1C9C67B2.wem</Path>
+				</File>
+				<File Id="240414810" Language="SFX">
+					<ShortName>Level2.wav</ShortName>
+					<Path>SFX\Level2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="263556889" Language="SFX">
 					<ShortName>Wingflap02.wav</ShortName>

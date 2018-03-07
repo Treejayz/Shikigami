@@ -22,8 +22,9 @@ namespace AK
         static const AkUniqueID PICKUPCOIN = 1097127270U;
         static const AkUniqueID RESETHPMUSIC = 3000620399U;
         static const AkUniqueID SPLASH = 160038168U;
+        static const AkUniqueID STARTLV1 = 298361094U;
+        static const AkUniqueID STARTLV2 = 298361093U;
         static const AkUniqueID STARTMUSIC = 3827058668U;
-        static const AkUniqueID STOPMUSIC = 1917263390U;
         static const AkUniqueID WINDBEGIN = 1021800662U;
         static const AkUniqueID WINDSTOP = 1571412035U;
         static const AkUniqueID WINGJUMP = 3191917460U;

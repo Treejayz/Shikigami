@@ -117,20 +117,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="StopMusic" ID="{BBFAAA79-9FF9-437B-BC9A-364E8D0731D3}">
-					<ChildrenList>
-						<Action Name="" ID="{766A1729-4555-4DF4-8803-A63CBCF5A600}" ShortID="644446013">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="MenuTheme" ID="{9A649B17-B8BE-43A2-9D07-A0900F5BC9E9}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="HPMusic" ID="{1A1D2228-E499-4307-B859-F269DD74700C}">
 					<ChildrenList>
 						<Action Name="" ID="{9AC0D980-43A9-4EDF-AD57-FCAFEB8B03A1}" ShortID="137478172">
@@ -201,6 +187,34 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Stick" ID="{E77B55F5-B095-4B78-889D-760030E70E02}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StartLv1" ID="{693D4FA1-2846-49D2-A651-D1CA38FC525E}">
+					<ChildrenList>
+						<Action Name="" ID="{06EC2B7B-109D-46C1-9944-A5EB8F99A2F7}" ShortID="704041184">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Level1" ID="{660828B0-A148-449F-AAC0-C515E65ACACB}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StartLv2" ID="{5662CE2B-CF26-40C5-B4AF-0ADAEF3EEB97}">
+					<ChildrenList>
+						<Action Name="" ID="{46AC8386-EAAF-4F59-B9E4-176B3F0354D9}" ShortID="17263848">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Level2" ID="{9B48D3FF-D85B-4D59-8375-464EA457E8DC}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

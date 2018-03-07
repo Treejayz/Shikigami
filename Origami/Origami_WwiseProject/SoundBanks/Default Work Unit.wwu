@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="PlayerSound" ID="{DB1E0133-8DCC-495A-B34F-236BC536C51F}">
 					<ObjectInclusionList>
+						<ObjectRef Name="StartLv2" ID="{5662CE2B-CF26-40C5-B4AF-0ADAEF3EEB97}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Windloop" ID="{35CA7AD7-E248-416F-B626-A0C4FAF5ADD1}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Coin03" ID="{0528F194-45DD-41E4-97E0-39AB098DEFAC}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
@@ -12,6 +13,7 @@
 						<ObjectRef Name="PickupCoin" ID="{84B9FE28-A236-4307-B247-147A798D86AB}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="MenuTheme" ID="{9A649B17-B8BE-43A2-9D07-A0900F5BC9E9}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="02" ID="{BC96E305-5974-43B4-A653-33A36DB09045}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Level1" ID="{660828B0-A148-449F-AAC0-C515E65ACACB}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="RandomSplash" ID="{60421BFD-4593-4622-95FF-33D2B198F46A}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Jump02" ID="{1B5ABF07-928C-4626-AB33-24BA90E32107}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="WingJump02" ID="{8CC71CDF-02CF-4630-83F3-088CD644F41C}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
@@ -21,11 +23,13 @@
 						<ObjectRef Name="WingJump03" ID="{536DA625-BB1D-4760-BB48-68B13E3D97DA}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Pickup2" ID="{60F84DBF-1A68-49A0-A5C1-39D6BF7992DA}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Dash02" ID="{D356CFD5-1341-49C5-A6AE-BB46B8101009}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="StartLv1" ID="{693D4FA1-2846-49D2-A651-D1CA38FC525E}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="WingJump01" ID="{8684A3A1-3D55-4A15-A8D7-DED63EE6812F}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Jump01" ID="{4234C997-F9A4-4AB3-9310-728409AF7E86}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="WaterHit01" ID="{8AC9DDF4-5F4E-4B2E-9EAF-655A4A8F7030}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stick" ID="{E77B55F5-B095-4B78-889D-760030E70E02}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="RandomFlap" ID="{C0487147-1BFA-4CA5-B156-B9B7D5F4AD6D}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Level2" ID="{9B48D3FF-D85B-4D59-8375-464EA457E8DC}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="WingJump04" ID="{988922D2-6D2E-4F25-BD67-B5107873959C}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Coin01" ID="{FB927FDD-3D27-4F5E-87ED-88A171D43C28}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>

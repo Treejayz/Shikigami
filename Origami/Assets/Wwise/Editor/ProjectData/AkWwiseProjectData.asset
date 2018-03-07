@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3838D55C-4A81-4825-8DB4-A33597820612}'
-    m_lastTimePsrt1: 1839574444
-    m_lastTimePart2: -1999273044
+    m_lastTimePsrt1: 2056689483
+    m_lastTimePart2: -1999272999
     List:
     - Name: Dash
       Path: Default Work Unit\Dash
@@ -127,6 +127,30 @@ MonoBehaviour:
       minDuration: 0
       maxDuration: 0
       maxAttenuation: 0
+    - Name: StartLv1
+      Path: Default Work Unit\StartLv1
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: StartLv1
+        ObjectType: 3
+      ID: 298361094
+      Guid: a14f3d694628d249a651d1ca38fc525e
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: StartLv2
+      Path: Default Work Unit\StartLv2
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: StartLv2
+        ObjectType: 3
+      ID: 298361093
+      Guid: 2bce625626cfc540b4af0adaef3eeb97
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
     - Name: StartMusic
       Path: Default Work Unit\StartMusic
       PathAndIcons:
@@ -136,18 +160,6 @@ MonoBehaviour:
         ObjectType: 3
       ID: -467908628
       Guid: 00ef7b9b98426149a320200c84b71b88
-      minDuration: 0
-      maxDuration: 0
-      maxAttenuation: 0
-    - Name: StopMusic
-      Path: Default Work Unit\StopMusic
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: StopMusic
-        ObjectType: 3
-      ID: 1917263390
-      Guid: 79aafabbf99f7b43bc9a364e8d0731d3
       minDuration: 0
       maxDuration: 0
       maxAttenuation: 0
@@ -230,15 +242,15 @@ MonoBehaviour:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{70DFAA7E-A926-41F3-B3EC-9EDEDC5BD535}'
-    m_lastTimePsrt1: 1470059688
-    m_lastTimePart2: -1999275832
+    m_lastTimePsrt1: -1325161147
+    m_lastTimePart2: -1999275788
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{090E2BE1-C110-4C48-8EE1-99814A8166EB}'
-    m_lastTimePsrt1: 1842094617
-    m_lastTimePart2: -1999273044
+    m_lastTimePsrt1: 2056879738
+    m_lastTimePart2: -1999272999
     List:
     - Name: PlayerSound
       Path: Default Work Unit\PlayerSound
@@ -269,15 +281,15 @@ MonoBehaviour:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{AAFD3342-11BC-416B-ACB8-0E400F3AA5C7}'
-    m_lastTimePsrt1: 1470069697
-    m_lastTimePart2: -1999275832
+    m_lastTimePsrt1: -1325141129
+    m_lastTimePart2: -1999275788
     List: []
   AcousticTextureWwu:
   - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8D14AE7B-F1F7-4613-9AF7-6BF7C07FB64D}'
-    m_lastTimePsrt1: 1470069697
-    m_lastTimePart2: -1999275832
+    m_lastTimePsrt1: -1325121115
+    m_lastTimePart2: -1999275788
     List: []
   ExpandedItems:
   - /Origami_WwiseProject

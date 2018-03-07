@@ -751,6 +751,44 @@
 						<ActiveSource Name="WingJump04" ID="{2A565576-0203-44AF-887C-AA5803CEC224}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="Level2" ID="{9B48D3FF-D85B-4D59-8375-464EA457E8DC}" ShortID="746908589">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Level2" ID="{FF275655-1F34-4B3B-8224-D88BBABEF08F}" ShortID="240414810">
+							<Language>SFX</Language>
+							<AudioFile>Level2.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Level2" ID="{FF275655-1F34-4B3B-8224-D88BBABEF08F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Level1" ID="{660828B0-A148-449F-AAC0-C515E65ACACB}" ShortID="454122351">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Level1" ID="{7EF7ED6E-4810-4844-AE08-C5F4587DEF05}" ShortID="239304637">
+							<Language>SFX</Language>
+							<AudioFile>Level1.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Level1" ID="{7EF7ED6E-4810-4844-AE08-C5F4587DEF05}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
