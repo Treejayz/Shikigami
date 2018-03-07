@@ -14,7 +14,7 @@ public class Checkpoint : MonoBehaviour {
 
     public static GameObject[] CheckPointList;
 
-    public static Text checkPointText;
+	public GameObject checkPointText;
     private static float fadeTime = 2f;
 
     // Use this for initialization
@@ -24,8 +24,7 @@ public class Checkpoint : MonoBehaviour {
         {
             pos = this.transform;
         }
-        checkPointText = GameObject.Find("CheckPointText").GetComponent<Text>();
-        checkPointText.color = new Color(checkPointText.color.r, checkPointText.color.g, checkPointText.color.b, 0f);
+		checkPointText.GetComponent<Image>().color = new Color(checkPointText.GetComponent<Image>().color.r, checkPointText.GetComponent<Image>().color.g, checkPointText.GetComponent<Image>().color.b, 0f);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -94,13 +93,24 @@ public class Checkpoint : MonoBehaviour {
 
     private IEnumerator DisplayText()
     {
-        checkPointText.color = new Color(checkPointText.color.r, checkPointText.color.g, checkPointText.color.b, 1f);
-        yield return new WaitForSeconds(3f);
-        while (checkPointText.color.a > 0f)
+		Color tempcol = checkPointText.GetComponent<Image>().color;
+		while (tempcol.a < 1f)
+		{
+			float newAlpha = checkPointText.GetComponent<Image>().color.a + (Time.fixedDeltaTime * (1f / fadeTime));
+			if (newAlpha > 1f) { newAlpha = 1f; }
+			tempcol = checkPointText.GetComponent<Image> ().color;
+			tempcol.a = newAlpha;
+			checkPointText.GetComponent<Image> ().color = tempcol;
+			yield return new WaitForFixedUpdate();
+		}
+        yield return new WaitForSeconds(1f);
+		while (tempcol.a > 0f)
         {
-            float newAlpha = checkPointText.color.a - (Time.fixedDeltaTime * (1f / fadeTime));
+			float newAlpha = checkPointText.GetComponent<Image>().color.a - (Time.fixedDeltaTime * (1f / fadeTime));
             if (newAlpha < 0f) { newAlpha = 0f; }
-            checkPointText.color = new Color(checkPointText.color.r, checkPointText.color.g, checkPointText.color.b, newAlpha);
+			tempcol = checkPointText.GetComponent<Image> ().color;
+			tempcol.a = newAlpha;
+			checkPointText.GetComponent<Image> ().color = tempcol;
             yield return new WaitForFixedUpdate();
         }
     }
