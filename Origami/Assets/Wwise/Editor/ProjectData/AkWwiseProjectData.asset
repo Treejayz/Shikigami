@@ -16,9 +16,21 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3838D55C-4A81-4825-8DB4-A33597820612}'
-    m_lastTimePsrt1: -487821981
-    m_lastTimePart2: -1999272994
+    m_lastTimePsrt1: 1037553232
+    m_lastTimePart2: -1999272956
     List:
+    - Name: BigPickup
+      Path: Default Work Unit\BigPickup
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: BigPickup
+        ObjectType: 3
+      ID: 38805597
+      Guid: 6caf5c1e84973f48a6a31c55d33a67a9
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
     - Name: Dash
       Path: Default Work Unit\Dash
       PathAndIcons:
@@ -40,6 +52,18 @@ MonoBehaviour:
         ObjectType: 3
       ID: 779278001
       Guid: 55c026e32798bf4995c1d65cc31e464c
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: FoxJump
+      Path: Default Work Unit\FoxJump
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: FoxJump
+        ObjectType: 3
+      ID: -458327192
+      Guid: 9725af8f0306454a8608587036c7db35
       minDuration: 0
       maxDuration: 0
       maxAttenuation: 0
@@ -249,8 +273,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{090E2BE1-C110-4C48-8EE1-99814A8166EB}'
-    m_lastTimePsrt1: -475941146
-    m_lastTimePart2: -1999272994
+    m_lastTimePsrt1: 1037633420
+    m_lastTimePart2: -1999272956
     List:
     - Name: PlayerSound
       Path: Default Work Unit\PlayerSound

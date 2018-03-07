@@ -142,6 +142,10 @@ public class Checkpoint : MonoBehaviour {
 
             yield return new WaitForSeconds(Time.fixedDeltaTime);
         }
+
+        // I think this is the best place to put this. The player is set as the source because the page should disappear here.
+        AkSoundEngine.PostEvent("BigPickup", player.gameObject);
+
         Destroy(Page);
     }
 }

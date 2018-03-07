@@ -220,6 +220,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="BigPickup" ID="{1E5CAF6C-9784-483F-A6A3-1C55D33A67A9}">
+					<ChildrenList>
+						<Action Name="" ID="{0D1ED567-C141-404E-A4DB-DB361F210F3C}" ShortID="811159166">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="BigPickup01" ID="{2C92F34D-7DDF-473D-8AB3-06295F618055}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FoxJump" ID="{8FAF2597-0603-4A45-8608-587036C7DB35}">
+					<ChildrenList>
+						<Action Name="" ID="{C4076FFA-7489-4FB0-8E6F-91BE16D56DC1}" ShortID="845008730">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FoxJump01" ID="{2211C189-6325-4D7F-B80C-BD44F8BB6C8A}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -40,6 +40,10 @@ public class Page : MonoBehaviour {
             {
                 other.gameObject.GetComponent<Character>().canFox = true;
             }
+
+            // Same sound as the normal checkpoints. Subject to change.
+            AkSoundEngine.PostEvent("BigPickup", other.gameObject);
+
             Destroy(this.gameObject);
         }
     }

@@ -13,8 +13,10 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID BIGPICKUP = 38805597U;
         static const AkUniqueID DASH = 1942692385U;
         static const AkUniqueID DEATH = 779278001U;
+        static const AkUniqueID FOXJUMP = 3836640104U;
         static const AkUniqueID FROGJUMP = 2432329107U;
         static const AkUniqueID FROGSTICK = 1880194273U;
         static const AkUniqueID HPMUSIC = 26407862U;

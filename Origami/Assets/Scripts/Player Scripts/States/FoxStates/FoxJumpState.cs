@@ -23,6 +23,8 @@ public class FoxJumpState : State {
         currentSpeed = jumpSpeed;
         character.foxAnimator.SetBool("Jumping", true);
         character.foxAnimator.Play("Fox_Jump_NRM", -1, .1f);
+
+        AkSoundEngine.PostEvent("FoxJump", character.gameObject);
     }
 
     public override void Tick()

@@ -795,6 +795,44 @@
 						<ActiveSource Name="Level1" ID="{7EF7ED6E-4810-4844-AE08-C5F4587DEF05}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="FoxJump01" ID="{2211C189-6325-4D7F-B80C-BD44F8BB6C8A}" ShortID="755707513">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{A22E32AA-C0DA-43F0-973C-80269745EF90}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="FoxJump01" ID="{E2F7624A-0C74-4A1A-8CBF-C19E4B8501A8}" ShortID="416254153">
+							<Language>SFX</Language>
+							<AudioFile>FoxJump01.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="FoxJump01" ID="{E2F7624A-0C74-4A1A-8CBF-C19E4B8501A8}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="BigPickup01" ID="{2C92F34D-7DDF-473D-8AB3-06295F618055}" ShortID="498475788">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{A22E32AA-C0DA-43F0-973C-80269745EF90}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="BigPickup01" ID="{19B0AD82-16F2-4849-B7FB-270B25153F7C}" ShortID="95738087">
+							<Language>SFX</Language>
+							<AudioFile>BigPickup01.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="BigPickup01" ID="{19B0AD82-16F2-4849-B7FB-270B25153F7C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
