@@ -1,15 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Tform_Icon_Mangement : MonoBehaviour {
 	
 	public GameObject pause;
 	public GameObject player;
-	Component[] renderers;
+	Component[] images;
 	// Use this for initialization
 	void Start () {
-		
+		images = GetComponentsInChildren<Image>();
 	}
 
 	// Update is called once per frame
@@ -22,20 +23,52 @@ public class Tform_Icon_Mangement : MonoBehaviour {
 		if (!player.GetComponent<Character>().canFrog) {
 			this.GetComponent<Canvas> ().enabled = false;
 		}
-		if (player.GetComponent<Character> ().canFox) {
+		else if (player.GetComponent<Character>().canFrog && !player.GetComponent<Character> ().canFox) {
 			if (player.GetComponent<Character> ().GetForm() == Character.CurrentForm.FROG) {
-				
-			} else if (player.GetComponent<Character> ().GetForm() == Character.CurrentForm.FOX) {
-				
-			} else {
-				
+				foreach (Image panel in images){
+					if (panel.gameObject.name == "E_Crane" || panel.gameObject.name == "Q_Crane") {
+						panel.enabled = true;
+					} else {
+						panel.enabled = false;
+					}
+				}
+			}  else {// crane form
+				foreach (Image panel in images){
+					if (panel.gameObject.name == "E_Frog" || panel.gameObject.name == "Q_Frog") {
+						panel.enabled = true;
+					} else {
+						panel.enabled = false;
+					}
+				}
 			}
-		} else {
-			if (player.GetComponent<Character> ().GetForm() == Character.CurrentForm.FROG) {
 
-			}  else {
-				
+		}
+		else { /// has fox and frog page
+			if (player.GetComponent<Character> ().GetForm() == Character.CurrentForm.FROG) {
+				foreach (Image panel in images){
+					if (panel.gameObject.name == "E_Fox" || panel.gameObject.name == "Q_Crane") {
+						panel.enabled = true;
+					} else {
+						panel.enabled = false;
+					}
+				}
+			} else if (player.GetComponent<Character> ().GetForm() == Character.CurrentForm.FOX) {
+				foreach (Image panel in images){
+					if (panel.gameObject.name == "E_Crane" || panel.gameObject.name == "Q_Frog") {
+						panel.enabled = true;
+					} else {
+						panel.enabled = false;
+					}
+				}
+			} else { //form crane
+				foreach (Image panel in images){
+					if (panel.gameObject.name == "E_Frog" || panel.gameObject.name == "Q_Fox") {
+						panel.enabled = true;
+					} else {
+						panel.enabled = false;
+					}
+				}
 			}
-		} 	
+		}	
 	}
 }
