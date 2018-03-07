@@ -30,7 +30,9 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	172993487	MenuUp			\Default Work Unit\MenuUp	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	4082871	Wingflap03	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Mac\SFX\Wingflap03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFlap\Wingflap03		29074
@@ -40,7 +42,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	184370491	GenFlap3	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Mac\SFX\GenFlap3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFlap\GenFlap3		132492
 	192483792	Splash5	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Mac\SFX\Splash5_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomSplash\Splash5		138920
 	211510730	Coin02	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Mac\SFX\Coin02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin02		255472
-	239304637	Level1	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Mac\SFX\Level1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level1		2816952
+	239304637	Level1	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Mac\SFX\Level1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level1		11289664
 	240414810	Level2	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Mac\SFX\Level2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level2		17640064
 	263556889	Wingflap02	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Mac\SFX\Wingflap02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFlap\Wingflap02		40000
 	274054376	Jump02	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Mac\SFX\Jump02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump02		100220
