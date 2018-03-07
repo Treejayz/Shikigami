@@ -12,19 +12,19 @@ public class FallingPlatform : MonoBehaviour {
     float respawntime = .5f;
     public AnimationCurve popIn;
 
-    public Transform plat;
+    public GameObject plat;
     private Vector3 platStartPos;
     private Vector3 platStartScale;
-    public Transform platVisual;
+    public GameObject platVisual;
     private Vector3 platVisualStart;
 
     private bool triggered;
 
     void Start () {
         triggered = false;
-        platStartPos = plat.position;
-        platVisualStart = platVisual.position;
-        platStartScale = plat.localScale;
+        platStartPos = plat.transform.position;
+        platVisualStart = platVisual.transform.position;
+        platStartScale = plat.transform.localScale;
 	}
 	
 	// Update is called once per frame
@@ -49,7 +49,7 @@ public class FallingPlatform : MonoBehaviour {
             float currentRatio = (shakeTime - currentTime) / shakeTime;
             float x = Random.Range(currentRatio * -1f, currentRatio) * shakeAmount;
             float z = Random.Range(currentRatio * -1f, currentRatio) * shakeAmount;
-            platVisual.position = new Vector3(platVisualStart.x + x, platVisualStart.y, platVisualStart.z + z);
+            platVisual.transform.position = new Vector3(platVisualStart.x + x, platVisualStart.y, platVisualStart.z + z);
             currentTime += Time.fixedDeltaTime;
             yield return new WaitForFixedUpdate();
         }
@@ -69,14 +69,19 @@ public class FallingPlatform : MonoBehaviour {
             currentTime += Time.fixedDeltaTime;
             yield return new WaitForFixedUpdate();
         }
-        plat.gameObject.SetActive(false);
+        
+        plat.GetComponent<MeshCollider>().enabled = false;
+        platVisual.GetComponent<MeshRenderer>().enabled = false;
+        platVisual.GetComponent<ParticleSystem>().Stop();
         yield return new WaitForSeconds(3f);
         StartCoroutine("Respawn");
     }
 
     IEnumerator Respawn()
     {
-        plat.gameObject.SetActive(true);
+        plat.GetComponent<MeshCollider>().enabled = true;
+        platVisual.GetComponent<MeshRenderer>().enabled = true;
+        platVisual.GetComponent<ParticleSystem>().Play();
         plat.transform.position = platStartPos;
         plat.transform.localScale = new Vector3(0f, 0f, 0f);
         float currentTime = 0f;
