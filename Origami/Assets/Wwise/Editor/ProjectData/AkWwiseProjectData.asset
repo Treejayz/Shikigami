@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3838D55C-4A81-4825-8DB4-A33597820612}'
-    m_lastTimePsrt1: 1037553232
-    m_lastTimePart2: -1999272956
+    m_lastTimePsrt1: -624895697
+    m_lastTimePart2: -1999272881
     List:
     - Name: BigPickup
       Path: Default Work Unit\BigPickup
@@ -273,8 +273,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{090E2BE1-C110-4C48-8EE1-99814A8166EB}'
-    m_lastTimePsrt1: 1037633420
-    m_lastTimePart2: -1999272956
+    m_lastTimePsrt1: -619135273
+    m_lastTimePart2: -1999272881
     List:
     - Name: PlayerSound
       Path: Default Work Unit\PlayerSound
