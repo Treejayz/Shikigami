@@ -32,6 +32,7 @@ public class CraneDashState : State {
         character.isDashing = true;
         ground = player.isGrounded;
         AkSoundEngine.PostEvent("Dash", character.gameObject);
+        character.GetComponentsInChildren<ParticleSystem>()[4].Play();
     }
 
     public override void Tick()
@@ -70,6 +71,7 @@ public class CraneDashState : State {
     {
         character.isDashing = false;
         character.canDash = false;
+        character.GetComponentsInChildren<ParticleSystem>()[4].Stop();
     }
 
     public override void OnColliderHit(ControllerColliderHit hit)
