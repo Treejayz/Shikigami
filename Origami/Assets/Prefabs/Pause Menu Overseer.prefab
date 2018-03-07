@@ -250,6 +250,7 @@ GameObject:
   - component: {fileID: 224282239037009962}
   - component: {fileID: 114434115586453288}
   - component: {fileID: 114819371254790584}
+  - component: {fileID: 114906962076923066}
   m_Layer: 5
   m_Name: Music
   m_TagString: Untagged
@@ -461,6 +462,7 @@ GameObject:
   - component: {fileID: 224854303812005006}
   - component: {fileID: 114078819857381180}
   - component: {fileID: 114529142038984604}
+  - component: {fileID: 114985899239114174}
   m_Layer: 5
   m_Name: SFX
   m_TagString: Untagged
@@ -738,10 +740,21 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0.75
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114985899239114174}
+        m_MethodName: ValueChanged
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114120791472379082
@@ -1210,10 +1223,21 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0.75
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114906962076923066}
+        m_MethodName: ValueChanged
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114434657945132452
@@ -1856,6 +1880,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114906962076923066
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1475026208677816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12666e613c17bb4a8252504f4ba695a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RTPC: MusicVolume
+  mainSlider: {fileID: 114434115586453288}
 --- !u!114 &114912439391888328
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1980,6 +2017,19 @@ MonoBehaviour:
   m_Text: 'Back
 
 '
+--- !u!114 &114985899239114174
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1825458629687688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12666e613c17bb4a8252504f4ba695a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RTPC: SFXVolume
+  mainSlider: {fileID: 114078819857381180}
 --- !u!114 &114987829365102422
 MonoBehaviour:
   m_ObjectHideFlags: 1
