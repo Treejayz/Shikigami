@@ -68,11 +68,11 @@
 				</File>
 				<File Id="239304637" Language="SFX">
 					<ShortName>Level1.wav</ShortName>
-					<Path>SFX\Level1_1C9C67B2.wem</Path>
+					<Path>SFX\Level1_F17FB28C.wem</Path>
 				</File>
 				<File Id="240414810" Language="SFX">
 					<ShortName>Level2.wav</ShortName>
-					<Path>SFX\Level2_1C9C67B2.wem</Path>
+					<Path>SFX\Level2_F17FB28C.wem</Path>
 				</File>
 				<File Id="263556889" Language="SFX">
 					<ShortName>Wingflap02.wav</ShortName>

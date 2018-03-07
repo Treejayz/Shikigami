@@ -203,8 +203,8 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}'
-    m_lastTimePsrt1: -748967955
-    m_lastTimePart2: -1999272989
+    m_lastTimePsrt1: -1226763605
+    m_lastTimePart2: -1999272986
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -265,8 +265,8 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{294866E5-205C-4CEF-A167-22F1B02116B6}'
-    m_lastTimePsrt1: 3649482
-    m_lastTimePart2: -1999273651
+    m_lastTimePsrt1: -1226813663
+    m_lastTimePart2: -1999272986
     List:
     - Name: MenuUp
       Path: Default Work Unit\MenuUp
@@ -277,6 +277,24 @@ MonoBehaviour:
         ObjectType: 13
       ID: 172993487
       Guid: 91cac312a8141f4eb490490225992db2
+    - Name: MusicVolume
+      Path: Default Work Unit\MusicVolume
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MusicVolume
+        ObjectType: 13
+      ID: -1948435988
+      Guid: 04f8e87a71e3314bad3fa6b824cf013c
+    - Name: SFXVolume
+      Path: Default Work Unit\SFXVolume
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFXVolume
+        ObjectType: 13
+      ID: 988953028
+      Guid: 028fb9f6de8bc74988f9934808b6311a
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
