@@ -24,6 +24,10 @@ public class Checkpoint : MonoBehaviour {
         {
             pos = this.transform;
         }
+        if (activated)
+        {
+            hasBeen = true;
+        }
 		checkPointText.GetComponent<Image>().color = new Color(checkPointText.GetComponent<Image>().color.r, checkPointText.GetComponent<Image>().color.g, checkPointText.GetComponent<Image>().color.b, 0f);
     }
 
