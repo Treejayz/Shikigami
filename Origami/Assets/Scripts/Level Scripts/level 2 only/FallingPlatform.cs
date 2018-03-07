@@ -71,7 +71,7 @@ public class FallingPlatform : MonoBehaviour {
         }
         
         plat.GetComponent<MeshCollider>().enabled = false;
-        platVisual.GetComponent<MeshRenderer>().enabled = false;
+        //platVisual.GetComponent<MeshRenderer>().enabled = false;
         platVisual.GetComponent<ParticleSystem>().Stop();
         yield return new WaitForSeconds(3f);
         StartCoroutine("Respawn");
@@ -80,7 +80,7 @@ public class FallingPlatform : MonoBehaviour {
     IEnumerator Respawn()
     {
         plat.GetComponent<MeshCollider>().enabled = true;
-        platVisual.GetComponent<MeshRenderer>().enabled = true;
+        //platVisual.GetComponent<MeshRenderer>().enabled = true;
         platVisual.GetComponent<ParticleSystem>().Play();
         plat.transform.position = platStartPos;
         plat.transform.localScale = new Vector3(0f, 0f, 0f);
