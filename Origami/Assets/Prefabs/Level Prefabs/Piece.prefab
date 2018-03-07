@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1283505745772324}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -23.46355, y: 1.1503534, z: -14.796806}
+  m_LocalPosition: {x: 257.46002, y: 1.2299995, z: 90.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -67,7 +67,7 @@ Halo:
   m_Enabled: 1
   m_Color:
     serializedVersion: 2
-    rgba: 1644201856
+    rgba: 1659764823
   m_Size: 1
 --- !u!136 &136151508379240968
 CapsuleCollider:
@@ -232,7 +232,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 0.5588235, a: 1}
+      maxColor: {r: 0.33996537, g: 0.14165227, b: 0.9632353, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -3531,7 +3531,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f1d2e07284e659a4bb00dbc8e167c4e5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 16293a22bf08cf84c8cfe1edb312185a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

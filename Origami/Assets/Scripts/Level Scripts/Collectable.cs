@@ -39,6 +39,7 @@ public class Collectable : MonoBehaviour {
 
                 case (CollectableType.SCRAP):
                     CollectableManager.Collect(Type);
+                    GetComponent<ParticleSystem>().Play();
                     GetComponent<Collider>().enabled = false;
                     GetComponent<SpriteRenderer>().enabled = false;
                     StartCoroutine("Kill");
