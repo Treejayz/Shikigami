@@ -527,7 +527,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1429857714916758
 GameObject:
   m_ObjectHideFlags: 1
@@ -1422,7 +1422,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1118020109444334}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalPosition: {x: -452.81, y: 120.6, z: -174.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4044943241029050}
@@ -2218,7 +2218,7 @@ Transform:
   m_GameObject: {fileID: 1953977809853170}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.239, z: -1.109}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 5.5, y: 5.5, z: 5.5}
   m_Children:
   - {fileID: 4711999204776696}
   - {fileID: 4556917988121060}
@@ -2415,7 +2415,7 @@ MonoBehaviour:
   gravity: 10
   momentum: {x: 10, y: 0, z: 10}
   canFrog: 1
-  canFox: 1
+  canFox: 0
   Form: 0
   craneAnimator: {fileID: 95713904129578012}
   frogAnimator: {fileID: 95991126540854374}
@@ -2452,7 +2452,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 5c7b8b06600374d4389a89c8490af78f, type: 3}
+  - {fileID: 2100000, guid: 7e3c579fe7ff74ec586010c4613fce06, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2476,7 +2476,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 4300000, guid: 5c7b8b06600374d4389a89c8490af78f, type: 3}
+  m_Mesh: {fileID: 4300000, guid: eb14e6c3322eb4e4480c5f361d8ba388, type: 3}
   m_Bones:
   - {fileID: 4842331035615318}
   - {fileID: 4983893406750370}
