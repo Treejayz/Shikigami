@@ -13,14 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
-  - PhysicalPath: Events/Default Work Unit.wwu
+  - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3838D55C-4A81-4825-8DB4-A33597820612}'
-    m_lastTimePsrt1: -1745635712
-    m_lastTimePart2: -1999273052
+    m_lastTimePsrt1: 534827417
+    m_lastTimePart2: -1999273068
     List:
     - Name: Dash
-      Path: Default Work Unit/Dash
+      Path: Default Work Unit\Dash
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -32,7 +32,7 @@ MonoBehaviour:
       maxDuration: 0
       maxAttenuation: 0
     - Name: Death
-      Path: Default Work Unit/Death
+      Path: Default Work Unit\Death
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -44,7 +44,7 @@ MonoBehaviour:
       maxDuration: 0
       maxAttenuation: 0
     - Name: FrogJump
-      Path: Default Work Unit/FrogJump
+      Path: Default Work Unit\FrogJump
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -56,7 +56,7 @@ MonoBehaviour:
       maxDuration: 0
       maxAttenuation: 0
     - Name: FrogStick
-      Path: Default Work Unit/FrogStick
+      Path: Default Work Unit\FrogStick
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -68,7 +68,7 @@ MonoBehaviour:
       maxDuration: 0
       maxAttenuation: 0
     - Name: HPMusic
-      Path: Default Work Unit/HPMusic
+      Path: Default Work Unit\HPMusic
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -80,7 +80,7 @@ MonoBehaviour:
       maxDuration: 0
       maxAttenuation: 0
     - Name: Pickup
-      Path: Default Work Unit/Pickup
+      Path: Default Work Unit\Pickup
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -92,7 +92,7 @@ MonoBehaviour:
       maxDuration: 0
       maxAttenuation: 0
     - Name: PickupCoin
-      Path: Default Work Unit/PickupCoin
+      Path: Default Work Unit\PickupCoin
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -104,7 +104,7 @@ MonoBehaviour:
       maxDuration: 0
       maxAttenuation: 0
     - Name: ResetHPMusic
-      Path: Default Work Unit/ResetHPMusic
+      Path: Default Work Unit\ResetHPMusic
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -116,7 +116,7 @@ MonoBehaviour:
       maxDuration: 0
       maxAttenuation: 0
     - Name: Splash
-      Path: Default Work Unit/Splash
+      Path: Default Work Unit\Splash
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -128,7 +128,7 @@ MonoBehaviour:
       maxDuration: 0
       maxAttenuation: 0
     - Name: StartMusic
-      Path: Default Work Unit/StartMusic
+      Path: Default Work Unit\StartMusic
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -140,7 +140,7 @@ MonoBehaviour:
       maxDuration: 0
       maxAttenuation: 0
     - Name: StopMusic
-      Path: Default Work Unit/StopMusic
+      Path: Default Work Unit\StopMusic
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -152,7 +152,7 @@ MonoBehaviour:
       maxDuration: 0
       maxAttenuation: 0
     - Name: WindBegin
-      Path: Default Work Unit/WindBegin
+      Path: Default Work Unit\WindBegin
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -164,7 +164,7 @@ MonoBehaviour:
       maxDuration: 0
       maxAttenuation: 0
     - Name: WindStop
-      Path: Default Work Unit/WindStop
+      Path: Default Work Unit\WindStop
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -176,7 +176,7 @@ MonoBehaviour:
       maxDuration: 0
       maxAttenuation: 0
     - Name: WingJump
-      Path: Default Work Unit/WingJump
+      Path: Default Work Unit\WingJump
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -188,21 +188,21 @@ MonoBehaviour:
       maxDuration: 0
       maxAttenuation: 0
   AuxBusWwu:
-  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}'
-    m_lastTimePsrt1: -986620544
-    m_lastTimePart2: -1999273235
+    m_lastTimePsrt1: 670009570
+    m_lastTimePart2: -1999274267
     List: []
   StateWwu:
-  - PhysicalPath: States/Default Work Unit.wwu
+  - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8D621B80-F254-43D1-8472-3699A245E539}'
-    m_lastTimePsrt1: -976620544
-    m_lastTimePart2: -1999273235
+    m_lastTimePsrt1: 670039593
+    m_lastTimePart2: -1999274267
     List:
     - Name: MenuHP
-      Path: Default Work Unit/MenuHP
+      Path: Default Work Unit\MenuHP
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -227,21 +227,21 @@ MonoBehaviour:
       - bytes: a7df0f2f43167f4cab19cb1cc471fa7d
       - bytes: 2286186eefd617458e7335bedd55a96f
   SwitchWwu:
-  - PhysicalPath: Switches/Default Work Unit.wwu
+  - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{70DFAA7E-A926-41F3-B3EC-9EDEDC5BD535}'
-    m_lastTimePsrt1: -976620544
-    m_lastTimePart2: -1999273235
+    m_lastTimePsrt1: 1175706064
+    m_lastTimePart2: -1999275845
     List: []
   BankWwu:
-  - PhysicalPath: SoundBanks/Default Work Unit.wwu
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{090E2BE1-C110-4C48-8EE1-99814A8166EB}'
-    m_lastTimePsrt1: -1735635712
-    m_lastTimePart2: -1999273052
+    m_lastTimePsrt1: 537329313
+    m_lastTimePart2: -1999273068
     List:
     - Name: PlayerSound
-      Path: Default Work Unit/PlayerSound
+      Path: Default Work Unit\PlayerSound
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -250,14 +250,14 @@ MonoBehaviour:
       ID: -1638582257
       Guid: 33011edbcc8d5a49b34f236bc536c51f
   RtpcWwu:
-  - PhysicalPath: Game Parameters/Default Work Unit.wwu
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{294866E5-205C-4CEF-A167-22F1B02116B6}'
-    m_lastTimePsrt1: -996620544
-    m_lastTimePart2: -1999273235
+    m_lastTimePsrt1: 2101726128
+    m_lastTimePart2: -1999274256
     List:
     - Name: MenuUp
-      Path: Default Work Unit/MenuUp
+      Path: Default Work Unit\MenuUp
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -266,18 +266,18 @@ MonoBehaviour:
       ID: 172993487
       Guid: 91cac312a8141f4eb490490225992db2
   TriggerWwu:
-  - PhysicalPath: Triggers/Default Work Unit.wwu
+  - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{AAFD3342-11BC-416B-ACB8-0E400F3AA5C7}'
-    m_lastTimePsrt1: -976620544
-    m_lastTimePart2: -1999273235
+    m_lastTimePsrt1: 1175716065
+    m_lastTimePart2: -1999275845
     List: []
   AcousticTextureWwu:
-  - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{8D14AE7B-F1F7-4613-9AF7-6BF7C07FB64D}'
-    m_lastTimePsrt1: -976620544
-    m_lastTimePart2: -1999273235
+    m_lastTimePsrt1: 1175716065
+    m_lastTimePart2: -1999275845
     List: []
   ExpandedItems:
   - /Origami_WwiseProject
