@@ -7,6 +7,7 @@ public class CraneMovingState : State {
 
 	private CharacterController player;
 	private Vector3 direction;
+    private bool shiftHeld;
 
     public CraneMovingState(Character character) : base(character)
     {
@@ -15,6 +16,14 @@ public class CraneMovingState : State {
     public override void OnStateEnter()
     {
 		player = character.GetComponent<CharacterController>();
+        if (Input.GetAxis("Ability1") != 0f)
+        {
+            shiftHeld = true;
+        }
+        else
+        {
+            shiftHeld = false;
+        }
     }
 
     public override void Tick()
@@ -34,7 +43,12 @@ public class CraneMovingState : State {
 		if (Input.GetAxis("Jump") != 0.0f && !character.jumped) {
 			character.SetState(new CraneJumpState(character));
 		}
-        if (Input.GetAxis("Ability1") != 0.0f && character.canDash)
+        if (shiftHeld && Input.GetAxis("Ability1") == 0f)
+        {
+            shiftHeld = false;
+        }
+
+        if (Input.GetAxis("Ability1") != 0.0f && character.canDash && !shiftHeld)
         {
             character.SetState(new CraneDashState(character));
         }

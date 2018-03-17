@@ -5,6 +5,7 @@ using UnityEngine;
 public class CraneIdleState : State {
 
 	private CharacterController player;
+    private bool shiftHeld;
 
     public CraneIdleState(Character character) : base(character)
     {
@@ -14,6 +15,13 @@ public class CraneIdleState : State {
 	{
 		player = character.GetComponent<CharacterController>();
         character.craneAnimator.SetBool("Moving", false);
+        if (Input.GetAxis("Ability1") != 0f)
+        {
+            shiftHeld = true;
+        } else
+        {
+            shiftHeld = false;
+        }
     }
 
     public override void Tick() {
@@ -30,8 +38,14 @@ public class CraneIdleState : State {
 			character.SetState(new CraneJumpState(character));
 		}
 
-        if (Input.GetAxis("Ability1") != 0.0f && character.canDash)
+        if (shiftHeld && Input.GetAxis("Ability1") == 0f)
         {
+            shiftHeld = false;
+        }
+
+        if (Input.GetAxis("Ability1") != 0.0f && character.canDash && !shiftHeld)
+        {
+            MonoBehaviour.print("here we go again");
             character.SetState(new CraneDashState(character));
         }
         if (!character.switching)

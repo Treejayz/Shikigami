@@ -73,7 +73,7 @@ public class CraneFallingState : State {
         }
         if (Input.GetAxis("Ability1") != 0.0f && character.canDash && !shiftHeld)
         {
-            //MonoBehaviour.print("woosh");
+            MonoBehaviour.print("woosh");
             character.SetState(new CraneDashState(character));
         }
         

@@ -74,6 +74,7 @@ public class CraneDashState : State {
         character.GetComponentsInChildren<ParticleSystem>()[4].Stop();
     }
 
+    /*
     public override void OnColliderHit(ControllerColliderHit hit)
     {
         Vector3 hitNormal = hit.normal;
@@ -86,4 +87,5 @@ public class CraneDashState : State {
         {
         }
     }
+    */
 }

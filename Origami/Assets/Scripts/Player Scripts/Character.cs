@@ -182,6 +182,8 @@ public class Character : MonoBehaviour {
             //}
             canDash = true;
             incooldown = false;
-        } 
+        }
+        canDash = true;
+        incooldown = false;
     }
 }

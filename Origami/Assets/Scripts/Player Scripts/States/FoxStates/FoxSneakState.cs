@@ -70,7 +70,7 @@ public class FoxSneakState : State {
             player.Move(character.momentum * Time.fixedDeltaTime);
         }
 
-        else if (Physics.SphereCast(newpos, player.radius / 2, Vector3.down, out hit, 1.5f))
+        else if (Physics.SphereCast(newpos, player.radius / 2, Vector3.down, out hit, 1.2f))
         {
             Vector3 direction = hit.point - character.transform.position;
             direction.y = 0;
