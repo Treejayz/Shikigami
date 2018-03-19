@@ -8,7 +8,7 @@
 	_Speed("Wave Speed", Range(0,1)) = 0.5
 		_Amount("Wave Amount", Range(0,1)) = 0.5
 		_Height("Wave Height", Range(0,1)) = 0.5
-		_Tiling("Tile size", float) = 1
+		_Tiling("Tile size", Range(0, 200)) = 1
 		_Foam("Foamline Thickness", Range(0,3)) = 0.5
 
 	}
@@ -46,13 +46,13 @@
 	uniform sampler2D _CameraDepthTexture; //Depth Texture
 	sampler2D _MainTex, _NoiseTex;//
 	float4 _MainTex_ST;
-	float _Speed, _Amount, _Height, _Foam;// 
+	float _Speed, _Amount, _Height, _Tiling, _Foam;// 
 
 	v2f vert(appdata v)
 	{
 		v2f o;
 		float4 tex = tex2Dlod(_NoiseTex, float4(v.uv.xy, 0, 0));//extra noise tex
-		v.vertex.y += sin(_Time.z * _Speed + (v.vertex.x * v.vertex.z * _Amount)) * _Height;//movement
+		v.vertex.y += sin( _Time.z * _Speed + (v.vertex.x * v.vertex.z * _Amount)) * _Height;//movement
 		o.vertex = UnityObjectToClipPos(v.vertex);
 		o.uv = TRANSFORM_TEX(v.uv, _MainTex);
 		o.scrPos = ComputeScreenPos(o.vertex); // grab position on screen
