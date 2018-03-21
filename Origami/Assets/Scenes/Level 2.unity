@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5558181, g: 0.6163075, b: 0.6789809, a: 1}
+  m_IndirectSpecularColor: {r: 0.5558183, g: 0.61630744, b: 0.67898256, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -13501,12 +13501,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerList: f7e1664c
   useOtherObject: 0
-  valueGuid: 33011edbcc8d5a49b34f236bc536c51f
   bankName: PlayerSound
-  loadAsynchronous: 0
   decodeBank: 0
+  loadAsynchronous: 0
   saveDecodedBank: 0
   unloadTriggerList: 958ca0ea
+  valueGuid: 33011edbcc8d5a49b34f236bc536c51f
 --- !u!124 &1293770352
 Behaviour:
   m_ObjectHideFlags: 0
@@ -13600,13 +13600,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c04b34e31483d44ea31daaf332871fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_positionOffsetData:
-    positionOffset: {x: 0, y: 0, z: 0}
-    KeepMe: 0
-  isEnvironmentAware: 0
-  isStaticObject: 0
   m_listeners:
     initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
 --- !u!114 &1293770358
@@ -13622,15 +13623,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerList: f7e1664c
   useOtherObject: 0
-  valueGuid: 2bce625626cfc540b4af0adaef3eeb97
-  eventID: 298361093
-  soundEmitterObject: {fileID: 0}
-  enableActionOnEvent: 0
   actionOnEventType: 0
   curveInterpolation: 4
-  transitionDuration: 0
+  enableActionOnEvent: 0
+  eventID: 298361093
   m_callbackData: {fileID: 0}
   playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  valueGuid: 2bce625626cfc540b4af0adaef3eeb97
 --- !u!45 &1293770359
 Skybox:
   m_ObjectHideFlags: 0
@@ -19855,7 +19856,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
