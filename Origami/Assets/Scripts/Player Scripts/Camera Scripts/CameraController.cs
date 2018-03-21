@@ -16,6 +16,7 @@ public class CameraController : MonoBehaviour {
 
     private Camera cam;
     private float maxDistance = 10.0f;
+    private float newMaxDistance = 10f;
     private float currentDistance;
     private float sensX = 4.0f;
     private float sensY = 1.0f;
@@ -47,6 +48,10 @@ public class CameraController : MonoBehaviour {
 		if (!pause.GetComponent<PauseSystem> ().pause) {
 			currentX += Input.GetAxis ("Mouse X") * sensX;
 			currentY += Input.GetAxis ("Mouse Y") * sensY * -1f;
+            newMaxDistance += Input.GetAxis("Mouse ScrollWheel") * -1f;
+            newMaxDistance = Mathf.Clamp(newMaxDistance, 5f, 25f);
+
+            maxDistance =  Mathf.Lerp(maxDistance, newMaxDistance, Time.deltaTime * 5f);
 		}
 
         currentY = Mathf.Clamp(currentY, Y_ANGLE_MIN, Y_ANGLE_MAX);

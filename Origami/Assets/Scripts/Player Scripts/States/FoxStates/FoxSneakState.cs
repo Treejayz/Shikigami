@@ -43,6 +43,7 @@ public class FoxSneakState : State {
         }
         if (Input.GetAxis("Ability2") == 0f)
         {
+            Character.sneaking = false;
             if (Input.GetAxis("Vertical") == 0.0f && Input.GetAxis("Horizontal") == 0.0f)
             {
                 character.SetState(new FoxIdleState(character));
@@ -84,7 +85,6 @@ public class FoxSneakState : State {
 
     public override void OnStateExit()
     {
-        Character.sneaking = false;
         character.foxAnimator.SetBool("Sneaking", false);
         character.foxAnimator.speed = 1f;
     }

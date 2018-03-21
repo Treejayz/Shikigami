@@ -72,11 +72,17 @@ public class FoxFallState : State {
         }
         else
         {
-            if (Input.GetAxis("Ability1") != 0f && (Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f))
+            if (Input.GetAxis("Ability2") != 0f)
             {
+                character.SetState(new FoxSneakState(character));
+            }
+            else if (Input.GetAxis("Ability1") != 0f && (Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f))
+            {
+                Character.sneaking = false;
                 character.SetState(new FoxSprintState(character, character.momentum));
             } else
             {
+                Character.sneaking = false;
                 character.SetState(new FoxIdleState(character));
             }
         }
