@@ -23,15 +23,23 @@ public class Updraft : MonoBehaviour {
 	void FixedUpdate () {
 		if (floating)
         {
-            player.GetComponent<CharacterController>().Move(new Vector3(0f, currentSpeed * Time.fixedDeltaTime, 0f));
-            if (!inTrigger)
+            if (player.GetComponent<CharacterController>().isGrounded)
             {
-                currentSpeed -= upForce * Time.fixedDeltaTime;
-                if (currentSpeed <= 0f)
+                floating = false;
+                currentSpeed = 0f;
+            }
+            else
+            {
+                player.GetComponent<CharacterController>().Move(new Vector3(0f, currentSpeed * Time.fixedDeltaTime, 0f));
+                if (!inTrigger)
                 {
-                    floating = false;
+                    currentSpeed -= upForce * Time.fixedDeltaTime;
+                    if (currentSpeed <= 0f)
+                    {
+                        floating = false;
+                    }
                 }
-            } 
+            }
         }
 	}
 
@@ -51,8 +59,9 @@ public class Updraft : MonoBehaviour {
         if (other.gameObject.tag == "Player")
         {
             print("hi");
-            if (currentSpeed < player.GetComponent<Character>().gravity)
+            if (currentSpeed < player.GetComponent<Character>().gravity && !player.GetComponent<CharacterController>().isGrounded)
             {
+                floating = true;
                 currentSpeed += upForce * Time.fixedDeltaTime;
             }
         }
