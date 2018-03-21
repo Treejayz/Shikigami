@@ -833,6 +833,42 @@
 						<ActiveSource Name="BigPickup01" ID="{19B0AD82-16F2-4849-B7FB-270B25153F7C}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="chimeloop" ID="{CBCF0A8E-4748-4295-840C-291B8A9FB919}" ShortID="1045773692">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>26</Value>
+							</ValueList>
+						</Property>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="PlatAttenuator" ID="{DB7F740E-F235-4F5F-8919-8E53DA10F2B5}" WorkUnitID="{4AF87D7F-3FBD-4AED-AFCD-6670229CB13C}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{A22E32AA-C0DA-43F0-973C-80269745EF90}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="chimeloop" ID="{318FE5BD-6EB1-43F4-B8B1-94444355B5C8}" ShortID="218799042">
+							<Language>SFX</Language>
+							<AudioFile>chimeloop.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="chimeloop" ID="{318FE5BD-6EB1-43F4-B8B1-94444355B5C8}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

@@ -22,6 +22,7 @@
 			<Path>PlayerSound.bnk</Path>
 			<IncludedEvents>
 				<Event Id="38805597" Name="BigPickup" ObjectPath="\Events\Default Work Unit\BigPickup"/>
+				<Event Id="2453422573" Name="chimeplay" ObjectPath="\Events\Default Work Unit\chimeplay" MaxAttenuation="80.000000"/>
 				<Event Id="1942692385" Name="Dash" ObjectPath="\Events\Default Work Unit\Dash"/>
 				<Event Id="779278001" Name="Death" ObjectPath="\Events\Default Work Unit\Death"/>
 				<Event Id="3836640104" Name="FoxJump" ObjectPath="\Events\Default Work Unit\FoxJump"/>
@@ -71,6 +72,10 @@
 				<File Id="211510730" Language="SFX">
 					<ShortName>Coin02.wav</ShortName>
 					<Path>SFX\Coin02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="218799042" Language="SFX">
+					<ShortName>chimeloop.wav</ShortName>
+					<Path>SFX\chimeloop_F17FB28C.wem</Path>
 				</File>
 				<File Id="239304637" Language="SFX">
 					<ShortName>Level1.wav</ShortName>

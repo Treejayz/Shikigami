@@ -21,8 +21,11 @@
 			<ShortName>PlayerSound</ShortName>
 			<Path>PlayerSound.bnk</Path>
 			<IncludedEvents>
+				<Event Id="38805597" Name="BigPickup" ObjectPath="\Events\Default Work Unit\BigPickup"/>
+				<Event Id="2453422573" Name="chimeplay" ObjectPath="\Events\Default Work Unit\chimeplay" MaxAttenuation="80.000000"/>
 				<Event Id="1942692385" Name="Dash" ObjectPath="\Events\Default Work Unit\Dash"/>
 				<Event Id="779278001" Name="Death" ObjectPath="\Events\Default Work Unit\Death"/>
+				<Event Id="3836640104" Name="FoxJump" ObjectPath="\Events\Default Work Unit\FoxJump"/>
 				<Event Id="2432329107" Name="FrogJump" ObjectPath="\Events\Default Work Unit\FrogJump"/>
 				<Event Id="1880194273" Name="FrogStick" ObjectPath="\Events\Default Work Unit\FrogStick"/>
 				<Event Id="26407862" Name="HPMusic" ObjectPath="\Events\Default Work Unit\HPMusic" MaxAttenuation="0.000000"/>
@@ -46,6 +49,10 @@
 					<ShortName>WingJump01.wav</ShortName>
 					<Path>SFX\WingJump01_1C9C67B2.wem</Path>
 				</File>
+				<File Id="95738087" Language="SFX">
+					<ShortName>BigPickup01.wav</ShortName>
+					<Path>SFX\BigPickup01_1C9C67B2.wem</Path>
+				</File>
 				<File Id="127240437" Language="SFX">
 					<ShortName>GenFlap2.wav</ShortName>
 					<Path>SFX\GenFlap2_1C9C67B2.wem</Path>
@@ -65,6 +72,10 @@
 				<File Id="211510730" Language="SFX">
 					<ShortName>Coin02.wav</ShortName>
 					<Path>SFX\Coin02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="218799042" Language="SFX">
+					<ShortName>chimeloop.wav</ShortName>
+					<Path>SFX\chimeloop_F17FB28C.wem</Path>
 				</File>
 				<File Id="239304637" Language="SFX">
 					<ShortName>Level1.wav</ShortName>
@@ -93,6 +104,10 @@
 				<File Id="381186739" Language="SFX">
 					<ShortName>Splash7.wav</ShortName>
 					<Path>SFX\Splash7_1C9C67B2.wem</Path>
+				</File>
+				<File Id="416254153" Language="SFX">
+					<ShortName>FoxJump01.wav</ShortName>
+					<Path>SFX\FoxJump01_1C9C67B2.wem</Path>
 				</File>
 				<File Id="422246823" Language="SFX">
 					<ShortName>Windloop.wav</ShortName>

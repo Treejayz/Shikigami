@@ -11,6 +11,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1880194273	FrogStick			\Default Work Unit\FrogStick	
 	1942692385	Dash			\Default Work Unit\Dash	
 	2432329107	FrogJump			\Default Work Unit\FrogJump	
+	2453422573	chimeplay			\Default Work Unit\chimeplay	
 	3000620399	ResetHPMusic			\Default Work Unit\ResetHPMusic	
 	3191917460	WingJump			\Default Work Unit\WingJump	
 	3827058668	StartMusic			\Default Work Unit\StartMusic	
@@ -47,6 +48,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	184370491	GenFlap3	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\GenFlap3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFlap\GenFlap3		132492
 	192483792	Splash5	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Splash5_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomSplash\Splash5		138920
 	211510730	Coin02	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Coin02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin02		255472
+	218799042	chimeloop	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\chimeloop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\chimeloop		1439808
 	239304637	Level1	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Level1_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level1		11289664
 	240414810	Level2	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Level2_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level2		17640064
 	263556889	Wingflap02	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Wingflap02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFlap\Wingflap02		40000
