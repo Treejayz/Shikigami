@@ -32,6 +32,7 @@ public class FrogFallState : State {
     public override void OnStateEnter()
     {
         player = character.GetComponent<CharacterController>();
+        character.frogAnimator.SetBool("Moving", false);
         fallSpeed = 0.0f;
     }
 
