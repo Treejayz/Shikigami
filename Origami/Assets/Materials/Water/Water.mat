@@ -7,12 +7,12 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Water
-  m_Shader: {fileID: 4800000, guid: 48f500a67922f0747a7a24b7750e7e3e, type: 3}
+  m_Shader: {fileID: 4800000, guid: 4ae311c8659c29b44b0b8ff133b579eb, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 200
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -39,7 +39,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: ca01b735002cc2c4d97db5298c1a6d8d, type: 3}
+        m_Texture: {fileID: 2800000, guid: a935f53f445225b4cad2a9cfc22e9f4e, type: 3}
         m_Scale: {x: 150, y: 150}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -64,11 +64,13 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _FadeLimit: 1
     - _Foam: 1.63
     - _GlossMapScale: 1
     - _Glossiness: 0.288
     - _GlossyReflections: 1
     - _Height: 0.15
+    - _InvFade: 0.96
     - _Metallic: 0.802
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -81,6 +83,7 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.024329575, g: 0.28971767, b: 0.5514706, a: 1}
+    - _BlendColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.019607844, g: 0.54509807, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Tint: {r: 0.66176474, g: 0.78000003, b: 0.88235295, a: 0.959}
