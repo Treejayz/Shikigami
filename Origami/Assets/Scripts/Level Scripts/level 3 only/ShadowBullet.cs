@@ -40,6 +40,10 @@ public class ShadowBullet : MonoBehaviour {
             {
                 target.GetComponent<Character>().SetState(new DeathState(target.GetComponent<Character>()));
                 target.GetComponent<Character>().dead = true;
+            } else if (Vector3.Magnitude(transform.position - target.transform.position) < 25f)
+            {
+                Vector3 targetDir = (target.transform.position - transform.position).normalized;
+                direction = Vector3.Lerp(direction, targetDir, 1f * Time.deltaTime);
             }
 
             if (Mathf.Abs(yRate - targetRotY) < 10f)
