@@ -6,6 +6,7 @@ public class ShadowFire : MonoBehaviour {
 
     public GameObject shadowBullet;
     public GameObject player;
+    public Animator dragonAnim;
 
     float fireTime;
 
@@ -17,7 +18,7 @@ public class ShadowFire : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         fireTime += Time.deltaTime;
-        if (fireTime > 1f)
+        if (fireTime > 4f)
         {
             StartCoroutine("CollectData");
             fireTime = 0f;
@@ -26,6 +27,10 @@ public class ShadowFire : MonoBehaviour {
 
     IEnumerator CollectData()
     {
+        dragonAnim.SetTrigger("Attacc");
+        yield return new WaitForSeconds(0.55f);
+
+
         float time = 0f;
         List<Vector3> list = new List<Vector3>();
 
@@ -60,7 +65,7 @@ public class ShadowFire : MonoBehaviour {
         //Vector3 direction = target - transform.position;
         bullet.GetComponent<ShadowBullet>().direction = target;
         bullet.GetComponent<ShadowBullet>().target = player;
-        bullet.GetComponent<ShadowBullet>().speed = 23f;
+        bullet.GetComponent<ShadowBullet>().speed = 27f;
     }
 
     private Vector3 calculateTarget(Vector3 velocity)

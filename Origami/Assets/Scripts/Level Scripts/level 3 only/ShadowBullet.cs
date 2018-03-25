@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShadowBullet : MonoBehaviour {
 
     public Vector3 direction;
+    public Vector3 newDirection;
     public GameObject target;
 
     public float speed;
@@ -30,6 +31,7 @@ public class ShadowBullet : MonoBehaviour {
         zRate = Random.Range(-300f, 300f);
         direction.Normalize();
         dying = false;
+        StartCoroutine("CollectData");
     }
 	
 	// Update is called once per frame
@@ -40,10 +42,15 @@ public class ShadowBullet : MonoBehaviour {
             {
                 target.GetComponent<Character>().SetState(new DeathState(target.GetComponent<Character>()));
                 target.GetComponent<Character>().dead = true;
-            } else if (Vector3.Magnitude(transform.position - target.transform.position) < 25f)
-            {
-                Vector3 targetDir = (target.transform.position - transform.position).normalized;
-                direction = Vector3.Lerp(direction, targetDir, 1f * Time.deltaTime);
+                StartCoroutine("Kill");
+            } 
+            //else if (Vector3.Magnitude(transform.position - target.transform.position) < 15f)
+            //{
+                //Vector3 targetDir = (target.transform.position - transform.position).normalized;
+                //direction = Vector3.Lerp(direction, targetDir, 1f * Time.deltaTime);
+            //}
+            else {
+                direction = Vector3.Lerp(direction, newDirection, .3f * Time.deltaTime);
             }
 
             if (Mathf.Abs(yRate - targetRotY) < 10f)
@@ -98,8 +105,37 @@ public class ShadowBullet : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        //Destroy(this.gameObject);
         StartCoroutine("Kill");
+    }
+
+    IEnumerator CollectData()
+    {
+        List<Vector3> list = new List<Vector3>();
+
+        Vector3 prev = target.transform.position;
+        yield return new WaitForSeconds(0.1f);
+        Vector3 current = target.transform.position;
+        Vector3 temp = (current - prev);
+        Vector3 result = temp * 10f;
+        newDirection = calculateTarget(result).normalized;
+        StartCoroutine("CollectData");
+    }
+
+    private Vector3 calculateTarget(Vector3 velocity)
+    {
+        Vector3 toPlayer = (target.transform.position - transform.position).normalized;
+        float dot = Vector3.Dot(toPlayer, velocity);
+        Vector3 uj = toPlayer * dot;
+        Vector3 ui = velocity - uj;
+
+        float viMag = ui.magnitude;
+        float vjMag = Mathf.Sqrt(speed * speed - 9 - viMag * viMag);
+
+        Vector3 vj = toPlayer * vjMag;
+
+        Vector3 targetVec = ui + vj;
+
+        return targetVec;
     }
 
     IEnumerator Kill()
@@ -108,7 +144,6 @@ public class ShadowBullet : MonoBehaviour {
         GetComponent<MeshRenderer>().enabled = false;
         GetComponent<SphereCollider>().enabled = false;
         GetComponent<ParticleSystem>().Stop();
-        //GetComponent<Rigidbody>().enabled = false;
         yield return new WaitForSeconds(2f);
         Destroy(this.gameObject);
 

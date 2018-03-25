@@ -6,6 +6,7 @@ public class CraneIdleState : State {
 
 	private CharacterController player;
     private bool shiftHeld;
+    private float time;
 
     public CraneIdleState(Character character) : base(character)
     {
@@ -25,6 +26,13 @@ public class CraneIdleState : State {
     }
 
     public override void Tick() {
+
+        time += Time.deltaTime;
+        if (time > 10f)
+        {
+            character.craneAnimator.SetTrigger("Shimmy");
+            time -= 10f;
+        }
 
         if (!player.isGrounded) {
 			character.SetState(new CraneFallingState(character));

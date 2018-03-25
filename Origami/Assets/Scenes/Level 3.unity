@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5558183, g: 0.61630744, b: 0.67898256, a: 1}
+  m_IndirectSpecularColor: {r: 0.5558181, g: 0.6163075, b: 0.6789809, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -781,6 +781,50 @@ Transform:
   m_Father: {fileID: 1685344024}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &742069018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 742069019}
+  - component: {fileID: 742069020}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &742069019
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 742069018}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -2.968, z: -1.75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 762924838}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &742069020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 742069018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd89b8ce8dd99da4d88955ad7ccc3f89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shadowBullet: {fileID: 1962160483701038, guid: 2e8533a19455bf3448c0cfbd779f258a,
+    type: 2}
+  player: {fileID: 1815654236}
+  dragonAnim: {fileID: 1617608741}
 --- !u!1 &744442055
 GameObject:
   m_ObjectHideFlags: 0
@@ -876,6 +920,111 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &762924837
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 762924838}
+  - component: {fileID: 762924839}
+  m_Layer: 0
+  m_Name: Dragon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &762924838
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 762924837}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -403.94455, y: 17.66, z: 41.805843}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1617608740}
+  - {fileID: 742069019}
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &762924839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 762924837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14d9e5ae6a1aa5746808781c4c2eed1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 423204298}
+--- !u!1001 &792506426
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 762924838}
+    m_Modifications:
+    - target: {fileID: 400000, guid: e3d9f20b65a523f478c302c38d9d4dfa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3d9f20b65a523f478c302c38d9d4dfa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3d9f20b65a523f478c302c38d9d4dfa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3d9f20b65a523f478c302c38d9d4dfa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3d9f20b65a523f478c302c38d9d4dfa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3d9f20b65a523f478c302c38d9d4dfa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3d9f20b65a523f478c302c38d9d4dfa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3d9f20b65a523f478c302c38d9d4dfa, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3d9f20b65a523f478c302c38d9d4dfa, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 217.28073
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3d9f20b65a523f478c302c38d9d4dfa, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 217.2812
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: e3d9f20b65a523f478c302c38d9d4dfa, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 217.2812
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: e3d9f20b65a523f478c302c38d9d4dfa, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: caa1a450d840c884c8b4a9bbf95fdc32, type: 2}
+    - target: {fileID: 400000, guid: e3d9f20b65a523f478c302c38d9d4dfa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e3d9f20b65a523f478c302c38d9d4dfa, type: 3}
+  m_IsPrefabParent: 0
 --- !u!1 &1015910470
 GameObject:
   m_ObjectHideFlags: 0
@@ -1542,6 +1691,15 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!4 &1617608740 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: e3d9f20b65a523f478c302c38d9d4dfa, type: 3}
+  m_PrefabInternal: {fileID: 792506426}
+--- !u!95 &1617608741 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: e3d9f20b65a523f478c302c38d9d4dfa,
+    type: 3}
+  m_PrefabInternal: {fileID: 792506426}
 --- !u!1001 &1619870727
 Prefab:
   m_ObjectHideFlags: 0
@@ -1885,7 +2043,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &1739635452
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1966,6 +2124,7 @@ MonoBehaviour:
   shadowBullet: {fileID: 1962160483701038, guid: 2e8533a19455bf3448c0cfbd779f258a,
     type: 2}
   player: {fileID: 1815654236}
+  dragonAnim: {fileID: 0}
 --- !u!1 &1779474905
 GameObject:
   m_ObjectHideFlags: 0
