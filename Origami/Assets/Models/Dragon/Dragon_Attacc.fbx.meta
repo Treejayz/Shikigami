@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: 4dd632856522e624f871d5b40e4c5697
+timeCreated: 1521937611
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Dragon_Model:droogon
+    100004: head
+    100006: L_back_foot
+    100008: L_back_leg
+    100010: L_front_foot
+    100012: L_front_leg
+    100014: L_wing_m
+    100016: L_wing_root
+    100018: L_wing_tip
+    100020: licky
+    100022: lower_body
+    100024: neck
+    100026: R_back_foot
+    100028: R_back_leg
+    100030: R_front_foot
+    100032: R_front_leg
+    100034: R_wing_m
+    100036: R_wing_root
+    100038: R_wing_tip
+    100040: root_
+    100042: snoot
+    100044: tail_base
+    100046: tail_tip
+    100048: tongue_bend
+    100050: upper_body
+    400000: //RootNode
+    400002: Dragon_Model:droogon
+    400004: head
+    400006: L_back_foot
+    400008: L_back_leg
+    400010: L_front_foot
+    400012: L_front_leg
+    400014: L_wing_m
+    400016: L_wing_root
+    400018: L_wing_tip
+    400020: licky
+    400022: lower_body
+    400024: neck
+    400026: R_back_foot
+    400028: R_back_leg
+    400030: R_front_foot
+    400032: R_front_leg
+    400034: R_wing_m
+    400036: R_wing_root
+    400038: R_wing_tip
+    400040: root_
+    400042: snoot
+    400044: tail_base
+    400046: tail_tip
+    400048: tongue_bend
+    400050: upper_body
+    2100000: Dragon_Model_parchment
+    4300000: Dragon_Model:droogon
+    7400000: Dragon_Attacc
+    9500000: //RootNode
+    13700000: Dragon_Model:droogon
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
