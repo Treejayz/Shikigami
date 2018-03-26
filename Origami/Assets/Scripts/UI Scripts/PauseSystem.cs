@@ -15,7 +15,7 @@ public class PauseSystem : MonoBehaviour {
 		canvases = GetComponentsInChildren<Canvas>();
 		pause = false; 
 		foreach (Canvas can in canvases){
-			if (can.enabled) {
+			if (can.enabled && can.name != "Fade") {
 				pause = true;
 			}
 		}
@@ -36,6 +36,11 @@ public class PauseSystem : MonoBehaviour {
 			Time.timeScale = 1.0F;
 			Cursor.visible = false;
 			AkSoundEngine.SetRTPCValue("MenuUp", 0.0f, null);
+		}
+		if (pause) {
+			this.transform.Find ("Fade").GetComponent<Canvas> ().enabled = true;
+		} else {
+			this.transform.Find ("Fade").GetComponent<Canvas> ().enabled = false;
 		}
 	}
 }

@@ -107,7 +107,7 @@ public class Checkpoint : MonoBehaviour {
 			checkPointText.GetComponent<Image> ().color = tempcol;
 			yield return new WaitForFixedUpdate();
 		}
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.5f);
 		while (tempcol.a > 0f)
         {
 			float newAlpha = checkPointText.GetComponent<Image>().color.a - (Time.fixedDeltaTime * (1f / fadeTime));
