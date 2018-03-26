@@ -50,7 +50,8 @@ public class ShadowBullet : MonoBehaviour {
                 //direction = Vector3.Lerp(direction, targetDir, 1f * Time.deltaTime);
             //}
             else {
-                direction = Vector3.Lerp(direction, newDirection, .3f * Time.deltaTime);
+                direction = Vector3.Lerp(direction, newDirection, 2f * Time.deltaTime);
+                direction.Normalize();
             }
 
             if (Mathf.Abs(yRate - targetRotY) < 10f)
