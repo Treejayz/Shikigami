@@ -8,7 +8,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	1880194273	FrogStick			\Default Work Unit\FrogStick	
 	1942692385	Dash			\Default Work Unit\Dash	
 	2432329107	FrogJump			\Default Work Unit\FrogJump	
-	2684716628	StopLv1			\Default Work Unit\StopLv1	
 	3191917460	WingJump			\Default Work Unit\WingJump	
 	3978245845	Pickup			\Default Work Unit\Pickup	
 

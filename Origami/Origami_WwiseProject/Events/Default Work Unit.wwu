@@ -274,21 +274,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="StopLv1" ID="{AF818525-AE79-44B9-9FE5-14B48F7E056D}">
-					<ChildrenList>
-						<Action Name="" ID="{B6227491-4932-403B-9980-1FEE33F67BE2}" ShortID="265738116">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="60"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Level1" ID="{660828B0-A148-449F-AAC0-C515E65ACACB}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
