@@ -14,12 +14,14 @@ public class TransformState : State
     private GameObject craneFold, frogFold, foxFold;
 
     //Crane Start and End
+    private float craneStartY = 0f;
+    private float craneEndY = 1f;
     private float craneStartRot = 0f;
     private float craneEndRot = -45f;
 
     //Frog Start and End
     private Vector3 frogStartPos = new Vector3(0f, 0, 0f);
-    private Vector3 frogEndPos = new Vector3(0, 1f, .75f);
+    private Vector3 frogEndPos = new Vector3(0, 2f, .75f);
     private float frogStartScale = 1f;
     private float frogEndScale = 1.43574f;
 
@@ -69,17 +71,19 @@ public class TransformState : State
     }
     public override void Tick()
     {
-        if (currentTime < 1.5f)
+        if (currentTime < 2f)
         {
             currentTime += Time.deltaTime;
-            if (currentTime < .75f)
+            if (currentTime < 1f)
             {
-                float progress = (currentTime / .75f);
+                float progress = (currentTime / 1f);
                 progress = progress * progress;
                 switch (character.Form)
                 {
                     case Character.CurrentForm.CRANE:
+                        float craneY = craneStartY * (1f - progress) + craneEndY * progress;
                         float craneRot = (360 + craneEndRot) * progress;
+                        craneFold.transform.localPosition = new Vector3(0, craneY, 0);
                         craneFold.transform.localEulerAngles = new Vector3(0, craneRot, 0f);
                         break;
                     case Character.CurrentForm.FROG:
@@ -96,7 +100,7 @@ public class TransformState : State
                         break;
                 };
             }
-            else if (currentTime > .75f && !step2)
+            else if (currentTime > 1f && !step2)
             {
                 step2 = true;
                 switch (character.Form)
@@ -155,12 +159,14 @@ public class TransformState : State
             }
             else
             {
-                float progress = 1 - ((currentTime - .75f) / .75f);
+                float progress = 1 - ((currentTime - 1f) / 1f);
                 progress = progress * progress;
                 switch (character.Form)
                 {
                     case Character.CurrentForm.CRANE:
+                        float craneY = craneStartY * (1f - progress) + craneEndY * progress;
                         float craneRot = -1 * (360 - craneEndRot) * progress;
+                        craneFold.transform.localPosition = new Vector3(0, craneY, 0);
                         craneFold.transform.localEulerAngles = new Vector3(0, craneRot, 0f);
                         break;
                     case Character.CurrentForm.FROG:
