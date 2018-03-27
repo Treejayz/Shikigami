@@ -15,6 +15,11 @@ public class Collectable : MonoBehaviour {
 
     public float spinSpeed;
 
+    private void Start()
+    {
+        transform.Rotate(0f, Random.Range(0,360), 0f);
+    }
+
     private void Update()
     {
         transform.Rotate(0f, spinSpeed * Time.deltaTime, 0f);
