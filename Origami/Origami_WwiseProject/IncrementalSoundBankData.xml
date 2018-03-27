@@ -4,12 +4,13 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="Init" Hash="3222260774" Timestamp="1520399297"/>
-				<File Name="PlayerSound" Hash="2958377940" Timestamp="1521663570"/>
+				<File Name="Level1SB" Hash="3462918232" Timestamp="1522114228"/>
+				<File Name="PlayerSound" Hash="2673157876" Timestamp="1522113820"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="290227691" Timestamp="1521663570"/>
+				<File Name="" Hash="4223949074" Timestamp="1522114228"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -17,12 +18,13 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="Init" Hash="2366118466" Timestamp="1520399297"/>
-				<File Name="PlayerSound" Hash="2958377940" Timestamp="1521663573"/>
+				<File Name="Level1SB" Hash="2218400249" Timestamp="1522113820"/>
+				<File Name="PlayerSound" Hash="2673157876" Timestamp="1522113820"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1086821009" Timestamp="1521663573"/>
+				<File Name="" Hash="3424091620" Timestamp="1522113820"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

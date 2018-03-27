@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.30446896, g: 0.49616235, b: 0.59687173, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -42367,6 +42367,7 @@ GameObject:
   - component: {fileID: 1293770351}
   - component: {fileID: 1293770358}
   - component: {fileID: 1293770359}
+  - component: {fileID: 1293770360}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -42387,12 +42388,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerList: f7e1664c
   useOtherObject: 0
-  bankName: PlayerSound
+  bankName: Level1SB
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
   unloadTriggerList: 958ca0ea
-  valueGuid: 33011edbcc8d5a49b34f236bc536c51f
+  valueGuid: e6bdc6567b6da9499468e21ebb142ebc
 --- !u!124 &1293770352
 Behaviour:
   m_ObjectHideFlags: 0
@@ -42526,6 +42527,28 @@ Skybox:
   m_GameObject: {fileID: 1293770350}
   m_Enabled: 1
   m_CustomSkybox: {fileID: 2100000, guid: 97f216ff49983e541ac56c7cb78a9c72, type: 2}
+--- !u!114 &1293770360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1293770350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 004342984aa1d12489fabf8be52e2f3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c958ca0ea
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  eventID: -1610250668
+  m_callbackData: {fileID: 0}
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  valueGuid: 258581af79aeb9449fe514b48f7e056d
 --- !u!1001 &1294093557
 Prefab:
   m_ObjectHideFlags: 0
@@ -57244,6 +57267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e53aea5ddd58d3a4c97d0973ead002a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  level: 1
 --- !u!4 &1736076259 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4359155469790622, guid: 4f24c7f06bf4b2148ac8935856112721,

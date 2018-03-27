@@ -12,6 +12,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1942692385	Dash			\Default Work Unit\Dash	
 	2432329107	FrogJump			\Default Work Unit\FrogJump	
 	2453422573	chimeplay			\Default Work Unit\chimeplay	
+	2684716628	StopLv1			\Default Work Unit\StopLv1	
 	3000620399	ResetHPMusic			\Default Work Unit\ResetHPMusic	
 	3191917460	WingJump			\Default Work Unit\WingJump	
 	3827058668	StartMusic			\Default Work Unit\StartMusic	

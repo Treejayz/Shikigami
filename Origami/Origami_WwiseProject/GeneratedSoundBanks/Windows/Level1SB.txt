@@ -1,0 +1,33 @@
+Event	ID	Name			Wwise Object Path	Notes
+	38805597	BigPickup			\Default Work Unit\BigPickup	
+	160038168	Splash			\Default Work Unit\Splash	
+	298361094	StartLv1			\Default Work Unit\StartLv1	
+	452547817	Stop_All			\Default Work Unit\Stop_All	
+	779278001	Death			\Default Work Unit\Death	
+	1097127270	PickupCoin			\Default Work Unit\PickupCoin	
+	1880194273	FrogStick			\Default Work Unit\FrogStick	
+	1942692385	Dash			\Default Work Unit\Dash	
+	2432329107	FrogJump			\Default Work Unit\FrogJump	
+	2684716628	StopLv1			\Default Work Unit\StopLv1	
+	3191917460	WingJump			\Default Work Unit\WingJump	
+	3978245845	Pickup			\Default Work Unit\Pickup	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	95738087	BigPickup01	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\BigPickup01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\BigPickup01		341064
+	192483792	Splash5	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Splash5_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomSplash\Splash5		138920
+	239304637	Level1	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Level1_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Level1		11289664
+	274054376	Jump02	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Jump02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Jump02		100220
+	312806774	Splash3	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Splash3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomSplash\Splash3		99064
+	381186739	Splash7	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Splash7_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomSplash\Splash7		99064
+	451997213	Rip03	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Rip03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomRip\Rip03		36510
+	528329268	Rip02	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Rip02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomRip\Rip02		57364
+	594872895	Stick	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Stick_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stick		10858
+	613255974	WingJump04	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\WingJump04_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\WingJump04		179224
+	658586597	Coin03	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Coin03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin03		255472
+	785646735	Splash6	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Splash6_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomSplash\Splash6		150492
+	832236322	Splash1	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Splash1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomSplash\Splash1		131204
+	853212425	Splash4	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Splash4_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomSplash\Splash4		111920
+	876069845	Pickup3	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Pickup3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pickup3		138708
+	896591778	Dash02	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Dash02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dash02		148952
+	1030449657	Rip01	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Rip01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomRip\Rip01		23616
+

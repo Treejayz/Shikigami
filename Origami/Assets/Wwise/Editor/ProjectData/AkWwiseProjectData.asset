@@ -28,11 +28,20 @@ MonoBehaviour:
     List: []
   BankWwu:
   - Guid: '{090E2BE1-C110-4C48-8EE1-99814A8166EB}'
-    m_lastTimePart2: -1999270043
-    m_lastTimePsrt1: 1521265828
+    m_lastTimePart2: -1999268991
+    m_lastTimePsrt1: 1514431816
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks\Default Work Unit.wwu
     List:
+    - Guid: e6bdc6567b6da9499468e21ebb142ebc
+      ID: -1896957831
+      Name: Level1SB
+      Path: Default Work Unit\Level1SB
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Level1SB
+        ObjectType: 7
     - Guid: 33011edbcc8d5a49b34f236bc536c51f
       ID: -1638582257
       Name: PlayerSound
@@ -48,8 +57,8 @@ MonoBehaviour:
   defaultPoolSize: 4096
   EventWwu:
   - Guid: '{3838D55C-4A81-4825-8DB4-A33597820612}'
-    m_lastTimePart2: -1999270043
-    m_lastTimePsrt1: 1521185627
+    m_lastTimePart2: -1999268990
+    m_lastTimePsrt1: 1338921466
     ParentPhysicalPath: 
     PhysicalPath: Events\Default Work Unit.wwu
     List:
@@ -229,6 +238,30 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: StartMusic
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: a90da819f9c0df4b80f8b26298064795
+      ID: 452547817
+      Name: Stop_All
+      Path: Default Work Unit\Stop_All
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_All
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 258581af79aeb9449fe514b48f7e056d
+      ID: -1610250668
+      Name: StopLv1
+      Path: Default Work Unit\StopLv1
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: StopLv1
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0

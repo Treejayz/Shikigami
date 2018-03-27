@@ -16,6 +16,95 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
+		<SoundBank Id="2398009465" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Level1SB</ObjectPath>
+			<ShortName>Level1SB</ShortName>
+			<Path>Level1SB.bnk</Path>
+			<IncludedEvents>
+				<Event Id="38805597" Name="BigPickup" ObjectPath="\Events\Default Work Unit\BigPickup"/>
+				<Event Id="1942692385" Name="Dash" ObjectPath="\Events\Default Work Unit\Dash"/>
+				<Event Id="779278001" Name="Death" ObjectPath="\Events\Default Work Unit\Death"/>
+				<Event Id="2432329107" Name="FrogJump" ObjectPath="\Events\Default Work Unit\FrogJump"/>
+				<Event Id="1880194273" Name="FrogStick" ObjectPath="\Events\Default Work Unit\FrogStick"/>
+				<Event Id="3978245845" Name="Pickup" ObjectPath="\Events\Default Work Unit\Pickup"/>
+				<Event Id="1097127270" Name="PickupCoin" ObjectPath="\Events\Default Work Unit\PickupCoin"/>
+				<Event Id="160038168" Name="Splash" ObjectPath="\Events\Default Work Unit\Splash"/>
+				<Event Id="298361094" Name="StartLv1" ObjectPath="\Events\Default Work Unit\StartLv1"/>
+				<Event Id="452547817" Name="Stop_All" ObjectPath="\Events\Default Work Unit\Stop_All" MaxAttenuation="0.000000"/>
+				<Event Id="2684716628" Name="StopLv1" ObjectPath="\Events\Default Work Unit\StopLv1" MaxAttenuation="0.000000"/>
+				<Event Id="3191917460" Name="WingJump" ObjectPath="\Events\Default Work Unit\WingJump"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="95738087" Language="SFX">
+					<ShortName>BigPickup01.wav</ShortName>
+					<Path>SFX\BigPickup01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="192483792" Language="SFX">
+					<ShortName>Splash5.wav</ShortName>
+					<Path>SFX\Splash5_1C9C67B2.wem</Path>
+				</File>
+				<File Id="239304637" Language="SFX">
+					<ShortName>Level1.wav</ShortName>
+					<Path>SFX\Level1_F17FB28C.wem</Path>
+				</File>
+				<File Id="274054376" Language="SFX">
+					<ShortName>Jump02.wav</ShortName>
+					<Path>SFX\Jump02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="312806774" Language="SFX">
+					<ShortName>Splash3.wav</ShortName>
+					<Path>SFX\Splash3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="381186739" Language="SFX">
+					<ShortName>Splash7.wav</ShortName>
+					<Path>SFX\Splash7_1C9C67B2.wem</Path>
+				</File>
+				<File Id="451997213" Language="SFX">
+					<ShortName>Rip03.wav</ShortName>
+					<Path>SFX\Rip03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="528329268" Language="SFX">
+					<ShortName>Rip02.wav</ShortName>
+					<Path>SFX\Rip02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="594872895" Language="SFX">
+					<ShortName>Stick.wav</ShortName>
+					<Path>SFX\Stick_1C9C67B2.wem</Path>
+				</File>
+				<File Id="613255974" Language="SFX">
+					<ShortName>WingJump04.wav</ShortName>
+					<Path>SFX\WingJump04_1C9C67B2.wem</Path>
+				</File>
+				<File Id="658586597" Language="SFX">
+					<ShortName>Coin03.wav</ShortName>
+					<Path>SFX\Coin03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="785646735" Language="SFX">
+					<ShortName>Splash6.wav</ShortName>
+					<Path>SFX\Splash6_1C9C67B2.wem</Path>
+				</File>
+				<File Id="832236322" Language="SFX">
+					<ShortName>Splash1.wav</ShortName>
+					<Path>SFX\Splash1_1C9C67B2.wem</Path>
+				</File>
+				<File Id="853212425" Language="SFX">
+					<ShortName>Splash4.wav</ShortName>
+					<Path>SFX\Splash4_1C9C67B2.wem</Path>
+				</File>
+				<File Id="876069845" Language="SFX">
+					<ShortName>Pickup3.wav</ShortName>
+					<Path>SFX\Pickup3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="896591778" Language="SFX">
+					<ShortName>Dash02.wav</ShortName>
+					<Path>SFX\Dash02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1030449657" Language="SFX">
+					<ShortName>Rip01.wav</ShortName>
+					<Path>SFX\Rip01_1C9C67B2.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 		<SoundBank Id="2656385039" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\PlayerSound</ObjectPath>
 			<ShortName>PlayerSound</ShortName>
@@ -36,6 +125,7 @@
 				<Event Id="298361094" Name="StartLv1" ObjectPath="\Events\Default Work Unit\StartLv1"/>
 				<Event Id="298361093" Name="StartLv2" ObjectPath="\Events\Default Work Unit\StartLv2"/>
 				<Event Id="3827058668" Name="StartMusic" ObjectPath="\Events\Default Work Unit\StartMusic"/>
+				<Event Id="2684716628" Name="StopLv1" ObjectPath="\Events\Default Work Unit\StopLv1" MaxAttenuation="0.000000"/>
 				<Event Id="1021800662" Name="WindBegin" ObjectPath="\Events\Default Work Unit\WindBegin"/>
 				<Event Id="1571412035" Name="WindStop" ObjectPath="\Events\Default Work Unit\WindStop" MaxAttenuation="0.000000"/>
 				<Event Id="3191917460" Name="WingJump" ObjectPath="\Events\Default Work Unit\WingJump"/>
