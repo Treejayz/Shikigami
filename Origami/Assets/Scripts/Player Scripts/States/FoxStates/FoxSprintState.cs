@@ -7,7 +7,7 @@ public class FoxSprintState : State {
     private CharacterController player;
     private Vector3 direction;
 
-    private float sprintSpeed = 19f;
+    private float sprintSpeed = 22f;
 
     public FoxSprintState(Character character) : base(character)
     {
@@ -25,6 +25,7 @@ public class FoxSprintState : State {
     {
         player = character.GetComponent<CharacterController>();
         character.foxAnimator.speed = 1.58333f;
+        character.GetComponentsInChildren<ParticleSystem>()[5].Play();
     }
 
     public override void Tick()
@@ -63,6 +64,7 @@ public class FoxSprintState : State {
     public override void OnStateExit()
     {
         character.foxAnimator.speed = 1f;
+        character.GetComponentsInChildren<ParticleSystem>()[5].Stop();
     }
 
     public override void OnColliderHit(ControllerColliderHit hit)
