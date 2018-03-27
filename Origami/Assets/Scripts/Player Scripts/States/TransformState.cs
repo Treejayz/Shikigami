@@ -40,7 +40,7 @@ public class TransformState : State
     {
         player = character.GetComponent<CharacterController>();
         currentTime = 0f;
-        //character.GetComponentsInChildren<ParticleSystem>()[3].Play();
+        character.GetComponentsInChildren<ParticleSystem>()[3].Play();
         character.gameObject.transform.GetChild(1).gameObject.SetActive(false);
         character.gameObject.transform.GetChild(0).gameObject.SetActive(false);
         character.gameObject.transform.GetChild(2).gameObject.SetActive(false);
