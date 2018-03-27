@@ -10,7 +10,10 @@ public class SendRTPC : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		if(PlayerPrefs.HasKey(RTPC))
+        {
+            mainSlider.value = PlayerPrefs.GetFloat(RTPC);
+        }
 	}
 	
 	// Update is called once per frame
@@ -19,7 +22,7 @@ public class SendRTPC : MonoBehaviour {
 	}
 
     public void ValueChanged () {
-
+        PlayerPrefs.SetFloat(RTPC, mainSlider.value);
         AkSoundEngine.SetRTPCValue(RTPC, mainSlider.value, null);
     }
 }
