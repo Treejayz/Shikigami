@@ -10,6 +10,22 @@ public class TransformState : State
     private bool Q; // if not q, then it's e. q = true
     private bool step2;
 
+
+    private GameObject craneFold, frogFold, foxFold;
+
+    //Crane Start and End
+    private float craneStartRot = 0f;
+    private float craneEndRot = -45f;
+
+    //Frog Start and End
+    private Vector3 frogStartPos = new Vector3(0f, 0, 0f);
+    private Vector3 frogEndPos = new Vector3(0, 1f, .75f);
+    private float frogStartScale = 1f;
+    private float frogEndScale = 1.43574f;
+
+
+
+
     public TransformState(Character character) : base(character)
     {
     }
@@ -27,21 +43,26 @@ public class TransformState : State
         character.gameObject.transform.GetChild(0).gameObject.SetActive(false);
         character.gameObject.transform.GetChild(2).gameObject.SetActive(false);
 
+        craneFold = character.gameObject.transform.GetChild(3).gameObject;
+        frogFold = character.gameObject.transform.GetChild(4).gameObject;
+        foxFold = character.gameObject.transform.GetChild(2).gameObject;
+
         step2 = false;
 
         switch (character.Form)
         {
             case Character.CurrentForm.CRANE:
-                character.gameObject.transform.GetChild(3).gameObject.GetComponent<Animator>().SetFloat("Speed", 1f);
-                character.gameObject.transform.GetChild(3).gameObject.SetActive(true);
-                character.gameObject.transform.GetChild(3).gameObject.GetComponent<Animator>().Play("Crane_Fold_Test", -1, 0f);
+                craneFold.GetComponentInChildren<Animator>().SetFloat("Speed", 1f);
+                craneFold.SetActive(true);
+                craneFold.GetComponentInChildren<Animator>().Play("Crane_Fold_Test", -1, 0f);
                 break;
             case Character.CurrentForm.FROG:
-                character.gameObject.transform.GetChild(4).gameObject.GetComponent<Animator>().SetFloat("Speed", 1f);
-                character.gameObject.transform.GetChild(4).gameObject.SetActive(true);
-                character.gameObject.transform.GetChild(4).gameObject.GetComponent<Animator>().Play("Frog_Fold_Test", -1, 0f);
+                frogFold.GetComponentInChildren<Animator>().SetFloat("Speed", 1f);
+                frogFold.SetActive(true);
+                frogFold.GetComponentInChildren<Animator>().Play("Frog_Fold_Test", -1, 0f);
                 break;
             case Character.CurrentForm.FOX:
+                foxFold.SetActive(true);
                 break;
         };
 
@@ -51,13 +72,37 @@ public class TransformState : State
         if (currentTime < 1.5f)
         {
             currentTime += Time.deltaTime;
-            if (currentTime > .75f && !step2)
+            if (currentTime < .75f)
+            {
+                float progress = (currentTime / .75f);
+                progress = progress * progress;
+                switch (character.Form)
+                {
+                    case Character.CurrentForm.CRANE:
+                        float craneRot = (360 + craneEndRot) * progress;
+                        craneFold.transform.localEulerAngles = new Vector3(0, craneRot, 0f);
+                        break;
+                    case Character.CurrentForm.FROG:
+                        Vector3 frogPos = frogStartPos * (1f - progress) + frogEndPos * progress;
+                        float frogRot =  360f * progress;
+                        float frogScale = frogStartScale * (1f - progress) + frogEndScale * progress;
+                        frogFold.transform.localPosition = frogPos;
+                        frogFold.transform.localEulerAngles = new Vector3(0, frogRot, 0f);
+                        frogFold.transform.localScale = new Vector3(frogScale, frogScale, frogScale);
+                        break;
+                    case Character.CurrentForm.FOX:
+                        float foxRot = 360f * progress;
+                        foxFold.transform.localEulerAngles = new Vector3(0, foxRot, 0f);
+                        break;
+                };
+            }
+            else if (currentTime > .75f && !step2)
             {
                 step2 = true;
                 switch (character.Form)
                 {
                     case Character.CurrentForm.CRANE:
-                        character.gameObject.transform.GetChild(3).gameObject.SetActive(false);
+                        craneFold.SetActive(false);
                         if (character.canFox && Q)
                         {
                             character.Form = Character.CurrentForm.FOX;
@@ -68,7 +113,7 @@ public class TransformState : State
                         }
                         break;
                     case Character.CurrentForm.FROG:
-                        character.gameObject.transform.GetChild(4).gameObject.SetActive(false);
+                        frogFold.SetActive(false);
                         if (character.canFox && !Q)
                         {
                             character.Form = Character.CurrentForm.FOX;
@@ -79,6 +124,7 @@ public class TransformState : State
                         }
                         break;
                     case Character.CurrentForm.FOX:
+                        foxFold.SetActive(false);
                         if (Q)
                         {
                             character.Form = Character.CurrentForm.FROG;
@@ -93,16 +139,41 @@ public class TransformState : State
                 switch (character.Form)
                 {
                     case Character.CurrentForm.CRANE:
-                        character.gameObject.transform.GetChild(3).gameObject.SetActive(true);
-                        character.gameObject.transform.GetChild(3).gameObject.GetComponent<Animator>().SetFloat("Speed", -1f);
-                        character.gameObject.transform.GetChild(3).gameObject.GetComponent<Animator>().Play("Crane_Fold_Test", -1, 1f);
+                        craneFold.SetActive(true);
+                        craneFold.GetComponentInChildren<Animator>().SetFloat("Speed", -1f);
+                        craneFold.GetComponentInChildren<Animator>().Play("Crane_Fold_Test", -1, 1f);
                         break;
                     case Character.CurrentForm.FROG:
-                        character.gameObject.transform.GetChild(4).gameObject.SetActive(true);
-                        character.gameObject.transform.GetChild(4).gameObject.GetComponent<Animator>().SetFloat("Speed", -1f);
-                        character.gameObject.transform.GetChild(4).gameObject.GetComponent<Animator>().Play("Frog_Fold_Test", -1, 1f);
+                        frogFold.SetActive(true);
+                        frogFold.GetComponentInChildren<Animator>().SetFloat("Speed", -1f);
+                        frogFold.GetComponentInChildren<Animator>().Play("Frog_Fold_Test", -1, 1f);
                         break;
                     case Character.CurrentForm.FOX:
+                        foxFold.SetActive(true);
+                        break;
+                };
+            }
+            else
+            {
+                float progress = 1 - ((currentTime - .75f) / .75f);
+                progress = progress * progress;
+                switch (character.Form)
+                {
+                    case Character.CurrentForm.CRANE:
+                        float craneRot = -1 * (360 - craneEndRot) * progress;
+                        craneFold.transform.localEulerAngles = new Vector3(0, craneRot, 0f);
+                        break;
+                    case Character.CurrentForm.FROG:
+                        Vector3 frogPos = frogStartPos * (1f - progress) + frogEndPos * progress;
+                        float frogRot = -1 * 360f * progress;
+                        float frogScale = frogStartScale * (1f - progress) + frogEndScale * progress;
+                        frogFold.transform.localPosition = frogPos;
+                        frogFold.transform.localEulerAngles = new Vector3(0, frogRot, 0f);
+                        frogFold.transform.localScale = new Vector3(frogScale, frogScale, frogScale);
+                        break;
+                    case Character.CurrentForm.FOX:
+                        float foxRot = -1 * 360f * progress;
+                        foxFold.transform.localEulerAngles = new Vector3(0, foxRot, 0f);
                         break;
                 };
             }
@@ -112,11 +183,11 @@ public class TransformState : State
             switch (character.Form)
             {
                 case Character.CurrentForm.CRANE:
-                    character.gameObject.transform.GetChild(3).gameObject.SetActive(false);
+                    craneFold.SetActive(false);
                     SetForm("Crane");
                     break;
                 case Character.CurrentForm.FROG:
-                    character.gameObject.transform.GetChild(4).gameObject.SetActive(false);
+                    frogFold.SetActive(false);
                     SetForm("Frog");
                     break;
                 case Character.CurrentForm.FOX:
