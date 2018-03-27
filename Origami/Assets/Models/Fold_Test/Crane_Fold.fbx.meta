@@ -1,0 +1,229 @@
+fileFormatVersion: 2
+guid: 5792ad27ebd9f4ac8a148accb6e18cf2
+timeCreated: 1522179377
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: back_
+    100002: back_tip
+    100004: Claire_PaperCrane_Rig_KeyTest:Claire_PaperCrane_RefModel:Crane
+    100006: Claire_PaperCrane_Rig_KeyTest:head
+    100008: Claire_PaperCrane_Rig_KeyTest:head_tip
+    100010: Claire_PaperCrane_Rig_KeyTest:l_wing_1
+    100012: Claire_PaperCrane_Rig_KeyTest:l_wing_2
+    100014: Claire_PaperCrane_Rig_KeyTest:l_wing_3
+    100016: Claire_PaperCrane_Rig_KeyTest:l_wing_4
+    100018: Claire_PaperCrane_Rig_KeyTest:l_wing_5
+    100020: Claire_PaperCrane_Rig_KeyTest:l_wing_6
+    100022: Claire_PaperCrane_Rig_KeyTest:l_wing_7
+    100024: Claire_PaperCrane_Rig_KeyTest:l_wing_8
+    100026: Claire_PaperCrane_Rig_KeyTest:l_wing_9
+    100028: Claire_PaperCrane_Rig_KeyTest:midsection_back
+    100030: Claire_PaperCrane_Rig_KeyTest:midsection_front
+    100032: Claire_PaperCrane_Rig_KeyTest:Move_GRP
+    100034: Claire_PaperCrane_Rig_KeyTest:neck
+    100036: Claire_PaperCrane_Rig_KeyTest:r_wing_1
+    100038: Claire_PaperCrane_Rig_KeyTest:r_wing_2
+    100040: Claire_PaperCrane_Rig_KeyTest:r_wing_3
+    100042: Claire_PaperCrane_Rig_KeyTest:r_wing_4
+    100044: Claire_PaperCrane_Rig_KeyTest:r_wing_5
+    100046: Claire_PaperCrane_Rig_KeyTest:r_wing_6
+    100048: Claire_PaperCrane_Rig_KeyTest:r_wing_7
+    100050: Claire_PaperCrane_Rig_KeyTest:r_wing_8
+    100052: Claire_PaperCrane_Rig_KeyTest:r_wing_9
+    100054: Claire_PaperCrane_Rig_KeyTest:root_
+    100056: Claire_PaperCrane_Rig_KeyTest:tail
+    100058: Claire_PaperCrane_Rig_KeyTest:tail_tip
+    100060: //RootNode
+    100062: Crane_Model_1
+    100064: Crane_Model_2
+    100066: Crane_Model_3
+    100068: front_
+    100070: front_tip
+    100072: head_JNT
+    100074: headtip_JNT
+    100076: JNT_B
+    100078: JNT_B_Center
+    100080: JNT_D
+    100082: JNT_D_Center
+    100084: joint1
+    100086: joint10
+    100088: joint11
+    100090: joint12
+    100092: joint2
+    100094: joint3
+    100096: joint4
+    100098: joint5
+    100100: joint6
+    100102: joint7
+    100104: joint8
+    100106: joint9
+    100108: L_wing_in
+    100110: L_wing_in_tip
+    100112: L_wing_JNT
+    100114: L_wingtip_JNT
+    100116: R_wing_in
+    100118: R_wing_in_tip
+    100120: R_wing_JNT
+    100122: R_wingtip_JNT
+    100124: root_1
+    100126: root_2
+    100128: root_3
+    400000: back_
+    400002: back_tip
+    400004: Claire_PaperCrane_Rig_KeyTest:Claire_PaperCrane_RefModel:Crane
+    400006: Claire_PaperCrane_Rig_KeyTest:head
+    400008: Claire_PaperCrane_Rig_KeyTest:head_tip
+    400010: Claire_PaperCrane_Rig_KeyTest:l_wing_1
+    400012: Claire_PaperCrane_Rig_KeyTest:l_wing_2
+    400014: Claire_PaperCrane_Rig_KeyTest:l_wing_3
+    400016: Claire_PaperCrane_Rig_KeyTest:l_wing_4
+    400018: Claire_PaperCrane_Rig_KeyTest:l_wing_5
+    400020: Claire_PaperCrane_Rig_KeyTest:l_wing_6
+    400022: Claire_PaperCrane_Rig_KeyTest:l_wing_7
+    400024: Claire_PaperCrane_Rig_KeyTest:l_wing_8
+    400026: Claire_PaperCrane_Rig_KeyTest:l_wing_9
+    400028: Claire_PaperCrane_Rig_KeyTest:midsection_back
+    400030: Claire_PaperCrane_Rig_KeyTest:midsection_front
+    400032: Claire_PaperCrane_Rig_KeyTest:Move_GRP
+    400034: Claire_PaperCrane_Rig_KeyTest:neck
+    400036: Claire_PaperCrane_Rig_KeyTest:r_wing_1
+    400038: Claire_PaperCrane_Rig_KeyTest:r_wing_2
+    400040: Claire_PaperCrane_Rig_KeyTest:r_wing_3
+    400042: Claire_PaperCrane_Rig_KeyTest:r_wing_4
+    400044: Claire_PaperCrane_Rig_KeyTest:r_wing_5
+    400046: Claire_PaperCrane_Rig_KeyTest:r_wing_6
+    400048: Claire_PaperCrane_Rig_KeyTest:r_wing_7
+    400050: Claire_PaperCrane_Rig_KeyTest:r_wing_8
+    400052: Claire_PaperCrane_Rig_KeyTest:r_wing_9
+    400054: Claire_PaperCrane_Rig_KeyTest:root_
+    400056: Claire_PaperCrane_Rig_KeyTest:tail
+    400058: Claire_PaperCrane_Rig_KeyTest:tail_tip
+    400060: //RootNode
+    400062: Crane_Model_1
+    400064: Crane_Model_2
+    400066: Crane_Model_3
+    400068: front_
+    400070: front_tip
+    400072: head_JNT
+    400074: headtip_JNT
+    400076: JNT_B
+    400078: JNT_B_Center
+    400080: JNT_D
+    400082: JNT_D_Center
+    400084: joint1
+    400086: joint10
+    400088: joint11
+    400090: joint12
+    400092: joint2
+    400094: joint3
+    400096: joint4
+    400098: joint5
+    400100: joint6
+    400102: joint7
+    400104: joint8
+    400106: joint9
+    400108: L_wing_in
+    400110: L_wing_in_tip
+    400112: L_wing_JNT
+    400114: L_wingtip_JNT
+    400116: R_wing_in
+    400118: R_wing_in_tip
+    400120: R_wing_JNT
+    400122: R_wingtip_JNT
+    400124: root_1
+    400126: root_2
+    400128: root_3
+    2100000: Paper
+    2100002: Claire_PaperCrane_Rig_KeyTest_Claire_PaperCrane_RefModel_Paper
+    4300000: Crane_Model_3
+    4300002: Crane_Model_2
+    4300004: Crane_Model_1
+    4300006: Claire_PaperCrane_Rig_KeyTest:Claire_PaperCrane_RefModel:Crane
+    7400000: Crane_Fold_Test
+    9500000: //RootNode
+    13700000: Claire_PaperCrane_Rig_KeyTest:Claire_PaperCrane_RefModel:Crane
+    13700002: Crane_Model_1
+    13700004: Crane_Model_2
+    13700006: Crane_Model_3
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
