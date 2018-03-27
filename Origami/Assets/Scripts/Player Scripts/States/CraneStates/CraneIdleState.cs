@@ -60,24 +60,11 @@ public class CraneIdleState : State {
         {
             if (Input.GetAxis("Switch2") != 0.0f && character.canFrog)
             {
-                character.SetForm("Frog");
-                character.GetComponentsInChildren<ParticleSystem>()[3].Play();
-                character.SetState(new FrogMoveState(character));
+                character.SetState(new TransformState(character, false));
             }
             else if (Input.GetAxis("Switch1") != 0.0f && character.canFrog)
             {
-                if (character.canFox)
-                {
-                    character.SetForm("Fox");
-                    character.GetComponentsInChildren<ParticleSystem>()[3].Play();
-                    character.SetState(new FoxMoveState(character));
-                }
-                else
-                {
-                    character.SetForm("Frog");
-                    character.GetComponentsInChildren<ParticleSystem>()[3].Play();
-                    character.SetState(new FrogMoveState(character));
-                }
+                character.SetState(new TransformState(character, true));
             }
         }
     }

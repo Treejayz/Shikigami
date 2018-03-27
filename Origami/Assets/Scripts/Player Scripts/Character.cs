@@ -38,7 +38,8 @@ public class Character : MonoBehaviour {
     [HideInInspector]
     public bool switching;
 
-    private GameObject CraneMesh, FrogMesh, FoxMesh;
+    [HideInInspector]
+    public GameObject CraneMesh, FrogMesh, FoxMesh;
     private State currentState;
 
     private void Start()

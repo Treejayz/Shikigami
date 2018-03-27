@@ -40,15 +40,11 @@ public class FoxIdleState : State {
         {
             if (Input.GetAxis("Switch2") != 0.0f)
             {
-                character.SetForm("Crane");
-                character.GetComponentsInChildren<ParticleSystem>()[3].Play();
-                character.SetState(new CraneMovingState(character));
+                character.SetState(new TransformState(character, false));
             }
             else if (Input.GetAxis("Switch1") != 0.0f)
             {
-                character.SetForm("Frog");
-                character.GetComponentsInChildren<ParticleSystem>()[3].Play();
-                character.SetState(new FrogMoveState(character));
+                character.SetState(new TransformState(character, true));
             }
         }
     }
