@@ -35,12 +35,20 @@ public class Page : MonoBehaviour {
             if (isFrog)
             {
                 other.gameObject.GetComponent<Character>().canFrog = true;
-				CollectableManager.spellbookpages [0] = 1;
+                other.gameObject.GetComponent<Character>().SetState(new TransformState(other.gameObject.GetComponent<Character>(), false));
+                CollectableManager.spellbookpages [0] = 1;
             }
             else if (isFox)
             {
                 other.gameObject.GetComponent<Character>().canFox = true;
-				CollectableManager.spellbookpages [2] = 1;
+                if (other.gameObject.GetComponent<Character>().Form == Character.CurrentForm.FROG)
+                {
+                    other.gameObject.GetComponent<Character>().SetState(new TransformState(other.gameObject.GetComponent<Character>(), false));
+                } else
+                {
+                    other.gameObject.GetComponent<Character>().SetState(new TransformState(other.gameObject.GetComponent<Character>(), true));
+                }
+                CollectableManager.spellbookpages [2] = 1;
             }
 
             // Same sound as the normal checkpoints. Subject to change.
