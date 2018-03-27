@@ -844,7 +844,7 @@
 						<Property Name="PositioningType" Type="int16" Value="1"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-12</Value>
+								<Value>-9</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -867,6 +867,45 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="chimeloop" ID="{318FE5BD-6EB1-43F4-B8B1-94444355B5C8}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="lawnmowerish" ID="{94057D0F-93C8-4752-AB35-C12FC9B47DFD}" ShortID="771918697">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>30</Value>
+							</ValueList>
+						</Property>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="PlatAttenuator" ID="{DB7F740E-F235-4F5F-8919-8E53DA10F2B5}" WorkUnitID="{4AF87D7F-3FBD-4AED-AFCD-6670229CB13C}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+							<ObjectRef Name="LawnMowerEQ" ID="{D643EE98-B53C-44A6-93D0-CEA99AC61432}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{A22E32AA-C0DA-43F0-973C-80269745EF90}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="lawnmowerish" ID="{854FBB37-B51C-4F33-B407-01B8E6D6DD3C}" ShortID="1020712570">
+							<Language>SFX</Language>
+							<AudioFile>lawnmowerish.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="lawnmowerish" ID="{854FBB37-B51C-4F33-B407-01B8E6D6DD3C}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

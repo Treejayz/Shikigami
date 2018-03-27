@@ -613,6 +613,16 @@
 										<Property Name="QFactorBand2" Type="Real32" Value="3"/>
 									</PropertyList>
 								</Effect>
+								<Effect Name="LawnMowerEQ" ID="{D643EE98-B53C-44A6-93D0-CEA99AC61432}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<PropertyList>
+										<Property Name="FrequencyBand1" Type="Real32" Value="1300"/>
+										<Property Name="FrequencyBand2" Type="Real32" Value="5000"/>
+										<Property Name="FrequencyBand3" Type="Real32" Value="7000"/>
+										<Property Name="GainBand1" Type="Real32" Value="15"/>
+										<Property Name="GainBand2" Type="Real32" Value="-10"/>
+										<Property Name="GainBand3" Type="Real32" Value="5"/>
+									</PropertyList>
+								</Effect>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Low Pass Filters" ID="{40969D6D-1C68-42EB-B46D-FD1A504F797C}" ShortID="1066977057">

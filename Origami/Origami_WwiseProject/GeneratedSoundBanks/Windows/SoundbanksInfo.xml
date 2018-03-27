@@ -26,6 +26,7 @@
 				<Event Id="779278001" Name="Death" ObjectPath="\Events\Default Work Unit\Death"/>
 				<Event Id="2432329107" Name="FrogJump" ObjectPath="\Events\Default Work Unit\FrogJump"/>
 				<Event Id="1880194273" Name="FrogStick" ObjectPath="\Events\Default Work Unit\FrogStick"/>
+				<Event Id="3498031842" Name="lawnmowerplatplay" ObjectPath="\Events\Default Work Unit\lawnmowerplatplay" MaxAttenuation="80.000000"/>
 				<Event Id="3978245845" Name="Pickup" ObjectPath="\Events\Default Work Unit\Pickup"/>
 				<Event Id="1097127270" Name="PickupCoin" ObjectPath="\Events\Default Work Unit\PickupCoin"/>
 				<Event Id="160038168" Name="Splash" ObjectPath="\Events\Default Work Unit\Splash"/>
@@ -97,6 +98,10 @@
 				<File Id="896591778" Language="SFX">
 					<ShortName>Dash02.wav</ShortName>
 					<Path>SFX\Dash02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1020712570" Language="SFX">
+					<ShortName>lawnmowerish.wav</ShortName>
+					<Path>SFX\lawnmowerish_F17FB28C.wem</Path>
 				</File>
 				<File Id="1030449657" Language="SFX">
 					<ShortName>Rip01.wav</ShortName>

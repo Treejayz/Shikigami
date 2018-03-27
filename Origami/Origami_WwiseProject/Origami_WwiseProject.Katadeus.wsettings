@@ -3,7 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{0083A858-593D-4404-B58E-25D75EC7F022}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Katadeus\Music"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Katadeus\Downloads"/>
 				<Property Name="Event Action List\{037D6415-D390-4CF3-801C-806F3D9A4332}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{19A80DA9-C0F9-4BDF-80F8-B26298064795}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{1A1D2228-E499-4307-B859-F269DD74700C}\x64_Expand States" Type="string" Value=""/>
@@ -17,6 +17,7 @@
 				<Property Name="Event Action List\{947EEC9C-E58C-48B3-A731-04A5112EC800}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{994DDA88-97D8-4984-8781-A60E80A25D01}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{9B7BEF00-4298-4961-A320-200C84B71B88}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{AA47A543-4DD1-4E05-A275-6DEB90CB6F44}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{AF818525-AE79-44B9-9FE5-14B48F7E056D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B26E24F4-DACE-437B-992F-B84D711BA154}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B944F94E-E789-4730-83ED-FCDD96E9B978}\x64_Expand States" Type="string" Value=""/>

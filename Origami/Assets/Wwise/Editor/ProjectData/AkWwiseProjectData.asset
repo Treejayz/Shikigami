@@ -28,8 +28,8 @@ MonoBehaviour:
     List: []
   BankWwu:
   - Guid: '{090E2BE1-C110-4C48-8EE1-99814A8166EB}'
-    m_lastTimePart2: -1999268991
-    m_lastTimePsrt1: 1514431816
+    m_lastTimePart2: -1999268813
+    m_lastTimePsrt1: 722887606
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks\Default Work Unit.wwu
     List:
@@ -57,8 +57,8 @@ MonoBehaviour:
   defaultPoolSize: 4096
   EventWwu:
   - Guid: '{3838D55C-4A81-4825-8DB4-A33597820612}'
-    m_lastTimePart2: -1999268990
-    m_lastTimePsrt1: 1338921466
+    m_lastTimePart2: -1999268816
+    m_lastTimePsrt1: 2032028744
     ParentPhysicalPath: 
     PhysicalPath: Events\Default Work Unit.wwu
     List:
@@ -158,6 +158,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - Guid: 43a547aad14d054ea2756deb90cb6f44
+      ID: -796935454
+      Name: lawnmowerplatplay
+      Path: Default Work Unit\lawnmowerplatplay
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: lawnmowerplatplay
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - Guid: 9cec7e948ce5b348a73104a5112ec800
       ID: -316721451
       Name: Pickup
@@ -250,18 +262,6 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Stop_All
-        ObjectType: 3
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - Guid: 258581af79aeb9449fe514b48f7e056d
-      ID: -1610250668
-      Name: StopLv1
-      Path: Default Work Unit\StopLv1
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: StopLv1
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0

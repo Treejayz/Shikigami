@@ -9,7 +9,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	1942692385	Dash			\Default Work Unit\Dash	
 	2432329107	FrogJump			\Default Work Unit\FrogJump	
 	3191917460	WingJump			\Default Work Unit\WingJump	
+	3498031842	lawnmowerplatplay			\Default Work Unit\lawnmowerplatplay	
 	3978245845	Pickup			\Default Work Unit\Pickup	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2393480921	LawnMowerEQ	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	95738087	BigPickup01	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\BigPickup01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\BigPickup01		341064
@@ -28,5 +32,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	853212425	Splash4	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Splash4_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomSplash\Splash4		111920
 	876069845	Pickup3	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Pickup3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pickup3		138708
 	896591778	Dash02	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Dash02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dash02		148952
+	1020712570	lawnmowerish	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\lawnmowerish_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\lawnmowerish		756128
 	1030449657	Rip01	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Rip01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomRip\Rip01		23616
 

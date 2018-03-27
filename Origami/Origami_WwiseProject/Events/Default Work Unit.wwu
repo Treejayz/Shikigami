@@ -274,6 +274,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="lawnmowerplatplay" ID="{AA47A543-4DD1-4E05-A275-6DEB90CB6F44}">
+					<ChildrenList>
+						<Action Name="" ID="{D572E119-0CC4-4C06-A932-10E5E5D37C5E}" ShortID="625307739">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="lawnmowerish" ID="{94057D0F-93C8-4752-AB35-C12FC9B47DFD}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
