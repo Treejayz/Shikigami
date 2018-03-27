@@ -7,12 +7,20 @@ public static class CollectableManager {
 
     public static int paperPieces;
     public static int scrapPieces;
+
 	public static int level1paperPieces;
 	public static int level1scrapPieces;
 	public static int level2paperPieces;
 	public static int level2scrapPieces;
 	public static int level3paperPieces;
 	public static int level3scrapPieces;
+
+	public static int[] storybookpages;
+	public static int[] spellbookpages;
+
+	static void Start(){
+		CollectableManager.spellbookpages [1] = 1;
+	}
 
     public static void Reset()
     {
