@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.30446896, g: 0.49616235, b: 0.59687173, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -14209,6 +14209,11 @@ Prefab:
       propertyPath: displayText
       value: Use the mouse to look around, and WASD to move
       objectReference: {fileID: 0}
+    - target: {fileID: 114378297945369290, guid: 7d8834efc087f904eb2806623e4ab89e,
+        type: 2}
+      propertyPath: displaytime
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7d8834efc087f904eb2806623e4ab89e, type: 2}
   m_IsPrefabParent: 0
@@ -26708,6 +26713,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayText: Press SPACE to jump, and hold space to glide
   displayCanvas: {fileID: 60347542}
+  displaytime: 3
 --- !u!1 &713475211
 GameObject:
   m_ObjectHideFlags: 0
