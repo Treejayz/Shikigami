@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	452547817	Stop_All			\Default Work Unit\Stop_All	
+	3827058668	StartMusic			\Default Work Unit\StartMusic	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	876606834	MenuTheme	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\MenuTheme_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\MenuTheme		11289664
+

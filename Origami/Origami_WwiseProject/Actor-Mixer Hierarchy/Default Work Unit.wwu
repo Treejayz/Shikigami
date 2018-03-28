@@ -954,6 +954,9 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="BossfightDemo" ID="{EB982181-B736-4B76-AAEB-9B0CA2E5455A}" ShortID="218076252">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
@@ -973,7 +976,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="platformdrop" ID="{3D915850-C778-4F73-9F42-C410352900CD}" ShortID="467982223">
+					<PropertyList>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="PlatAttenuator" ID="{DB7F740E-F235-4F5F-8919-8E53DA10F2B5}" WorkUnitID="{4AF87D7F-3FBD-4AED-AFCD-6670229CB13C}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
 						</Reference>
@@ -992,7 +1001,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="platspawn" ID="{F3DCB1BB-E182-4C5F-B2EF-71AEAFF2E1DC}" ShortID="24870173">
+					<PropertyList>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="PlatAttenuator" ID="{DB7F740E-F235-4F5F-8919-8E53DA10F2B5}" WorkUnitID="{4AF87D7F-3FBD-4AED-AFCD-6670229CB13C}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
 						</Reference>

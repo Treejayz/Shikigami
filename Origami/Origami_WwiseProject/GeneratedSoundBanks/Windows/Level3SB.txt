@@ -28,7 +28,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	416254153	FoxJump01	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\FoxJump01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\FoxJump01		16450
 	422246823	Windloop	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Windloop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Windloop		1523776
 	451997213	Rip03	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Rip03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomRip\Rip03		36510
-	456752970	BossfightDemo	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\BossfightDemo_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\BossfightDemo		4980772
+	456752970	BossfightDemo	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\BossfightDemo_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\BossfightDemo		4980772
 	528329268	Rip02	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Rip02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomRip\Rip02		57364
 	594872895	Stick	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Stick_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stick		10858
 	613255974	WingJump04	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\WingJump04_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\WingJump04		179224

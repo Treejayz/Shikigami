@@ -45,8 +45,8 @@
 				<Event Id="1880194273" Name="FrogStick" ObjectPath="\Events\Default Work Unit\FrogStick"/>
 				<Event Id="3978245845" Name="Pickup" ObjectPath="\Events\Default Work Unit\Pickup"/>
 				<Event Id="1097127270" Name="PickupCoin" ObjectPath="\Events\Default Work Unit\PickupCoin"/>
-				<Event Id="2933970505" Name="PlatDrop" ObjectPath="\Events\Default Work Unit\PlatDrop"/>
-				<Event Id="4040173943" Name="PlatSpawn" ObjectPath="\Events\Default Work Unit\PlatSpawn"/>
+				<Event Id="2933970505" Name="PlatDrop" ObjectPath="\Events\Default Work Unit\PlatDrop" MaxAttenuation="80.000000"/>
+				<Event Id="4040173943" Name="PlatSpawn" ObjectPath="\Events\Default Work Unit\PlatSpawn" MaxAttenuation="80.000000"/>
 				<Event Id="160038168" Name="Splash" ObjectPath="\Events\Default Work Unit\Splash"/>
 				<Event Id="1422622395" Name="Transform" ObjectPath="\Events\Default Work Unit\Transform"/>
 				<Event Id="1021800662" Name="WindBegin" ObjectPath="\Events\Default Work Unit\WindBegin"/>
@@ -100,7 +100,7 @@
 				</File>
 				<File Id="456752970" Language="SFX">
 					<ShortName>BossfightDemo.wav</ShortName>
-					<Path>SFX\BossfightDemo_1C9C67B2.wem</Path>
+					<Path>SFX\BossfightDemo_F17FB28C.wem</Path>
 				</File>
 				<File Id="528329268" Language="SFX">
 					<ShortName>Rip02.wav</ShortName>
@@ -263,8 +263,8 @@
 				<Event Id="26407862" Name="HPMusic" ObjectPath="\Events\Default Work Unit\HPMusic" MaxAttenuation="0.000000"/>
 				<Event Id="3978245845" Name="Pickup" ObjectPath="\Events\Default Work Unit\Pickup"/>
 				<Event Id="1097127270" Name="PickupCoin" ObjectPath="\Events\Default Work Unit\PickupCoin"/>
-				<Event Id="2933970505" Name="PlatDrop" ObjectPath="\Events\Default Work Unit\PlatDrop"/>
-				<Event Id="4040173943" Name="PlatSpawn" ObjectPath="\Events\Default Work Unit\PlatSpawn"/>
+				<Event Id="2933970505" Name="PlatDrop" ObjectPath="\Events\Default Work Unit\PlatDrop" MaxAttenuation="80.000000"/>
+				<Event Id="4040173943" Name="PlatSpawn" ObjectPath="\Events\Default Work Unit\PlatSpawn" MaxAttenuation="80.000000"/>
 				<Event Id="3000620399" Name="ResetHPMusic" ObjectPath="\Events\Default Work Unit\ResetHPMusic" MaxAttenuation="0.000000"/>
 				<Event Id="160038168" Name="Splash" ObjectPath="\Events\Default Work Unit\Splash"/>
 				<Event Id="298361094" Name="StartLv1" ObjectPath="\Events\Default Work Unit\StartLv1"/>
