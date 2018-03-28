@@ -321,32 +321,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114222891850677728, guid: d5faf07e4bbf9a0489df579638798e7e,
-        type: 2}
-      propertyPath: m_Text
-      value: '420
-
-'
-      objectReference: {fileID: 0}
-    - target: {fileID: 224453662181741070, guid: d5faf07e4bbf9a0489df579638798e7e,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1039075822899210, guid: d5faf07e4bbf9a0489df579638798e7e, type: 2}
-      propertyPath: m_Name
-      value: ScrapDisplay
-      objectReference: {fileID: 0}
-    - target: {fileID: 114910139916835508, guid: d5faf07e4bbf9a0489df579638798e7e,
-        type: 2}
-      propertyPath: fadeTime
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114910139916835508, guid: d5faf07e4bbf9a0489df579638798e7e,
-        type: 2}
-      propertyPath: timer
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d5faf07e4bbf9a0489df579638798e7e, type: 2}
   m_IsPrefabParent: 0
