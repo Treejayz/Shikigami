@@ -38,6 +38,7 @@ public class TransformState : State
 
     public override void OnStateEnter()
     {
+        AkSoundEngine.PostEvent("Transform",character.gameObject);
         player = character.GetComponent<CharacterController>();
         character.switching = true;
 

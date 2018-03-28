@@ -7,6 +7,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	779278001	Death			\Default Work Unit\Death	
 	1021800662	WindBegin			\Default Work Unit\WindBegin	
 	1097127270	PickupCoin			\Default Work Unit\PickupCoin	
+	1422622395	Transform			\Default Work Unit\Transform	
 	1571412035	WindStop			\Default Work Unit\WindStop	
 	1880194273	FrogStick			\Default Work Unit\FrogStick	
 	1942692385	Dash			\Default Work Unit\Dash	
@@ -42,6 +43,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	4082871	Wingflap03	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Wingflap03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFlap\Wingflap03		29074
 	56846237	WingJump01	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\WingJump01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\WingJump01		34172
+	80407323	PlaceholderTransform	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\PlaceholderTransform_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlaceholderTransform		173744
 	95738087	BigPickup01	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\BigPickup01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\BigPickup01		341064
 	127240437	GenFlap2	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\GenFlap2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFlap\GenFlap2		167208
 	164196824	Pickup2	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Pickup2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pickup2		59138

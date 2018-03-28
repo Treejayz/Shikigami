@@ -922,6 +922,37 @@
 						<ActiveSource Name="lawnmowerish" ID="{854FBB37-B51C-4F33-B407-01B8E6D6DD3C}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="PlaceholderTransform" ID="{78CF1061-A90D-43F8-9FCB-923550852C30}" ShortID="301865102">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-7</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{A22E32AA-C0DA-43F0-973C-80269745EF90}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="PlaceholderTransform" ID="{928B638D-9BEA-4CE3-B180-C2A15D45228C}" ShortID="80407323">
+							<Language>SFX</Language>
+							<AudioFile>PlaceholderTransform.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="PlaceholderTransform" ID="{928B638D-9BEA-4CE3-B180-C2A15D45228C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

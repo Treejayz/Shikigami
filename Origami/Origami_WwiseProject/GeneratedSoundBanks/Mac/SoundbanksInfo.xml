@@ -47,11 +47,16 @@
 				<Event Id="160038168" Name="Splash" ObjectPath="\Events\Default Work Unit\Splash"/>
 				<Event Id="298361094" Name="StartLv1" ObjectPath="\Events\Default Work Unit\StartLv1"/>
 				<Event Id="452547817" Name="Stop_All" ObjectPath="\Events\Default Work Unit\Stop_All" MaxAttenuation="0.000000"/>
+				<Event Id="1422622395" Name="Transform" ObjectPath="\Events\Default Work Unit\Transform"/>
 				<Event Id="1021800662" Name="WindBegin" ObjectPath="\Events\Default Work Unit\WindBegin"/>
 				<Event Id="1571412035" Name="WindStop" ObjectPath="\Events\Default Work Unit\WindStop" MaxAttenuation="0.000000"/>
 				<Event Id="3191917460" Name="WingJump" ObjectPath="\Events\Default Work Unit\WingJump"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="80407323" Language="SFX">
+					<ShortName>PlaceholderTransform.wav</ShortName>
+					<Path>SFX\PlaceholderTransform_1C9C67B2.wem</Path>
+				</File>
 				<File Id="95738087" Language="SFX">
 					<ShortName>BigPickup01.wav</ShortName>
 					<Path>SFX\BigPickup01_1C9C67B2.wem</Path>
@@ -150,6 +155,7 @@
 				<Event Id="298361094" Name="StartLv1" ObjectPath="\Events\Default Work Unit\StartLv1"/>
 				<Event Id="298361093" Name="StartLv2" ObjectPath="\Events\Default Work Unit\StartLv2"/>
 				<Event Id="3827058668" Name="StartMusic" ObjectPath="\Events\Default Work Unit\StartMusic"/>
+				<Event Id="1422622395" Name="Transform" ObjectPath="\Events\Default Work Unit\Transform"/>
 				<Event Id="1021800662" Name="WindBegin" ObjectPath="\Events\Default Work Unit\WindBegin"/>
 				<Event Id="1571412035" Name="WindStop" ObjectPath="\Events\Default Work Unit\WindStop" MaxAttenuation="0.000000"/>
 				<Event Id="3191917460" Name="WingJump" ObjectPath="\Events\Default Work Unit\WingJump"/>
@@ -162,6 +168,10 @@
 				<File Id="56846237" Language="SFX">
 					<ShortName>WingJump01.wav</ShortName>
 					<Path>SFX\WingJump01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="80407323" Language="SFX">
+					<ShortName>PlaceholderTransform.wav</ShortName>
+					<Path>SFX\PlaceholderTransform_1C9C67B2.wem</Path>
 				</File>
 				<File Id="95738087" Language="SFX">
 					<ShortName>BigPickup01.wav</ShortName>

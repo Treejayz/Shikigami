@@ -28,8 +28,8 @@ MonoBehaviour:
     List: []
   BankWwu:
   - Guid: '{090E2BE1-C110-4C48-8EE1-99814A8166EB}'
-    m_lastTimePart2: -1999268800
-    m_lastTimePsrt1: 616211978
+    m_lastTimePart2: -1999268792
+    m_lastTimePsrt1: -515286129
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks\Default Work Unit.wwu
     List:
@@ -66,8 +66,8 @@ MonoBehaviour:
   defaultPoolSize: 4096
   EventWwu:
   - Guid: '{3838D55C-4A81-4825-8DB4-A33597820612}'
-    m_lastTimePart2: -1999268811
-    m_lastTimePsrt1: 2013161600
+    m_lastTimePart2: -1999268792
+    m_lastTimePsrt1: -515185927
     ParentPhysicalPath: 
     PhysicalPath: Events\Default Work Unit.wwu
     List:
@@ -271,6 +271,18 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Stop_All
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 25c89ded3bb66047ba3ec4c67ac3e5b8
+      ID: 1422622395
+      Name: Transform
+      Path: Default Work Unit\Transform
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Transform
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0
