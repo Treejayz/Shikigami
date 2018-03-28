@@ -17003,11 +17003,6 @@ Prefab:
       propertyPath: m_Name
       value: Collectables (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 224453662181741070, guid: d5faf07e4bbf9a0489df579638798e7e,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 40
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d5faf07e4bbf9a0489df579638798e7e, type: 2}
   m_IsPrefabParent: 0
