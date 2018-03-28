@@ -18,7 +18,7 @@ public class ShadowFire : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         fireTime += Time.deltaTime;
-        if (fireTime > 4f)
+        if (fireTime > 4f && Vector3.Distance(transform.position, player.transform.position) < 80f)
         {
             StartCoroutine("CollectData");
             fireTime = 0f;
