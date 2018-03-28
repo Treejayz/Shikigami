@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.30446896, g: 0.49616235, b: 0.59687173, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -7641,6 +7641,7 @@ MonoBehaviour:
   pos: {fileID: 102511464}
   Page: {fileID: 1379935969}
   checkPointText: {fileID: 828533254}
+  newForm: 1
 --- !u!1 &197447981
 GameObject:
   m_ObjectHideFlags: 0
@@ -34156,6 +34157,66 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7147872aa3b2f848b741ee64d2b7502, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &974436432
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1479060186495628, guid: 7d8834efc087f904eb2806623e4ab89e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 974436433}
+  - component: {fileID: 974436435}
+  - component: {fileID: 974436434}
+  m_Layer: 0
+  m_Name: TorielTrigger (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &974436433
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4236049429694788, guid: 7d8834efc087f904eb2806623e4ab89e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 974436432}
+  m_LocalRotation: {x: -0, y: 0.9886013, z: -0, w: 0.15055728}
+  m_LocalPosition: {x: 218.6, y: 10.6, z: 110.07}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 1297973394}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 162.682, z: 0}
+--- !u!65 &974436434
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 65266316919719352, guid: 7d8834efc087f904eb2806623e4ab89e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 974436432}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 17.2, y: 8.89, z: 34.26}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &974436435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114378297945369290, guid: 7d8834efc087f904eb2806623e4ab89e,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 974436432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fdab70072d226d45b42e748c26a7021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayText: Press Left Shift to Dash, so you can cross larger gaps
+  displayCanvas: {fileID: 60347542}
+  displaytime: 3
 --- !u!1 &974942292
 GameObject:
   m_ObjectHideFlags: 0
@@ -36485,6 +36546,7 @@ MonoBehaviour:
   pos: {fileID: 659890412}
   Page: {fileID: 99928099}
   checkPointText: {fileID: 828533254}
+  newForm: 0
 --- !u!1 &1069100143
 GameObject:
   m_ObjectHideFlags: 0
@@ -40574,6 +40636,7 @@ MonoBehaviour:
   pos: {fileID: 640752142}
   Page: {fileID: 1478470190}
   checkPointText: {fileID: 828533254}
+  newForm: 0
 --- !u!1 &1194217662
 GameObject:
   m_ObjectHideFlags: 0
@@ -41695,6 +41758,7 @@ MonoBehaviour:
   pos: {fileID: 0}
   Page: {fileID: 255836434}
   checkPointText: {fileID: 828533254}
+  newForm: 0
 --- !u!1 &1243800044
 GameObject:
   m_ObjectHideFlags: 0
@@ -46741,6 +46805,21 @@ GameObject:
   m_PrefabParentObject: {fileID: 1043901087679176, guid: e59895e4b74763e41a6fa0a058e97bf8,
     type: 2}
   m_PrefabInternal: {fileID: 951042278}
+--- !u!114 &1379935975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1379935969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fdab70072d226d45b42e748c26a7021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayText: As a frog, you can jump higher, as well as stick to walls and jump
+    off them!
+  displayCanvas: {fileID: 60347542}
+  displaytime: 5
 --- !u!4 &1380290707 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4240680573625412, guid: 771303eacddba5d4fb0f993cb0c5d4ac,
@@ -47865,6 +47944,7 @@ MonoBehaviour:
   pos: {fileID: 815321884}
   Page: {fileID: 2143539738}
   checkPointText: {fileID: 828533254}
+  newForm: 0
 --- !u!4 &1457224056 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 1a2a3d85fc0ad7a4ca42ebd98f995939, type: 3}
@@ -52167,6 +52247,7 @@ MonoBehaviour:
   pos: {fileID: 0}
   Page: {fileID: 710169601}
   checkPointText: {fileID: 828533254}
+  newForm: 0
 --- !u!4 &1493040771 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4586413789640760, guid: d7147872aa3b2f848b741ee64d2b7502,
@@ -64345,6 +64426,7 @@ MonoBehaviour:
   pos: {fileID: 0}
   Page: {fileID: 0}
   checkPointText: {fileID: 828533254}
+  newForm: 0
 --- !u!1 &2020797530
 GameObject:
   m_ObjectHideFlags: 0

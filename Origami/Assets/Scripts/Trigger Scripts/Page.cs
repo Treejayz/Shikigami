@@ -32,11 +32,14 @@ public class Page : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
+            AkSoundEngine.PostEvent("BigPickup", other.gameObject);
+
             if (isFrog)
             {
                 other.gameObject.GetComponent<Character>().canFrog = true;
                 other.gameObject.GetComponent<Character>().SetState(new TransformState(other.gameObject.GetComponent<Character>(), false));
                 CollectableManager.spellbookpages [0] = 1;
+                Destroy(this);
             }
             else if (isFox)
             {
@@ -49,12 +52,13 @@ public class Page : MonoBehaviour {
                     other.gameObject.GetComponent<Character>().SetState(new TransformState(other.gameObject.GetComponent<Character>(), true));
                 }
                 CollectableManager.spellbookpages [2] = 1;
+                Destroy(this);
             }
 
-            // Same sound as the normal checkpoints. Subject to change.
-            AkSoundEngine.PostEvent("BigPickup", other.gameObject);
-
-            Destroy(this.gameObject);
+            else
+            {
+                Destroy(this.gameObject);
+            }          
         }
     }
 }

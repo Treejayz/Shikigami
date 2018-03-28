@@ -1,0 +1,282 @@
+fileFormatVersion: 2
+guid: 449fbf5c97ef5554fbf6d7504b32d995
+timeCreated: 1522208439
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Arcane_Table:Arcane_Table
+    100004: Book_1:Book_1
+    100006: book_2
+    100008: Book_2:book_2
+    100010: book_3
+    100012: Book_3:book_3
+    100014: Book_4
+    100016: book_4
+    100018: Book_5
+    100020: book_5
+    100022: Book_6
+    100024: book_6
+    100026: Bottle
+    100028: Candle_1
+    100030: Candle_1 1
+    100032: Candle_2
+    100034: Candle_2 1
+    100036: Candle_3
+    100038: Candle_3 1
+    100040: Crystal
+    100042: Crystal_Ball1
+    100044: good_boi_bottle
+    100046: good_boi_bottle1
+    100048: L_books
+    100050: L_Candles
+    100052: pCylinder1
+    100054: pCylinder2
+    100056: pCylinder3
+    100058: pCylinder4
+    100060: pCylinder5
+    100062: pCylinder6
+    100064: Potion_Bottle:Bottle
+    100066: Potion_Bottle:Stopper
+    100068: R_books
+    100070: R_Candles
+    100072: Spellbook:Spellbook
+    100074: Stand
+    100076: Stand1
+    100078: Stand2
+    100080: Stopper
+    400000: //RootNode
+    400002: Arcane_Table:Arcane_Table
+    400004: Book_1:Book_1
+    400006: book_2
+    400008: Book_2:book_2
+    400010: book_3
+    400012: Book_3:book_3
+    400014: Book_4
+    400016: book_4
+    400018: Book_5
+    400020: book_5
+    400022: Book_6
+    400024: book_6
+    400026: Bottle
+    400028: Candle_1
+    400030: Candle_1 1
+    400032: Candle_2
+    400034: Candle_2 1
+    400036: Candle_3
+    400038: Candle_3 1
+    400040: Crystal
+    400042: Crystal_Ball1
+    400044: good_boi_bottle
+    400046: good_boi_bottle1
+    400048: L_books
+    400050: L_Candles
+    400052: pCylinder1
+    400054: pCylinder2
+    400056: pCylinder3
+    400058: pCylinder4
+    400060: pCylinder5
+    400062: pCylinder6
+    400064: Potion_Bottle:Bottle
+    400066: Potion_Bottle:Stopper
+    400068: R_books
+    400070: R_Candles
+    400072: Spellbook:Spellbook
+    400074: Stand
+    400076: Stand1
+    400078: Stand2
+    400080: Stopper
+    2100000: wax
+    2100002: wick
+    2100004: lambert1
+    2100006: Book_3_pages
+    2100008: Book_1_pages
+    2100010: Book_2_pages
+    2100012: Spellbook_pages
+    2100014: Book_Basic_pages
+    2100016: glass
+    2100018: cork
+    2100020: wood
+    2100022: crystal_base
+    2100024: crystal_ball_2
+    2100026: crystal_ball_1
+    2300000: Arcane_Table:Arcane_Table
+    2300002: Book_1:Book_1
+    2300004: book_2
+    2300006: Book_2:book_2
+    2300008: book_3
+    2300010: Book_3:book_3
+    2300012: Book_4
+    2300014: book_4
+    2300016: Book_5
+    2300018: book_5
+    2300020: Book_6
+    2300022: book_6
+    2300024: Bottle
+    2300026: Candle_1
+    2300028: Candle_1 1
+    2300030: Candle_2
+    2300032: Candle_2 1
+    2300034: Candle_3
+    2300036: Candle_3 1
+    2300038: Crystal
+    2300040: pCylinder1
+    2300042: pCylinder2
+    2300044: pCylinder3
+    2300046: pCylinder4
+    2300048: pCylinder5
+    2300050: pCylinder6
+    2300052: Potion_Bottle:Bottle
+    2300054: Potion_Bottle:Stopper
+    2300056: Spellbook:Spellbook
+    2300058: Stand
+    2300060: Stand1
+    2300062: Stand2
+    2300064: Stopper
+    3300000: Arcane_Table:Arcane_Table
+    3300002: Book_1:Book_1
+    3300004: book_2
+    3300006: Book_2:book_2
+    3300008: book_3
+    3300010: Book_3:book_3
+    3300012: Book_4
+    3300014: book_4
+    3300016: Book_5
+    3300018: book_5
+    3300020: Book_6
+    3300022: book_6
+    3300024: Bottle
+    3300026: Candle_1
+    3300028: Candle_1 1
+    3300030: Candle_2
+    3300032: Candle_2 1
+    3300034: Candle_3
+    3300036: Candle_3 1
+    3300038: Crystal
+    3300040: pCylinder1
+    3300042: pCylinder2
+    3300044: pCylinder3
+    3300046: pCylinder4
+    3300048: pCylinder5
+    3300050: pCylinder6
+    3300052: Potion_Bottle:Bottle
+    3300054: Potion_Bottle:Stopper
+    3300056: Spellbook:Spellbook
+    3300058: Stand
+    3300060: Stand1
+    3300062: Stand2
+    3300064: Stopper
+    4300000: Candle_1
+    4300002: Candle_2
+    4300004: Candle_3
+    4300006: pCylinder4
+    4300008: pCylinder5
+    4300010: pCylinder6
+    4300012: Candle_3
+    4300014: Candle_2
+    4300016: Candle_1
+    4300018: pCylinder1
+    4300020: pCylinder2
+    4300022: pCylinder3
+    4300024: book_6
+    4300026: Book_6
+    4300028: book_5
+    4300030: book_4
+    4300032: book_2
+    4300034: Book_5
+    4300036: Book_2:book_2
+    4300038: Book_3:book_3
+    4300040: Book_1:Book_1
+    4300042: book_3
+    4300044: Book_4
+    4300046: Spellbook:Spellbook
+    4300048: Potion_Bottle:Bottle
+    4300050: Potion_Bottle:Stopper
+    4300052: Bottle
+    4300054: Stopper
+    4300056: Arcane_Table:Arcane_Table
+    4300058: Crystal
+    4300060: Stand
+    4300062: Stand1
+    4300064: Stand2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

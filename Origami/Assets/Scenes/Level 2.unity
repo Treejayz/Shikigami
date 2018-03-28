@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.5558183, g: 0.61630744, b: 0.67898256, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -8846,6 +8846,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 771303eacddba5d4fb0f993cb0c5d4ac, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &471824577 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1871355580567026, guid: 7d8834efc087f904eb2806623e4ab89e,
+    type: 2}
+  m_PrefabInternal: {fileID: 2046383747}
 --- !u!1001 &475794190
 Prefab:
   m_ObjectHideFlags: 0
@@ -31168,6 +31173,7 @@ MonoBehaviour:
   pos: {fileID: 2904456}
   Page: {fileID: 1877142195}
   checkPointText: {fileID: 1648982113}
+  newForm: 1
 --- !u!4 &1426702830 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4717946034346694, guid: e59895e4b74763e41a6fa0a058e97bf8,
@@ -39903,6 +39909,21 @@ GameObject:
   m_PrefabParentObject: {fileID: 1043901087679176, guid: e59895e4b74763e41a6fa0a058e97bf8,
     type: 2}
   m_PrefabInternal: {fileID: 1133326106}
+--- !u!114 &1877142196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1877142195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fdab70072d226d45b42e748c26a7021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayText: As the fox, you can hold Left Shift to Sprint, or hold left control
+    to sneak and walk across tightropes or falling platforms!
+  displayCanvas: {fileID: 471824577}
+  displaytime: 7
 --- !u!4 &1881487692 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4983028655291958, guid: 58d1c7d8e7f27104dabdea95d62ac063,
@@ -42731,6 +42752,10 @@ Prefab:
     - target: {fileID: 4704130373710972, guid: 7d8834efc087f904eb2806623e4ab89e, type: 2}
       propertyPath: m_RootOrder
       value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1479060186495628, guid: 7d8834efc087f904eb2806623e4ab89e, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7d8834efc087f904eb2806623e4ab89e, type: 2}

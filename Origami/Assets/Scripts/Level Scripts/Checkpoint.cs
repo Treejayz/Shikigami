@@ -17,6 +17,8 @@ public class Checkpoint : MonoBehaviour {
 	public GameObject checkPointText;
     private static float fadeTime = 2f;
 
+    public bool newForm = false;
+
     // Use this for initialization
     void Start() {
         CheckPointList = GameObject.FindGameObjectsWithTag("Checkpoint");
@@ -145,7 +147,9 @@ public class Checkpoint : MonoBehaviour {
 
         // I think this is the best place to put this. The player is set as the source because the page should disappear here.
         AkSoundEngine.PostEvent("BigPickup", player.gameObject);
-
-        Destroy(Page);
+        if (!newForm)
+        {
+            Destroy(Page);
+        }
     }
 }
