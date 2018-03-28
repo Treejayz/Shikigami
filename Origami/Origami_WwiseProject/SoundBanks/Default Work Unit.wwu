@@ -71,6 +71,26 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="Level3SB" ID="{9BBAB3F8-59C4-40F7-A254-BF2E3D950460}">
+					<ObjectInclusionList>
+						<ObjectRef Name="PickupCoin" ID="{84B9FE28-A236-4307-B247-147A798D86AB}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="FrogJump" ID="{B26E24F4-DACE-437B-992F-B84D711BA154}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Dash" ID="{3634A491-0A2A-463A-A09E-1B2130E688A5}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="WingJump" ID="{DDFEB236-29F6-46B0-96D4-8DD54FCC1DAD}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="WindStop" ID="{B944F94E-E789-4730-83ED-FCDD96E9B978}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Transform" ID="{ED9DC825-B63B-4760-BA3E-C4C67AC3E5B8}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="BigPickup" ID="{1E5CAF6C-9784-483F-A6A3-1C55D33A67A9}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Pickup" ID="{947EEC9C-E58C-48B3-A731-04A5112EC800}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="WindBegin" ID="{CE7F98F0-1688-48D6-8217-39451F98F2D4}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="FrogStick" ID="{994DDA88-97D8-4984-8781-A60E80A25D01}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Death" ID="{E326C055-9827-49BF-95C1-D65CC31E464C}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="FoxJump" ID="{8FAF2597-0603-4A45-8608-587036C7DB35}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Splash" ID="{037D6415-D390-4CF3-801C-806F3D9A4332}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="BossBattleStart" ID="{F44C7EEA-240D-4F27-A27C-CBDAE29DF458}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

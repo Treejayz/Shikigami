@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID BIGPICKUP = 38805597U;
+        static const AkUniqueID BOSSBATTLESTART = 2577690848U;
         static const AkUniqueID CHIMEPLAY = 2453422573U;
         static const AkUniqueID DASH = 1942692385U;
         static const AkUniqueID DEATH = 779278001U;
@@ -62,6 +63,7 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID LEVEL1SB = 2398009465U;
+        static const AkUniqueID LEVEL3SB = 2263494199U;
         static const AkUniqueID MENUSB = 139438331U;
         static const AkUniqueID PLAYERSOUND = 2656385039U;
     } // namespace BANKS

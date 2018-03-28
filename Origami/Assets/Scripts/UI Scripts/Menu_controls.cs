@@ -16,6 +16,7 @@ public class Menu_controls : MonoBehaviour {
 	}
 
 	public void loadScene(string scenename){
+        AkSoundEngine.StopAll();
 		SceneManager.LoadScene (scenename);
 	}
 	public void loadCanvas(GameObject canvasName){

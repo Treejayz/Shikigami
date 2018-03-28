@@ -3,7 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{0083A858-593D-4404-B58E-25D75EC7F022}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Katadeus\Documents\OrigamiSounds\PlayerSounds\Universal"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Katadeus\Documents\OrigamiSounds\Music"/>
 				<Property Name="Event Action List\{037D6415-D390-4CF3-801C-806F3D9A4332}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{19A80DA9-C0F9-4BDF-80F8-B26298064795}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{1A1D2228-E499-4307-B859-F269DD74700C}\x64_Expand States" Type="string" Value=""/>
@@ -27,6 +27,7 @@
 				<Property Name="Event Action List\{DDFEB236-29F6-46B0-96D4-8DD54FCC1DAD}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E326C055-9827-49BF-95C1-D65CC31E464C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{ED9DC825-B63B-4760-BA3E-C4C67AC3E5B8}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{F44C7EEA-240D-4F27-A27C-CBDAE29DF458}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>

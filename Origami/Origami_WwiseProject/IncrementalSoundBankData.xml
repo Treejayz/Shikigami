@@ -5,13 +5,14 @@
 			<Language ID="393239870">
 				<File Name="Init" Hash="682759791" Timestamp="1522190941"/>
 				<File Name="Level1SB" Hash="3661592058" Timestamp="1522199515"/>
+				<File Name="Level3SB" Hash="34610398" Timestamp="1522204122"/>
 				<File Name="MenuSB" Hash="1908703406" Timestamp="1522195759"/>
 				<File Name="PlayerSound" Hash="627928966" Timestamp="1522199515"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="200449973" Timestamp="1522199515"/>
+				<File Name="" Hash="2879673747" Timestamp="1522204122"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
