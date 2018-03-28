@@ -11,6 +11,9 @@ public class DragonMover : MonoBehaviour {
     public Transform pointA;
     public Transform pointB;
 
+    private Vector3 newPos;
+    private float currentSpeed;
+
     public enum MoveType { PARALLEL, LEAD, CHASE };
     public MoveType Type;
 
@@ -21,23 +24,36 @@ public class DragonMover : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		switch(Type)
+
+        Vector3 direction = pointB.position - pointA.position;
+        Vector3 heading = player.position - pointA.position;
+        Vector3 pos = Vector3.Project(heading, direction);
+
+
+        switch (Type)
         {
             case MoveType.PARALLEL:
-
-                Vector3 direction = pointB.position - pointA.position;
-                Vector3 heading = player.position - pointA.position;
-                Vector3 pos = Vector3.Project(heading, direction);
-                transform.position = pointA.position + pos;
+                newPos = pointA.position + pos;
                 break;
 
             case MoveType.LEAD:
-
+                newPos = pointA.position + pos + (direction.normalized * 40f);
                 break;
 
             case MoveType.CHASE:
-
+                newPos = pointA.position + pos - (direction.normalized * 40f);
                 break;
         };
+
+        if (Vector3.Distance(newPos, transform.position) < 10f)
+        {
+            currentSpeed = speed * (Vector3.Distance(newPos, transform.position) / 10f);
+        }
+        print(newPos);
 	}
+
+    private void FixedUpdate()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, newPos, currentSpeed * Time.deltaTime);
+    }
 }
