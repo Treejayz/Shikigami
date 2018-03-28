@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.5558183, g: 0.61630744, b: 0.67898256, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -17003,6 +17003,11 @@ Prefab:
       propertyPath: m_Name
       value: Collectables (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 224453662181741070, guid: d5faf07e4bbf9a0489df579638798e7e,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d5faf07e4bbf9a0489df579638798e7e, type: 2}
   m_IsPrefabParent: 0
@@ -31245,12 +31250,12 @@ Prefab:
     - target: {fileID: 224763950842142618, guid: 4513a79a985c0a34bb34fbe58608b11e,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 224763950842142618, guid: 4513a79a985c0a34bb34fbe58608b11e,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224969861118483524, guid: 4513a79a985c0a34bb34fbe58608b11e,
         type: 2}
