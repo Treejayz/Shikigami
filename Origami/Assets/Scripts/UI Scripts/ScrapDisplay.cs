@@ -38,6 +38,7 @@ public class ScrapDisplay : MonoBehaviour {
 		}
 		if (timeoflast + timer > Time.time) {
 			StopCoroutine ("loweroppacity");
+			going = false;
 			Color tempcoltext = this.GetComponentInChildren<Text> ().color;
 			Color tempcolimage = this.GetComponent<Image> ().color;
 			tempcoltext = this.GetComponentInChildren<Text> ().color;
