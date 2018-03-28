@@ -26,6 +26,8 @@ public class DeathState : State
         character.gameObject.transform.GetChild(1).gameObject.SetActive(false);
         character.gameObject.transform.GetChild(0).gameObject.SetActive(false);
         character.gameObject.transform.GetChild(2).gameObject.SetActive(false);
+        character.gameObject.transform.GetChild(3).gameObject.SetActive(false);
+        character.gameObject.transform.GetChild(4).gameObject.SetActive(false);
         AkSoundEngine.PostEvent("Death", character.gameObject);
         AkSoundEngine.PostEvent("Splash", character.gameObject);
 

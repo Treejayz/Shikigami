@@ -39,6 +39,8 @@ public class TransformState : State
     public override void OnStateEnter()
     {
         player = character.GetComponent<CharacterController>();
+        character.switching = true;
+
         currentTime = 0f;
         character.GetComponentsInChildren<ParticleSystem>()[3].Play();
         character.gameObject.transform.GetChild(1).gameObject.SetActive(false);
@@ -207,7 +209,7 @@ public class TransformState : State
     public override void PhysicsTick()
     {
         Vector3 target = new Vector3(0f, 0f, 0f);
-        character.momentum = Vector3.Lerp(character.momentum, target, 0.03f);
+        character.momentum = Vector3.Lerp(character.momentum, target, 0.015f);
         if (character.momentum.x < 0.001f && character.momentum.x > -0.001f) { character.momentum.x = 0f; }
         if (character.momentum.z < 0.001f && character.momentum.z > -0.001f) { character.momentum.z = 0f; }
 
@@ -215,9 +217,13 @@ public class TransformState : State
         player.Move(Vector3.down * character.gravity * Time.fixedDeltaTime);
     }
 
+    public override void OnStateExit()
+    {
+        character.switching = false;
+    }
+
     private void SetForm(string next)
     {
-        character.switching = true;
         if (next == "Frog")
         {
             character.CraneMesh.SetActive(false);

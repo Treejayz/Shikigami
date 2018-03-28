@@ -92,7 +92,7 @@ public class Character : MonoBehaviour {
             incooldown = true;
         }
         
-        if (switching && Input.GetAxis("Switch2") == 0.0f && Input.GetAxis("Switch1") == 0.0f) { switching = false; }
+        //if (switching && Input.GetAxis("Switch2") == 0.0f && Input.GetAxis("Switch1") == 0.0f) { switching = false; }
 
         if (!switching)
         {
@@ -172,7 +172,6 @@ public class Character : MonoBehaviour {
             frogAnimator.enabled = false;
             foxAnimator.enabled = true;
         }
-        switching = true;
     }
     public CurrentForm GetForm()
     {
