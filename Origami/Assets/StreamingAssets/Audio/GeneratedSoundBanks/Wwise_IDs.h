@@ -25,6 +25,8 @@ namespace AK
         static const AkUniqueID LAWNMOWERPLATPLAY = 3498031842U;
         static const AkUniqueID PICKUP = 3978245845U;
         static const AkUniqueID PICKUPCOIN = 1097127270U;
+        static const AkUniqueID PLATDROP = 2933970505U;
+        static const AkUniqueID PLATSPAWN = 4040173943U;
         static const AkUniqueID RESETHPMUSIC = 3000620399U;
         static const AkUniqueID SPLASH = 160038168U;
         static const AkUniqueID STARTLV1 = 298361094U;

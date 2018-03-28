@@ -316,6 +316,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="PlatDrop" ID="{0C3B5521-45EA-4D29-B38E-CD7D91D15742}">
+					<ChildrenList>
+						<Action Name="" ID="{E1508D94-1C7E-49A1-ADB6-88A71BF4D598}" ShortID="430430140">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="platformdrop" ID="{3D915850-C778-4F73-9F42-C410352900CD}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlatSpawn" ID="{56D084E5-23ED-4832-B513-303487B2DEB8}">
+					<ChildrenList>
+						<Action Name="" ID="{338216CE-BFA8-469D-8E3F-A753C309A88E}" ShortID="238342379">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="platspawn" ID="{F3DCB1BB-E182-4C5F-B2EF-71AEAFF2E1DC}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

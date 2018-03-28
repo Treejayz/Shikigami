@@ -37,6 +37,7 @@ public class FallingPlatform : MonoBehaviour {
         if (other.tag == "Player" && !Character.sneaking && !triggered)
         {
             triggered = true;
+            AkSoundEngine.PostEvent("PlatDrop", gameObject);
             StartCoroutine("Shake");
         }
     }
@@ -79,6 +80,7 @@ public class FallingPlatform : MonoBehaviour {
 
     IEnumerator Respawn()
     {
+        AkSoundEngine.PostEvent("PlatSpawn", gameObject);
         plat.GetComponent<MeshCollider>().enabled = true;
         //platVisual.GetComponent<MeshRenderer>().enabled = true;
         platVisual.GetComponent<ParticleSystem>().Play();
