@@ -52,7 +52,6 @@ public class DragonMover : MonoBehaviour {
         {
             currentSpeed = speed;
         }
-        print(currentSpeed);
 	}
 
     private void FixedUpdate()

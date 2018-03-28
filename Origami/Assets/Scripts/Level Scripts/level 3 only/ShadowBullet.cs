@@ -7,6 +7,7 @@ public class ShadowBullet : MonoBehaviour {
     public Vector3 direction;
     public Vector3 newDirection;
     public GameObject target;
+    public Transform dragon;
 
     public float speed;
     private float rotationspeed;
@@ -44,11 +45,10 @@ public class ShadowBullet : MonoBehaviour {
                 target.GetComponent<Character>().dead = true;
                 StartCoroutine("Kill");
             } 
-            //else if (Vector3.Magnitude(transform.position - target.transform.position) < 15f)
-            //{
-                //Vector3 targetDir = (target.transform.position - transform.position).normalized;
-                //direction = Vector3.Lerp(direction, targetDir, 1f * Time.deltaTime);
-            //}
+            else if (Vector3.Distance(target.transform.position, dragon.position) < Vector3.Distance(transform.position, dragon.position))
+            {
+                //Do nothing we missed
+            }
             else {
                 direction = Vector3.Lerp(direction, newDirection, 2f * Time.deltaTime);
                 direction.Normalize();
