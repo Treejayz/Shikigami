@@ -1465,12 +1465,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerList: f7e1664c
   useOtherObject: 0
-  bankName: PlayerSound
+  bankName: Level3SB
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
   unloadTriggerList: 958ca0ea
-  valueGuid: 33011edbcc8d5a49b34f236bc536c51f
+  valueGuid: f8b3ba9bc459f740a254bf2e3d950460
 --- !u!124 &1293770352
 Behaviour:
   m_ObjectHideFlags: 0
@@ -1590,12 +1590,12 @@ MonoBehaviour:
   actionOnEventType: 0
   curveInterpolation: 4
   enableActionOnEvent: 0
-  eventID: 298361093
+  eventID: -1717276448
   m_callbackData: {fileID: 0}
   playingId: 0
   soundEmitterObject: {fileID: 0}
   transitionDuration: 0
-  valueGuid: 2bce625626cfc540b4af0adaef3eeb97
+  valueGuid: ea7e4cf40d24274fa27ccbdae29df458
 --- !u!45 &1293770359
 Skybox:
   m_ObjectHideFlags: 0
