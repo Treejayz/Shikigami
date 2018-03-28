@@ -28,8 +28,8 @@ MonoBehaviour:
     List: []
   BankWwu:
   - Guid: '{090E2BE1-C110-4C48-8EE1-99814A8166EB}'
-    m_lastTimePart2: -1999268813
-    m_lastTimePsrt1: 722887606
+    m_lastTimePart2: -1999268800
+    m_lastTimePsrt1: 616211978
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks\Default Work Unit.wwu
     List:
@@ -41,6 +41,15 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Level1SB
+        ObjectType: 7
+    - Guid: 79fd9fb3fdb7b248bb6a4120c59859c5
+      ID: 139438331
+      Name: MenuSB
+      Path: Default Work Unit\MenuSB
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MenuSB
         ObjectType: 7
     - Guid: 33011edbcc8d5a49b34f236bc536c51f
       ID: -1638582257
@@ -57,8 +66,8 @@ MonoBehaviour:
   defaultPoolSize: 4096
   EventWwu:
   - Guid: '{3838D55C-4A81-4825-8DB4-A33597820612}'
-    m_lastTimePart2: -1999268816
-    m_lastTimePsrt1: 2032028744
+    m_lastTimePart2: -1999268811
+    m_lastTimePsrt1: 2013161600
     ParentPhysicalPath: 
     PhysicalPath: Events\Default Work Unit.wwu
     List:

@@ -11,6 +11,21 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
+		<SoundBank Id="139438331" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\MenuSB</ObjectPath>
+			<ShortName>MenuSB</ShortName>
+			<Path>MenuSB.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3827058668" Name="StartMusic" ObjectPath="\Events\Default Work Unit\StartMusic"/>
+				<Event Id="452547817" Name="Stop_All" ObjectPath="\Events\Default Work Unit\Stop_All" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="876606834" Language="SFX">
+					<ShortName>MenuTheme.wav</ShortName>
+					<Path>SFX\MenuTheme_F17FB28C.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
@@ -26,11 +41,14 @@
 				<Event Id="779278001" Name="Death" ObjectPath="\Events\Default Work Unit\Death"/>
 				<Event Id="2432329107" Name="FrogJump" ObjectPath="\Events\Default Work Unit\FrogJump"/>
 				<Event Id="1880194273" Name="FrogStick" ObjectPath="\Events\Default Work Unit\FrogStick"/>
+				<Event Id="3498031842" Name="lawnmowerplatplay" ObjectPath="\Events\Default Work Unit\lawnmowerplatplay" MaxAttenuation="80.000000"/>
 				<Event Id="3978245845" Name="Pickup" ObjectPath="\Events\Default Work Unit\Pickup"/>
 				<Event Id="1097127270" Name="PickupCoin" ObjectPath="\Events\Default Work Unit\PickupCoin"/>
 				<Event Id="160038168" Name="Splash" ObjectPath="\Events\Default Work Unit\Splash"/>
 				<Event Id="298361094" Name="StartLv1" ObjectPath="\Events\Default Work Unit\StartLv1"/>
 				<Event Id="452547817" Name="Stop_All" ObjectPath="\Events\Default Work Unit\Stop_All" MaxAttenuation="0.000000"/>
+				<Event Id="1021800662" Name="WindBegin" ObjectPath="\Events\Default Work Unit\WindBegin"/>
+				<Event Id="1571412035" Name="WindStop" ObjectPath="\Events\Default Work Unit\WindStop" MaxAttenuation="0.000000"/>
 				<Event Id="3191917460" Name="WingJump" ObjectPath="\Events\Default Work Unit\WingJump"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -57,6 +75,10 @@
 				<File Id="381186739" Language="SFX">
 					<ShortName>Splash7.wav</ShortName>
 					<Path>SFX\Splash7_1C9C67B2.wem</Path>
+				</File>
+				<File Id="422246823" Language="SFX">
+					<ShortName>Windloop.wav</ShortName>
+					<Path>SFX\Windloop_F17FB28C.wem</Path>
 				</File>
 				<File Id="451997213" Language="SFX">
 					<ShortName>Rip03.wav</ShortName>
@@ -97,6 +119,10 @@
 				<File Id="896591778" Language="SFX">
 					<ShortName>Dash02.wav</ShortName>
 					<Path>SFX\Dash02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1020712570" Language="SFX">
+					<ShortName>lawnmowerish.wav</ShortName>
+					<Path>SFX\lawnmowerish_F17FB28C.wem</Path>
 				</File>
 				<File Id="1030449657" Language="SFX">
 					<ShortName>Rip01.wav</ShortName>
