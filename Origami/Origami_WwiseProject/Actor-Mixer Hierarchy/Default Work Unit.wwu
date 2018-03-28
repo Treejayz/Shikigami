@@ -894,7 +894,7 @@
 						<Property Name="PositioningType" Type="int16" Value="1"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-10</Value>
+								<Value>-18</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -970,6 +970,44 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="BossfightDemo" ID="{A964574B-D851-43E9-91D6-7A410CD5E610}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="platformdrop" ID="{3D915850-C778-4F73-9F42-C410352900CD}" ShortID="467982223">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="platformdrop" ID="{63878980-14C6-45F3-B9E8-9333F038ADBD}" ShortID="207377098">
+							<Language>SFX</Language>
+							<AudioFile>platformdrop.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="platformdrop" ID="{63878980-14C6-45F3-B9E8-9333F038ADBD}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="platspawn" ID="{F3DCB1BB-E182-4C5F-B2EF-71AEAFF2E1DC}" ShortID="24870173">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="platspawn" ID="{B96F88FD-55F2-4002-8BCB-A1C6929DC358}" ShortID="246559277">
+							<Language>SFX</Language>
+							<AudioFile>platspawn.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="platspawn" ID="{B96F88FD-55F2-4002-8BCB-A1C6929DC358}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>
