@@ -48,8 +48,11 @@ public class DragonMover : MonoBehaviour {
         if (Vector3.Distance(newPos, transform.position) < 10f)
         {
             currentSpeed = speed * (Vector3.Distance(newPos, transform.position) / 10f);
+        } else if (currentSpeed < speed)
+        {
+            currentSpeed = speed;
         }
-        print(newPos);
+        print(currentSpeed);
 	}
 
     private void FixedUpdate()
