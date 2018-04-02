@@ -902,6 +902,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4521407637438122}
   - component: {fileID: 95220198796660238}
+  - component: {fileID: 114798674585876010}
   m_Layer: 0
   m_Name: Crane
   m_TagString: Untagged
@@ -1158,6 +1159,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4712314110957226}
   - component: {fileID: 95991126540854374}
+  - component: {fileID: 114851693944301636}
   m_Layer: 0
   m_Name: Frog
   m_TagString: Untagged
@@ -3007,6 +3009,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4945393163630318}
   - component: {fileID: 95687515058771698}
+  - component: {fileID: 114728479148160846}
   m_Layer: 0
   m_Name: Fox
   m_TagString: Untagged
@@ -6144,6 +6147,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camTrans: {fileID: 0}
   camTargetTrans: {fileID: 0}
+--- !u!114 &114728479148160846
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1953977809853170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7436eb04da416b2458e15ace85644b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114798674585876010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1294230454298140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7436eb04da416b2458e15ace85644b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114851693944301636
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1381327607034908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7436eb04da416b2458e15ace85644b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!137 &137102959106313212
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

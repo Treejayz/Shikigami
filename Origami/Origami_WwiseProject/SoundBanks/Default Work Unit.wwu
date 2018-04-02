@@ -24,6 +24,7 @@
 						<ObjectRef Name="RandomRip" ID="{FEB3E9DD-762C-4745-AE7E-656F17A0CDA9}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Transform" ID="{ED9DC825-B63B-4760-BA3E-C4C67AC3E5B8}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="WingJump03" ID="{536DA625-BB1D-4760-BB48-68B13E3D97DA}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Flap" ID="{03F77E6D-03B0-4813-9DC7-3856C98A67FA}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PlatSpawn" ID="{56D084E5-23ED-4832-B513-303487B2DEB8}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Pickup2" ID="{60F84DBF-1A68-49A0-A5C1-39D6BF7992DA}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Dash02" ID="{D356CFD5-1341-49C5-A6AE-BB46B8101009}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
@@ -52,6 +53,7 @@
 						<ObjectRef Name="WingJump" ID="{DDFEB236-29F6-46B0-96D4-8DD54FCC1DAD}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="WindStop" ID="{B944F94E-E789-4730-83ED-FCDD96E9B978}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Transform" ID="{ED9DC825-B63B-4760-BA3E-C4C67AC3E5B8}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Flap" ID="{03F77E6D-03B0-4813-9DC7-3856C98A67FA}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="BigPickup" ID="{1E5CAF6C-9784-483F-A6A3-1C55D33A67A9}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Pickup" ID="{947EEC9C-E58C-48B3-A731-04A5112EC800}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="WindBegin" ID="{CE7F98F0-1688-48D6-8217-39451F98F2D4}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
@@ -81,6 +83,7 @@
 						<ObjectRef Name="WingJump" ID="{DDFEB236-29F6-46B0-96D4-8DD54FCC1DAD}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="WindStop" ID="{B944F94E-E789-4730-83ED-FCDD96E9B978}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Transform" ID="{ED9DC825-B63B-4760-BA3E-C4C67AC3E5B8}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Flap" ID="{03F77E6D-03B0-4813-9DC7-3856C98A67FA}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PlatSpawn" ID="{56D084E5-23ED-4832-B513-303487B2DEB8}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="BigPickup" ID="{1E5CAF6C-9784-483F-A6A3-1C55D33A67A9}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Pickup" ID="{947EEC9C-E58C-48B3-A731-04A5112EC800}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>

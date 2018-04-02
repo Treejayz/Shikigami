@@ -344,6 +344,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Flap" ID="{03F77E6D-03B0-4813-9DC7-3856C98A67FA}">
+					<ChildrenList>
+						<Action Name="" ID="{21BD4D01-F94C-41E9-9E8B-C6D05B9587CF}" ShortID="379184158">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RandomFlap" ID="{C0487147-1BFA-4CA5-B156-B9B7D5F4AD6D}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

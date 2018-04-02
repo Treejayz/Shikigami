@@ -4,15 +4,15 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="Init" Hash="682759791" Timestamp="1522190941"/>
-				<File Name="Level1SB" Hash="1769283355" Timestamp="1522205984"/>
-				<File Name="Level3SB" Hash="642822150" Timestamp="1522256824"/>
+				<File Name="Level1SB" Hash="673842892" Timestamp="1522689986"/>
+				<File Name="Level3SB" Hash="1041127666" Timestamp="1522266161"/>
 				<File Name="MenuSB" Hash="1908703406" Timestamp="1522195759"/>
-				<File Name="PlayerSound" Hash="554314346" Timestamp="1522256824"/>
+				<File Name="PlayerSound" Hash="2058571716" Timestamp="1522689897"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="212612329" Timestamp="1522256824"/>
+				<File Name="" Hash="4244874005" Timestamp="1522690018"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -20,14 +20,15 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="Init" Hash="4243042678" Timestamp="1522195787"/>
-				<File Name="Level1SB" Hash="2691730828" Timestamp="1522195981"/>
+				<File Name="Level1SB" Hash="673842892" Timestamp="1522690203"/>
+				<File Name="Level3SB" Hash="1041127666" Timestamp="1522689897"/>
 				<File Name="MenuSB" Hash="1908703406" Timestamp="1522195787"/>
-				<File Name="PlayerSound" Hash="627928966" Timestamp="1522199515"/>
+				<File Name="PlayerSound" Hash="2058571716" Timestamp="1522689897"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3397657527" Timestamp="1522199515"/>
+				<File Name="" Hash="2915796175" Timestamp="1522690203"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

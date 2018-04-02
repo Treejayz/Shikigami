@@ -40,6 +40,7 @@
 				<Event Id="2577690848" Name="BossBattleStart" ObjectPath="\Events\Default Work Unit\BossBattleStart"/>
 				<Event Id="1942692385" Name="Dash" ObjectPath="\Events\Default Work Unit\Dash"/>
 				<Event Id="779278001" Name="Death" ObjectPath="\Events\Default Work Unit\Death"/>
+				<Event Id="2931383628" Name="Flap" ObjectPath="\Events\Default Work Unit\Flap"/>
 				<Event Id="3836640104" Name="FoxJump" ObjectPath="\Events\Default Work Unit\FoxJump"/>
 				<Event Id="2432329107" Name="FrogJump" ObjectPath="\Events\Default Work Unit\FrogJump"/>
 				<Event Id="1880194273" Name="FrogStick" ObjectPath="\Events\Default Work Unit\FrogStick"/>
@@ -54,6 +55,10 @@
 				<Event Id="3191917460" Name="WingJump" ObjectPath="\Events\Default Work Unit\WingJump"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="4082871" Language="SFX">
+					<ShortName>Wingflap03.wav</ShortName>
+					<Path>SFX\Wingflap03_1C9C67B2.wem</Path>
+				</File>
 				<File Id="80407323" Language="SFX">
 					<ShortName>PlaceholderTransform.wav</ShortName>
 					<Path>SFX\PlaceholderTransform_1C9C67B2.wem</Path>
@@ -61,6 +66,14 @@
 				<File Id="95738087" Language="SFX">
 					<ShortName>BigPickup01.wav</ShortName>
 					<Path>SFX\BigPickup01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="127240437" Language="SFX">
+					<ShortName>GenFlap2.wav</ShortName>
+					<Path>SFX\GenFlap2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="184370491" Language="SFX">
+					<ShortName>GenFlap3.wav</ShortName>
+					<Path>SFX\GenFlap3_1C9C67B2.wem</Path>
 				</File>
 				<File Id="192483792" Language="SFX">
 					<ShortName>Splash5.wav</ShortName>
@@ -74,9 +87,17 @@
 					<ShortName>platspawn.wav</ShortName>
 					<Path>SFX\platspawn_1C9C67B2.wem</Path>
 				</File>
+				<File Id="263556889" Language="SFX">
+					<ShortName>Wingflap02.wav</ShortName>
+					<Path>SFX\Wingflap02_1C9C67B2.wem</Path>
+				</File>
 				<File Id="274054376" Language="SFX">
 					<ShortName>Jump02.wav</ShortName>
 					<Path>SFX\Jump02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="301842021" Language="SFX">
+					<ShortName>Wingflap01.wav</ShortName>
+					<Path>SFX\Wingflap01_1C9C67B2.wem</Path>
 				</File>
 				<File Id="312806774" Language="SFX">
 					<ShortName>Splash3.wav</ShortName>
@@ -118,6 +139,10 @@
 					<ShortName>Coin03.wav</ShortName>
 					<Path>SFX\Coin03_1C9C67B2.wem</Path>
 				</File>
+				<File Id="723316495" Language="SFX">
+					<ShortName>GenFlap1.wav</ShortName>
+					<Path>SFX\GenFlap1_1C9C67B2.wem</Path>
+				</File>
 				<File Id="785646735" Language="SFX">
 					<ShortName>Splash6.wav</ShortName>
 					<Path>SFX\Splash6_1C9C67B2.wem</Path>
@@ -152,6 +177,7 @@
 				<Event Id="38805597" Name="BigPickup" ObjectPath="\Events\Default Work Unit\BigPickup"/>
 				<Event Id="1942692385" Name="Dash" ObjectPath="\Events\Default Work Unit\Dash"/>
 				<Event Id="779278001" Name="Death" ObjectPath="\Events\Default Work Unit\Death"/>
+				<Event Id="2931383628" Name="Flap" ObjectPath="\Events\Default Work Unit\Flap"/>
 				<Event Id="2432329107" Name="FrogJump" ObjectPath="\Events\Default Work Unit\FrogJump"/>
 				<Event Id="1880194273" Name="FrogStick" ObjectPath="\Events\Default Work Unit\FrogStick"/>
 				<Event Id="3498031842" Name="lawnmowerplatplay" ObjectPath="\Events\Default Work Unit\lawnmowerplatplay" MaxAttenuation="80.000000"/>
@@ -166,6 +192,10 @@
 				<Event Id="3191917460" Name="WingJump" ObjectPath="\Events\Default Work Unit\WingJump"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="4082871" Language="SFX">
+					<ShortName>Wingflap03.wav</ShortName>
+					<Path>SFX\Wingflap03_1C9C67B2.wem</Path>
+				</File>
 				<File Id="80407323" Language="SFX">
 					<ShortName>PlaceholderTransform.wav</ShortName>
 					<Path>SFX\PlaceholderTransform_1C9C67B2.wem</Path>
@@ -173,6 +203,14 @@
 				<File Id="95738087" Language="SFX">
 					<ShortName>BigPickup01.wav</ShortName>
 					<Path>SFX\BigPickup01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="127240437" Language="SFX">
+					<ShortName>GenFlap2.wav</ShortName>
+					<Path>SFX\GenFlap2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="184370491" Language="SFX">
+					<ShortName>GenFlap3.wav</ShortName>
+					<Path>SFX\GenFlap3_1C9C67B2.wem</Path>
 				</File>
 				<File Id="192483792" Language="SFX">
 					<ShortName>Splash5.wav</ShortName>
@@ -182,9 +220,17 @@
 					<ShortName>Level1.wav</ShortName>
 					<Path>SFX\Level1_F17FB28C.wem</Path>
 				</File>
+				<File Id="263556889" Language="SFX">
+					<ShortName>Wingflap02.wav</ShortName>
+					<Path>SFX\Wingflap02_1C9C67B2.wem</Path>
+				</File>
 				<File Id="274054376" Language="SFX">
 					<ShortName>Jump02.wav</ShortName>
 					<Path>SFX\Jump02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="301842021" Language="SFX">
+					<ShortName>Wingflap01.wav</ShortName>
+					<Path>SFX\Wingflap01_1C9C67B2.wem</Path>
 				</File>
 				<File Id="312806774" Language="SFX">
 					<ShortName>Splash3.wav</ShortName>
@@ -217,6 +263,10 @@
 				<File Id="658586597" Language="SFX">
 					<ShortName>Coin03.wav</ShortName>
 					<Path>SFX\Coin03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="723316495" Language="SFX">
+					<ShortName>GenFlap1.wav</ShortName>
+					<Path>SFX\GenFlap1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="785646735" Language="SFX">
 					<ShortName>Splash6.wav</ShortName>
@@ -257,6 +307,7 @@
 				<Event Id="2453422573" Name="chimeplay" ObjectPath="\Events\Default Work Unit\chimeplay" MaxAttenuation="80.000000"/>
 				<Event Id="1942692385" Name="Dash" ObjectPath="\Events\Default Work Unit\Dash"/>
 				<Event Id="779278001" Name="Death" ObjectPath="\Events\Default Work Unit\Death"/>
+				<Event Id="2931383628" Name="Flap" ObjectPath="\Events\Default Work Unit\Flap"/>
 				<Event Id="3836640104" Name="FoxJump" ObjectPath="\Events\Default Work Unit\FoxJump"/>
 				<Event Id="2432329107" Name="FrogJump" ObjectPath="\Events\Default Work Unit\FrogJump"/>
 				<Event Id="1880194273" Name="FrogStick" ObjectPath="\Events\Default Work Unit\FrogStick"/>

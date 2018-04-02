@@ -28,8 +28,8 @@ MonoBehaviour:
     List: []
   BankWwu:
   - Guid: '{090E2BE1-C110-4C48-8EE1-99814A8166EB}'
-    m_lastTimePart2: -1999268792
-    m_lastTimePsrt1: -515286129
+    m_lastTimePart2: -1999267650
+    m_lastTimePsrt1: -1742309772
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks\Default Work Unit.wwu
     List:
@@ -41,6 +41,15 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Level1SB
+        ObjectType: 7
+    - Guid: f8b3ba9bc459f740a254bf2e3d950460
+      ID: -2031473097
+      Name: Level3SB
+      Path: Default Work Unit\Level3SB
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Level3SB
         ObjectType: 7
     - Guid: 79fd9fb3fdb7b248bb6a4120c59859c5
       ID: 139438331
@@ -66,8 +75,8 @@ MonoBehaviour:
   defaultPoolSize: 4096
   EventWwu:
   - Guid: '{3838D55C-4A81-4825-8DB4-A33597820612}'
-    m_lastTimePart2: -1999268792
-    m_lastTimePsrt1: -515185927
+    m_lastTimePart2: -1999267650
+    m_lastTimePsrt1: -1742249557
     ParentPhysicalPath: 
     PhysicalPath: Events\Default Work Unit.wwu
     List:
@@ -79,6 +88,18 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: BigPickup
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: ea7e4cf40d24274fa27ccbdae29df458
+      ID: -1717276448
+      Name: BossBattleStart
+      Path: Default Work Unit\BossBattleStart
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: BossBattleStart
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0
@@ -115,6 +136,18 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Death
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 6d7ef703b00313489dc73856c98a67fa
+      ID: -1363583668
+      Name: Flap
+      Path: Default Work Unit\Flap
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Flap
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0
@@ -199,6 +232,30 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: PickupCoin
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 21553b0cea45294db38ecd7d91d15742
+      ID: -1360996791
+      Name: PlatDrop
+      Path: Default Work Unit\PlatDrop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PlatDrop
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: e584d056ed233248b513303487b2deb8
+      ID: -254793353
+      Name: PlatSpawn
+      Path: Default Work Unit\PlatSpawn
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PlatSpawn
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0
