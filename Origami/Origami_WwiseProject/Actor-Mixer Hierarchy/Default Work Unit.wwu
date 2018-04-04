@@ -111,9 +111,14 @@
 				</Sound>
 				<RandomSequenceContainer Name="RandomFlap" ID="{C0487147-1BFA-4CA5-B156-B9B7D5F4AD6D}" ShortID="188256037">
 					<PropertyList>
-						<Property Name="Highpass" Type="int16">
+						<Property Name="OutputBusHighpass" Type="int16">
 							<ValueList>
 								<Value>20</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
