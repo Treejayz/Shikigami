@@ -9,7 +9,7 @@ public class Character : MonoBehaviour {
     public float gravity = 10f;
 
     [HideInInspector]
-    public Vector3 momentum;
+    public Vector3 momentum = new Vector3(0f, 0f, 0f);
     public bool canFrog = false;
     public bool canFox = false;
 
