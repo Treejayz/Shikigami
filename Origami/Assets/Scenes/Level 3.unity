@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5642959, g: 0.623669, b: 0.66496205, a: 1}
+  m_IndirectSpecularColor: {r: 0.5642959, g: 0.6236688, b: 0.66496295, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2624,6 +2624,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shadowBullet: {fileID: 1962160483701038, guid: 2e8533a19455bf3448c0cfbd779f258a,
+    type: 2}
+  shadowPillar: {fileID: 1105248772453704, guid: 685b3112a69607246a83cc5aa6875848,
     type: 2}
   player: {fileID: 1815654236}
   dragonAnim: {fileID: 1617608741}

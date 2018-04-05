@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShadowFire : MonoBehaviour {
 
     public GameObject shadowBullet;
+    public GameObject shadowPillar;
     public GameObject player;
     public Animator dragonAnim;
 
@@ -20,12 +21,29 @@ public class ShadowFire : MonoBehaviour {
         fireTime += Time.deltaTime;
         if (fireTime > 4f && Vector3.Distance(transform.position, player.transform.position) < 100f)
         {
-            StartCoroutine("CollectData");
+            StartCoroutine("Pillar");
             fireTime = 0f;
         }
 	}
 
-    IEnumerator CollectData()
+    IEnumerator Pillar()
+    {
+
+        Vector3 prev = player.transform.position;
+        yield return new WaitForSeconds(0.1f);
+        Vector3 current = player.transform.position;
+        Vector3 velocity = (current - prev) * 10f;
+        Vector3 targetpos = player.transform.position + velocity;
+
+        RaycastHit hit;
+        int layerMask = 1 << 8;
+        layerMask = ~layerMask;
+        if (Physics.SphereCast(targetpos + Vector3.up * 40f, 2f, Vector3.down,out hit, 80f, layerMask)){
+            GameObject pillar = Instantiate(shadowPillar, hit.point + Vector3.up * .01f, Quaternion.identity);
+        }
+    }
+
+    IEnumerator Bullet()
     {
         dragonAnim.SetTrigger("Attacc");
         yield return new WaitForSeconds(0.55f);

@@ -19,7 +19,8 @@ public class KILL : MonoBehaviour {
         print("hi");
         if (other.tag == "Player")
         {
-
+            other.GetComponent<Character>().SetState(new DeathState(other.GetComponent<Character>()));
+            other.GetComponent<Character>().dead = true;
         }
     }
 }

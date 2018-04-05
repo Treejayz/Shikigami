@@ -7,7 +7,7 @@ public class ShadowPillar : MonoBehaviour {
     public GameObject sprite;
     public GameObject trigger;
     public GameObject pillar;
-    float buildTime = 2f;
+    float buildTime = 1f;
 
 	// Use this for initialization
 	void Start () {
@@ -48,9 +48,9 @@ public class ShadowPillar : MonoBehaviour {
             {
                 float scale = Mathf.Sin((currentTime / .1f) * Mathf.PI * .5f);
                 pillar.transform.localScale = new Vector3(1f, scale, 1f);
-            } else if (currentTime > .9f)
+            } else if (currentTime > .6f)
             {
-                float scale = Mathf.Sin(((1f - currentTime) / .1f) * Mathf.PI * .5f);
+                float scale = Mathf.Sin(((1f - currentTime) / .4f) * Mathf.PI * .5f);
                 pillar.transform.localScale = new Vector3(1f, scale, 1f);
             }
 
