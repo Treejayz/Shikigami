@@ -53,7 +53,6 @@ public class CraneIdleState : State {
 
         if (Input.GetAxis("Ability1") != 0.0f && character.canDash && !shiftHeld)
         {
-            MonoBehaviour.print("here we go again");
             character.SetState(new CraneDashState(character));
         }
         if (!character.switching)

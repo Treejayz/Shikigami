@@ -12747,7 +12747,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2f498aa1cea7b64ab72a451b636cddf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  totalTime: 5
   platforms: {fileID: 410888641}
+  platMat: {fileID: 2100000, guid: 27964a7ff1bae364d9cbfb8ea4503639, type: 2}
 --- !u!1 &728553177
 GameObject:
   m_ObjectHideFlags: 0
@@ -17903,7 +17905,7 @@ Transform:
   m_GameObject: {fileID: 1247896203}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 7.5767426, y: 2.6852722, z: 9.640817}
+  m_LocalScale: {x: 7.5767426, y: 2.6852722, z: 15.040395}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -22372,7 +22374,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1803958516
+  randomSeed: 1578973322
   InitialModule:
     serializedVersion: 3
     enabled: 1

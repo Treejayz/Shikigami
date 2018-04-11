@@ -180,7 +180,6 @@ public class Character : MonoBehaviour {
 
     IEnumerator DashCooldown()
     {
-        MonoBehaviour.print("cooling down");
         yield return new WaitForSeconds(0.5f);
         if (!isDashing)
         {
