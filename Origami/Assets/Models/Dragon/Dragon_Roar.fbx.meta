@@ -1,0 +1,192 @@
+fileFormatVersion: 2
+guid: d6c46ce9e7e8c42c88cbd798d76f6d6e
+timeCreated: 1523466814
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Dragon_Model:droogon
+    100002: //RootNode
+    100004: head
+    100006: head_CNTRL
+    100008: L_back_foot
+    100010: L_back_leg
+    100012: L_back_leg_CNTRL
+    100014: L_back_leg_offGRP
+    100016: L_front_foot
+    100018: L_front_leg
+    100020: L_front_leg_CNTRL
+    100022: L_front_leg_offGRP
+    100024: L_wing_base_CNTRL
+    100026: L_wing_base_offGRP
+    100028: L_wing_bend_CNTRL
+    100030: L_wing_bend_offGRP
+    100032: L_wing_m
+    100034: L_wing_root
+    100036: L_wing_tip
+    100038: licky
+    100040: lower_body
+    100042: lower_body_CNTRL
+    100044: neck
+    100046: neck_CNTRL
+    100048: R_back_foot
+    100050: R_back_leg
+    100052: R_back_leg_CNTRL
+    100054: R_back_leg_offGRP
+    100056: R_front_foot
+    100058: R_front_leg
+    100060: R_front_leg_CNTRL
+    100062: R_front_leg_offGRP
+    100064: R_wing_base_CNTRL
+    100066: R_wing_base_offGRP
+    100068: R_wing_bend_CNTRL
+    100070: R_wing_bend_offGRP
+    100072: R_wing_m
+    100074: R_wing_root
+    100076: R_wing_tip
+    100078: root_
+    100080: root_CNTRL
+    100082: snoot
+    100084: tail_base
+    100086: tail_CNTRL
+    100088: tail_tip
+    100090: tongue_bend
+    100092: tongue_bend_CNTRL
+    100094: tongue_main_CNTRL
+    100096: upper_body
+    100098: upper_body_CNTRL
+    400000: Dragon_Model:droogon
+    400002: //RootNode
+    400004: head
+    400006: head_CNTRL
+    400008: L_back_foot
+    400010: L_back_leg
+    400012: L_back_leg_CNTRL
+    400014: L_back_leg_offGRP
+    400016: L_front_foot
+    400018: L_front_leg
+    400020: L_front_leg_CNTRL
+    400022: L_front_leg_offGRP
+    400024: L_wing_base_CNTRL
+    400026: L_wing_base_offGRP
+    400028: L_wing_bend_CNTRL
+    400030: L_wing_bend_offGRP
+    400032: L_wing_m
+    400034: L_wing_root
+    400036: L_wing_tip
+    400038: licky
+    400040: lower_body
+    400042: lower_body_CNTRL
+    400044: neck
+    400046: neck_CNTRL
+    400048: R_back_foot
+    400050: R_back_leg
+    400052: R_back_leg_CNTRL
+    400054: R_back_leg_offGRP
+    400056: R_front_foot
+    400058: R_front_leg
+    400060: R_front_leg_CNTRL
+    400062: R_front_leg_offGRP
+    400064: R_wing_base_CNTRL
+    400066: R_wing_base_offGRP
+    400068: R_wing_bend_CNTRL
+    400070: R_wing_bend_offGRP
+    400072: R_wing_m
+    400074: R_wing_root
+    400076: R_wing_tip
+    400078: root_
+    400080: root_CNTRL
+    400082: snoot
+    400084: tail_base
+    400086: tail_CNTRL
+    400088: tail_tip
+    400090: tongue_bend
+    400092: tongue_bend_CNTRL
+    400094: tongue_main_CNTRL
+    400096: upper_body
+    400098: upper_body_CNTRL
+    2100000: Dragon_Model_parchment
+    4300000: Dragon_Model:droogon
+    7400000: Dragon_Roar
+    9500000: //RootNode
+    13700000: Dragon_Model:droogon
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
