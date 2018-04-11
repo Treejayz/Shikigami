@@ -7,7 +7,7 @@ public class StartState : State
 
     private CharacterController player;
     private float currentTime;
-    private bool pressed;
+    private bool pressed, done;
 
 
     private GameObject craneFold, craneAnimator;
@@ -35,6 +35,7 @@ public class StartState : State
         craneAnimator = (craneFold.transform.GetChild(1)).gameObject;
 
         pressed = false;
+        done = false;
         craneFold.transform.GetChild(0).gameObject.SetActive(false);
         craneAnimator.GetComponent<Animator>().SetFloat("Speed", 0f);
         craneFold.SetActive(true);
@@ -94,6 +95,7 @@ public class StartState : State
             character.foxAnimator.enabled = false;
 
             character.SetState(new CraneIdleState(character));
+            character.craneAnimator.Play("Crane_Shimmy");
         }
 
     }
