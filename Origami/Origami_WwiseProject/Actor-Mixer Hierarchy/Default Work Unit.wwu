@@ -116,11 +116,6 @@
 								<Value>20</Value>
 							</ValueList>
 						</Property>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-5</Value>
-							</ValueList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -133,6 +128,16 @@
 					<ChildrenList>
 						<Sound Name="GenFlap1" ID="{BD04BE3B-0FEE-40D1-9FAF-4251916C2126}" ShortID="19208686">
 							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Weight" Type="Real64">
 									<ValueList>
 										<Value>11</Value>
@@ -149,6 +154,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="GenFlap1" ID="{54A68350-2256-40EA-A496-EF0761002F90}" ShortID="723316495">
+									<PropertyList>
+										<Property Name="VolumeOffset" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>GenFlap1.wav</AudioFile>
 								</AudioFileSource>
@@ -159,6 +171,16 @@
 						</Sound>
 						<Sound Name="GenFlap3" ID="{D136D0AB-BE8A-4998-B581-A4258BDC19BB}" ShortID="952897646">
 							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Weight" Type="Real64">
 									<ValueList>
 										<Value>11</Value>
@@ -175,6 +197,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="GenFlap3" ID="{F29ACFB1-FD2F-4946-8FDF-AE67562D847E}" ShortID="184370491">
+									<PropertyList>
+										<Property Name="VolumeOffset" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>GenFlap3.wav</AudioFile>
 								</AudioFileSource>
@@ -185,6 +214,16 @@
 						</Sound>
 						<Sound Name="GenFlap2" ID="{0EAE8564-1057-428B-BE95-27DDD600C22D}" ShortID="1055154163">
 							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Weight" Type="Real64">
 									<ValueList>
 										<Value>11</Value>
@@ -201,6 +240,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="GenFlap2" ID="{CFBD21BD-688D-4616-80FF-42EC2FB6BE12}" ShortID="127240437">
+									<PropertyList>
+										<Property Name="VolumeOffset" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>GenFlap2.wav</AudioFile>
 								</AudioFileSource>
@@ -210,6 +256,18 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Wingflap02" ID="{BC1350E9-8827-4ADC-A73C-9D353DDC9AD3}" ShortID="452860022">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
@@ -220,6 +278,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Wingflap02" ID="{817CE735-9741-4772-83F6-03A337A48818}" ShortID="263556889">
+									<PropertyList>
+										<Property Name="VolumeOffset" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Wingflap02.wav</AudioFile>
 								</AudioFileSource>
@@ -229,6 +294,18 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Wingflap03" ID="{A2667282-1F89-4D32-8375-D5D4324E9B6A}" ShortID="1005873309">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
@@ -239,6 +316,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Wingflap03" ID="{B2930973-D01B-41D3-A652-10CFFD7168ED}" ShortID="4082871">
+									<PropertyList>
+										<Property Name="VolumeOffset" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Wingflap03.wav</AudioFile>
 								</AudioFileSource>
@@ -248,6 +332,18 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Wingflap01" ID="{F44B6684-4133-4AF1-A6BA-0CB037D406E9}" ShortID="966895010">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
@@ -258,6 +354,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Wingflap01" ID="{E945C0E0-5A48-4A4B-BCCD-C7E5EB891A23}" ShortID="301842021">
+									<PropertyList>
+										<Property Name="VolumeOffset" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Wingflap01.wav</AudioFile>
 								</AudioFileSource>
