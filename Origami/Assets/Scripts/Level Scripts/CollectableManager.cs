@@ -15,11 +15,17 @@ public static class CollectableManager {
 	public static int level3paperPieces;
 	public static int level3scrapPieces;
 
-	public static int[] storybookpages;
-	public static int[] spellbookpages;
+	public static bool[] storybookpages;
+	public static bool[] spellbookpages;
 
 	static void Start(){
-		CollectableManager.spellbookpages [1] = 1;
+		for (int i = 0; i < 7; i++){
+			storybookpages[i] = false;
+		} 
+		for (int i = 0; i < 7; i++){// find number of pages later
+			spellbookpages[i] = false;
+		} 
+		CollectableManager.storybookpages [1] = true;
 	}
 
     public static void Reset()
