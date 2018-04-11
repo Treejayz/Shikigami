@@ -16,7 +16,7 @@ public class TransformState : State
     //Crane Start and End
     private float craneStartY = 0f;
     private float craneEndY = 1f;
-    private float craneStartRot = 0f;
+    //private float craneStartRot = 0f;
     private float craneEndRot = -45f;
 
     //Frog Start and End
