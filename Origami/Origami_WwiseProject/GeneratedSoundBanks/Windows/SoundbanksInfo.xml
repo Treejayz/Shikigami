@@ -494,5 +494,19 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
+		<SoundBank Id="3346296327" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\CreditsBank</ObjectPath>
+			<ShortName>CreditsBank</ShortName>
+			<Path>CreditsBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2716678721" Name="Victory" ObjectPath="\Events\Default Work Unit\Victory"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="497579342" Language="SFX">
+					<ShortName>Victory.wav</ShortName>
+					<Path>SFX\Victory_1C9C67B2.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

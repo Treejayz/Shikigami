@@ -3,6 +3,7 @@
 	<Platform GUID="{A868C834-FB4B-4202-9DD2-534868C14E26}">
 		<Banks>
 			<Language ID="393239870">
+				<File Name="CreditsBank" Hash="351097444" Timestamp="1523636891"/>
 				<File Name="Init" Hash="682759791" Timestamp="1522190941"/>
 				<File Name="Level1SB" Hash="2610562777" Timestamp="1523471266"/>
 				<File Name="Level3SB" Hash="68036216" Timestamp="1523636259"/>
@@ -12,7 +13,7 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="59244354" Timestamp="1523636259"/>
+				<File Name="" Hash="795116796" Timestamp="1523636891"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

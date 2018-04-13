@@ -66,6 +66,7 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID CREDITSBANK = 3346296327U;
         static const AkUniqueID LEVEL1SB = 2398009465U;
         static const AkUniqueID LEVEL3SB = 2263494199U;
         static const AkUniqueID MENUSB = 139438331U;

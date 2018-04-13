@@ -100,6 +100,14 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="CreditsBank" ID="{5A7922C0-A365-48F0-8CDF-DA301408B25B}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Victory" ID="{A71C2CD0-C18C-43DA-B2D7-6FE6CA3177D2}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Victory" ID="{C2C36203-4909-4973-854E-DADD14826560}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>
