@@ -1140,6 +1140,25 @@
 						<ActiveSource Name="platspawn" ID="{B96F88FD-55F2-4002-8BCB-A1C6929DC358}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="Victory" ID="{C2C36203-4909-4973-854E-DADD14826560}" ShortID="179958664">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{409BEEA6-2A0B-4E9C-AE93-1353CB7FE3C8}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Victory" ID="{668F358F-FBBE-471D-8D6E-76D2402D683E}" ShortID="497579342">
+							<Language>SFX</Language>
+							<AudioFile>Victory.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Victory" ID="{668F358F-FBBE-471D-8D6E-76D2402D683E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

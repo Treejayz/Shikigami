@@ -50,6 +50,7 @@
 				<Event Id="4040173943" Name="PlatSpawn" ObjectPath="\Events\Default Work Unit\PlatSpawn" MaxAttenuation="80.000000"/>
 				<Event Id="160038168" Name="Splash" ObjectPath="\Events\Default Work Unit\Splash"/>
 				<Event Id="1422622395" Name="Transform" ObjectPath="\Events\Default Work Unit\Transform"/>
+				<Event Id="2716678721" Name="Victory" ObjectPath="\Events\Default Work Unit\Victory"/>
 				<Event Id="1021800662" Name="WindBegin" ObjectPath="\Events\Default Work Unit\WindBegin"/>
 				<Event Id="1571412035" Name="WindStop" ObjectPath="\Events\Default Work Unit\WindStop" MaxAttenuation="0.000000"/>
 				<Event Id="3191917460" Name="WingJump" ObjectPath="\Events\Default Work Unit\WingJump"/>
@@ -122,6 +123,10 @@
 				<File Id="456752970" Language="SFX">
 					<ShortName>BossfightDemo.wav</ShortName>
 					<Path>SFX\BossfightDemo_F17FB28C.wem</Path>
+				</File>
+				<File Id="497579342" Language="SFX">
+					<ShortName>Victory.wav</ShortName>
+					<Path>SFX\Victory_1C9C67B2.wem</Path>
 				</File>
 				<File Id="528329268" Language="SFX">
 					<ShortName>Rip02.wav</ShortName>

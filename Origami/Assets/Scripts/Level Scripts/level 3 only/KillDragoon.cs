@@ -13,5 +13,7 @@ public class KillDragoon : MonoBehaviour {
             Destroy(dragon);
             Destroy(this.gameObject);
         }
+
+        AkSoundEngine.StopAll();
     }
 }

@@ -358,6 +358,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Victory" ID="{A71C2CD0-C18C-43DA-B2D7-6FE6CA3177D2}">
+					<ChildrenList>
+						<Action Name="" ID="{B83B9F8D-6066-441A-B96B-58A34D5A3B79}" ShortID="94328849">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Victory" ID="{C2C36203-4909-4973-854E-DADD14826560}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

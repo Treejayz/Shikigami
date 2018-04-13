@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5642959, g: 0.623669, b: 0.66496205, a: 1}
+  m_IndirectSpecularColor: {r: 0.5642959, g: 0.6236688, b: 0.66496295, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -9600,6 +9600,8 @@ GameObject:
   - component: {fileID: 1938655564}
   - component: {fileID: 1938655566}
   - component: {fileID: 1938655565}
+  - component: {fileID: 1938655568}
+  - component: {fileID: 1938655567}
   m_Layer: 0
   m_Name: KillDragon
   m_TagString: Untagged
@@ -9644,6 +9646,49 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 45, y: 24.76, z: 22.6}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1938655567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1938655563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 004342984aa1d12489fabf8be52e2f3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7f422d6
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  eventID: -1578288575
+  m_callbackData: {fileID: 0}
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  valueGuid: d02c1ca78cc1da43b2d76fe6ca3177d2
+--- !u!114 &1938655568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1938655563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c04b34e31483d44ea31daaf332871fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &1941496182 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100022, guid: 7fa7bf254cf878f4cb0c507a55121322, type: 3}

@@ -35,6 +35,7 @@ namespace AK
         static const AkUniqueID STARTMUSIC = 3827058668U;
         static const AkUniqueID STOP_ALL = 452547817U;
         static const AkUniqueID TRANSFORM = 1422622395U;
+        static const AkUniqueID VICTORY = 2716678721U;
         static const AkUniqueID WINDBEGIN = 1021800662U;
         static const AkUniqueID WINDSTOP = 1571412035U;
         static const AkUniqueID WINGJUMP = 3191917460U;
