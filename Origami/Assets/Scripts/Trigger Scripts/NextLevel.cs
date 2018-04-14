@@ -12,14 +12,19 @@ public class NextLevel : MonoBehaviour {
         if (other.tag == "Player")
         {
             AkSoundEngine.StopAll();
+            if (level == 0)
+            {
+                LevelLoader.scene = "Level 1";
+            }
             if (level == 1)
             {
-                SceneManager.LoadScene("Level 2");
+                LevelLoader.scene = "Level 2";
             }
             else if (level == 2)
             {
-                SceneManager.LoadScene("Level 3");
+                LevelLoader.scene = "Level 3";
             }
+            SceneManager.LoadScene("LoadLevel");
         }
     }
 }

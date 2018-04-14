@@ -108,6 +108,7 @@ public class StartState : State
     public override void OnStateExit()
     {
         character.switching = false;
+        craneFold.transform.GetChild(0).gameObject.SetActive(true);
         craneAnimator.SetActive(false);
         player.GetComponent<forwardtest>().enabled = true;
     }

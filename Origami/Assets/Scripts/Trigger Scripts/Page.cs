@@ -38,10 +38,12 @@ public class Page : MonoBehaviour {
             {
                 other.gameObject.GetComponent<Character>().canFrog = true;
                 other.gameObject.GetComponent<Character>().SetState(new TransformState(other.gameObject.GetComponent<Character>(), false));
-                CollectableManager.spellbookpages [0] = true;
                 GetComponent<SpriteRenderer>().enabled = false;
+                transform.GetChild(0).gameObject.SetActive(false);
                 GetComponent<CapsuleCollider>().enabled = false;
-                Destroy(this);
+                print("hi");
+                CollectableManager.spellbookpages[0] = true;
+                //Destroy(this);
             }
             else if (isFox)
             {
@@ -53,10 +55,12 @@ public class Page : MonoBehaviour {
                 {
                     other.gameObject.GetComponent<Character>().SetState(new TransformState(other.gameObject.GetComponent<Character>(), true));
                 }
-                CollectableManager.spellbookpages [2] = true;
+                
                 GetComponent<SpriteRenderer>().enabled = false;
+                transform.GetChild(0).gameObject.SetActive(false);
                 GetComponent<CapsuleCollider>().enabled = false;
-                Destroy(this);
+                CollectableManager.spellbookpages [2] = true;
+                //Destroy(this);
             }
 
             else
