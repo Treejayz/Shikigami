@@ -15,6 +15,9 @@ public class Collectable : MonoBehaviour {
 
     public float spinSpeed;
 
+    float acceleration = 100f;
+    Transform player;
+
     private void Start()
     {
         transform.Rotate(0f, Random.Range(0,360), 0f);
@@ -29,38 +32,47 @@ public class Collectable : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            switch(Type)
-            {
-                case (CollectableType.PIECE):
-                    CollectableManager.Collect(Type);
-                    GetComponent<ParticleSystem>().Play();
-                    GetComponent<Collider>().enabled = false;
-                    GetComponent<SpriteRenderer>().enabled = false;
-                    Component halo = GetComponent("Halo");
-                    halo.GetType().GetProperty("enabled").SetValue(halo, false, null);
-                    StartCoroutine("Kill");
-                    AkSoundEngine.PostEvent("Pickup", gameObject);
-                    break;
-
-                case (CollectableType.SCRAP):
-                    CollectableManager.Collect(Type);
-                    GetComponent<ParticleSystem>().Play();
-                    GetComponent<Collider>().enabled = false;
-                    GetComponent<SpriteRenderer>().enabled = false;
-                    StartCoroutine("Kill");
-                    AkSoundEngine.PostEvent("PickupCoin", gameObject);
-                    break;
-
-            };
-
-
-            
+            player = other.transform;
+            StartCoroutine("Collect");
         }
        
     }
 
+    IEnumerator Collect()
+    {
+        float speed = 0f;
+        while (Vector3.Distance(player.position, transform.position) > 0.2f)
+        {
+            speed += Time.fixedDeltaTime * acceleration;
+            transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.fixedDeltaTime);
+            yield return new WaitForFixedUpdate();
+        }
+        StartCoroutine("Kill");
+    }
+
     IEnumerator Kill()
     {
+        switch (Type)
+        {
+            case (CollectableType.PIECE):
+                CollectableManager.Collect(Type);
+                GetComponent<ParticleSystem>().Play();
+                GetComponent<Collider>().enabled = false;
+                GetComponent<SpriteRenderer>().enabled = false;
+                Component halo = GetComponent("Halo");
+                halo.GetType().GetProperty("enabled").SetValue(halo, false, null);
+                AkSoundEngine.PostEvent("Pickup", gameObject);
+                break;
+
+            case (CollectableType.SCRAP):
+                CollectableManager.Collect(Type);
+                GetComponent<ParticleSystem>().Play();
+                GetComponent<Collider>().enabled = false;
+                GetComponent<SpriteRenderer>().enabled = false;
+                AkSoundEngine.PostEvent("PickupCoin", gameObject);
+                break;
+
+        };
         yield return new WaitForSeconds(1f);
         Destroy(this.gameObject);
     }

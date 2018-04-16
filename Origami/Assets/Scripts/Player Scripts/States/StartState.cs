@@ -71,7 +71,7 @@ public class StartState : State
             }
             else
             {
-                craneY = (10/9) *  (1f - progress);
+                craneY = (10 / 9) * (1f - progress);
             }
             if (progress < 0.5f)
             {
@@ -84,7 +84,7 @@ public class StartState : State
             craneFold.transform.localPosition = new Vector3(0, craneY, 0);
             craneFold.transform.localEulerAngles = new Vector3(0, craneRot, 0f);
         }
-        else
+        else if (!done)
         {
             craneFold.SetActive(false);
             character.CraneMesh.SetActive(true);
@@ -94,8 +94,11 @@ public class StartState : State
             character.frogAnimator.enabled = false;
             character.foxAnimator.enabled = false;
 
-            character.SetState(new CraneIdleState(character));
+            done = true;
             character.craneAnimator.Play("Crane_Shimmy");
+        } else if (done && !character.craneAnimator.GetCurrentAnimatorStateInfo(0).IsName("Crane_Shimmy"))
+        {
+            character.SetState(new CraneIdleState(character));
         }
 
     }
