@@ -8,12 +8,13 @@ public class RoarTrigger : MonoBehaviour {
     public GameObject dragon;
     public GameObject cam;
 
+    public static bool triggered = false;
     Vector3 camPosition;
     Quaternion camRotation;
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && !triggered)
         {
             player.GetComponent<forwardtest>().enabled = false;
             player.GetComponent<Character>().enabled = false;
@@ -21,6 +22,7 @@ public class RoarTrigger : MonoBehaviour {
             camPosition = cam.transform.position;
             camRotation = cam.transform.rotation;
 
+            triggered = true;
             //magic numbers 
             cam.transform.position = dragon.transform.position + Vector3.up * 1 + dragon.transform.forward * -9 + dragon.transform.right * 3;
             cam.transform.LookAt(dragon.transform.position + dragon.transform.forward * 5 + Vector3.down * 4f);
@@ -59,6 +61,9 @@ public class RoarTrigger : MonoBehaviour {
         cam.transform.rotation = camRotation;
         player.GetComponent<forwardtest>().enabled = true;
         player.GetComponent<Character>().enabled = true;
+        dragon.GetComponent<LookAtPlayer>().enabled = true;
+        dragon.GetComponent<DragonMover>().enabled = true;
+        dragon.GetComponentInChildren<ShadowFire>().enabled = true;
         cam.GetComponent<CameraController>().enabled = true;
 
     }

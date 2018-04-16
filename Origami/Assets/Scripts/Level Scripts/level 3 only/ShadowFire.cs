@@ -11,19 +11,70 @@ public class ShadowFire : MonoBehaviour {
 
     float fireTime;
 
-	// Use this for initialization
-	void Start () {
+    public enum FireType { BULLET, PILLARLEAD, PILLARSTILL, NONE };
+    public FireType Type;
+
+    // Used for pillarstill
+    Vector3 playerPositionOld;
+    bool recharge;
+
+
+    // Use this for initialization
+    void Start () {
         fireTime = 0f;
+        recharge = false;
+        playerPositionOld = new Vector3(0f, 0f, 0f);
 	}
 	
 	// Update is called once per frame
 	void Update () {
         fireTime += Time.deltaTime;
-        if (fireTime > 4f && Vector3.Distance(transform.position, player.transform.position) < 100f)
+        switch(Type)
         {
-            StartCoroutine("Pillar");
-            fireTime = 0f;
-        }
+            case FireType.BULLET:
+                if (fireTime > 4f && Vector3.Distance(transform.position, player.transform.position) < 100f)
+                {
+                    StartCoroutine("Bullet");
+                    fireTime = 0f;
+                }
+                break;
+            case FireType.PILLARLEAD:
+                if (fireTime > 5f && Vector3.Distance(transform.position, player.transform.position) < 100f)
+                {
+                    StartCoroutine("Pillar");
+                    fireTime = 0f;
+                }
+                break;
+            case FireType.PILLARSTILL:
+                if (fireTime > .1f && !recharge)
+                {
+                    if (Vector3.Distance(player.transform.position, playerPositionOld) < .1f)
+                    {
+                        RaycastHit hit;
+                        int layerMask = 1 << 8;
+                        layerMask = ~layerMask;
+                        if (Physics.SphereCast(player.transform.position, .5f, Vector3.down, out hit, 5f, layerMask))
+                        {
+                            GameObject pillar = Instantiate(shadowPillar, hit.point + Vector3.up * .01f, Quaternion.identity);
+                        }
+                        recharge = true;
+                    } else
+                    {
+                        playerPositionOld = player.transform.position;
+                    }
+                    fireTime = 0f;
+                }
+
+                if (fireTime > 5f && recharge)
+                {
+                    fireTime = 0f;
+                    recharge = false;
+                }
+                break;
+            case FireType.NONE:
+                fireTime = 0f;
+                break;
+        };
 	}
 
     IEnumerator Pillar()

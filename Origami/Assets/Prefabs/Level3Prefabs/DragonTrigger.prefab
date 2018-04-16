@@ -51,6 +51,7 @@ GameObject:
   - component: {fileID: 4496893326621072}
   - component: {fileID: 114531814632700844}
   - component: {fileID: 65622374337848034}
+  - component: {fileID: 114956133849701040}
   m_Layer: 0
   m_Name: DragonTrigger
   m_TagString: Untagged
@@ -65,7 +66,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1159868140758206}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 10, z: 20}
+  m_LocalPosition: {x: -52.6, y: 10, z: 20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4496893326621072}
@@ -77,15 +78,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1942177125904678}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -433.4, y: 5, z: -5.5}
+  m_LocalRotation: {x: 0, y: 0.2588191, z: 0, w: 0.9659258}
+  m_LocalPosition: {x: 129.7, y: 23, z: -102.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4322669331176318}
   - {fileID: 4563660562479512}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 30, z: 0}
 --- !u!4 &4563660562479512
 Transform:
   m_ObjectHideFlags: 1
@@ -93,7 +94,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1621195899372838}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 10, z: -20}
+  m_LocalPosition: {x: -52.599983, y: 10, z: -19.999998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4496893326621072}
@@ -109,7 +110,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 11.15, y: 20.64, z: 55.6}
+  m_Size: {x: 65, y: 20.64, z: 118}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114531814632700844
 MonoBehaviour:
@@ -125,4 +126,19 @@ MonoBehaviour:
   Dragon: {fileID: 0}
   pointA: {fileID: 4322669331176318}
   pointB: {fileID: 4563660562479512}
-  type: 2
+  moveType: 0
+  fireType: 0
+--- !u!114 &114956133849701040
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1942177125904678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49f8132f3f3eeea4395877a7972cb7de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  dragon: {fileID: 0}
+  cam: {fileID: 0}

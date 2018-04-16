@@ -4,22 +4,25 @@ using UnityEngine;
 
 public class DragonMover : MonoBehaviour {
 
-    public float speed = 25f;
+    public float speed = 40f;
     private float easeDistance = 3f;
     public Transform player;
 
     public Transform pointA;
     public Transform pointB;
 
+    public Vector3 centerPos = new Vector3(-400f, 0f, 0f);
+
+    private Vector3 startPos;
     private Vector3 newPos;
     private float currentSpeed;
 
-    public enum MoveType { PARALLEL, LEAD, CHASE };
+    public enum MoveType { PARALLEL, LEAD, CHASE, NONE };
     public MoveType Type;
 
     // Use this for initialization
     void Start () {
-		
+        startPos = transform.position;
 	}
 	
 	// Update is called once per frame
@@ -42,6 +45,12 @@ public class DragonMover : MonoBehaviour {
 
             case MoveType.CHASE:
                 newPos = pointA.position + pos - (direction.normalized * 40f);
+                break;
+            case MoveType.NONE:
+                Vector3 targetDir = player.transform.position - centerPos;
+                targetDir.y = 0f;
+                targetDir.Normalize();
+                newPos = player.transform.position + targetDir * -30f + Vector3.up * 15f;
                 break;
         };
 
