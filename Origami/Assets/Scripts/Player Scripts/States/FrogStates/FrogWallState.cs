@@ -66,6 +66,12 @@ public class FrogWallState : State {
 		if (jumpHeld && Input.GetAxis("Jump") == 0f) {
 			jumpHeld = false;
 		}
+
+        if (!Physics.Raycast(character.transform.position, wallHit * -1f, 1f))
+        {
+            character.momentum = wallHit * 4f;
+            character.SetState(new FrogFallState(character, wallHit));
+        }
 	}
 
     public override void OnStateExit()
