@@ -12,6 +12,7 @@ public class ScrapDisplay : MonoBehaviour {
 	public float timer;
 	float timeoflast;
 	bool going;
+	public bool piece;
 
 	// Use this for initialization
 	void Start () {
@@ -21,17 +22,28 @@ public class ScrapDisplay : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (SceneManager.GetActiveScene().name == "Level 1"){
-			temp = CollectableManager.level1scrapPieces;
-			leveltotal = 100;
-		}
-		else if (SceneManager.GetActiveScene().name == "Level 2"){
-			temp = CollectableManager.level2scrapPieces;
-			leveltotal = 130;
-		}
-		else {//if (SceneManager.GetActiveScene().name == "Level 3"){
-			temp = CollectableManager.level3scrapPieces;
-			leveltotal = 0;
+		if (!piece) {
+			if (SceneManager.GetActiveScene ().name == "Level 1") {
+				temp = CollectableManager.level1scrapPieces;
+				leveltotal = 100;
+			} else if (SceneManager.GetActiveScene ().name == "Level 2") {
+				temp = CollectableManager.level2scrapPieces;
+				leveltotal = 130;
+			} else {//if (SceneManager.GetActiveScene().name == "Level 3"){
+				temp = CollectableManager.level3scrapPieces;
+				leveltotal = 0;
+			}
+		} else {
+			if (SceneManager.GetActiveScene ().name == "Level 1") {
+				temp = CollectableManager.level1paperPieces;
+				leveltotal = 8;
+			} else if (SceneManager.GetActiveScene ().name == "Level 2") {
+				temp = CollectableManager.level2paperPieces;
+				leveltotal = 9;
+			} else {//if (SceneManager.GetActiveScene().name == "Level 3"){
+				temp = CollectableManager.level3paperPieces;
+				leveltotal = 0;
+			}
 		}
 		if (temp == 0) {
 			this.GetComponent<Image> ().enabled = false;

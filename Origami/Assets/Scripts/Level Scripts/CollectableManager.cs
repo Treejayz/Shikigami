@@ -49,7 +49,8 @@ public static class CollectableManager {
     {
         switch(type)
         {
-            case Collectable.CollectableType.PIECE:
+				case Collectable.CollectableType.PIECE:
+				GameObject.Find ("PieceDisplay").GetComponent<ScrapDisplay> ().collect (Time.time);
                 paperPieces += 1;
                 MonoBehaviour.print(paperPieces);
 				if (SceneManager.GetActiveScene().name == "Level 1"){
@@ -58,7 +59,7 @@ public static class CollectableManager {
 				else if (SceneManager.GetActiveScene().name == "Level 2"){
 					level2paperPieces += 1;
 				}
-				else if (SceneManager.GetActiveScene().name == "Level 3"){
+				else { //if (SceneManager.GetActiveScene().name == "Level 3"){
 					level3paperPieces += 1;
 				}
                 break;
