@@ -6,22 +6,36 @@ using UnityEngine.SceneManagement;
 public class CreditsStuff : MonoBehaviour {
 
     public Animator anim;
+    float speed;
 
 	// Update is called once per frame
 	void Update () {
-        /*
+        
         if (Input.anyKey)
         {
-            print("hi");
-            //anim.SetFloat("Speed", 2f);
-            Time.timeScale = 3f;
+            if (speed < 4f)
+            {
+                speed += Time.deltaTime * 6f;
+            } else
+            {
+                speed = 4f;
+            }
+            
         }
         else
         {
-            anim.SetFloat("Speed", 1f);
-            Time.timeScale = 1f;
+            if (speed > 1f)
+            {
+                speed -= Time.deltaTime * 6f;
+            } else
+            {
+                speed = 1f;
+            }
         }
-        */
+
+        Time.timeScale = speed;
+        //Asmodeus codeus
+
         if (Input.GetKey(KeyCode.Escape))
         {
             AkSoundEngine.StopAll();
