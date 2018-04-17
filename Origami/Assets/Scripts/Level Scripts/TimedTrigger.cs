@@ -26,6 +26,7 @@ public class TimedTrigger : MonoBehaviour {
         botSand.localScale = new Vector3(1f, 1f, 1f);
         topSand.localScale = new Vector3(0f, 0f, 0f);
         sandDropper.Stop();
+        platforms.SetActive(false);
     }
 
 
