@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class KillDragoon : MonoBehaviour {
 
@@ -10,8 +11,8 @@ public class KillDragoon : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            Destroy(dragon);
-            Destroy(this.gameObject);
+            LevelLoader.scene = "Credits";
+            SceneManager.LoadScene("LoadLevel");
         }
 
         AkSoundEngine.StopAll();
