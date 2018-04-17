@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class ScrapDisplay : MonoBehaviour {
 
 	int temp;
+	int leveltotal;
 	public float fadeTime;
 	public float timer;
 	float timeoflast;
@@ -22,12 +23,15 @@ public class ScrapDisplay : MonoBehaviour {
 	void Update () {
 		if (SceneManager.GetActiveScene().name == "Level 1"){
 			temp = CollectableManager.level1scrapPieces;
+			leveltotal = 100;
 		}
 		else if (SceneManager.GetActiveScene().name == "Level 2"){
 			temp = CollectableManager.level2scrapPieces;
+			leveltotal = 130;
 		}
 		else {//if (SceneManager.GetActiveScene().name == "Level 3"){
 			temp = CollectableManager.level3scrapPieces;
+			leveltotal = 0;
 		}
 		if (temp == 0) {
 			this.GetComponent<Image> ().enabled = false;
@@ -50,7 +54,7 @@ public class ScrapDisplay : MonoBehaviour {
 		} else if (!going && temp !=0) {
 			StartCoroutine ("loweroppacity");
 		}
-		GetComponentInChildren<Text> ().text = temp.ToString() ;
+		GetComponentInChildren<Text> ().text = temp.ToString() + "\n/" + leveltotal.ToString();
 	}
 	public void collect(float timereset){
 		timeoflast = timereset;
