@@ -32,7 +32,7 @@ public static class CollectableManager {
 	public static int spellpage4piecemax;
 
 	public static bool[] storybookpages = new bool[7];
-	public static bool[] spellbookpages = new bool[5];
+	public static bool[] spellbookpages = new bool[4];
 	private static bool started;
 
 	public static void Startup(){
@@ -40,25 +40,12 @@ public static class CollectableManager {
 			for (int i = 0; i < 7; i++) {
 				storybookpages [i] = false;
 			} 
-			for (int i = 0; i < 5; i++) {// find number of pages later
+			for (int i = 0; i < 4; i++) {// find number of pages later
 				spellbookpages [i] = false;
 			} 
 			CollectableManager.storybookpages [1] = true;
 			started = true;
 		}
-
-	}
-
-    public static void Reset()
-    {
-        paperPieces = 0;
-		scrapPieces = 0;
-		level1paperPieces = 0;
-		level1scrapPieces = 0;
-		level2paperPieces = 0;
-		level2scrapPieces = 0;
-		level3paperPieces = 0;
-		level3scrapPieces = 0;	
 		storypage4scraps = 0;
 		storypage4scrapmax = 80;
 		storypage5scraps = 0;
@@ -76,6 +63,18 @@ public static class CollectableManager {
 		spellpage3piecemax = 6;
 		spellpage4pieces = 0;
 		spellpage4piecemax = 6;
+	}
+
+    public static void Reset()
+    {
+        paperPieces = 0;
+		scrapPieces = 0;
+		level1paperPieces = 0;
+		level1scrapPieces = 0;
+		level2paperPieces = 0;
+		level2scrapPieces = 0;
+		level3paperPieces = 0;
+		level3scrapPieces = 0;	
     }
 
     public static void Collect(Collectable.CollectableType type)

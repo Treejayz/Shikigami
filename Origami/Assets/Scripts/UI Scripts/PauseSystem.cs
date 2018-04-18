@@ -7,7 +7,7 @@ public class PauseSystem : MonoBehaviour {
 	public bool pause = false; 
 	// Use this for initialization
 	void Start () {
-		
+		CollectableManager.Startup ();
 	}
 	
 	// Update is called once per frame

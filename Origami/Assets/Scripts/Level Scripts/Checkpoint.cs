@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Checkpoint : MonoBehaviour {
 
@@ -11,7 +12,7 @@ public class Checkpoint : MonoBehaviour {
 
     public GameObject Page;
     private Transform player;
-
+	public bool page1;
     public static GameObject[] CheckPointList;
 
 	public GameObject checkPointText;
@@ -40,6 +41,12 @@ public class Checkpoint : MonoBehaviour {
             player = other.gameObject.transform;
             ActivateCheckPoint();
         }
+		if (page1){
+			CollectableManager.spellpage1pieces++;
+		}
+		else {
+			CollectableManager.spellpage2pieces++;
+		}
     }
 
     private void ActivateCheckPoint()

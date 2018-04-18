@@ -26,7 +26,7 @@ public class BookSystem : MonoBehaviour {
 		for (int i = -1; i < activepage2; i++){
 			pages [i+1].GetComponent<RectTransform> ().anchorMin = new Vector2 (.0f, .5f);
 			pages [i+1].GetComponent<RectTransform> ().anchorMax = new Vector2 (.0f, .5f);
-			pages [i+1].transform.SetSiblingIndex(6);
+			pages [i+1].transform.SetSiblingIndex(pages.Length);
 		}
 		for (int i = activepage2; i < pages.Length; i++) {
 			pages [i].GetComponent<RectTransform> ().anchorMin = new Vector2 (1f, .5f);
@@ -84,7 +84,6 @@ public class BookSystem : MonoBehaviour {
 		bookbutton1.gameObject.GetComponent<Image> ().enabled = false;
 		bookbutton2.gameObject.GetComponent<Button> ().enabled = false;
 		bookbutton2.gameObject.GetComponent<Image> ().enabled = false;
-		CollectableManager.Startup (); // move to player start later???
 		for (int i = 0; i < pages.Length; i++){
 			if (this.name == "Book 1") {
 				if (CollectableManager.storybookpages [i]) {
