@@ -7229,7 +7229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd89b8ce8dd99da4d88955ad7ccc3f89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shadowBullet: {fileID: 1962160483701038, guid: 2e8533a19455bf3448c0cfbd779f258a,
+  shadowBullet: {fileID: 1026551647080730, guid: 230fd0bc189149441b96f9aa45d445be,
     type: 2}
   shadowPillar: {fileID: 1105248772453704, guid: 685b3112a69607246a83cc5aa6875848,
     type: 2}

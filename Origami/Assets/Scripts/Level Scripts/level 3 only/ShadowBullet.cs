@@ -107,6 +107,7 @@ public class ShadowBullet : MonoBehaviour {
     private void OnCollisionEnter(Collision collision)
     {
         StartCoroutine("Kill");
+        
     }
 
     IEnumerator CollectData()
@@ -141,10 +142,13 @@ public class ShadowBullet : MonoBehaviour {
 
     IEnumerator Kill()
     {
+        print("hit");
+        transform.rotation = new Quaternion(0f, 0f, 0f, 0f);
+        GetComponentsInChildren<ParticleSystem>()[1].Play();
         dying = true;
-        GetComponent<MeshRenderer>().enabled = false;
-        GetComponent<SphereCollider>().enabled = false;
-        GetComponent<ParticleSystem>().Stop();
+        GetComponentInChildren<MeshRenderer>().enabled = false;
+        GetComponentInChildren<SphereCollider>().enabled = false;
+        GetComponentInChildren<ParticleSystem>().Stop();
         yield return new WaitForSeconds(2f);
         Destroy(this.gameObject);
 
