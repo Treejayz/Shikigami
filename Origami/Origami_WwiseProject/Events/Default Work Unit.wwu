@@ -186,7 +186,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Stick" ID="{E77B55F5-B095-4B78-889D-760030E70E02}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+									<ObjectRef Name="Stick02" ID="{BC25EFEF-5689-4C2A-9EA7-A4BEABF53B11}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -423,6 +423,20 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="shadowball02" ID="{EECB1DCD-24C2-4DEB-AFDA-66C822CEB3C2}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="FrogStep" ID="{538A09F6-2743-49E5-B2A7-1391B900666A}">
+					<ChildrenList>
+						<Action Name="" ID="{7FE62EE1-1D34-4018-BEB8-25C3721E1607}" ShortID="320056413">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RandomFrogStep" ID="{F254DA61-1EE0-4C0F-A3B0-1C6F049F3C67}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

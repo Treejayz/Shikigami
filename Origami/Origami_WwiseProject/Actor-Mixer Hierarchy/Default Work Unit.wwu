@@ -818,6 +818,10 @@
 							<Language>SFX</Language>
 							<AudioFile>Stick.wav</AudioFile>
 						</AudioFileSource>
+						<AudioFileSource Name="Stick02" ID="{FF5B705C-46D8-4135-B6CB-401B6A4E6171}" ShortID="979601126">
+							<Language>SFX</Language>
+							<AudioFile>Stick02.wav</AudioFile>
+						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="Stick" ID="{152E9DDF-227B-4F76-9185-011CD5B611C4}" Platform="Linked"/>
@@ -1344,6 +1348,177 @@
 						<ActiveSource Name="shadowball02" ID="{49736223-7D65-4FF3-8AC4-85C75BFC9284}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="Stick02" ID="{BC25EFEF-5689-4C2A-9EA7-A4BEABF53B11}" ShortID="643376913">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{A22E32AA-C0DA-43F0-973C-80269745EF90}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Stick02" ID="{CBD6C71E-131D-4972-87F1-B24CD9B67F97}" ShortID="807586000">
+							<Language>SFX</Language>
+							<AudioFile>Stick02.wav</AudioFile>
+							<ConvertedFileIDList>
+								<File ID="979601126"/>
+							</ConvertedFileIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Stick02" ID="{CBD6C71E-131D-4972-87F1-B24CD9B67F97}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="RandomFrogStep" ID="{F254DA61-1EE0-4C0F-A3B0-1C6F049F3C67}" ShortID="56498082">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{A22E32AA-C0DA-43F0-973C-80269745EF90}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="FrogStep01" ID="{A61CB140-235F-4807-8EEC-5012F122D6B0}" ShortID="934327711">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FrogStep01" ID="{3F5785CD-36CA-42A5-A603-2D7B249FD02A}" ShortID="705281928">
+									<Language>SFX</Language>
+									<AudioFile>FrogStep01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FrogStep01" ID="{3F5785CD-36CA-42A5-A603-2D7B249FD02A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="FrogStep02" ID="{68C985E4-57EE-4D56-AF5A-EF5010937959}" ShortID="80648868">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FrogStep02" ID="{BF5DC5FA-B410-4F64-9071-1E290D538666}" ShortID="989246533">
+									<Language>SFX</Language>
+									<AudioFile>FrogStep02.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FrogStep02" ID="{BF5DC5FA-B410-4F64-9071-1E290D538666}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="FrogStep03" ID="{5911170F-A7FE-4997-97C2-E948459D9E7C}" ShortID="916275450">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FrogStep03" ID="{BAC6818C-6472-4397-9FD0-234F336289C1}" ShortID="600259957">
+									<Language>SFX</Language>
+									<AudioFile>FrogStep03.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FrogStep03" ID="{BAC6818C-6472-4397-9FD0-234F336289C1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="FrogStep04" ID="{2A2C8DA6-D3C4-4F95-9BEA-1BA34DDFACD0}" ShortID="548990258">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FrogStep04" ID="{05D06699-86DD-4DC8-82E6-25FBC45EF898}" ShortID="682674031">
+									<Language>SFX</Language>
+									<AudioFile>FrogStep04.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FrogStep04" ID="{05D06699-86DD-4DC8-82E6-25FBC45EF898}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="FrogStep05" ID="{A91AEE3D-7942-436F-BC2A-7D46F3C50490}" ShortID="58717791">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FrogStep05" ID="{4EAB921B-205F-40EA-AF81-C1CE931B12CD}" ShortID="902014820">
+									<Language>SFX</Language>
+									<AudioFile>FrogStep05.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FrogStep05" ID="{4EAB921B-205F-40EA-AF81-C1CE931B12CD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
