@@ -59,6 +59,7 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID MENUUP = 172993487U;
+        static const AkUniqueID MUSICSPEED = 1763041431U;
         static const AkUniqueID MUSICVOLUME = 2346531308U;
         static const AkUniqueID SFXVOLUME = 988953028U;
     } // namespace GAME_PARAMETERS

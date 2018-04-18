@@ -70,6 +70,109 @@
 										</RTPC>
 									</RTPCList>
 								</Property>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{91B955E8-50AD-4B95-95D2-2F27E69F1D66}" ShortID="39911951">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="MusicSpeed" ID="{838F9120-8DC7-47E1-AFC7-F9E557CA443B}" WorkUnitID="{294866E5-205C-4CEF-A167-22F1B02116B6}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{5E779608-6C7B-4D26-8656-1667E3B07BA2}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0.25</XPos>
+														<YPos>-2400</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.30859375</XPos>
+														<YPos>-2035</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0.3671875</XPos>
+														<YPos>-1734</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0.484375</XPos>
+														<YPos>-1255</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0.6015625</XPos>
+														<YPos>-880</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0.71875</XPos>
+														<YPos>-572</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0.8359375</XPos>
+														<YPos>-310</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0.953125</XPos>
+														<YPos>-83</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1.1875</XPos>
+														<YPos>298</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1.421875</XPos>
+														<YPos>609</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1.65625</XPos>
+														<YPos>874</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1.890625</XPos>
+														<YPos>1103</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>2.125</XPos>
+														<YPos>1305</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>2.59375</XPos>
+														<YPos>1650</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>3.0625</XPos>
+														<YPos>1938</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>3.53125</XPos>
+														<YPos>2184</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>4</XPos>
+														<YPos>2400</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 						</Bus>
 						<Bus Name="SFX" ID="{A22E32AA-C0DA-43F0-973C-80269745EF90}">

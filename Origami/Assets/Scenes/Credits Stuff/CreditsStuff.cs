@@ -35,6 +35,7 @@ public class CreditsStuff : MonoBehaviour {
 
         Time.timeScale = speed;
         //Asmodeus codeus
+        AkSoundEngine.SetRTPCValue("MusicSpeed", speed);
 
         if (Input.GetKey(KeyCode.Escape))
         {

@@ -21,8 +21,8 @@ MonoBehaviour:
   autoPopulateEnabled: 1
   AuxBusWwu:
   - Guid: '{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}'
-    m_lastTimePart2: -1999272986
-    m_lastTimePsrt1: -1226763605
+    m_lastTimePart2: -1999264573
+    m_lastTimePsrt1: 1694748141
     ParentPhysicalPath: 
     PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     List: []
@@ -413,8 +413,8 @@ MonoBehaviour:
   preparePoolSize: 0
   RtpcWwu:
   - Guid: '{294866E5-205C-4CEF-A167-22F1B02116B6}'
-    m_lastTimePart2: -1999272986
-    m_lastTimePsrt1: -1226813663
+    m_lastTimePart2: -1999264577
+    m_lastTimePsrt1: -1627290121
     ParentPhysicalPath: 
     PhysicalPath: Game Parameters\Default Work Unit.wwu
     List:
@@ -426,6 +426,15 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: MenuUp
+        ObjectType: 13
+    - Guid: 20918f83c78de147afc7f9e557ca443b
+      ID: 1763041431
+      Name: MusicSpeed
+      Path: Default Work Unit\MusicSpeed
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MusicSpeed
         ObjectType: 13
     - Guid: 04f8e87a71e3314bad3fa6b824cf013c
       ID: -1948435988
