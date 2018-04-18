@@ -107,7 +107,7 @@ public class ShadowBullet : MonoBehaviour {
     private void OnCollisionEnter(Collision collision)
     {
         StartCoroutine("Kill");
-        
+        AkSoundEngine.PostEvent("StopShadowBall", gameObject);
     }
 
     IEnumerator CollectData()
