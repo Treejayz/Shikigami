@@ -8,6 +8,7 @@ public class CutscenePlayer : MonoBehaviour {
     bool playing;
 
     public GameObject FUCKINGGARBAGEAGAHAHGAGA;
+    float speed;
 
 	// Use this for initialization
 	void Start () {
@@ -19,9 +20,45 @@ public class CutscenePlayer : MonoBehaviour {
 	void Update () {
 		if (playing)
         {
+            if (Input.anyKey)
+            {
+                if (speed < 4f)
+                {
+                    speed += Time.deltaTime * 6f;
+                }
+                else
+                {
+                    speed = 4f;
+                }
+
+            }
+            else
+            {
+                if (speed > 1f)
+                {
+                    speed -= Time.deltaTime * 6f;
+                }
+                else
+                {
+                    speed = 1f;
+                }
+            }
+
+            //Time.timeScale = speed;
+            cam.GetComponent<UnityEngine.Video.VideoPlayer>().playbackSpeed = speed;
+            AkSoundEngine.SetRTPCValue("MusicSpeed", speed);
+
+            if (Input.GetKey(KeyCode.Escape))
+            {
+                AkSoundEngine.StopAll();
+                AkSoundEngine.SetRTPCValue("MusicSpeed", 1f);
+                LevelLoader.scene = "Level 1";
+                SceneManager.LoadScene("LoadLevel");
+            }
             if (cam.GetComponent<UnityEngine.Video.VideoPlayer>().time >= cam.GetComponent<UnityEngine.Video.VideoPlayer>().clip.length - .1f)
             {
-                
+                AkSoundEngine.StopAll();
+                AkSoundEngine.SetRTPCValue("MusicSpeed", 1f);
                 LevelLoader.scene = "Level 1";
                 SceneManager.LoadScene("LoadLevel");
             }

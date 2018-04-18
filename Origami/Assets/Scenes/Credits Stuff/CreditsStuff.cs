@@ -41,6 +41,7 @@ public class CreditsStuff : MonoBehaviour {
         {
             AkSoundEngine.StopAll();
             AkSoundEngine.SetRTPCValue("MusicSpeed", 1f);
+            Time.timeScale = 1f;
             LevelLoader.scene = "Main Menu";
             SceneManager.LoadScene("LoadLevel");
         }
