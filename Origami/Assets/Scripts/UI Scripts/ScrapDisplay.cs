@@ -66,7 +66,7 @@ public class ScrapDisplay : MonoBehaviour {
 		} else if (!going && temp !=0) {
 			StartCoroutine ("loweroppacity");
 		}
-		GetComponentInChildren<Text> ().text = temp.ToString() + "/" + leveltotal.ToString();
+		GetComponentInChildren<Text> ().text = temp.ToString() + " / " + leveltotal.ToString();
 	}
 	public void collect(float timereset){
 		timeoflast = timereset;
