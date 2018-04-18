@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5642959, g: 0.6236688, b: 0.66496295, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -19475,6 +19475,16 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: 110
       objectReference: {fileID: 0}
+    - target: {fileID: 114018405114779488, guid: 7d8834efc087f904eb2806623e4ab89e,
+        type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 223574389376345284, guid: 7d8834efc087f904eb2806623e4ab89e,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7d8834efc087f904eb2806623e4ab89e, type: 2}
   m_IsPrefabParent: 0
@@ -21410,7 +21420,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -2
   m_TargetDisplay: 0
 --- !u!1001 &1911210694
 Prefab:

@@ -51,14 +51,14 @@ public static class CollectableManager {
 		storypage5scraps = 0;
 		storypage5scrapmax = 110;
 		storypage6scraps = 0;
-		storypage6scrapmax = 60;
+		storypage6scrapmax = 50;
 		storypage7scraps = 0;
 		storypage7scrapmax = 50;
 
 		spellpage1pieces = 0;
-		spellpage1piecemax = 10;
+		spellpage1piecemax = 11;
 		spellpage2pieces = 0;
-		spellpage2piecemax = 10;
+		spellpage2piecemax = 11;
 		spellpage3pieces = 0;
 		spellpage3piecemax = 6;
 		spellpage4pieces = 0;
