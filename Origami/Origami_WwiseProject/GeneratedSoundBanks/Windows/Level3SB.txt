@@ -10,17 +10,21 @@ Event	ID	Name			Wwise Object Path	Notes
 	1880194273	FrogStick			\Default Work Unit\FrogStick	
 	1942692385	Dash			\Default Work Unit\Dash	
 	2432329107	FrogJump			\Default Work Unit\FrogJump	
+	2451460166	StopShadowBall			\Default Work Unit\StopShadowBall	
 	2577690848	BossBattleStart			\Default Work Unit\BossBattleStart	
 	2582515549	Pillar			\Default Work Unit\Pillar	
 	2716678721	Victory			\Default Work Unit\Victory	
 	2931383628	Flap			\Default Work Unit\Flap	
 	2933970505	PlatDrop			\Default Work Unit\PlatDrop	
 	3191917460	WingJump			\Default Work Unit\WingJump	
+	3498031842	lawnmowerplatplay			\Default Work Unit\lawnmowerplatplay	
 	3836640104	FoxJump			\Default Work Unit\FoxJump	
+	3840406958	ShadowBall			\Default Work Unit\ShadowBall	
 	3978245845	Pickup			\Default Work Unit\Pickup	
 	4040173943	PlatSpawn			\Default Work Unit\PlatSpawn	
 
 Effect plug-ins	ID	Name	Type				Notes
+	2393480921	LawnMowerEQ	Wwise Parametric EQ			
 	2653529179	Three_Voices	Wwise Harmonizer			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
@@ -28,6 +32,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	80407323	PlaceholderTransform	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\PlaceholderTransform_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlaceholderTransform		173744
 	95738087	BigPickup01	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\BigPickup01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\BigPickup01		341064
 	127240437	GenFlap2	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\GenFlap2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFlap\GenFlap2		167208
+	130902425	shadowball02	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\shadowball02_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\shadowball02		814284
 	184370491	GenFlap3	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\GenFlap3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFlap\GenFlap3		132492
 	192483792	Splash5	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Splash5_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomSplash\Splash5		138920
 	207377098	platformdrop	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\platformdrop_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\platformdrop		455828
@@ -54,5 +59,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	876069845	Pickup3	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Pickup3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pickup3		138708
 	896591778	Dash02	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Dash02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dash02		148952
 	954646978	DragonRoar	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\DragonRoar		473292
+	1020712570	lawnmowerish	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\lawnmowerish_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\lawnmowerish		756128
 	1030449657	Rip01	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Rip01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomRip\Rip01		23616
 

@@ -31,11 +31,13 @@ namespace AK
         static const AkUniqueID PLATSPAWN = 4040173943U;
         static const AkUniqueID RESETHPMUSIC = 3000620399U;
         static const AkUniqueID ROOAAARRRR = 594977870U;
+        static const AkUniqueID SHADOWBALL = 3840406958U;
         static const AkUniqueID SPLASH = 160038168U;
         static const AkUniqueID STARTLV1 = 298361094U;
         static const AkUniqueID STARTLV2 = 298361093U;
         static const AkUniqueID STARTMUSIC = 3827058668U;
         static const AkUniqueID STOP_ALL = 452547817U;
+        static const AkUniqueID STOPSHADOWBALL = 2451460166U;
         static const AkUniqueID TRANSFORM = 1422622395U;
         static const AkUniqueID VICTORY = 2716678721U;
         static const AkUniqueID WINDBEGIN = 1021800662U;

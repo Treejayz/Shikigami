@@ -44,13 +44,16 @@
 				<Event Id="3836640104" Name="FoxJump" ObjectPath="\Events\Default Work Unit\FoxJump"/>
 				<Event Id="2432329107" Name="FrogJump" ObjectPath="\Events\Default Work Unit\FrogJump"/>
 				<Event Id="1880194273" Name="FrogStick" ObjectPath="\Events\Default Work Unit\FrogStick"/>
+				<Event Id="3498031842" Name="lawnmowerplatplay" ObjectPath="\Events\Default Work Unit\lawnmowerplatplay" MaxAttenuation="80.000000"/>
 				<Event Id="3978245845" Name="Pickup" ObjectPath="\Events\Default Work Unit\Pickup"/>
 				<Event Id="1097127270" Name="PickupCoin" ObjectPath="\Events\Default Work Unit\PickupCoin"/>
 				<Event Id="2582515549" Name="Pillar" ObjectPath="\Events\Default Work Unit\Pillar" MaxAttenuation="100.000000"/>
 				<Event Id="2933970505" Name="PlatDrop" ObjectPath="\Events\Default Work Unit\PlatDrop" MaxAttenuation="80.000000"/>
 				<Event Id="4040173943" Name="PlatSpawn" ObjectPath="\Events\Default Work Unit\PlatSpawn" MaxAttenuation="80.000000"/>
 				<Event Id="594977870" Name="ROOAAARRRR" ObjectPath="\Events\Default Work Unit\ROOAAARRRR"/>
+				<Event Id="3840406958" Name="ShadowBall" ObjectPath="\Events\Default Work Unit\ShadowBall" MaxAttenuation="80.000000"/>
 				<Event Id="160038168" Name="Splash" ObjectPath="\Events\Default Work Unit\Splash"/>
+				<Event Id="2451460166" Name="StopShadowBall" ObjectPath="\Events\Default Work Unit\StopShadowBall" MaxAttenuation="0.000000"/>
 				<Event Id="1422622395" Name="Transform" ObjectPath="\Events\Default Work Unit\Transform"/>
 				<Event Id="2716678721" Name="Victory" ObjectPath="\Events\Default Work Unit\Victory"/>
 				<Event Id="1021800662" Name="WindBegin" ObjectPath="\Events\Default Work Unit\WindBegin"/>
@@ -73,6 +76,10 @@
 				<File Id="127240437" Language="SFX">
 					<ShortName>GenFlap2.wav</ShortName>
 					<Path>SFX\GenFlap2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="130902425" Language="SFX">
+					<ShortName>shadowball02.wav</ShortName>
+					<Path>SFX\shadowball02_F17FB28C.wem</Path>
 				</File>
 				<File Id="184370491" Language="SFX">
 					<ShortName>GenFlap3.wav</ShortName>
@@ -177,6 +184,10 @@
 				<File Id="954646978" Language="SFX">
 					<ShortName>3.wav</ShortName>
 					<Path>SFX\3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1020712570" Language="SFX">
+					<ShortName>lawnmowerish.wav</ShortName>
+					<Path>SFX\lawnmowerish_F17FB28C.wem</Path>
 				</File>
 				<File Id="1030449657" Language="SFX">
 					<ShortName>Rip01.wav</ShortName>

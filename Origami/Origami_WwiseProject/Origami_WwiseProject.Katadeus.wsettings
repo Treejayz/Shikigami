@@ -6,6 +6,7 @@
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Katadeus\Documents\OrigamiSounds\PlayerSounds\Universal"/>
 				<Property Name="Event Action List\{037D6415-D390-4CF3-801C-806F3D9A4332}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{03F77E6D-03B0-4813-9DC7-3856C98A67FA}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{063A744D-9A9A-4A4B-9998-65DFFE0BCC3C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{09F51710-D52E-48F4-9647-A5908744E89A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{0C3B5521-45EA-4D29-B38E-CD7D91D15742}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{19A80DA9-C0F9-4BDF-80F8-B26298064795}\x64_Expand States" Type="string" Value=""/>
