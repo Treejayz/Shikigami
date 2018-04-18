@@ -386,6 +386,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Pillar" ID="{62F9D69D-3938-4114-A7D8-E59FF3C48209}">
+					<ChildrenList>
+						<Action Name="" ID="{0D107487-7B8A-44EA-AF0F-73B758802E76}" ShortID="585014980">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PillarAttack03" ID="{6096ADB3-3F5E-4422-9F9D-918AE536CF8D}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ShadowBall" ID="{09F51710-D52E-48F4-9647-A5908744E89A}">
+					<ChildrenList>
+						<Action Name="" ID="{991D2D33-00F0-48CC-8338-0903FDD47EA2}" ShortID="555310079">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="shadowball02" ID="{EECB1DCD-24C2-4DEB-AFDA-66C822CEB3C2}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

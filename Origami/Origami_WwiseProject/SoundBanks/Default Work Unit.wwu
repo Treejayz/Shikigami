@@ -77,6 +77,7 @@
 				</SoundBank>
 				<SoundBank Name="Level3SB" ID="{9BBAB3F8-59C4-40F7-A254-BF2E3D950460}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Pillar" ID="{62F9D69D-3938-4114-A7D8-E59FF3C48209}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PickupCoin" ID="{84B9FE28-A236-4307-B247-147A798D86AB}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="FrogJump" ID="{B26E24F4-DACE-437B-992F-B84D711BA154}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Dash" ID="{3634A491-0A2A-463A-A09E-1B2130E688A5}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
@@ -89,6 +90,7 @@
 						<ObjectRef Name="Pickup" ID="{947EEC9C-E58C-48B3-A731-04A5112EC800}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="WindBegin" ID="{CE7F98F0-1688-48D6-8217-39451F98F2D4}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ROOAAARRRR" ID="{374A9B2E-0BC0-48E6-8839-0F4614E84D75}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ShadowBall" ID="{09F51710-D52E-48F4-9647-A5908744E89A}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Victory" ID="{C2C36203-4909-4973-854E-DADD14826560}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="FrogStick" ID="{994DDA88-97D8-4984-8781-A60E80A25D01}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Death" ID="{E326C055-9827-49BF-95C1-D65CC31E464C}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>

@@ -11,6 +11,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1942692385	Dash			\Default Work Unit\Dash	
 	2432329107	FrogJump			\Default Work Unit\FrogJump	
 	2577690848	BossBattleStart			\Default Work Unit\BossBattleStart	
+	2582515549	Pillar			\Default Work Unit\Pillar	
 	2716678721	Victory			\Default Work Unit\Victory	
 	2931383628	Flap			\Default Work Unit\Flap	
 	2933970505	PlatDrop			\Default Work Unit\PlatDrop	
@@ -42,6 +43,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	456752970	BossfightDemo	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\BossfightDemo_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\BossfightDemo		4980772
 	497579342	Victory	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Victory_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Victory		13675544
 	528329268	Rip02	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Rip02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomRip\Rip02		57364
+	534584386	PillarAttack03	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\PillarAttack03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\PillarAttack03		5644928
 	594872895	Stick	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Stick_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Stick		10858
 	613255974	WingJump04	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\WingJump04_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\WingJump04		179224
 	658586597	Coin03	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Coin03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin03		255472

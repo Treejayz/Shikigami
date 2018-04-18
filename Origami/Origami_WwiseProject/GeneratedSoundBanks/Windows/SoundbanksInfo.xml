@@ -46,6 +46,7 @@
 				<Event Id="1880194273" Name="FrogStick" ObjectPath="\Events\Default Work Unit\FrogStick"/>
 				<Event Id="3978245845" Name="Pickup" ObjectPath="\Events\Default Work Unit\Pickup"/>
 				<Event Id="1097127270" Name="PickupCoin" ObjectPath="\Events\Default Work Unit\PickupCoin"/>
+				<Event Id="2582515549" Name="Pillar" ObjectPath="\Events\Default Work Unit\Pillar" MaxAttenuation="100.000000"/>
 				<Event Id="2933970505" Name="PlatDrop" ObjectPath="\Events\Default Work Unit\PlatDrop" MaxAttenuation="80.000000"/>
 				<Event Id="4040173943" Name="PlatSpawn" ObjectPath="\Events\Default Work Unit\PlatSpawn" MaxAttenuation="80.000000"/>
 				<Event Id="594977870" Name="ROOAAARRRR" ObjectPath="\Events\Default Work Unit\ROOAAARRRR"/>
@@ -132,6 +133,10 @@
 				<File Id="528329268" Language="SFX">
 					<ShortName>Rip02.wav</ShortName>
 					<Path>SFX\Rip02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="534584386" Language="SFX">
+					<ShortName>PillarAttack03.wav</ShortName>
+					<Path>SFX\PillarAttack03_1C9C67B2.wem</Path>
 				</File>
 				<File Id="594872895" Language="SFX">
 					<ShortName>Stick.wav</ShortName>
