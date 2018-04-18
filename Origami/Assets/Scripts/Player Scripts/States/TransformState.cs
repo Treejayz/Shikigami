@@ -25,7 +25,8 @@ public class TransformState : State
     private float frogStartScale = 1f;
     private float frogEndScale = 1.43574f;
 
-
+    private float foxEndY = 0.5f;
+    private float foxEndScale = 1.5f;
 
 
     public TransformState(Character character) : base(character)
@@ -50,7 +51,7 @@ public class TransformState : State
 
         craneFold = character.gameObject.transform.GetChild(3).gameObject;
         frogFold = character.gameObject.transform.GetChild(4).gameObject;
-        foxFold = character.gameObject.transform.GetChild(2).gameObject;
+        foxFold = character.gameObject.transform.GetChild(5).gameObject;
 
         step2 = false;
 
@@ -67,7 +68,9 @@ public class TransformState : State
                 frogFold.GetComponentInChildren<Animator>().Play("Frog_Fold_Test", -1, 0f);
                 break;
             case Character.CurrentForm.FOX:
+                foxFold.GetComponentInChildren<Animator>().SetFloat("Speed", 1f);
                 foxFold.SetActive(true);
+                foxFold.GetComponentInChildren<Animator>().Play("Fox_Fold", -1, 0f);
                 break;
         };
 
@@ -98,8 +101,12 @@ public class TransformState : State
                         frogFold.transform.localScale = new Vector3(frogScale, frogScale, frogScale);
                         break;
                     case Character.CurrentForm.FOX:
+                        float foxY = foxEndY * progress;
+                        float foxScale = (1f - progress) + foxEndScale * progress;
                         float foxRot = 360f * progress;
                         foxFold.transform.localEulerAngles = new Vector3(0, foxRot, 0f);
+                        foxFold.transform.localPosition = new Vector3(0f, foxY, 0f);
+                        foxFold.transform.localScale = new Vector3(foxScale, foxScale, foxScale);
                         break;
                 };
             }
@@ -157,6 +164,8 @@ public class TransformState : State
                         break;
                     case Character.CurrentForm.FOX:
                         foxFold.SetActive(true);
+                        foxFold.GetComponentInChildren<Animator>().SetFloat("Speed", -1f);
+                        foxFold.GetComponentInChildren<Animator>().Play("Fox_Fold", -1, 1f);
                         break;
                 };
             }
@@ -181,8 +190,12 @@ public class TransformState : State
                         frogFold.transform.localScale = new Vector3(frogScale, frogScale, frogScale);
                         break;
                     case Character.CurrentForm.FOX:
-                        float foxRot = -1 * 360f * progress;
+                        float foxY = foxEndY * progress;
+                        float foxScale = (1f - progress) + foxEndScale * progress;
+                        float foxRot = -360f * progress;
                         foxFold.transform.localEulerAngles = new Vector3(0, foxRot, 0f);
+                        foxFold.transform.localPosition = new Vector3(0f, foxY, 0f);
+                        foxFold.transform.localScale = new Vector3(foxScale, foxScale, foxScale);
                         break;
                 };
             }
@@ -200,6 +213,7 @@ public class TransformState : State
                     SetForm("Frog");
                     break;
                 case Character.CurrentForm.FOX:
+                    foxFold.SetActive(false);
                     SetForm("Fox");
                     break;
             };
