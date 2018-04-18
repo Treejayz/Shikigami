@@ -1,0 +1,259 @@
+fileFormatVersion: 2
+guid: 3991a4d9bf624034e8639ffd83399583
+timeCreated: 1524015216
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Beaker
+    100004: Beaker 1
+    100006: Beaker 2
+    100008: Beaker 3
+    100010: Beaker1
+    100012: Beaker2
+    100014: Book_2:book_2
+    100016: Book_2:left
+    100018: Bottle
+    100020: Bottle 1
+    100022: Bottle1
+    100024: Bottle2
+    100026: Bottle3
+    100028: Bottle4
+    100030: Bottle5
+    100032: Desk
+    100034: Holder
+    100036: pCube3
+    100038: Scale:Cup
+    100040: Scale:Cup1
+    100042: Scale:Hook
+    100044: Scale:Hook1
+    100046: Scale:OtherPartOfScale
+    100048: Scale:Scale
+    100050: Scale:String
+    100052: Scale:String1
+    100054: Scale:String2
+    100056: Scale:String3
+    100058: Scale:String4
+    100060: Scale:String5
+    100062: Small_Stopper
+    100064: Small_Stopper 1
+    100066: Small_Stopper 2
+    100068: Stopper
+    100070: Stovetop
+    100072: Test_Tube_Set
+    400000: //RootNode
+    400002: Beaker
+    400004: Beaker 1
+    400006: Beaker 2
+    400008: Beaker 3
+    400010: Beaker1
+    400012: Beaker2
+    400014: Book_2:book_2
+    400016: Book_2:left
+    400018: Bottle
+    400020: Bottle 1
+    400022: Bottle1
+    400024: Bottle2
+    400026: Bottle3
+    400028: Bottle4
+    400030: Bottle5
+    400032: Desk
+    400034: Holder
+    400036: pCube3
+    400038: Scale:Cup
+    400040: Scale:Cup1
+    400042: Scale:Hook
+    400044: Scale:Hook1
+    400046: Scale:OtherPartOfScale
+    400048: Scale:Scale
+    400050: Scale:String
+    400052: Scale:String1
+    400054: Scale:String2
+    400056: Scale:String3
+    400058: Scale:String4
+    400060: Scale:String5
+    400062: Small_Stopper
+    400064: Small_Stopper 1
+    400066: Small_Stopper 2
+    400068: Stopper
+    400070: Stovetop
+    400072: Test_Tube_Set
+    2000000: Book_2:left
+    2100000: wood_LAM
+    2100002: glass_green_LAM
+    2100004: copper_LAM
+    2100006: cork_LAM
+    2100008: glass_LAM
+    2100010: green_LAM
+    2100012: stove_flame_LAM
+    2100014: stove_LAM
+    2100016: Book_Purple_Dark
+    2100018: Book_2_pages
+    2300000: Beaker 1
+    2300002: Beaker 2
+    2300004: Beaker 3
+    2300006: Book_2:book_2
+    2300008: Bottle
+    2300010: Bottle 1
+    2300012: Bottle3
+    2300014: Bottle4
+    2300016: Bottle5
+    2300018: Desk
+    2300020: Holder
+    2300022: pCube3
+    2300024: Scale:Cup
+    2300026: Scale:Cup1
+    2300028: Scale:Hook
+    2300030: Scale:Hook1
+    2300032: Scale:OtherPartOfScale
+    2300034: Scale:Scale
+    2300036: Scale:String
+    2300038: Scale:String1
+    2300040: Scale:String2
+    2300042: Scale:String3
+    2300044: Scale:String4
+    2300046: Scale:String5
+    2300048: Small_Stopper
+    2300050: Small_Stopper 1
+    2300052: Small_Stopper 2
+    2300054: Stopper
+    2300056: Stovetop
+    3300000: Beaker 1
+    3300002: Beaker 2
+    3300004: Beaker 3
+    3300006: Book_2:book_2
+    3300008: Bottle
+    3300010: Bottle 1
+    3300012: Bottle3
+    3300014: Bottle4
+    3300016: Bottle5
+    3300018: Desk
+    3300020: Holder
+    3300022: pCube3
+    3300024: Scale:Cup
+    3300026: Scale:Cup1
+    3300028: Scale:Hook
+    3300030: Scale:Hook1
+    3300032: Scale:OtherPartOfScale
+    3300034: Scale:Scale
+    3300036: Scale:String
+    3300038: Scale:String1
+    3300040: Scale:String2
+    3300042: Scale:String3
+    3300044: Scale:String4
+    3300046: Scale:String5
+    3300048: Small_Stopper
+    3300050: Small_Stopper 1
+    3300052: Small_Stopper 2
+    3300054: Stopper
+    3300056: Stovetop
+    4300000: Desk
+    4300002: Bottle5
+    4300004: Bottle3
+    4300006: Bottle4
+    4300008: Scale:Scale
+    4300010: Scale:Hook1
+    4300012: Scale:Cup1
+    4300014: Scale:String5
+    4300016: Scale:String4
+    4300018: Scale:String3
+    4300020: Scale:Cup
+    4300022: Scale:String2
+    4300024: Scale:String1
+    4300026: Scale:String
+    4300028: Scale:Hook
+    4300030: Scale:OtherPartOfScale
+    4300032: Stopper
+    4300034: Bottle
+    4300036: Bottle
+    4300038: Beaker
+    4300040: Small_Stopper
+    4300042: Beaker
+    4300044: Small_Stopper
+    4300046: Beaker
+    4300048: Small_Stopper
+    4300050: pCube3
+    4300052: Holder
+    4300054: Stovetop
+    4300056: Book_2:book_2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
