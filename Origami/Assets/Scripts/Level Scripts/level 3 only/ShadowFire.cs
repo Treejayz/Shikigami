@@ -39,7 +39,7 @@ public class ShadowFire : MonoBehaviour {
                 }
                 break;
             case FireType.PILLARLEAD:
-                if (fireTime > 5f && Vector3.Distance(transform.position, player.transform.position) < 100f)
+                if (fireTime > 3f && Vector3.Distance(transform.position, player.transform.position) < 100f)
                 {
                     StartCoroutine("Pillar");
                     fireTime = 0f;
@@ -48,21 +48,42 @@ public class ShadowFire : MonoBehaviour {
             case FireType.PILLARSTILL:
                 if (fireTime > .1f && !recharge)
                 {
-                    if (Vector3.Distance(player.transform.position, playerPositionOld) < .1f)
+                    //if (Vector3.Distance(player.transform.position, playerPositionOld) < .1f)
+                    if (player.GetComponent<Character>().momentum.magnitude < 1f)
                     {
                         RaycastHit hit;
                         int layerMask = 1 << 8;
                         layerMask = ~layerMask;
-                        if (Physics.SphereCast(player.transform.position, .5f, Vector3.down, out hit, 5f, layerMask))
+                        if (Physics.SphereCast(player.transform.position + Vector3.up * 3f, .5f, Vector3.down, out hit, 10f, layerMask))
                         {
                             GameObject pillar = Instantiate(shadowPillar, hit.point + Vector3.up * .01f, Quaternion.identity);
+                            pillar.transform.parent = hit.transform;
+                            recharge = true;
+                            fireTime = 0f;
                         }
-                        recharge = true;
                     } else
                     {
                         playerPositionOld = player.transform.position;
                     }
-                    fireTime = 0f;
+                    
+                }
+                if (fireTime > 10f && !recharge)
+                {
+                    //if (Vector3.Distance(player.transform.position, playerPositionOld) < .1f)
+                    RaycastHit hit;
+                    int layerMask = 1 << 8;
+                    layerMask = ~layerMask;
+                    if (Physics.SphereCast(player.transform.position + Vector3.up * 3f, .5f, Vector3.down, out hit, 10f, layerMask))
+                    {
+                        GameObject pillar = Instantiate(shadowPillar, hit.point + Vector3.up * .01f, Quaternion.identity);
+                        pillar.transform.parent = hit.transform;
+                        recharge = true;
+                        fireTime = 0f;
+                    }
+                    else
+                    {
+                        playerPositionOld = player.transform.position;
+                    }
                 }
 
                 if (fireTime > 5f && recharge)
