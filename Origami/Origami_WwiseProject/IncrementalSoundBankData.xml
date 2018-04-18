@@ -7,13 +7,13 @@
 				<File Name="Init" Hash="2218645010" Timestamp="1524014565"/>
 				<File Name="Level1SB" Hash="1959247778" Timestamp="1524026139"/>
 				<File Name="Level3SB" Hash="3257127933" Timestamp="1524026139"/>
-				<File Name="MenuSB" Hash="1908703406" Timestamp="1522195759"/>
+				<File Name="MenuSB" Hash="1972353879" Timestamp="1524065439"/>
 				<File Name="PlayerSound" Hash="198951838" Timestamp="1524026139"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1699444077" Timestamp="1524026139"/>
+				<File Name="" Hash="1499165968" Timestamp="1524065439"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

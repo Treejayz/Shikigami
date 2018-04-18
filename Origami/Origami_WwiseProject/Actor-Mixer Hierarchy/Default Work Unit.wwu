@@ -1519,6 +1519,25 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<Sound Name="CutsceneFull3" ID="{03D06C5B-646B-4CA8-A067-006BDC97CD8D}" ShortID="107577630">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{409BEEA6-2A0B-4E9C-AE93-1353CB7FE3C8}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="CutsceneFull3" ID="{7DB0CAC0-8499-4F32-8717-B0C10D6F3294}" ShortID="801312338">
+							<Language>SFX</Language>
+							<AudioFile>CutsceneFull3.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="CutsceneFull3" ID="{7DB0CAC0-8499-4F32-8717-B0C10D6F3294}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

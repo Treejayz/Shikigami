@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID BIGPICKUP = 38805597U;
         static const AkUniqueID BOSSBATTLESTART = 2577690848U;
         static const AkUniqueID CHIMEPLAY = 2453422573U;
+        static const AkUniqueID CUTSCENE = 1182958561U;
         static const AkUniqueID DASH = 1942692385U;
         static const AkUniqueID DEATH = 779278001U;
         static const AkUniqueID FLAP = 2931383628U;

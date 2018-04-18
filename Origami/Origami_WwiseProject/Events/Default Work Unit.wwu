@@ -442,6 +442,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Cutscene" ID="{C6611B98-DA42-4B58-9DCA-036B6F073B96}">
+					<ChildrenList>
+						<Action Name="" ID="{A453B9B0-22E5-48EE-A459-869BBCBF56D0}" ShortID="1043863694">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CutsceneFull3" ID="{03D06C5B-646B-4CA8-A067-006BDC97CD8D}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

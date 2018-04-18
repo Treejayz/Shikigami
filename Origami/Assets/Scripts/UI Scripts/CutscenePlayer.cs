@@ -31,6 +31,7 @@ public class CutscenePlayer : MonoBehaviour {
     public void playCutscene()
     {
         AkSoundEngine.StopAll();
+        AkSoundEngine.PostEvent("Cutscene", cam);
         cam.GetComponent<UnityEngine.Video.VideoPlayer>().Play();
         playing = true;
 

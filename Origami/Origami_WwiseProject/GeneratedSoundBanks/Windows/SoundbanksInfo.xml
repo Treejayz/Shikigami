@@ -16,10 +16,15 @@
 			<ShortName>MenuSB</ShortName>
 			<Path>MenuSB.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1182958561" Name="Cutscene" ObjectPath="\Events\Default Work Unit\Cutscene"/>
 				<Event Id="3827058668" Name="StartMusic" ObjectPath="\Events\Default Work Unit\StartMusic"/>
 				<Event Id="452547817" Name="Stop_All" ObjectPath="\Events\Default Work Unit\Stop_All" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="801312338" Language="SFX">
+					<ShortName>CutsceneFull3.wav</ShortName>
+					<Path>SFX\CutsceneFull3_1C9C67B2.wem</Path>
+				</File>
 				<File Id="876606834" Language="SFX">
 					<ShortName>MenuTheme.wav</ShortName>
 					<Path>SFX\MenuTheme_F17FB28C.wem</Path>

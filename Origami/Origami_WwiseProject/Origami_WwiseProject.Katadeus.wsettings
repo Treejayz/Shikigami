@@ -3,7 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{0083A858-593D-4404-B58E-25D75EC7F022}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Katadeus\Documents\OrigamiSounds\PlayerSounds\Frog"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Katadeus\Documents\OrigamiSounds\Music"/>
 				<Property Name="Event Action List\{037D6415-D390-4CF3-801C-806F3D9A4332}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{03F77E6D-03B0-4813-9DC7-3856C98A67FA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{063A744D-9A9A-4A4B-9998-65DFFE0BCC3C}\x64_Expand States" Type="string" Value=""/>
@@ -31,6 +31,7 @@
 				<Property Name="Event Action List\{B26E24F4-DACE-437B-992F-B84D711BA154}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B944F94E-E789-4730-83ED-FCDD96E9B978}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{BBFAAA79-9FF9-437B-BC9A-364E8D0731D3}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C6611B98-DA42-4B58-9DCA-036B6F073B96}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{CE74E385-643E-4C49-9873-A2203F645284}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{CE7F98F0-1688-48D6-8217-39451F98F2D4}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{DDFEB236-29F6-46B0-96D4-8DD54FCC1DAD}\x64_Expand States" Type="string" Value=""/>
