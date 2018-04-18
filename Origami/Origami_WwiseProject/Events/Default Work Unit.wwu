@@ -372,6 +372,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="ROOAAARRRR" ID="{374A9B2E-0BC0-48E6-8839-0F4614E84D75}">
+					<ChildrenList>
+						<Action Name="" ID="{DEA61EEB-26D7-41BE-89D4-FF98130F8B10}" ShortID="418108336">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DragonRoar" ID="{956319EC-31AA-48D6-B393-D985A06B9C34}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

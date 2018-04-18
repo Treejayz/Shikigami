@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	38805597	BigPickup			\Default Work Unit\BigPickup	
 	160038168	Splash			\Default Work Unit\Splash	
+	594977870	ROOAAARRRR			\Default Work Unit\ROOAAARRRR	
 	779278001	Death			\Default Work Unit\Death	
 	1021800662	WindBegin			\Default Work Unit\WindBegin	
 	1097127270	PickupCoin			\Default Work Unit\PickupCoin	
@@ -47,5 +48,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	853212425	Splash4	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Mac\SFX\Splash4_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomSplash\Splash4		111920
 	876069845	Pickup3	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Mac\SFX\Pickup3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pickup3		138708
 	896591778	Dash02	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Mac\SFX\Dash02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dash02		148952
+	954646978	DragonRoar	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Mac\SFX\3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\DragonRoar		473292
 	1030449657	Rip01	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Mac\SFX\Rip01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomRip\Rip01		23616
 

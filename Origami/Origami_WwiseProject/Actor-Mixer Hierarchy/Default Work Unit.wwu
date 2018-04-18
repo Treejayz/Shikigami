@@ -1159,6 +1159,36 @@
 						<ActiveSource Name="Victory" ID="{668F358F-FBBE-471D-8D6E-76D2402D683E}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="DragonRoar" ID="{956319EC-31AA-48D6-B393-D985A06B9C34}" ShortID="116347154">
+					<PropertyList>
+						<Property Name="EnablePositioning" Type="bool" Value="False"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Harmonizer" CompanyID="0" PluginID="138" PluginType="3">
+							<ObjectRef Name="Three_Voices" ID="{71CA20BE-8C1D-4A0C-92AF-BFCE183D5651}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="3" ID="{403B7062-CA8F-4A79-A433-5080C28DD6AD}" ShortID="954646978">
+							<Language>SFX</Language>
+							<AudioFile>3.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="3" ID="{403B7062-CA8F-4A79-A433-5080C28DD6AD}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

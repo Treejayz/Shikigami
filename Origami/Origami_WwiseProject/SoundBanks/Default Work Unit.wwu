@@ -88,6 +88,7 @@
 						<ObjectRef Name="BigPickup" ID="{1E5CAF6C-9784-483F-A6A3-1C55D33A67A9}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Pickup" ID="{947EEC9C-E58C-48B3-A731-04A5112EC800}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="WindBegin" ID="{CE7F98F0-1688-48D6-8217-39451F98F2D4}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ROOAAARRRR" ID="{374A9B2E-0BC0-48E6-8839-0F4614E84D75}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Victory" ID="{C2C36203-4909-4973-854E-DADD14826560}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="FrogStick" ID="{994DDA88-97D8-4984-8781-A60E80A25D01}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Death" ID="{E326C055-9827-49BF-95C1-D65CC31E464C}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
