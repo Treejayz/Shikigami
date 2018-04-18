@@ -35,17 +35,17 @@ public class LevelCollection : MonoBehaviour {
 			piece = CollectableManager.level1paperPieces;
 			piecetotal = 8;
 			scrap = CollectableManager.level1scrapPieces;
-			piecetotal = 100;
+			scraptotal = 100;
 		} else if (level == 2) {
 			piece = CollectableManager.level2paperPieces;
 			piecetotal = 9;
 			scrap = CollectableManager.level2scrapPieces;
-			piecetotal = 130;
+			scraptotal = 130;
 		} else {//if (SceneManager.GetActiveScene().name == "Level 3"){
 			piece = CollectableManager.level3paperPieces;
 			piecetotal = 0;
 			scrap = CollectableManager.level3scrapPieces;
-			piecetotal = 0;
+			scraptotal = 0;
 		}
 		scraptext.GetComponentInChildren<Text> ().text = scrap.ToString() + " / " + scraptotal.ToString();
 		piecetext.GetComponentInChildren<Text> ().text = piece.ToString() + " / " + piecetotal.ToString();

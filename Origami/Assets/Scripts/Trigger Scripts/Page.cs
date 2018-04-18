@@ -42,7 +42,7 @@ public class Page : MonoBehaviour {
                 transform.GetChild(0).gameObject.SetActive(false);
                 GetComponent<CapsuleCollider>().enabled = false;
                 print("hi");
-                CollectableManager.spellbookpages[0] = true;
+                CollectableManager.storybookpages[0] = true;
                 //Destroy(this);
             }
             else if (isFox)
@@ -59,7 +59,7 @@ public class Page : MonoBehaviour {
                 GetComponent<SpriteRenderer>().enabled = false;
                 transform.GetChild(0).gameObject.SetActive(false);
                 GetComponent<CapsuleCollider>().enabled = false;
-                CollectableManager.spellbookpages [2] = true;
+                CollectableManager.storybookpages [2] = true;
                 //Destroy(this);
             }
 
