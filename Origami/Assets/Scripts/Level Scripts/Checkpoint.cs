@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class Checkpoint : MonoBehaviour {
 
@@ -12,7 +11,7 @@ public class Checkpoint : MonoBehaviour {
 
     public GameObject Page;
     private Transform player;
-	public bool page1;
+	public bool page3;
     public static GameObject[] CheckPointList;
 
 	public GameObject checkPointText;
@@ -41,11 +40,17 @@ public class Checkpoint : MonoBehaviour {
             player = other.gameObject.transform;
             ActivateCheckPoint();
         }
-		if (page1){
-			CollectableManager.spellpage1pieces++;
+		if (page3){
+			CollectableManager.spellpage3pieces++;
+			if (CollectableManager.spellpage3pieces == 1) { 
+				CollectableManager.spellbookpages [2] = true;
+			} 
 		}
 		else {
-			CollectableManager.spellpage2pieces++;
+			CollectableManager.spellpage4pieces++;
+			if (CollectableManager.spellpage4pieces == CollectableManager.spellpage4piecemax) { 
+				CollectableManager.spellbookpages [3] = true;
+			} 
 		}
     }
 

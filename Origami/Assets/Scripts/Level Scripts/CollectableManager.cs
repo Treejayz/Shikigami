@@ -88,18 +88,30 @@ public static class CollectableManager {
 				if (SceneManager.GetActiveScene().name == "Level 1"){
 					level1paperPieces += 1;
 					spellpage1pieces++;
+					if (spellpage1pieces == spellpage1piecemax) { 
+						CollectableManager.spellbookpages [0] = true;
+					} 
 				}
 				else if (SceneManager.GetActiveScene().name == "Level 2"){
 					level2paperPieces += 1;
 					if (level2paperPieces > 2) {
 						spellpage2pieces++;
+						if (spellpage2pieces == spellpage2piecemax) { 
+							CollectableManager.spellbookpages [1] = true;
+						} 
 					} else {
 						spellpage1pieces++;
+						if (spellpage1pieces == spellpage1piecemax) { 
+							CollectableManager.spellbookpages [0] = true;
+						} 
 					}
 				}
 				else { //if (SceneManager.GetActiveScene().name == "Level 3"){
 					level3paperPieces += 1;
 					spellpage2pieces++;
+					if (spellpage2pieces == spellpage2piecemax) { 
+						CollectableManager.spellbookpages [1] = true;
+					} 
 				}
                 break;
 		case Collectable.CollectableType.SCRAP:

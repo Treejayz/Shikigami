@@ -7640,7 +7640,7 @@ MonoBehaviour:
   activated: 0
   pos: {fileID: 102511464}
   Page: {fileID: 1379935969}
-  page1: 0
+  page3: 0
   checkPointText: {fileID: 828533254}
   newForm: 1
 --- !u!1 &197447981
@@ -34174,6 +34174,11 @@ Prefab:
       propertyPath: page1
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114783782375843626, guid: d7147872aa3b2f848b741ee64d2b7502,
+        type: 2}
+      propertyPath: page3
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d7147872aa3b2f848b741ee64d2b7502, type: 2}
   m_IsPrefabParent: 0
@@ -36565,7 +36570,7 @@ MonoBehaviour:
   activated: 0
   pos: {fileID: 659890412}
   Page: {fileID: 99928099}
-  page1: 1
+  page3: 1
   checkPointText: {fileID: 828533254}
   newForm: 0
 --- !u!1 &1069100143
@@ -40656,7 +40661,7 @@ MonoBehaviour:
   activated: 0
   pos: {fileID: 640752142}
   Page: {fileID: 1478470190}
-  page1: 1
+  page3: 1
   checkPointText: {fileID: 828533254}
   newForm: 0
 --- !u!1 &1194217662
@@ -41779,7 +41784,7 @@ MonoBehaviour:
   activated: 0
   pos: {fileID: 0}
   Page: {fileID: 255836434}
-  page1: 1
+  page3: 1
   checkPointText: {fileID: 828533254}
   newForm: 0
 --- !u!1 &1243800044
@@ -47966,7 +47971,7 @@ MonoBehaviour:
   activated: 0
   pos: {fileID: 815321884}
   Page: {fileID: 2143539738}
-  page1: 1
+  page3: 1
   checkPointText: {fileID: 828533254}
   newForm: 0
 --- !u!4 &1457224056 stripped
@@ -52270,7 +52275,7 @@ MonoBehaviour:
   activated: 0
   pos: {fileID: 0}
   Page: {fileID: 710169601}
-  page1: 1
+  page3: 1
   checkPointText: {fileID: 828533254}
   newForm: 0
 --- !u!4 &1493040771 stripped
@@ -64445,7 +64450,7 @@ MonoBehaviour:
   activated: 1
   pos: {fileID: 0}
   Page: {fileID: 0}
-  page1: 0
+  page3: 0
   checkPointText: {fileID: 828533254}
   newForm: 0
 --- !u!1 &2020797530
