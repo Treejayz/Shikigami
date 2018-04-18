@@ -28,8 +28,8 @@ MonoBehaviour:
     List: []
   BankWwu:
   - Guid: '{090E2BE1-C110-4C48-8EE1-99814A8166EB}'
-    m_lastTimePart2: -1999265445
-    m_lastTimePsrt1: -1976199291
+    m_lastTimePart2: -1999264566
+    m_lastTimePsrt1: 701404192
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks\Default Work Unit.wwu
     List:
@@ -84,8 +84,8 @@ MonoBehaviour:
   defaultPoolSize: 4096
   EventWwu:
   - Guid: '{3838D55C-4A81-4825-8DB4-A33597820612}'
-    m_lastTimePart2: -1999265446
-    m_lastTimePsrt1: 279403897
+    m_lastTimePart2: -1999264568
+    m_lastTimePsrt1: 503458964
     ParentPhysicalPath: 
     PhysicalPath: Events\Default Work Unit.wwu
     List:
@@ -122,7 +122,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: chimeplay
         ObjectType: 3
-      maxAttenuation: 80
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: 91a434362a0a3a46a09e1b2130e688a5
@@ -218,7 +218,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: lawnmowerplatplay
         ObjectType: 3
-      maxAttenuation: 80
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: 9cec7e948ce5b348a73104a5112ec800
@@ -254,7 +254,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: PlatDrop
         ObjectType: 3
-      maxAttenuation: 80
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: e584d056ed233248b513303487b2deb8
@@ -266,7 +266,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: PlatSpawn
         ObjectType: 3
-      maxAttenuation: 80
+      maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
     - Guid: e321be60204ebe4885a503078f6c0524
@@ -277,6 +277,18 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: ResetHPMusic
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 2e9b4a37c00be64888390f4614e84d75
+      ID: 594977870
+      Name: ROOAAARRRR
+      Path: Default Work Unit\ROOAAARRRR
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ROOAAARRRR
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0
