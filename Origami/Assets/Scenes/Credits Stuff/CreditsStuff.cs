@@ -40,6 +40,7 @@ public class CreditsStuff : MonoBehaviour {
         if (Input.GetKey(KeyCode.Escape))
         {
             AkSoundEngine.StopAll();
+            AkSoundEngine.SetRTPCValue("MusicSpeed", 1f);
             LevelLoader.scene = "Main Menu";
             SceneManager.LoadScene("LoadLevel");
         }

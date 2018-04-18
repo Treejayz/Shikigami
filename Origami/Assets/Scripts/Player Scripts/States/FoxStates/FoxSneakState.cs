@@ -22,7 +22,7 @@ public class FoxSneakState : State {
         character.foxAnimator.SetBool("Sneaking", true);
         //character.foxAnimator.Play("Fox_Sneak_NRM", -1, 0.1f);
         start = Time.time;
-
+        AkSoundEngine.SetRTPCValue("MusicSpeed", .975f);
     }
 
     public override void Tick()
@@ -87,6 +87,7 @@ public class FoxSneakState : State {
     {
         character.foxAnimator.SetBool("Sneaking", false);
         character.foxAnimator.speed = 1f;
+        AkSoundEngine.SetRTPCValue("MusicSpeed", 1f);
     }
 
     public override void OnColliderHit(ControllerColliderHit hit)

@@ -14,6 +14,7 @@ public class FoxSprintState : State {
         direction = forwardtest.forward;
         direction.Normalize();
         //character.momentum = direction * sprintSpeed;
+
     }
 
     public FoxSprintState(Character character, Vector3 moveDirection) : base(character)
@@ -26,6 +27,7 @@ public class FoxSprintState : State {
         player = character.GetComponent<CharacterController>();
         character.foxAnimator.speed = 1.58333f;
         character.GetComponentsInChildren<ParticleSystem>()[5].Play();
+        AkSoundEngine.SetRTPCValue("MusicSpeed", 1.05f);
     }
 
     public override void Tick()
@@ -65,6 +67,7 @@ public class FoxSprintState : State {
     {
         character.foxAnimator.speed = 1f;
         character.GetComponentsInChildren<ParticleSystem>()[5].Stop();
+        AkSoundEngine.SetRTPCValue("MusicSpeed", 1f);
     }
 
     public override void OnColliderHit(ControllerColliderHit hit)
