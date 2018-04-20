@@ -20,7 +20,8 @@ public class PauseSystem : MonoBehaviour {
 				pause = true;
 			}
 		}
-		if (Input.GetKeyDown(KeyCode.Escape)){
+		if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Joystick1Button7))
+        {
 			if (!pause) {
 				this.transform.Find ("Pause Menu").GetComponent<Canvas> ().enabled = true;
 			} else {

@@ -94,24 +94,28 @@ public class Character : MonoBehaviour {
 
     private void Update()
     {
-        currentState.Tick();
-        if (jumped && Input.GetAxis("Jump") == 0f) { jumped = false; }
-        if (!canDash && !isDashing && !incooldown) {
-            StartCoroutine("DashCooldown");
-            incooldown = true;
-        }
-        
-        //if (switching && Input.GetAxis("Switch2") == 0.0f && Input.GetAxis("Switch1") == 0.0f) { switching = false; }
-
-        if (!switching)
+        if (Time.timeScale != 0f)
         {
-            if (Input.GetAxis("Switch2") != 0.0f && canFrog)
+            currentState.Tick();
+            if (jumped && Input.GetAxis("Jump") == 0f) { jumped = false; }
+            if (!canDash && !isDashing && !incooldown)
             {
-                SetState(new TransformState(this, false));
+                StartCoroutine("DashCooldown");
+                incooldown = true;
             }
-            else if (Input.GetAxis("Switch1") != 0.0f && canFrog)
+
+            //if (switching && Input.GetAxis("Switch2") == 0.0f && Input.GetAxis("Switch1") == 0.0f) { switching = false; }
+
+            if (!switching)
             {
-                SetState(new TransformState(this, true));
+                if (Input.GetAxis("Switch2") != 0.0f && canFrog)
+                {
+                    SetState(new TransformState(this, false));
+                }
+                else if (Input.GetAxis("Switch1") != 0.0f && canFrog)
+                {
+                    SetState(new TransformState(this, true));
+                }
             }
         }
     }
