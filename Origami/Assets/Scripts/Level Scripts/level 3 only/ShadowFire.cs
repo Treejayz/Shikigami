@@ -57,6 +57,7 @@ public class ShadowFire : MonoBehaviour {
                         if (Physics.SphereCast(player.transform.position + Vector3.up * 3f, .5f, Vector3.down, out hit, 10f, layerMask))
                         {
                             GameObject pillar = Instantiate(shadowPillar, hit.point + Vector3.up * .01f, Quaternion.identity);
+                            pillar.GetComponent<ShadowPillar>().buildTime = 1.5f;
                             pillar.transform.parent = hit.transform;
                             recharge = true;
                             fireTime = 0f;

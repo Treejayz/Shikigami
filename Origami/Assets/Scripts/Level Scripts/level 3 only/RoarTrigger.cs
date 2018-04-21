@@ -12,6 +12,14 @@ public class RoarTrigger : MonoBehaviour {
     Vector3 camPosition;
     Quaternion camRotation;
 
+    private void Start()
+    {
+        if (triggered == true)
+        {
+            triggered = false;
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player" && !triggered)

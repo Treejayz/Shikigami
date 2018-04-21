@@ -108,11 +108,11 @@ public class Character : MonoBehaviour {
 
             if (!switching && !dead)
             {
-                if (Input.GetAxis("Switch2") != 0.0f && canFrog)
+                if ((Input.GetAxis("Switch2") != 0.0f || Input.GetAxis("DpadSwitch") > 0.0f) && canFrog)
                 {
                     SetState(new TransformState(this, false));
                 }
-                else if (Input.GetAxis("Switch1") != 0.0f && canFrog)
+                else if ((Input.GetAxis("Switch1") != 0.0f || Input.GetAxis("DpadSwitch") < 0.0f) && canFrog)
                 {
                     SetState(new TransformState(this, true));
                 }

@@ -7,7 +7,7 @@ public class ShadowPillar : MonoBehaviour {
     public GameObject sprite;
     public GameObject trigger;
     public GameObject pillar;
-    float buildTime = 1f;
+    public float buildTime = 1f;
 
 	// Use this for initialization
 	void Start () {
