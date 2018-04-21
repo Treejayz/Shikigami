@@ -106,7 +106,7 @@ public class Character : MonoBehaviour {
 
             //if (switching && Input.GetAxis("Switch2") == 0.0f && Input.GetAxis("Switch1") == 0.0f) { switching = false; }
 
-            if (!switching)
+            if (!switching && !dead)
             {
                 if (Input.GetAxis("Switch2") != 0.0f && canFrog)
                 {

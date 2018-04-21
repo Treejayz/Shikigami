@@ -37,7 +37,7 @@ public class CreditsStuff : MonoBehaviour {
         //Asmodeus codeus
         AkSoundEngine.SetRTPCValue("MusicSpeed", speed);
 
-        if (Input.GetKey(KeyCode.Escape))
+        if (Input.GetKey(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Joystick1Button7))
         {
             AkSoundEngine.StopAll();
             AkSoundEngine.SetRTPCValue("MusicSpeed", 1f);
