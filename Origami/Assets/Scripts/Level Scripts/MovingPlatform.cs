@@ -11,55 +11,60 @@ public class MovingPlatform : MonoBehaviour {
 
     public Transform[] targets;
     public Transform platform;
-    public float speed;
-    private float currentSpeed;
-    private float currentDistance;
-    private float acceleration;
 
-    public bool ease = true;
-    public float easeDistance = 3f;
+    public float moveTime = 6f;
 
+    private int prevTarget;
     private int currentTarget;
+
+    private int iteration = 0;
+
+    private float progress;
 
 	// Use this for initialization
 	void Start () {
         platform.position = targets[0].position;
         currentTarget = 1;
-        currentSpeed = 0f;
-
-        acceleration = ((speed * speed) / (2 * easeDistance));
+        prevTarget = 0;
+        iteration = (int)((Time.time / moveTime) - (Time.time % moveTime));
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        float distance = Vector3.Distance(platform.position, targets[currentTarget].position);
-
-        if (distance < 0.05f || currentSpeed < 0f)
+        if ((int)((Time.time / moveTime) - ((Time.time % moveTime)/moveTime)) > iteration)
         {
-            currentSpeed = 0f;
+            iteration += 1;
 
             switch (PlatformType)
             {
                 case Type.LOOP:
                     currentTarget += 1;
+                    prevTarget += 1;
                     if (currentTarget == targets.Length)
                     {
                         currentTarget = 0;
+                    }
+                    if (prevTarget == targets.Length)
+                    {
+                        prevTarget = 0;
                     }
                     break;
                 case Type.YOYO:
                     if (Yoyoing)
                     {
                         currentTarget -= 1;
+                        prevTarget -= 1;
                         if (currentTarget == -1)
                         {
                             currentTarget = 1;
+                            prevTarget = 0;
                             Yoyoing = false;
                         }
                     }
                     else
                     {
                         currentTarget += 1;
+                        prevTarget += 1;
                         if (currentTarget == targets.Length)
                         {
                             currentTarget -= 2;
@@ -68,26 +73,16 @@ public class MovingPlatform : MonoBehaviour {
                     }
                     break;
             }
-            currentDistance = Vector3.Distance(platform.position, targets[currentTarget].position);
+            platform.position = targets[prevTarget].position;
         }
-        else if (distance < easeDistance)
-        {
-            //currentSpeed = speed * Mathf.Sin((distance / easeDistance) * Mathf.PI * 0.5f);
-            currentSpeed -= acceleration * Time.deltaTime;
-        }
-        else if (distance > (currentDistance - easeDistance))
-        {
-            //currentSpeed = speed * Mathf.Sin((.1f + distance - currentDistance / easeDistance) * Mathf.PI * 0.5f);
-            currentSpeed += acceleration * Time.deltaTime;
-        } else if (currentSpeed != speed)
-        {
-            currentSpeed = speed;
-        }
+        float temp = (Time.time % moveTime) / moveTime;
+        progress = (Mathf.Cos(temp * Mathf.PI) + 1) / 2;
+        platform.position = targets[currentTarget].position * (1 - progress) + targets[prevTarget].position * progress;
     }
 
-    void FixedUpdate () {
-        platform.position = Vector3.MoveTowards(platform.position, targets[currentTarget].position, currentSpeed * Time.fixedDeltaTime);
-	}
+    //void FixedUpdate () {
+        
+	//}
 
 
 }

@@ -55,5 +55,5 @@ MonoBehaviour:
   haloObject: {fileID: 1109074420368536, guid: 08d37b124e91e0e41bc45bed36f819bf, type: 2}
   radius: 5
   numItems: 8
-  spinSpeed: 0.3
+  spinSpeed: 0.2
   objectSpinSpeed: 0
