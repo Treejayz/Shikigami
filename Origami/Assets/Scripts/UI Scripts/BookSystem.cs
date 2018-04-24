@@ -36,9 +36,23 @@ public class BookSystem : MonoBehaviour {
 		}
 		if (active) {
 			Navigation nav = back.GetComponentInChildren<Button> ().navigation;
-			nav.selectOnUp = swapbutton;
+			if (active && activepage1 == -1) {
+				nav.selectOnUp = next;
+			} else {
+				nav.selectOnUp = prev;
+			}
 			nav.selectOnRight = swapbutton;
-			nav.selectOnLeft = prev;
+			nav.selectOnLeft = swapbutton;
+			back.GetComponentInChildren<Button> ().navigation = nav;
+
+			nav = swapbutton.GetComponentInChildren<Button> ().navigation;
+			if (active && activepage2 == pages.Length-1) {
+				nav.selectOnUp = prev;
+			} else {
+				nav.selectOnUp = next;
+			}
+			swapbutton.GetComponentInChildren<Button> ().navigation = nav;
+
 			swapbutton.gameObject.GetComponent<Button> ().enabled = true;
 			swapbutton.gameObject.GetComponent<Image> ().enabled = true;
 			if (activepage1 <= -1) {
@@ -60,6 +74,7 @@ public class BookSystem : MonoBehaviour {
 			nav.selectOnUp = bookbutton1;
 			nav.selectOnRight = bookbutton2;
 			nav.selectOnLeft = back;
+			back.GetComponentInChildren<Button> ().navigation = nav;
 			next.gameObject.GetComponent<Button> ().enabled = false;
 			next.gameObject.GetComponent<Image> ().enabled = false;
 			prev.gameObject.GetComponent<Button> ().enabled = false;
@@ -73,12 +88,18 @@ public class BookSystem : MonoBehaviour {
 		if (activepage2 < pages.Length-1) {
 			activepage1++;
 			activepage2++;
+			if (active && activepage2 == pages.Length-1){
+				GameObject.Find("EventSystem").GetComponent<UnityEngine.EventSystems.EventSystem> ().SetSelectedGameObject (GameObject.Find ("Previous"));
+			}
 		}
 	}
 	public void prev_page(){
 		if (activepage1 > -1) {
 			activepage1--;
 			activepage2--;
+			if (active && activepage1 == -1){
+				GameObject.Find("EventSystem").GetComponent<UnityEngine.EventSystems.EventSystem> ().SetSelectedGameObject (GameObject.Find ("Next"));
+			}
 		}
 	}
 	public void swap(){
