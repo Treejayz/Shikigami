@@ -1199,12 +1199,15 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
-							<Custom>
-								<Attenuation Name="Attenuation (Custom)" ID="{DCE5EEE8-A4D6-45CA-8C10-58CA6EBA47B8}" ShortID="139156863">
+							<Custom CreatedFrom="{DB7F740E-F235-4F5F-8919-8E53DA10F2B5}">
+								<Attenuation Name="PlatAttenuator (Custom)" ID="{83D226A3-4668-466E-AAD5-07773BB76346}" ShortID="106651757">
+									<PropertyList>
+										<Property Name="RadiusMax" Type="Real64" Value="80"/>
+									</PropertyList>
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-												<Curve Name="VolumeDry" ID="{C4BEB34B-040E-4416-8D2E-DFDC322E8E25}">
+												<Curve Name="VolumeDry" ID="{A98CC411-8F41-4CB8-96D2-0765ABD6E06B}">
 													<PropertyList>
 														<Property Name="Flags" Type="int32" Value="3"/>
 													</PropertyList>
@@ -1213,9 +1216,22 @@
 															<XPos>0</XPos>
 															<YPos>0</YPos>
 															<Flags>5</Flags>
+															<SegmentShape>Exp2</SegmentShape>
 														</Point>
 														<Point>
-															<XPos>100</XPos>
+															<XPos>13.03031</XPos>
+															<YPos>-4.55681</YPos>
+															<Flags>0</Flags>
+															<SegmentShape>Log1</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>25.35353</XPos>
+															<YPos>-10.54845</YPos>
+															<Flags>0</Flags>
+															<SegmentShape>Log1</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>80</XPos>
 															<YPos>-200</YPos>
 															<Flags>37</Flags>
 														</Point>
@@ -1536,6 +1552,93 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="CutsceneFull3" ID="{7DB0CAC0-8499-4F32-8717-B0C10D6F3294}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="longPillar" ID="{BDB91026-8336-4BBC-9D4B-13FD857CE393}" ShortID="247790545">
+					<PropertyList>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<Custom CreatedFrom="{DB7F740E-F235-4F5F-8919-8E53DA10F2B5}">
+								<Attenuation Name="PlatAttenuator (Custom)" ID="{5B85903A-FDB8-4BB6-A24F-46D0068D7D22}" ShortID="658950947">
+									<PropertyList>
+										<Property Name="RadiusMax" Type="Real64" Value="80"/>
+									</PropertyList>
+									<CurveUsageInfoList>
+										<VolumeDryUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+												<Curve Name="VolumeDry" ID="{F502C057-7F77-4D86-BD45-CD5A10BF1B86}">
+													<PropertyList>
+														<Property Name="Flags" Type="int32" Value="3"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>0</YPos>
+															<Flags>5</Flags>
+															<SegmentShape>Exp2</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>13.03031</XPos>
+															<YPos>-4.55681</YPos>
+															<Flags>0</Flags>
+															<SegmentShape>Log1</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>25.35353</XPos>
+															<YPos>-10.54845</YPos>
+															<Flags>0</Flags>
+															<SegmentShape>Log1</SegmentShape>
+														</Point>
+														<Point>
+															<XPos>80</XPos>
+															<YPos>-200</YPos>
+															<Flags>37</Flags>
+														</Point>
+													</PointList>
+												</Curve>
+											</CurveUsageInfo>
+										</VolumeDryUsage>
+										<VolumeWetGameUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetGameUsage>
+										<VolumeWetUserUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+										</VolumeWetUserUsage>
+										<LowPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</LowPassFilterUsage>
+										<HighPassFilterUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</HighPassFilterUsage>
+										<SpreadUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</SpreadUsage>
+										<FocusUsage>
+											<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+										</FocusUsage>
+									</CurveUsageInfoList>
+								</Attenuation>
+							</Custom>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="longPillar" ID="{66E0BC5F-FB67-47DF-AAD4-16E8FD5E46DE}" ShortID="693987294">
+							<Comment>1.5 second buildup
+</Comment>
+							<Language>SFX</Language>
+							<AudioFile>longPillar.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="longPillar" ID="{66E0BC5F-FB67-47DF-AAD4-16E8FD5E46DE}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

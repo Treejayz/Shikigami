@@ -15,6 +15,12 @@ public class ShadowPillar : MonoBehaviour {
         trigger.SetActive(false);
         pillar.SetActive(false);
         StartCoroutine("Build");
+        if (buildTime == 1f) {
+            AkSoundEngine.PostEvent("Pillar", this.gameObject);
+            Debug.Log("shorto"); 
+        } else {
+            AkSoundEngine.PostEvent("longPillar", this.gameObject);
+        }
 	}
 	
 	// Update is called once per frame

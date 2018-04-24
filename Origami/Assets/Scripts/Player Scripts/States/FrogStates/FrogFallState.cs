@@ -18,6 +18,9 @@ public class FrogFallState : State {
 	private Vector3 wallJump;
 	private bool fromWall;
 
+    private float startTime;
+    private float minTime = 0.3f;
+
     public FrogFallState(Character character) : base(character)
     {
 		fromWall = false;
@@ -34,6 +37,7 @@ public class FrogFallState : State {
         player = character.GetComponent<CharacterController>();
         character.frogAnimator.SetBool("Moving", false);
         fallSpeed = 0.0f;
+        startTime = Time.time;
     }
 
     public override void Tick()
@@ -101,6 +105,9 @@ public class FrogFallState : State {
         else
         {
             character.SetState(new FrogIdleState(character));
+            if(Time.time - startTime > minTime) {
+                AkSoundEngine.PostEvent("FrogStick", character.gameObject);
+            }
         }
     }
 }

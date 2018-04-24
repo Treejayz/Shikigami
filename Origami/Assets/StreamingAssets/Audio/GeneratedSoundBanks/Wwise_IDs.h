@@ -26,6 +26,7 @@ namespace AK
         static const AkUniqueID FROGSTICK = 1880194273U;
         static const AkUniqueID HPMUSIC = 26407862U;
         static const AkUniqueID LAWNMOWERPLATPLAY = 3498031842U;
+        static const AkUniqueID LONGPILLAR = 1304366647U;
         static const AkUniqueID PICKUP = 3978245845U;
         static const AkUniqueID PICKUPCOIN = 1097127270U;
         static const AkUniqueID PILLAR = 2582515549U;

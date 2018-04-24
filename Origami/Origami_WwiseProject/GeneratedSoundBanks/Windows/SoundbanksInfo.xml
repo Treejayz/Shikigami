@@ -51,9 +51,10 @@
 				<Event Id="3921870201" Name="FrogStep" ObjectPath="\Events\Default Work Unit\FrogStep"/>
 				<Event Id="1880194273" Name="FrogStick" ObjectPath="\Events\Default Work Unit\FrogStick"/>
 				<Event Id="3498031842" Name="lawnmowerplatplay" ObjectPath="\Events\Default Work Unit\lawnmowerplatplay" MaxAttenuation="80.000000"/>
+				<Event Id="1304366647" Name="longPillar" ObjectPath="\Events\Default Work Unit\longPillar" MaxAttenuation="80.000000"/>
 				<Event Id="3978245845" Name="Pickup" ObjectPath="\Events\Default Work Unit\Pickup"/>
 				<Event Id="1097127270" Name="PickupCoin" ObjectPath="\Events\Default Work Unit\PickupCoin"/>
-				<Event Id="2582515549" Name="Pillar" ObjectPath="\Events\Default Work Unit\Pillar" MaxAttenuation="100.000000"/>
+				<Event Id="2582515549" Name="Pillar" ObjectPath="\Events\Default Work Unit\Pillar" MaxAttenuation="80.000000"/>
 				<Event Id="2933970505" Name="PlatDrop" ObjectPath="\Events\Default Work Unit\PlatDrop" MaxAttenuation="80.000000"/>
 				<Event Id="4040173943" Name="PlatSpawn" ObjectPath="\Events\Default Work Unit\PlatSpawn" MaxAttenuation="80.000000"/>
 				<Event Id="594977870" Name="ROOAAARRRR" ObjectPath="\Events\Default Work Unit\ROOAAARRRR"/>
@@ -166,6 +167,10 @@
 				<File Id="682674031" Language="SFX">
 					<ShortName>FrogStep04.wav</ShortName>
 					<Path>SFX\FrogStep04_1C9C67B2.wem</Path>
+				</File>
+				<File Id="693987294" Language="SFX">
+					<ShortName>longPillar.wav</ShortName>
+					<Path>SFX\longPillar_1C9C67B2.wem</Path>
 				</File>
 				<File Id="705281928" Language="SFX">
 					<ShortName>FrogStep01.wav</ShortName>
