@@ -73,6 +73,6 @@ public class RoarTrigger : MonoBehaviour {
         dragon.GetComponent<DragonMover>().enabled = true;
         dragon.GetComponentInChildren<ShadowFire>().enabled = true;
         cam.GetComponent<CameraController>().enabled = true;
-
+        AkSoundEngine.PostEvent("BossBattleStart", cam);
     }
 }
