@@ -36,4 +36,8 @@ public class Menu_controls : MonoBehaviour {
 		player.GetComponent<Character> ().SetState (new DeathState(player.GetComponent<Character>()));
 		this.GetComponent<Canvas> ().enabled = false;
 	}
+	public void reset(){
+		CollectableManager.Reset ();
+		RoarTrigger.triggered = false;
+	}
 }

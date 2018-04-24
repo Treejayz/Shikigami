@@ -31,7 +31,7 @@ public class ScrapDisplay : MonoBehaviour {
 				leveltotal = 130;
 			} else {//if (SceneManager.GetActiveScene().name == "Level 3"){
 				temp = CollectableManager.level3scrapPieces;
-				leveltotal = 0;
+				leveltotal = 60;
 			}
 		} else {
 			if (SceneManager.GetActiveScene ().name == "Level 1") {
@@ -42,7 +42,7 @@ public class ScrapDisplay : MonoBehaviour {
 				leveltotal = 9;
 			} else {//if (SceneManager.GetActiveScene().name == "Level 3"){
 				temp = CollectableManager.level3paperPieces;
-				leveltotal = 0;
+				leveltotal = 5;
 			}
 		}
 		if (temp == 0) {

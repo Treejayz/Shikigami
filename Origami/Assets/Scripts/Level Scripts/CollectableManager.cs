@@ -75,6 +75,21 @@ public static class CollectableManager {
 		level2scrapPieces = 0;
 		level3paperPieces = 0;
 		level3scrapPieces = 0;	
+		storypage4scraps = 0;
+		spellpage1pieces = 0;
+		storypage5scraps = 0;
+		spellpage2pieces = 0;
+		storypage6scraps = 0;
+		spellpage3pieces = 0;
+		storypage7scraps = 0;
+		spellpage4pieces = 0;
+		for (int i = 0; i < 7; i++) {
+			storybookpages [i] = false;
+		} 
+		for (int i = 0; i < 4; i++) {// find number of pages later
+			spellbookpages [i] = false;
+		} 
+		CollectableManager.storybookpages [1] = true;
     }
 
     public static void Collect(Collectable.CollectableType type)

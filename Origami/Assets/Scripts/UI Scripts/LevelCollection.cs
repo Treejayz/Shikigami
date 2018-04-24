@@ -43,9 +43,9 @@ public class LevelCollection : MonoBehaviour {
 			scraptotal = 130;
 		} else {//if (SceneManager.GetActiveScene().name == "Level 3"){
 			piece = CollectableManager.level3paperPieces;
-			piecetotal = 0;
+			piecetotal = 5;
 			scrap = CollectableManager.level3scrapPieces;
-			scraptotal = 0;
+			scraptotal = 60;
 		}
 		scraptext.GetComponentInChildren<Text> ().text = scrap.ToString() + " / " + scraptotal.ToString();
 		piecetext.GetComponentInChildren<Text> ().text = piece.ToString() + " / " + piecetotal.ToString();

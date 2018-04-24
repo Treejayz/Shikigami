@@ -42,7 +42,7 @@ public class Checkpoint : MonoBehaviour {
         }
 		if (page3){
 			CollectableManager.spellpage3pieces++;
-			if (CollectableManager.spellpage3pieces == 1) { 
+			if (CollectableManager.spellpage3pieces == CollectableManager.spellpage3piecemax) { 
 				CollectableManager.spellbookpages [2] = true;
 			} 
 		}
