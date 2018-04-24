@@ -38,7 +38,6 @@ GameObject:
   - component: {fileID: 4454370482372602}
   - component: {fileID: 114087215138789116}
   - component: {fileID: 114550757966040540}
-  - component: {fileID: 114032070696421582}
   - component: {fileID: 54586782345248732}
   m_Layer: 0
   m_Name: Shadow Pillar
@@ -661,28 +660,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114032070696421582
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1105248772453704}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 004342984aa1d12489fabf8be52e2f3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  eventID: -1712451747
-  m_callbackData: {fileID: 0}
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  valueGuid: 9dd6f96238391441a7d8e59ff3c48209
 --- !u!114 &114068366354046178
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -708,6 +685,7 @@ MonoBehaviour:
   sprite: {fileID: 1711625864378162}
   trigger: {fileID: 1878638555918968}
   pillar: {fileID: 1243382648809166}
+  buildTime: 1
 --- !u!114 &114222723011507566
 MonoBehaviour:
   m_ObjectHideFlags: 1
