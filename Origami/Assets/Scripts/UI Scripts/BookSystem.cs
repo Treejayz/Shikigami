@@ -8,11 +8,12 @@ public class BookSystem : MonoBehaviour {
 	int activepage2 = 0;
 	public GameObject[] pages;
 	bool[] pageshave;// change this to grab from collectables CollectableManager.storybookpages CollectableManager.spellbookpages
-	public GameObject prev;
-	public GameObject next;
-	public GameObject swapbutton;
-	public GameObject bookbutton1;
-	public GameObject bookbutton2;
+	public Selectable prev;
+	public Selectable next;
+	public Selectable back;
+	public Selectable swapbutton;
+	public Selectable bookbutton1;
+	public Selectable bookbutton2;
 	public GameObject otherBook;
 	bool active;
 	// Use this for initialization
@@ -34,6 +35,10 @@ public class BookSystem : MonoBehaviour {
 			pages [i].transform.SetSiblingIndex(0);
 		}
 		if (active) {
+			Navigation nav = back.GetComponentInChildren<Button> ().navigation;
+			nav.selectOnUp = swapbutton;
+			nav.selectOnRight = swapbutton;
+			nav.selectOnLeft = prev;
 			swapbutton.gameObject.GetComponent<Button> ().enabled = true;
 			swapbutton.gameObject.GetComponent<Image> ().enabled = true;
 			if (activepage1 <= -1) {
@@ -51,6 +56,10 @@ public class BookSystem : MonoBehaviour {
 				next.gameObject.GetComponent<Image> ().enabled = true;
 			}
 		} else if(!otherBook.GetComponent<BookSystem>().isactive()){
+			Navigation nav = back.GetComponentInChildren<Button> ().navigation;
+			nav.selectOnUp = bookbutton1;
+			nav.selectOnRight = bookbutton2;
+			nav.selectOnLeft = back;
 			next.gameObject.GetComponent<Button> ().enabled = false;
 			next.gameObject.GetComponent<Image> ().enabled = false;
 			prev.gameObject.GetComponent<Button> ().enabled = false;

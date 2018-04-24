@@ -25,6 +25,7 @@ public class StartState : State
 
     public override void OnStateEnter()
     {
+		GameObject.Find ("Pause Menu Overseer").GetComponent<PauseSystem> ().cantpauseon ();
         player = character.GetComponent<CharacterController>();
         character.switching = true;
         currentTime = 0f;
@@ -110,6 +111,7 @@ public class StartState : State
 
     public override void OnStateExit()
     {
+		GameObject.Find ("Pause Menu Overseer").GetComponent<PauseSystem> ().cantpauseoff ();
         character.switching = false;
         craneFold.transform.GetChild(0).gameObject.SetActive(true);
         craneAnimator.SetActive(false);

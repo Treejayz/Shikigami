@@ -5,13 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class PauseSystem : MonoBehaviour {
 	public bool pause = false; 
+	bool cantpause;
 	// Use this for initialization
 	void Start () {
 		CollectableManager.Startup ();
+		bool cantpause = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		MonoBehaviour.print (GameObject.Find ("EventSystem").GetComponent<UnityEngine.EventSystems.EventSystem> ().currentSelectedGameObject);
 		Component[] canvases;
 		canvases = GetComponentsInChildren<Canvas>();
 		pause = false; 
@@ -20,12 +23,13 @@ public class PauseSystem : MonoBehaviour {
 				pause = true;
 			}
 		}
-		if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Joystick1Button7))
-        {
+		if (!cantpause && (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Joystick1Button7))) {
 			if (!pause) {
 				this.transform.Find ("Pause Menu").GetComponent<Canvas> ().enabled = true;
+				GameObject.Find("EventSystem").GetComponent<UnityEngine.EventSystems.EventSystem> ().SetSelectedGameObject (GameObject.Find ("Continue"));
 			} else {
 				foreach (Canvas can in canvases) {
+					GameObject.Find("EventSystem").GetComponent<UnityEngine.EventSystems.EventSystem> ().SetSelectedGameObject (null);
 					can.enabled = false;
 				}
 			}
@@ -44,5 +48,11 @@ public class PauseSystem : MonoBehaviour {
 		} else {
 			this.transform.Find ("Fade").GetComponent<Canvas> ().enabled = false;
 		}
+	}
+	public void cantpauseon(){
+		cantpause = true;
+	}
+	public void cantpauseoff(){
+		cantpause = false;
 	}
 }

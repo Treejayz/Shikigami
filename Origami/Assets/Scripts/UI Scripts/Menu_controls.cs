@@ -15,6 +15,13 @@ public class Menu_controls : MonoBehaviour {
 		
 	}
 
+	public void setMenuSelect(GameObject button){
+		GameObject.Find("EventSystem").GetComponent<UnityEngine.EventSystems.EventSystem> ().SetSelectedGameObject (button);
+	}
+	public void setMenuSelectNull(){
+		GameObject.Find("EventSystem").GetComponent<UnityEngine.EventSystems.EventSystem> ().SetSelectedGameObject (null);
+	}
+
 	public void loadScene(string scenename){
         AkSoundEngine.StopAll();
         LevelLoader.scene = scenename;
