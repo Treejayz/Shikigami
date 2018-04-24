@@ -41,6 +41,7 @@ public class ShadowBullet : MonoBehaviour {
         {
             if (Vector3.Magnitude(transform.position - target.transform.position) < 1.5f && !target.GetComponent<Character>().dead)
             {
+                AkSoundEngine.PostEvent("StopShadowBall", gameObject);
                 target.GetComponent<Character>().SetState(new DeathState(target.GetComponent<Character>()));
                 target.GetComponent<Character>().dead = true;
                 StartCoroutine("Kill");
@@ -106,8 +107,8 @@ public class ShadowBullet : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        StartCoroutine("Kill");
         AkSoundEngine.PostEvent("StopShadowBall", gameObject);
+        StartCoroutine("Kill");
     }
 
     IEnumerator CollectData()

@@ -6,14 +6,14 @@
 				<File Name="CreditsBank" Hash="351097444" Timestamp="1523636891"/>
 				<File Name="Init" Hash="2218645010" Timestamp="1524014565"/>
 				<File Name="Level1SB" Hash="1959247778" Timestamp="1524026139"/>
-				<File Name="Level3SB" Hash="747692866" Timestamp="1524529277"/>
+				<File Name="Level3SB" Hash="2373502559" Timestamp="1524530567"/>
 				<File Name="MenuSB" Hash="1972353879" Timestamp="1524065439"/>
 				<File Name="PlayerSound" Hash="198951838" Timestamp="1524026139"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2891859809" Timestamp="1524529277"/>
+				<File Name="" Hash="2891859809" Timestamp="1524530567"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
