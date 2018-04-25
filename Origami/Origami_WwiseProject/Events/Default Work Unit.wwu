@@ -481,6 +481,44 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="StartTime" ID="{01669140-C2D8-4C14-BD57-0A1829CD4C44}">
+					<ChildrenList>
+						<Action Name="" ID="{2E7D32FF-F747-43B4-8011-02FEB7C90859}" ShortID="769591627">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TimeStart" ID="{AE4EB419-7CD4-40F5-B3FA-5274C9993D87}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D0C96937-0BE7-48D6-8F0A-B40C5E62E915}" ShortID="456353777">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ticks" ID="{CD8CC549-433E-4EB6-9221-EDB41287D5DB}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopTime" ID="{77691FC6-1B06-478A-8AA8-046ADADCD105}">
+					<ChildrenList>
+						<Action Name="" ID="{E573BD8D-F181-45AF-8564-207B60886A0D}" ShortID="841767058">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ticks" ID="{CD8CC549-433E-4EB6-9221-EDB41287D5DB}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

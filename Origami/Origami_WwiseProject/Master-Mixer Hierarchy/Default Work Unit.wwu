@@ -5,6 +5,34 @@
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
 					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{BC47E26B-7244-4DC4-A00C-20C7E2BD5F51}" ShortID="1020917743">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="LoadProgress" ID="{BDF4B528-BCB1-418E-8A98-8C85D46DEDD8}" WorkUnitID="{294866E5-205C-4CEF-A167-22F1B02116B6}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{93776B73-D5AB-4E97-B0BD-EACB1C669F79}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 						<Property Name="Highpass" Type="int16">
 							<RTPCList>
 								<RTPC Name="" ID="{E587418B-21F3-4376-B1EA-3798E4704AAB}" ShortID="346562607">

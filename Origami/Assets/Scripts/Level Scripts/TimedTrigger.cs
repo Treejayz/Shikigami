@@ -38,11 +38,14 @@ public class TimedTrigger : MonoBehaviour {
             {
                 StartCoroutine("Triggered");
                 triggered = true;
+                AkSoundEngine.PostEvent("StartTime", this.gameObject);
             }
             else
             {
                 StopCoroutine("Triggered");
+                AkSoundEngine.PostEvent("StopTime", this.gameObject);
                 StartCoroutine("Triggered");
+                AkSoundEngine.PostEvent("StartTime", this.gameObject);
             }
         }
     }
@@ -53,6 +56,7 @@ public class TimedTrigger : MonoBehaviour {
         poof.Play();
         float currentTime = 0f;
         platforms.SetActive(true);
+        AkSoundEngine.SetRTPCValue("TimeRemaining", totalTime - currentTime);
         while (currentTime < totalTime)
         {
 
@@ -111,6 +115,7 @@ public class TimedTrigger : MonoBehaviour {
         platforms.SetActive(false);
         sandDropper.Stop();
         triggered = false;
+        AkSoundEngine.PostEvent("StopTime", this.gameObject);
     }
 
 }

@@ -1726,6 +1726,83 @@
 						<ActiveSource Name="shadowballhit02" ID="{0AA5A64B-1DDE-449D-979D-03C4732736D7}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="TimeStart" ID="{AE4EB419-7CD4-40F5-B3FA-5274C9993D87}" ShortID="496069293">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="TimeStart" ID="{FA5356E6-2E17-462A-90B3-D9F0AE144129}" ShortID="601640113">
+							<Language>SFX</Language>
+							<AudioFile>TimeStart.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="TimeStart" ID="{FA5356E6-2E17-462A-90B3-D9F0AE144129}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="Ticks" ID="{CD8CC549-433E-4EB6-9221-EDB41287D5DB}" ShortID="117264624">
+					<PropertyList>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Tick1" ID="{A93CF4C2-89AC-4C8C-BAD4-F29CD98EA6ED}" ShortID="684750968">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Tick1" ID="{9801633D-E2AF-4060-97D3-A7DFD9CC0143}" ShortID="24637605">
+									<Language>SFX</Language>
+									<AudioFile>Tick1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Tick1" ID="{9801633D-E2AF-4060-97D3-A7DFD9CC0143}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Tick2" ID="{03F29043-AD93-4623-A8C6-E81A11451083}" ShortID="439188838">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Tick2" ID="{EF3BF03C-FBBD-482B-908A-06B14AE631CB}" ShortID="372341769">
+									<Language>SFX</Language>
+									<AudioFile>Tick2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Tick2" ID="{EF3BF03C-FBBD-482B-908A-06B14AE631CB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

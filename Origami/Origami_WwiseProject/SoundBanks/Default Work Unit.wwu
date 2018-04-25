@@ -24,6 +24,7 @@
 						<ObjectRef Name="RandomRip" ID="{FEB3E9DD-762C-4745-AE7E-656F17A0CDA9}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Transform" ID="{ED9DC825-B63B-4760-BA3E-C4C67AC3E5B8}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="WingJump03" ID="{536DA625-BB1D-4760-BB48-68B13E3D97DA}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="StopTime" ID="{77691FC6-1B06-478A-8AA8-046ADADCD105}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Flap" ID="{03F77E6D-03B0-4813-9DC7-3856C98A67FA}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PlatSpawn" ID="{56D084E5-23ED-4832-B513-303487B2DEB8}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="FrogStick" ID="{994DDA88-97D8-4984-8781-A60E80A25D01}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
@@ -35,6 +36,7 @@
 						<ObjectRef Name="Jump01" ID="{4234C997-F9A4-4AB3-9310-728409AF7E86}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="WaterHit01" ID="{8AC9DDF4-5F4E-4B2E-9EAF-655A4A8F7030}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stick" ID="{E77B55F5-B095-4B78-889D-760030E70E02}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="StartTime" ID="{01669140-C2D8-4C14-BD57-0A1829CD4C44}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="chimeplay" ID="{CE74E385-643E-4C49-9873-A2203F645284}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="RandomFlap" ID="{C0487147-1BFA-4CA5-B156-B9B7D5F4AD6D}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PlatDrop" ID="{0C3B5521-45EA-4D29-B38E-CD7D91D15742}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
@@ -55,6 +57,7 @@
 						<ObjectRef Name="WingJump" ID="{DDFEB236-29F6-46B0-96D4-8DD54FCC1DAD}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="WindStop" ID="{B944F94E-E789-4730-83ED-FCDD96E9B978}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Transform" ID="{ED9DC825-B63B-4760-BA3E-C4C67AC3E5B8}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="StopTime" ID="{77691FC6-1B06-478A-8AA8-046ADADCD105}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Flap" ID="{03F77E6D-03B0-4813-9DC7-3856C98A67FA}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="BigPickup" ID="{1E5CAF6C-9784-483F-A6A3-1C55D33A67A9}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Pickup" ID="{947EEC9C-E58C-48B3-A731-04A5112EC800}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
@@ -64,6 +67,7 @@
 						<ObjectRef Name="StartLv1" ID="{693D4FA1-2846-49D2-A651-D1CA38FC525E}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="FrogStep" ID="{538A09F6-2743-49E5-B2A7-1391B900666A}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_All" ID="{19A80DA9-C0F9-4BDF-80F8-B26298064795}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="StartTime" ID="{01669140-C2D8-4C14-BD57-0A1829CD4C44}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Splash" ID="{037D6415-D390-4CF3-801C-806F3D9A4332}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="lawnmowerplatplay" ID="{AA47A543-4DD1-4E05-A275-6DEB90CB6F44}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
@@ -88,6 +92,7 @@
 						<ObjectRef Name="WingJump" ID="{DDFEB236-29F6-46B0-96D4-8DD54FCC1DAD}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="WindStop" ID="{B944F94E-E789-4730-83ED-FCDD96E9B978}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Transform" ID="{ED9DC825-B63B-4760-BA3E-C4C67AC3E5B8}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="StopTime" ID="{77691FC6-1B06-478A-8AA8-046ADADCD105}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Flap" ID="{03F77E6D-03B0-4813-9DC7-3856C98A67FA}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PlatSpawn" ID="{56D084E5-23ED-4832-B513-303487B2DEB8}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="BigPickup" ID="{1E5CAF6C-9784-483F-A6A3-1C55D33A67A9}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
@@ -101,6 +106,7 @@
 						<ObjectRef Name="FrogStep" ID="{538A09F6-2743-49E5-B2A7-1391B900666A}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="FoxJump" ID="{8FAF2597-0603-4A45-8608-587036C7DB35}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="StopShadowBall" ID="{063A744D-9A9A-4A4B-9998-65DFFE0BCC3C}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="StartTime" ID="{01669140-C2D8-4C14-BD57-0A1829CD4C44}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="RandomFlap" ID="{C0487147-1BFA-4CA5-B156-B9B7D5F4AD6D}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Splash" ID="{037D6415-D390-4CF3-801C-806F3D9A4332}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PlatDrop" ID="{0C3B5521-45EA-4D29-B38E-CD7D91D15742}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>

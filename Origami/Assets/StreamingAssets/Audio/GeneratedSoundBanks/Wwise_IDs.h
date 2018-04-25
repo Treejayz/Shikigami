@@ -39,8 +39,10 @@ namespace AK
         static const AkUniqueID STARTLV1 = 298361094U;
         static const AkUniqueID STARTLV2 = 298361093U;
         static const AkUniqueID STARTMUSIC = 3827058668U;
+        static const AkUniqueID STARTTIME = 36382812U;
         static const AkUniqueID STOP_ALL = 452547817U;
         static const AkUniqueID STOPSHADOWBALL = 2451460166U;
+        static const AkUniqueID STOPTIME = 1464645490U;
         static const AkUniqueID TRANSFORM = 1422622395U;
         static const AkUniqueID VICTORY = 2716678721U;
         static const AkUniqueID WINDBEGIN = 1021800662U;
@@ -65,10 +67,12 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID LOADPROGRESS = 2284553720U;
         static const AkUniqueID MENUUP = 172993487U;
         static const AkUniqueID MUSICSPEED = 1763041431U;
         static const AkUniqueID MUSICVOLUME = 2346531308U;
         static const AkUniqueID SFXVOLUME = 988953028U;
+        static const AkUniqueID TIMEREMAINING = 1691631674U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

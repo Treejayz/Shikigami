@@ -2,6 +2,7 @@
 <PluginInfo Project="Origami_WwiseProject" Platform="Mac" BasePlatform="Mac">
 	<Plugins>
 		<Plugin Name="Wwise Parametric EQ" ID="6881283" DLL="AkParametricEQ"/>
+		<Plugin Name="Wwise Harmonizer" ID="9043971" DLL="AkHarmonizer"/>
 		<Plugin Name="System" ID="11403271" DLL="DefaultSink"/>
 		<Plugin Name="No Output" ID="11862023" DLL="DefaultSink"/>
 	</Plugins>

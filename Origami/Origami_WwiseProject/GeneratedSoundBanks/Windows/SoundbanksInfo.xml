@@ -60,7 +60,9 @@
 				<Event Id="594977870" Name="ROOAAARRRR" ObjectPath="\Events\Default Work Unit\ROOAAARRRR"/>
 				<Event Id="3840406958" Name="ShadowBall" ObjectPath="\Events\Default Work Unit\ShadowBall" MaxAttenuation="80.000000"/>
 				<Event Id="160038168" Name="Splash" ObjectPath="\Events\Default Work Unit\Splash"/>
+				<Event Id="36382812" Name="StartTime" ObjectPath="\Events\Default Work Unit\StartTime"/>
 				<Event Id="2451460166" Name="StopShadowBall" ObjectPath="\Events\Default Work Unit\StopShadowBall" MaxAttenuation="80.000000"/>
+				<Event Id="1464645490" Name="StopTime" ObjectPath="\Events\Default Work Unit\StopTime" MaxAttenuation="0.000000"/>
 				<Event Id="1422622395" Name="Transform" ObjectPath="\Events\Default Work Unit\Transform"/>
 				<Event Id="2716678721" Name="Victory" ObjectPath="\Events\Default Work Unit\Victory"/>
 				<Event Id="1021800662" Name="WindBegin" ObjectPath="\Events\Default Work Unit\WindBegin"/>
@@ -71,6 +73,10 @@
 				<File Id="4082871" Language="SFX">
 					<ShortName>Wingflap03.wav</ShortName>
 					<Path>SFX\Wingflap03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="24637605" Language="SFX">
+					<ShortName>Tick1.wav</ShortName>
+					<Path>SFX\Tick1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="30317786" Language="SFX">
 					<ShortName>shadowballhit02.wav</ShortName>
@@ -124,6 +130,10 @@
 					<ShortName>Splash3.wav</ShortName>
 					<Path>SFX\Splash3_1C9C67B2.wem</Path>
 				</File>
+				<File Id="372341769" Language="SFX">
+					<ShortName>Tick2.wav</ShortName>
+					<Path>SFX\Tick2_1C9C67B2.wem</Path>
+				</File>
 				<File Id="381186739" Language="SFX">
 					<ShortName>Splash7.wav</ShortName>
 					<Path>SFX\Splash7_1C9C67B2.wem</Path>
@@ -159,6 +169,10 @@
 				<File Id="600259957" Language="SFX">
 					<ShortName>FrogStep03.wav</ShortName>
 					<Path>SFX\FrogStep03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="601640113" Language="SFX">
+					<ShortName>TimeStart.wav</ShortName>
+					<Path>SFX\TimeStart_1C9C67B2.wem</Path>
 				</File>
 				<File Id="613255974" Language="SFX">
 					<ShortName>WingJump04.wav</ShortName>
@@ -247,7 +261,9 @@
 				<Event Id="1097127270" Name="PickupCoin" ObjectPath="\Events\Default Work Unit\PickupCoin"/>
 				<Event Id="160038168" Name="Splash" ObjectPath="\Events\Default Work Unit\Splash"/>
 				<Event Id="298361094" Name="StartLv1" ObjectPath="\Events\Default Work Unit\StartLv1"/>
+				<Event Id="36382812" Name="StartTime" ObjectPath="\Events\Default Work Unit\StartTime"/>
 				<Event Id="452547817" Name="Stop_All" ObjectPath="\Events\Default Work Unit\Stop_All" MaxAttenuation="0.000000"/>
+				<Event Id="1464645490" Name="StopTime" ObjectPath="\Events\Default Work Unit\StopTime" MaxAttenuation="0.000000"/>
 				<Event Id="1422622395" Name="Transform" ObjectPath="\Events\Default Work Unit\Transform"/>
 				<Event Id="1021800662" Name="WindBegin" ObjectPath="\Events\Default Work Unit\WindBegin"/>
 				<Event Id="1571412035" Name="WindStop" ObjectPath="\Events\Default Work Unit\WindStop" MaxAttenuation="0.000000"/>
@@ -257,6 +273,10 @@
 				<File Id="4082871" Language="SFX">
 					<ShortName>Wingflap03.wav</ShortName>
 					<Path>SFX\Wingflap03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="24637605" Language="SFX">
+					<ShortName>Tick1.wav</ShortName>
+					<Path>SFX\Tick1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="80407323" Language="SFX">
 					<ShortName>PlaceholderTransform.wav</ShortName>
@@ -298,6 +318,10 @@
 					<ShortName>Splash3.wav</ShortName>
 					<Path>SFX\Splash3_1C9C67B2.wem</Path>
 				</File>
+				<File Id="372341769" Language="SFX">
+					<ShortName>Tick2.wav</ShortName>
+					<Path>SFX\Tick2_1C9C67B2.wem</Path>
+				</File>
 				<File Id="381186739" Language="SFX">
 					<ShortName>Splash7.wav</ShortName>
 					<Path>SFX\Splash7_1C9C67B2.wem</Path>
@@ -317,6 +341,10 @@
 				<File Id="600259957" Language="SFX">
 					<ShortName>FrogStep03.wav</ShortName>
 					<Path>SFX\FrogStep03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="601640113" Language="SFX">
+					<ShortName>TimeStart.wav</ShortName>
+					<Path>SFX\TimeStart_1C9C67B2.wem</Path>
 				</File>
 				<File Id="613255974" Language="SFX">
 					<ShortName>WingJump04.wav</ShortName>
@@ -404,6 +432,8 @@
 				<Event Id="298361094" Name="StartLv1" ObjectPath="\Events\Default Work Unit\StartLv1"/>
 				<Event Id="298361093" Name="StartLv2" ObjectPath="\Events\Default Work Unit\StartLv2"/>
 				<Event Id="3827058668" Name="StartMusic" ObjectPath="\Events\Default Work Unit\StartMusic"/>
+				<Event Id="36382812" Name="StartTime" ObjectPath="\Events\Default Work Unit\StartTime"/>
+				<Event Id="1464645490" Name="StopTime" ObjectPath="\Events\Default Work Unit\StopTime" MaxAttenuation="0.000000"/>
 				<Event Id="1422622395" Name="Transform" ObjectPath="\Events\Default Work Unit\Transform"/>
 				<Event Id="1021800662" Name="WindBegin" ObjectPath="\Events\Default Work Unit\WindBegin"/>
 				<Event Id="1571412035" Name="WindStop" ObjectPath="\Events\Default Work Unit\WindStop" MaxAttenuation="0.000000"/>
@@ -413,6 +443,10 @@
 				<File Id="4082871" Language="SFX">
 					<ShortName>Wingflap03.wav</ShortName>
 					<Path>SFX\Wingflap03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="24637605" Language="SFX">
+					<ShortName>Tick1.wav</ShortName>
+					<Path>SFX\Tick1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="56846237" Language="SFX">
 					<ShortName>WingJump01.wav</ShortName>
@@ -482,6 +516,10 @@
 					<ShortName>Splash3.wav</ShortName>
 					<Path>SFX\Splash3_1C9C67B2.wem</Path>
 				</File>
+				<File Id="372341769" Language="SFX">
+					<ShortName>Tick2.wav</ShortName>
+					<Path>SFX\Tick2_1C9C67B2.wem</Path>
+				</File>
 				<File Id="381186739" Language="SFX">
 					<ShortName>Splash7.wav</ShortName>
 					<Path>SFX\Splash7_1C9C67B2.wem</Path>
@@ -517,6 +555,10 @@
 				<File Id="600259957" Language="SFX">
 					<ShortName>FrogStep03.wav</ShortName>
 					<Path>SFX\FrogStep03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="601640113" Language="SFX">
+					<ShortName>TimeStart.wav</ShortName>
+					<Path>SFX\TimeStart_1C9C67B2.wem</Path>
 				</File>
 				<File Id="613255974" Language="SFX">
 					<ShortName>WingJump04.wav</ShortName>

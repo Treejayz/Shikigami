@@ -31,6 +31,14 @@
 						<Property Name="Min" Type="Real64" Value="0.25"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="LoadProgress" ID="{BDF4B528-BCB1-418E-8A98-8C85D46DEDD8}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="TimeRemaining" ID="{603B647E-B3D9-4435-98BD-F45A22551E8A}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

@@ -11,7 +11,7 @@ public class NextLevel : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            AkSoundEngine.StopAll();
+            //AkSoundEngine.StopAll();
             if (level == 0)
             {
                 LevelLoader.scene = "Level 1";

@@ -59,8 +59,14 @@ public class LevelLoader : MonoBehaviour {
         // While the asynchronous operation to load the new scene is not yet complete, continue waiting until it's done.
         while (!async.isDone)
         {
+            AkSoundEngine.SetRTPCValue("LoadProgress", Mathf.Clamp01(1 - async.progress/0.9f));
+            Debug.Log(Mathf.Clamp01(1 - async.progress / 0.9f));
             yield return null;
         }
 
+    }
+
+    void OnDisable() {
+        AkSoundEngine.ResetRTPCValue("LoadProgress");
     }
 }

@@ -13,6 +13,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	172993487	MenuUp			\Default Work Unit\MenuUp	
 	988953028	SFXVolume			\Default Work Unit\SFXVolume	
 	1763041431	MusicSpeed			\Default Work Unit\MusicSpeed	
+	2284553720	LoadProgress			\Default Work Unit\LoadProgress	
 	2346531308	MusicVolume			\Default Work Unit\MusicVolume	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes

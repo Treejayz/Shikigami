@@ -21,15 +21,15 @@ MonoBehaviour:
   autoPopulateEnabled: 1
   AuxBusWwu:
   - Guid: '{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}'
-    m_lastTimePart2: -1999264573
-    m_lastTimePsrt1: 1694748141
+    m_lastTimePart2: -1999263345
+    m_lastTimePsrt1: -1950020330
     ParentPhysicalPath: 
     PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     List: []
   BankWwu:
   - Guid: '{090E2BE1-C110-4C48-8EE1-99814A8166EB}'
-    m_lastTimePart2: -1999264566
-    m_lastTimePsrt1: 701404192
+    m_lastTimePart2: -1999263014
+    m_lastTimePsrt1: -75296706
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks\Default Work Unit.wwu
     List:
@@ -84,8 +84,8 @@ MonoBehaviour:
   defaultPoolSize: 4096
   EventWwu:
   - Guid: '{3838D55C-4A81-4825-8DB4-A33597820612}'
-    m_lastTimePart2: -1999264568
-    m_lastTimePsrt1: 503458964
+    m_lastTimePart2: -1999263016
+    m_lastTimePsrt1: -670111728
     ParentPhysicalPath: 
     PhysicalPath: Events\Default Work Unit.wwu
     List:
@@ -121,6 +121,18 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: chimeplay
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 981b61c642da584b9dca036b6f073b96
+      ID: 1182958561
+      Name: Cutscene
+      Path: Default Work Unit\Cutscene
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Cutscene
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0
@@ -185,6 +197,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - Guid: f6098a534327e549b2a71391b900666a
+      ID: -373097095
+      Name: FrogStep
+      Path: Default Work Unit\FrogStep
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: FrogStep
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - Guid: 88da4d99d89784498781a60e80a25d01
       ID: 1880194273
       Name: FrogStick
@@ -221,6 +245,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - Guid: d3a029c59305d24e95ba139ac4b95b8a
+      ID: 1304366647
+      Name: longPillar
+      Path: Default Work Unit\longPillar
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: longPillar
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - Guid: 9cec7e948ce5b348a73104a5112ec800
       ID: -316721451
       Name: Pickup
@@ -241,6 +277,18 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: PickupCoin
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 9dd6f96238391441a7d8e59ff3c48209
+      ID: -1712451747
+      Name: Pillar
+      Path: Default Work Unit\Pillar
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Pillar
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0
@@ -293,6 +341,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - Guid: 1017f5092ed5f4489647a5908744e89a
+      ID: -454560338
+      Name: ShadowBall
+      Path: Default Work Unit\ShadowBall
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ShadowBall
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - Guid: 15647d0390d3f34c801c806f3d9a4332
       ID: 160038168
       Name: Splash
@@ -341,6 +401,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - Guid: 40916601d8c2144cbd570a1829cd4c44
+      ID: 36382812
+      Name: StartTime
+      Path: Default Work Unit\StartTime
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: StartTime
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - Guid: a90da819f9c0df4b80f8b26298064795
       ID: 452547817
       Name: Stop_All
@@ -349,6 +421,30 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Stop_All
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 4d743a069a9a4b4a999865dffe0bcc3c
+      ID: -1843507130
+      Name: StopShadowBall
+      Path: Default Work Unit\StopShadowBall
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: StopShadowBall
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: c61f6977061b8a478aa8046adadcd105
+      ID: 1464645490
+      Name: StopTime
+      Path: Default Work Unit\StopTime
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: StopTime
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0
@@ -416,7 +512,8 @@ MonoBehaviour:
   ExpandedItems:
   - /Origami_WwiseProject
   - /Origami_WwiseProject/Events
-  - /Origami_WwiseProject/Events/Default Work Unit
+  - /Origami_WwiseProject/SoundBanks
+  - /Origami_WwiseProject/SoundBanks/Default Work Unit
   language: English(US)
   lowerPoolSize: 2048
   m_lastPopulateTimePart2: 0
@@ -425,11 +522,20 @@ MonoBehaviour:
   preparePoolSize: 0
   RtpcWwu:
   - Guid: '{294866E5-205C-4CEF-A167-22F1B02116B6}'
-    m_lastTimePart2: -1999264577
-    m_lastTimePsrt1: -1627290121
+    m_lastTimePart2: -1999263016
+    m_lastTimePsrt1: -670061703
     ParentPhysicalPath: 
     PhysicalPath: Game Parameters\Default Work Unit.wwu
     List:
+    - Guid: 28b5f4bdb1bc8e418a988c85d46dedd8
+      ID: -2010413576
+      Name: LoadProgress
+      Path: Default Work Unit\LoadProgress
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LoadProgress
+        ObjectType: 13
     - Guid: 91cac312a8141f4eb490490225992db2
       ID: 172993487
       Name: MenuUp
@@ -465,6 +571,15 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: SFXVolume
+        ObjectType: 13
+    - Guid: c11d37b528d64347a54542cbcb7c4281
+      ID: 1691631674
+      Name: TimeRemaining
+      Path: Default Work Unit\TimeRemaining
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: TimeRemaining
         ObjectType: 13
   StateWwu:
   - Guid: '{8D621B80-F254-43D1-8472-3699A245E539}'
