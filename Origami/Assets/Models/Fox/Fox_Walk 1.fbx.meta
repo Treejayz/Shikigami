@@ -1,0 +1,174 @@
+fileFormatVersion: 2
+guid: 0bcc47f93ad5e60439a60420c54bdfe4
+timeCreated: 1524819776
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: BigBoy
+    100002: Fox:Mesh1
+    100004: //RootNode
+    100006: head_CNTRL
+    100008: hips
+    100010: L_back_ankle_JNT
+    100012: L_back_foot_JNT
+    100014: L_Back_IK_Handle
+    100016: L_back_knee_JNT
+    100018: L_back_leg
+    100020: L_back_leg_CNTRL
+    100022: L_back_leg_CNTRLosGRP
+    100024: L_Front_IK_Handle
+    100026: L_front_leg_CNTRL
+    100028: L_frontfoot
+    100030: L_frontleg
+    100032: L_frontleg_bend
+    100034: lower_body_CNTRL
+    100036: neck
+    100038: R_back_ankle_JNT
+    100040: R_back_foot_JNT
+    100042: R_Back_IK_Handle
+    100044: R_back_knee_JNT
+    100046: R_back_leg
+    100048: R_back_leg_CNTRL
+    100050: R_back_leg_CNTRLosGRP
+    100052: R_Front_IK_Handle
+    100054: R_front_leg_CNTRL
+    100056: R_frontfoot
+    100058: R_frontleg
+    100060: R_frontleg_bend
+    100062: root_
+    100064: root_CNTRL
+    100066: shoulder
+    100068: snoot
+    100070: snoot_CNTRL
+    100072: snoot_tip
+    100074: tail
+    100076: tail_CNTRL
+    100078: tail_tip
+    100080: upper_body_CNTRL
+    400000: BigBoy
+    400002: Fox:Mesh1
+    400004: //RootNode
+    400006: head_CNTRL
+    400008: hips
+    400010: L_back_ankle_JNT
+    400012: L_back_foot_JNT
+    400014: L_Back_IK_Handle
+    400016: L_back_knee_JNT
+    400018: L_back_leg
+    400020: L_back_leg_CNTRL
+    400022: L_back_leg_CNTRLosGRP
+    400024: L_Front_IK_Handle
+    400026: L_front_leg_CNTRL
+    400028: L_frontfoot
+    400030: L_frontleg
+    400032: L_frontleg_bend
+    400034: lower_body_CNTRL
+    400036: neck
+    400038: R_back_ankle_JNT
+    400040: R_back_foot_JNT
+    400042: R_Back_IK_Handle
+    400044: R_back_knee_JNT
+    400046: R_back_leg
+    400048: R_back_leg_CNTRL
+    400050: R_back_leg_CNTRLosGRP
+    400052: R_Front_IK_Handle
+    400054: R_front_leg_CNTRL
+    400056: R_frontfoot
+    400058: R_frontleg
+    400060: R_frontleg_bend
+    400062: root_
+    400064: root_CNTRL
+    400066: shoulder
+    400068: snoot
+    400070: snoot_CNTRL
+    400072: snoot_tip
+    400074: tail
+    400076: tail_CNTRL
+    400078: tail_tip
+    400080: upper_body_CNTRL
+    2100000: Fox_fox_page_txt
+    4300000: Fox:Mesh1
+    7400000: Fox_Walk
+    9500000: //RootNode
+    13700000: Fox:Mesh1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
