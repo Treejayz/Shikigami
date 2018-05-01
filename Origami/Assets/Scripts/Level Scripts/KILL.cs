@@ -16,7 +16,6 @@ public class KILL : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        print("hi");
         if (other.tag == "Player")
         {
             other.GetComponent<Character>().SetState(new DeathState(other.GetComponent<Character>()));

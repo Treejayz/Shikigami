@@ -23,7 +23,6 @@ public class SpriteHalo : MonoBehaviour {
         {
             GameObject thing = Instantiate(haloObject, transform, false);
             thing.transform.localPosition = new Vector3(0f, 0f, 0f);
-            print(((float)i / (float)numItems));
             Vector3 direction = (Quaternion.AngleAxis(360f * ((float)i / (float)numItems), Vector3.up) * Vector3.forward).normalized * radius;
             thing.transform.Translate(direction);
             thing.transform.Rotate(transform.up, (360f * ((float)i / (float)numItems)));
