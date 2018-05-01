@@ -78,8 +78,9 @@ public class CameraController : MonoBehaviour {
             {
                 currentX = Mathf.Lerp(currentX, wallAngle, 0.1f);
             }
-            if (Mathf.Abs(currentX - wallAngle) < 2f)
+            if (Mathf.Abs(currentX - wallAngle) < .5f)
             {
+                currentX = wallAngle;
                 onWall = false;
             }
         }
@@ -147,7 +148,9 @@ public class CameraController : MonoBehaviour {
             if (test1 && test2)
             {
                 float temp1 = Mathf.Abs(currentX - newx1);
+                if (temp1 > 180f) { temp1 = 360f - temp1; }
                 float temp2 = Mathf.Abs(currentX - newx2);
+                if (temp2 > 180f) { temp2 = 360f - temp2; }
                 if (temp1 > temp2)
                 {
                     wallAngle = newx2;
