@@ -14,7 +14,7 @@ public class PauseSystem : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		MonoBehaviour.print (GameObject.Find ("EventSystem").GetComponent<UnityEngine.EventSystems.EventSystem> ().currentSelectedGameObject);
+		//MonoBehaviour.print (GameObject.Find ("EventSystem").GetComponent<UnityEngine.EventSystems.EventSystem> ().currentSelectedGameObject);
 		Component[] canvases;
 		canvases = GetComponentsInChildren<Canvas>();
 		pause = false; 

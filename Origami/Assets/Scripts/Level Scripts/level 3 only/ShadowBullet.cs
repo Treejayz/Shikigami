@@ -143,7 +143,6 @@ public class ShadowBullet : MonoBehaviour {
 
     IEnumerator Kill()
     {
-        print("hit");
         transform.rotation = new Quaternion(0f, 0f, 0f, 0f);
         GetComponentsInChildren<ParticleSystem>()[1].Play();
         dying = true;
