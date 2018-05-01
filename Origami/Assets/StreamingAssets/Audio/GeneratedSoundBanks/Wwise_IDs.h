@@ -42,7 +42,8 @@ namespace AK
         static const AkUniqueID STARTTIME = 36382812U;
         static const AkUniqueID STOP_ALL = 452547817U;
         static const AkUniqueID STOPSHADOWBALL = 2451460166U;
-        static const AkUniqueID STOPTIME = 1464645490U;
+        static const AkUniqueID TICK = 2755031898U;
+        static const AkUniqueID TOCK = 3292901488U;
         static const AkUniqueID TRANSFORM = 1422622395U;
         static const AkUniqueID VICTORY = 2716678721U;
         static const AkUniqueID WINDBEGIN = 1021800662U;

@@ -19,6 +19,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	3921870201	FrogStep			\Default Work Unit\FrogStep	
 	3978245845	Pickup			\Default Work Unit\Pickup	
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1691631674	TimeRemaining			\Default Work Unit\TimeRemaining	
+
 Effect plug-ins	ID	Name	Type				Notes
 	2393480921	LawnMowerEQ	Wwise Parametric EQ			
 

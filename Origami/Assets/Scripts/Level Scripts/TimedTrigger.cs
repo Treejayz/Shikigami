@@ -43,7 +43,7 @@ public class TimedTrigger : MonoBehaviour {
             else
             {
                 StopCoroutine("Triggered");
-                AkSoundEngine.PostEvent("StopTime", this.gameObject);
+                // AkSoundEngine.PostEvent("StopTime", this.gameObject);
                 StartCoroutine("Triggered");
                 AkSoundEngine.PostEvent("StartTime", this.gameObject);
             }
@@ -56,9 +56,24 @@ public class TimedTrigger : MonoBehaviour {
         poof.Play();
         float currentTime = 0f;
         platforms.SetActive(true);
-        AkSoundEngine.SetRTPCValue("TimeRemaining", totalTime - currentTime);
+        float timeRemaining = totalTime;
+        float interval = timeRemaining / 30;
+        bool tick = true;
+        // AkSoundEngine.SetRTPCValue("TimeRemaining", totalTime - currentTime);
         while (currentTime < totalTime)
         {
+            timeRemaining = totalTime - currentTime;
+            if (currentTime > interval)
+            {
+                if (tick)
+                {
+                    AkSoundEngine.PostEvent("Tick", this.gameObject);
+                } else {
+                    AkSoundEngine.PostEvent("Tock", this.gameObject);
+                }
+                tick = !tick;
+                interval = timeRemaining / 40 + currentTime + 0.05f;
+            }
 
             if (currentTime < totalTime/10f)
             {
@@ -115,7 +130,7 @@ public class TimedTrigger : MonoBehaviour {
         platforms.SetActive(false);
         sandDropper.Stop();
         triggered = false;
-        AkSoundEngine.PostEvent("StopTime", this.gameObject);
+        // AkSoundEngine.PostEvent("StopTime", this.gameObject);
     }
 
 }

@@ -38,7 +38,7 @@
 						<Property Name="RTPCRamping" Type="int16" Value="1"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="TimeRemaining" ID="{603B647E-B3D9-4435-98BD-F45A22551E8A}"/>
+				<GameParameter Name="TimeRemaining" ID="{BC5869B6-5B74-4808-B3C7-56909D4171DC}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

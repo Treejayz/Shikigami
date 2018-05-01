@@ -28,8 +28,8 @@ MonoBehaviour:
     List: []
   BankWwu:
   - Guid: '{090E2BE1-C110-4C48-8EE1-99814A8166EB}'
-    m_lastTimePart2: -1999263014
-    m_lastTimePsrt1: -75296706
+    m_lastTimePart2: -1999261777
+    m_lastTimePsrt1: -251794173
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks\Default Work Unit.wwu
     List:
@@ -84,8 +84,8 @@ MonoBehaviour:
   defaultPoolSize: 4096
   EventWwu:
   - Guid: '{3838D55C-4A81-4825-8DB4-A33597820612}'
-    m_lastTimePart2: -1999263016
-    m_lastTimePsrt1: -670111728
+    m_lastTimePart2: -1999261776
+    m_lastTimePsrt1: -1109549043
     ParentPhysicalPath: 
     PhysicalPath: Events\Default Work Unit.wwu
     List:
@@ -522,8 +522,8 @@ MonoBehaviour:
   preparePoolSize: 0
   RtpcWwu:
   - Guid: '{294866E5-205C-4CEF-A167-22F1B02116B6}'
-    m_lastTimePart2: -1999263016
-    m_lastTimePsrt1: -670061703
+    m_lastTimePart2: -1999261779
+    m_lastTimePsrt1: 992347814
     ParentPhysicalPath: 
     PhysicalPath: Game Parameters\Default Work Unit.wwu
     List:
@@ -572,7 +572,7 @@ MonoBehaviour:
         ObjectType: 12
       - ElementName: SFXVolume
         ObjectType: 13
-    - Guid: c11d37b528d64347a54542cbcb7c4281
+    - Guid: b66958bc745b0848b3c756909d4171dc
       ID: 1691631674
       Name: TimeRemaining
       Path: Default Work Unit\TimeRemaining

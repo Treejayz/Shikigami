@@ -5,15 +5,15 @@
 			<Language ID="393239870">
 				<File Name="CreditsBank" Hash="351097444" Timestamp="1523636891"/>
 				<File Name="Init" Hash="2295428010" Timestamp="1524685235"/>
-				<File Name="Level1SB" Hash="806749463" Timestamp="1524685423"/>
-				<File Name="Level3SB" Hash="2153544319" Timestamp="1524685420"/>
+				<File Name="Level1SB" Hash="3348628589" Timestamp="1525212289"/>
+				<File Name="Level3SB" Hash="1707431791" Timestamp="1525215725"/>
 				<File Name="MenuSB" Hash="1972353879" Timestamp="1524065439"/>
-				<File Name="PlayerSound" Hash="3943718532" Timestamp="1524685417"/>
+				<File Name="PlayerSound" Hash="381733067" Timestamp="1525215745"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="443762392" Timestamp="1524685423"/>
+				<File Name="" Hash="3381409176" Timestamp="1525215745"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -21,16 +21,16 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="CreditsBank" Hash="351097444" Timestamp="1524011236"/>
-				<File Name="Init" Hash="454443943" Timestamp="1524681164"/>
-				<File Name="Level1SB" Hash="3272617131" Timestamp="1524681506"/>
-				<File Name="Level3SB" Hash="1990225180" Timestamp="1524681506"/>
+				<File Name="Init" Hash="2677698497" Timestamp="1525212110"/>
+				<File Name="Level1SB" Hash="3348628589" Timestamp="1525212335"/>
+				<File Name="Level3SB" Hash="263133103" Timestamp="1525212336"/>
 				<File Name="MenuSB" Hash="1972353879" Timestamp="1524681164"/>
-				<File Name="PlayerSound" Hash="3812327327" Timestamp="1524681506"/>
+				<File Name="PlayerSound" Hash="803924301" Timestamp="1525212336"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2491457274" Timestamp="1524681506"/>
+				<File Name="" Hash="2491457274" Timestamp="1525212336"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
