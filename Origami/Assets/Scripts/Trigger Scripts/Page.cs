@@ -37,7 +37,10 @@ public class Page : MonoBehaviour {
             if (isFrog)
             {
                 other.gameObject.GetComponent<Character>().canFrog = true;
-                other.gameObject.GetComponent<Character>().SetState(new TransformState(other.gameObject.GetComponent<Character>(), false));
+                if (!other.gameObject.GetComponent<Character>().dead)
+                {
+                    other.gameObject.GetComponent<Character>().SetState(new TransformState(other.gameObject.GetComponent<Character>(), false));
+                }
                 GetComponent<SpriteRenderer>().enabled = false;
                 transform.GetChild(0).gameObject.SetActive(false);
                 GetComponent<CapsuleCollider>().enabled = false;
@@ -48,14 +51,17 @@ public class Page : MonoBehaviour {
             else if (isFox)
             {
                 other.gameObject.GetComponent<Character>().canFox = true;
-                if (other.gameObject.GetComponent<Character>().Form == Character.CurrentForm.FROG)
+                if (!other.gameObject.GetComponent<Character>().dead)
                 {
-                    other.gameObject.GetComponent<Character>().SetState(new TransformState(other.gameObject.GetComponent<Character>(), false));
-                } else
-                {
-                    other.gameObject.GetComponent<Character>().SetState(new TransformState(other.gameObject.GetComponent<Character>(), true));
+                    if (other.gameObject.GetComponent<Character>().Form == Character.CurrentForm.FROG)
+                    {
+                        other.gameObject.GetComponent<Character>().SetState(new TransformState(other.gameObject.GetComponent<Character>(), false));
+                    }
+                    else
+                    {
+                        other.gameObject.GetComponent<Character>().SetState(new TransformState(other.gameObject.GetComponent<Character>(), true));
+                    }
                 }
-                
                 GetComponent<SpriteRenderer>().enabled = false;
                 transform.GetChild(0).gameObject.SetActive(false);
                 GetComponent<CapsuleCollider>().enabled = false;
