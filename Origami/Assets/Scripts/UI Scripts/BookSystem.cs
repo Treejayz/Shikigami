@@ -19,6 +19,7 @@ public class BookSystem : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		active = false;	
+
 	}
 	
 	// Update is called once per frame
@@ -28,11 +29,25 @@ public class BookSystem : MonoBehaviour {
 			pages [i+1].GetComponent<RectTransform> ().anchorMin = new Vector2 (.0f, .5f);
 			pages [i+1].GetComponent<RectTransform> ().anchorMax = new Vector2 (.0f, .5f);
 			pages [i+1].transform.SetSiblingIndex(pages.Length);
+			pages [i+1].GetComponentInChildren<Text> ().enabled = false;
 		}
 		for (int i = activepage2; i < pages.Length; i++) {
 			pages [i].GetComponent<RectTransform> ().anchorMin = new Vector2 (1f, .5f);
 			pages [i].GetComponent<RectTransform> ().anchorMax = new Vector2 (1f, .5f);
 			pages [i].transform.SetSiblingIndex(0);
+			if (this.name == "Book 1") {
+				if (i == activepage2 && !CollectableManager.storybookpages [i] && active) {
+					pages [i].GetComponentInChildren<Text> ().enabled = true;
+				} else {
+					pages [i].GetComponentInChildren<Text> ().enabled = false;
+				}
+			} else {
+				if (i == activepage2 && !CollectableManager.spellbookpages [i] && active) {
+					pages [i].GetComponentInChildren<Text> ().enabled = true;
+				} else {
+					pages [i].GetComponentInChildren<Text> ().enabled = false;
+				}
+			}
 		}
 		if (active) {
 			Navigation nav = back.GetComponentInChildren<Button> ().navigation;

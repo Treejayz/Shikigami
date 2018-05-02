@@ -86,7 +86,7 @@ public static class CollectableManager {
 		for (int i = 0; i < 7; i++) {
 			storybookpages [i] = false;
 		} 
-		for (int i = 0; i < 4; i++) {// find number of pages later
+		for (int i = 0; i < 4; i++) {
 			spellbookpages [i] = false;
 		} 
 		CollectableManager.storybookpages [1] = true;
