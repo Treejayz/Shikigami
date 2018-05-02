@@ -13,6 +13,7 @@ public class CutscenePlayer : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         cam = GameObject.Find("Main Camera");
+        cam.GetComponent<UnityEngine.Video.VideoPlayer>().Prepare();
         playing = false;
 	}
 	
