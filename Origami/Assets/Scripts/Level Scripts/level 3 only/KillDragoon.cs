@@ -10,6 +10,8 @@ public class KillDragoon : MonoBehaviour {
     public GameObject player;
     public GameObject cam;
 
+    public GameObject canvas;
+
     public Transform particles;
     public Transform target;
 
@@ -40,6 +42,7 @@ public class KillDragoon : MonoBehaviour {
         dragon.GetComponent<DragonMover>().enabled = false;
         dragon.GetComponentInChildren<ShadowFire>().enabled = false;
         GetComponent<ParticleSystem>().Stop();
+        canvas.SetActive(false);
         AkSoundEngine.StopAll();
 
         // Position things

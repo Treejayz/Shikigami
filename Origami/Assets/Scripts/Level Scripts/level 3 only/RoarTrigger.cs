@@ -7,6 +7,8 @@ public class RoarTrigger : MonoBehaviour {
     public GameObject player;
     public GameObject dragon;
     public GameObject cam;
+    public GameObject canvas;
+
 
     public static bool triggered = false;
     Vector3 camPosition;
@@ -27,6 +29,7 @@ public class RoarTrigger : MonoBehaviour {
             player.GetComponent<forwardtest>().enabled = false;
             player.GetComponent<Character>().enabled = false;
             cam.GetComponent<CameraController>().enabled = false;
+            canvas.SetActive(false);
             camPosition = cam.transform.position;
             camRotation = cam.transform.rotation;
 
@@ -73,6 +76,7 @@ public class RoarTrigger : MonoBehaviour {
         dragon.GetComponent<DragonMover>().enabled = true;
         dragon.GetComponentInChildren<ShadowFire>().enabled = true;
         cam.GetComponent<CameraController>().enabled = true;
+        canvas.SetActive(true);
         AkSoundEngine.PostEvent("BossBattleStart", cam);
     }
 }
