@@ -1,0 +1,216 @@
+fileFormatVersion: 2
+guid: 98493d83eebd2474782c3afb0f9d0bbd
+timeCreated: 1525250876
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: butt
+    100002: //RootNode
+    100004: Frog_Rig_KeyTest:head_jnt
+    100006: Frog_Rig_KeyTest:hindleg_CNTRL
+    100008: Frog_Rig_KeyTest:hindleg_jnt
+    100010: Frog_Rig_KeyTest:hindleg_osGRP
+    100012: Frog_Rig_KeyTest:joint2
+    100014: Frog_Rig_KeyTest:joint2 1
+    100016: Frog_Rig_KeyTest:joint4
+    100018: Frog_Rig_KeyTest:joint4 1
+    100020: Frog_Rig_KeyTest:l_arm_CNTRL
+    100022: Frog_Rig_KeyTest:l_arm_jnt
+    100024: Frog_Rig_KeyTest:l_leg_jnt
+    100026: Frog_Rig_KeyTest:midsection_CNTRL
+    100028: Frog_Rig_KeyTest:midsection_jnt
+    100030: Frog_Rig_KeyTest:r_arm_CNTRL
+    100032: Frog_Rig_KeyTest:r_arm_jnt
+    100034: Frog_Rig_KeyTest:r_leg_jnt
+    100036: Frog_Rig_KeyTest:root_
+    100038: Frog_Rig_KeyTest:root_CNTRL
+    100040: Frog_Rig_KeyTest:spring_CNTRL
+    100042: Frog_Rig_KeyTest:spring_jnt
+    100044: Frog_Rig_KeyTest:spring_osGRP
+    100046: Frog_Rig_KeyTest:torso_CNTRL
+    100048: Frog_Rig_KeyTest:torso_osGRP
+    100050: joint1
+    100052: joint2
+    100054: joint2 1
+    100056: joint3
+    100058: joint4
+    100060: joint4 1
+    100062: joint5
+    100064: joint6
+    100066: joint7
+    100068: joint8
+    100070: L_arm
+    100072: L_arm_tip
+    100074: L_knee
+    100076: L_leg
+    100078: L_leg_tip
+    100080: legs
+    100082: Model_1
+    100084: Model_2
+    100086: Model_3
+    100088: Model_4
+    100090: Model_5
+    100092: Model_6
+    100094: R_arm
+    100096: R_arm_tip
+    100098: R_knee
+    100100: R_leg
+    100102: R_leg_tip
+    100104: root_1
+    100106: root_2
+    100108: root_5
+    100110: root_6
+    100112: waist
+    400000: butt
+    400002: //RootNode
+    400004: Frog_Rig_KeyTest:head_jnt
+    400006: Frog_Rig_KeyTest:hindleg_CNTRL
+    400008: Frog_Rig_KeyTest:hindleg_jnt
+    400010: Frog_Rig_KeyTest:hindleg_osGRP
+    400012: Frog_Rig_KeyTest:joint2
+    400014: Frog_Rig_KeyTest:joint2 1
+    400016: Frog_Rig_KeyTest:joint4
+    400018: Frog_Rig_KeyTest:joint4 1
+    400020: Frog_Rig_KeyTest:l_arm_CNTRL
+    400022: Frog_Rig_KeyTest:l_arm_jnt
+    400024: Frog_Rig_KeyTest:l_leg_jnt
+    400026: Frog_Rig_KeyTest:midsection_CNTRL
+    400028: Frog_Rig_KeyTest:midsection_jnt
+    400030: Frog_Rig_KeyTest:r_arm_CNTRL
+    400032: Frog_Rig_KeyTest:r_arm_jnt
+    400034: Frog_Rig_KeyTest:r_leg_jnt
+    400036: Frog_Rig_KeyTest:root_
+    400038: Frog_Rig_KeyTest:root_CNTRL
+    400040: Frog_Rig_KeyTest:spring_CNTRL
+    400042: Frog_Rig_KeyTest:spring_jnt
+    400044: Frog_Rig_KeyTest:spring_osGRP
+    400046: Frog_Rig_KeyTest:torso_CNTRL
+    400048: Frog_Rig_KeyTest:torso_osGRP
+    400050: joint1
+    400052: joint2
+    400054: joint2 1
+    400056: joint3
+    400058: joint4
+    400060: joint4 1
+    400062: joint5
+    400064: joint6
+    400066: joint7
+    400068: joint8
+    400070: L_arm
+    400072: L_arm_tip
+    400074: L_knee
+    400076: L_leg
+    400078: L_leg_tip
+    400080: legs
+    400082: Model_1
+    400084: Model_2
+    400086: Model_3
+    400088: Model_4
+    400090: Model_5
+    400092: Model_6
+    400094: R_arm
+    400096: R_arm_tip
+    400098: R_knee
+    400100: R_leg
+    400102: R_leg_tip
+    400104: root_1
+    400106: root_2
+    400108: root_5
+    400110: root_6
+    400112: waist
+    2100000: Frog_Rig_KeyTest_frog_Frog_Spellbook_Page
+    4300000: Model_1
+    4300002: Model_2
+    4300004: Model_3
+    4300006: Model_4
+    4300008: Model_5
+    4300010: Model_6
+    7400000: Frog_Fold_UV
+    9500000: //RootNode
+    13700000: Model_1
+    13700002: Model_2
+    13700004: Model_3
+    13700006: Model_4
+    13700008: Model_5
+    13700010: Model_6
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

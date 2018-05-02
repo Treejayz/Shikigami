@@ -1,0 +1,207 @@
+fileFormatVersion: 2
+guid: 76479af2acfad420f882cae6d5774876
+timeCreated: 1525250876
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: back_left
+    100002: back_left_GRP
+    100004: back_left_leg
+    100006: back_right
+    100008: back_right_GRP
+    100010: back_right_leg
+    100012: BOTTOM
+    100014: Fox_1
+    100016: Fox_2
+    100018: Fox_3
+    100020: Fox_4
+    100022: //RootNode
+    100024: front_left
+    100026: front_left_GRP
+    100028: front_left_leg
+    100030: front_right
+    100032: front_right_GRP
+    100034: front_right_leg
+    100036: joint1
+    100038: joint12
+    100040: joint13
+    100042: joint2
+    100044: joint3
+    100046: joint3 1
+    100048: joint4
+    100050: joint5
+    100052: joint5 1
+    100054: L_CNTRL_GRP
+    100056: left_side_plane
+    100058: LSP_GRP
+    100060: Mesh2
+    100062: polySurface6
+    100064: pPlane2
+    100066: R_CNTRL_GRP
+    100068: right_side_plane_
+    100070: RSP_GRP
+    400000: back_left
+    400002: back_left_GRP
+    400004: back_left_leg
+    400006: back_right
+    400008: back_right_GRP
+    400010: back_right_leg
+    400012: BOTTOM
+    400014: Fox_1
+    400016: Fox_2
+    400018: Fox_3
+    400020: Fox_4
+    400022: //RootNode
+    400024: front_left
+    400026: front_left_GRP
+    400028: front_left_leg
+    400030: front_right
+    400032: front_right_GRP
+    400034: front_right_leg
+    400036: joint1
+    400038: joint12
+    400040: joint13
+    400042: joint2
+    400044: joint3
+    400046: joint3 1
+    400048: joint4
+    400050: joint5
+    400052: joint5 1
+    400054: L_CNTRL_GRP
+    400056: left_side_plane
+    400058: LSP_GRP
+    400060: Mesh2
+    400062: polySurface6
+    400064: pPlane2
+    400066: R_CNTRL_GRP
+    400068: right_side_plane_
+    400070: RSP_GRP
+    2100000: Fox_d3_fox_page_txt
+    2100002: lambert1
+    2300000: back_left
+    2300002: back_left_leg
+    2300004: back_right
+    2300006: back_right_leg
+    2300008: BOTTOM
+    2300010: Fox_1
+    2300012: front_left
+    2300014: front_left_leg
+    2300016: front_right
+    2300018: front_right_leg
+    2300020: left_side_plane
+    2300022: Mesh2
+    2300024: polySurface6
+    2300026: right_side_plane_
+    3300000: back_left
+    3300002: back_left_leg
+    3300004: back_right
+    3300006: back_right_leg
+    3300008: BOTTOM
+    3300010: Fox_1
+    3300012: front_left
+    3300014: front_left_leg
+    3300016: front_right
+    3300018: front_right_leg
+    3300020: left_side_plane
+    3300022: Mesh2
+    3300024: polySurface6
+    3300026: right_side_plane_
+    4300000: Fox_1
+    4300002: polySurface6
+    4300004: Mesh2
+    4300006: BOTTOM
+    4300008: front_right_leg
+    4300010: front_right
+    4300012: front_left_leg
+    4300014: front_left
+    4300016: back_left
+    4300018: back_left_leg
+    4300020: back_right_leg
+    4300022: back_right
+    4300024: right_side_plane_
+    4300026: left_side_plane
+    4300028: pPlane2
+    7400000: Fox_Fold_UV
+    9500000: //RootNode
+    13700000: pPlane2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
