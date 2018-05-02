@@ -23,15 +23,16 @@ public class CraneIdleState : State {
         {
             shiftHeld = false;
         }
+        time = 0f;
     }
 
     public override void Tick() {
 
         time += Time.deltaTime;
-        if (time > 10f)
+        if (time > 7f)
         {
             character.craneAnimator.SetTrigger("Shimmy");
-            time -= 10f;
+            time -= 7f;
         }
 
         if (!player.isGrounded) {
@@ -81,6 +82,10 @@ public class CraneIdleState : State {
     public override void OnStateExit()
     {
         character.craneAnimator.SetBool("Moving", true);
+        if (character.craneAnimator.GetCurrentAnimatorStateInfo(0).IsName("Crane_Shimmy"))
+        {
+            character.craneAnimator.Play("Crane_Idle");
+        }
     }
 
     public override void OnColliderHit(ControllerColliderHit hit)

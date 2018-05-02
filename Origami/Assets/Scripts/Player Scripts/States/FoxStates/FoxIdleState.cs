@@ -5,6 +5,7 @@ using UnityEngine;
 public class FoxIdleState : State {
 
     private CharacterController player;
+    private float time;
 
     public FoxIdleState(Character character) : base(character)
     {
@@ -14,10 +15,17 @@ public class FoxIdleState : State {
     {
         player = character.GetComponent<CharacterController>();
         character.foxAnimator.SetBool("Moving", false);
+        time = 0f;
     }
 
     public override void Tick()
     {
+        time += Time.deltaTime;
+        if (time > 7f)
+        {
+            character.foxAnimator.SetTrigger("Shimmy");
+            time -= 7f;
+        }
 
         if (!player.isGrounded)
         {
@@ -62,6 +70,10 @@ public class FoxIdleState : State {
 
     public override void OnStateExit()
     {
+        if (character.foxAnimator.GetCurrentAnimatorStateInfo(0).IsName("Fox_Shimmy"))
+        {
+            character.foxAnimator.Play("Fox_Idle");
+        }
     }
 
     public override void OnColliderHit(ControllerColliderHit hit)
