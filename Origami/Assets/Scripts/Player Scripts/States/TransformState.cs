@@ -60,7 +60,7 @@ public class TransformState : State
             case Character.CurrentForm.CRANE:
                 craneFold.GetComponentInChildren<Animator>().SetFloat("Speed", 1f);
                 craneFold.SetActive(true);
-                craneFold.GetComponentInChildren<Animator>().Play("Crane_Fold_Test", -1, 0f);
+                craneFold.GetComponentInChildren<Animator>().Play("Crane_Fold_UV", -1, 0f);
                 break;
             case Character.CurrentForm.FROG:
                 frogFold.GetComponentInChildren<Animator>().SetFloat("Speed", 1f);
@@ -155,7 +155,7 @@ public class TransformState : State
                     case Character.CurrentForm.CRANE:
                         craneFold.SetActive(true);
                         craneFold.GetComponentInChildren<Animator>().SetFloat("Speed", -1f);
-                        craneFold.GetComponentInChildren<Animator>().Play("Crane_Fold_Test", -1, 1f);
+                        craneFold.GetComponentInChildren<Animator>().Play("Crane_Fold_UV", -1, 1f);
                         break;
                     case Character.CurrentForm.FROG:
                         frogFold.SetActive(true);
