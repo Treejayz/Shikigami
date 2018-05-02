@@ -461,7 +461,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="CutsceneFull3" ID="{03D06C5B-646B-4CA8-A067-006BDC97CD8D}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+									<ObjectRef Name="CutsceneFullWithSFX3" ID="{4376E1C4-3A0A-4285-9506-20C715E62D92}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

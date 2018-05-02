@@ -26,6 +26,10 @@
 					<ShortName>hover01.wav</ShortName>
 					<Path>SFX\hover01_1C9C67B2.wem</Path>
 				</File>
+				<File Id="713254651" Language="SFX">
+					<ShortName>CutsceneFullWithSFX3.wav</ShortName>
+					<Path>SFX\CutsceneFullWithSFX3_1C9C67B2.wem</Path>
+				</File>
 				<File Id="801312338" Language="SFX">
 					<ShortName>CutsceneFull3.wav</ShortName>
 					<Path>SFX\CutsceneFull3_1C9C67B2.wem</Path>

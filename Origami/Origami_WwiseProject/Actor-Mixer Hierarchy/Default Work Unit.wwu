@@ -1895,6 +1895,25 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<Sound Name="CutsceneFullWithSFX3" ID="{4376E1C4-3A0A-4285-9506-20C715E62D92}" ShortID="281287903">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="CutsceneFullWithSFX3" ID="{6C0E7C41-6F4F-4F83-B4B2-37F75804A0EC}" ShortID="713254651">
+							<Language>SFX</Language>
+							<AudioFile>CutsceneFullWithSFX3.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="CutsceneFullWithSFX3" ID="{6C0E7C41-6F4F-4F83-B4B2-37F75804A0EC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
