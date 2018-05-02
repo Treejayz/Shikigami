@@ -10,6 +10,7 @@
 						<ObjectRef Name="Windloop" ID="{35CA7AD7-E248-416F-B626-A0C4FAF5ADD1}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Coin03" ID="{0528F194-45DD-41E4-97E0-39AB098DEFAC}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="chimeloop" ID="{CBCF0A8E-4748-4295-840C-291B8A9FB919}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="FoxTrot" ID="{53D93D74-44B8-42D3-82A9-F0B7FD73C126}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Pickup3" ID="{7B397E1F-BD40-4301-914F-CF7E7FB1228B}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PickupCoin" ID="{84B9FE28-A236-4307-B247-147A798D86AB}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Tock" ID="{F11DC54C-4784-4396-9593-9D84C3A1AE25}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
@@ -39,6 +40,7 @@
 						<ObjectRef Name="Stick" ID="{E77B55F5-B095-4B78-889D-760030E70E02}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="StartTime" ID="{01669140-C2D8-4C14-BD57-0A1829CD4C44}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="chimeplay" ID="{CE74E385-643E-4C49-9873-A2203F645284}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="RandomFoxStep" ID="{08D9C4C4-5599-4C94-8CDF-951BC9287801}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="RandomFlap" ID="{C0487147-1BFA-4CA5-B156-B9B7D5F4AD6D}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PlatDrop" ID="{0C3B5521-45EA-4D29-B38E-CD7D91D15742}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Level2" ID="{9B48D3FF-D85B-4D59-8375-464EA457E8DC}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
@@ -88,6 +90,7 @@
 				<SoundBank Name="Level3SB" ID="{9BBAB3F8-59C4-40F7-A254-BF2E3D950460}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Pillar" ID="{62F9D69D-3938-4114-A7D8-E59FF3C48209}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="FoxTrot" ID="{53D93D74-44B8-42D3-82A9-F0B7FD73C126}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PickupCoin" ID="{84B9FE28-A236-4307-B247-147A798D86AB}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="FrogJump" ID="{B26E24F4-DACE-437B-992F-B84D711BA154}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Tock" ID="{F11DC54C-4784-4396-9593-9D84C3A1AE25}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
@@ -110,6 +113,7 @@
 						<ObjectRef Name="StopShadowBall" ID="{063A744D-9A9A-4A4B-9998-65DFFE0BCC3C}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Tick" ID="{72173CC0-ECAB-4A88-BB42-0160C6FD91F5}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="StartTime" ID="{01669140-C2D8-4C14-BD57-0A1829CD4C44}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="RandomFoxStep" ID="{08D9C4C4-5599-4C94-8CDF-951BC9287801}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="RandomFlap" ID="{C0487147-1BFA-4CA5-B156-B9B7D5F4AD6D}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Splash" ID="{037D6415-D390-4CF3-801C-806F3D9A4332}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PlatDrop" ID="{0C3B5521-45EA-4D29-B38E-CD7D91D15742}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>

@@ -1826,6 +1826,75 @@
 						<ActiveSource Name="Tick2" ID="{93238799-365B-41C5-AFF9-F20EBD3C48FD}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<RandomSequenceContainer Name="RandomFoxStep" ID="{08D9C4C4-5599-4C94-8CDF-951BC9287801}" ShortID="29290276">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{A22E32AA-C0DA-43F0-973C-80269745EF90}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="FoxStep3_03" ID="{FA93ED02-D503-4414-9D90-26A4AD4A2945}" ShortID="249975555">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FoxStep3_03" ID="{66D85560-5D19-4A32-87FB-9079817DBDD0}" ShortID="54157248">
+									<Language>SFX</Language>
+									<AudioFile>FoxStep3_03.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FoxStep3_03" ID="{66D85560-5D19-4A32-87FB-9079817DBDD0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="FoxStep1_03" ID="{1A78CFA4-52C8-4C32-B090-869F9AEAFC27}" ShortID="119000147">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FoxStep1_03" ID="{DF75D029-0C84-4FA2-A46C-0BD9CE2B2021}" ShortID="279781255">
+									<Language>SFX</Language>
+									<AudioFile>FoxStep1_03.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FoxStep1_03" ID="{DF75D029-0C84-4FA2-A46C-0BD9CE2B2021}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="FoxStep2_03" ID="{14CC1FB3-7EA9-4F36-B015-3E2E6F26D7C5}" ShortID="612728494">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="FoxStep2_03" ID="{5580354A-91B7-4192-9688-F3FBC412CCD4}" ShortID="721724998">
+									<Language>SFX</Language>
+									<AudioFile>FoxStep2_03.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="FoxStep2_03" ID="{5580354A-91B7-4192-9688-F3FBC412CCD4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

@@ -537,6 +537,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="FoxTrot" ID="{53D93D74-44B8-42D3-82A9-F0B7FD73C126}">
+					<ChildrenList>
+						<Action Name="" ID="{ADB9BCB6-4C0D-415D-82A9-345756A27F03}" ShortID="785264558">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RandomFoxStep" ID="{08D9C4C4-5599-4C94-8CDF-951BC9287801}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

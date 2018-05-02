@@ -52,6 +52,7 @@
 				<Event Id="779278001" Name="Death" ObjectPath="\Events\Default Work Unit\Death"/>
 				<Event Id="2931383628" Name="Flap" ObjectPath="\Events\Default Work Unit\Flap"/>
 				<Event Id="3836640104" Name="FoxJump" ObjectPath="\Events\Default Work Unit\FoxJump"/>
+				<Event Id="2412658343" Name="FoxTrot" ObjectPath="\Events\Default Work Unit\FoxTrot"/>
 				<Event Id="2432329107" Name="FrogJump" ObjectPath="\Events\Default Work Unit\FrogJump"/>
 				<Event Id="3921870201" Name="FrogStep" ObjectPath="\Events\Default Work Unit\FrogStep"/>
 				<Event Id="1880194273" Name="FrogStick" ObjectPath="\Events\Default Work Unit\FrogStick"/>
@@ -83,6 +84,10 @@
 				<File Id="30317786" Language="SFX">
 					<ShortName>shadowballhit02.wav</ShortName>
 					<Path>SFX\shadowballhit02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="54157248" Language="SFX">
+					<ShortName>FoxStep3_03.wav</ShortName>
+					<Path>SFX\FoxStep3_03_1C9C67B2.wem</Path>
 				</File>
 				<File Id="80407323" Language="SFX">
 					<ShortName>PlaceholderTransform.wav</ShortName>
@@ -127,6 +132,10 @@
 				<File Id="274054376" Language="SFX">
 					<ShortName>Jump02.wav</ShortName>
 					<Path>SFX\Jump02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="279781255" Language="SFX">
+					<ShortName>FoxStep1_03.wav</ShortName>
+					<Path>SFX\FoxStep1_03_1C9C67B2.wem</Path>
 				</File>
 				<File Id="301842021" Language="SFX">
 					<ShortName>Wingflap01.wav</ShortName>
@@ -195,6 +204,10 @@
 				<File Id="705281928" Language="SFX">
 					<ShortName>FrogStep01.wav</ShortName>
 					<Path>SFX\FrogStep01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="721724998" Language="SFX">
+					<ShortName>FoxStep2_03.wav</ShortName>
+					<Path>SFX\FoxStep2_03_1C9C67B2.wem</Path>
 				</File>
 				<File Id="723316495" Language="SFX">
 					<ShortName>GenFlap1.wav</ShortName>
@@ -416,6 +429,7 @@
 				<Event Id="779278001" Name="Death" ObjectPath="\Events\Default Work Unit\Death"/>
 				<Event Id="2931383628" Name="Flap" ObjectPath="\Events\Default Work Unit\Flap"/>
 				<Event Id="3836640104" Name="FoxJump" ObjectPath="\Events\Default Work Unit\FoxJump"/>
+				<Event Id="2412658343" Name="FoxTrot" ObjectPath="\Events\Default Work Unit\FoxTrot"/>
 				<Event Id="2432329107" Name="FrogJump" ObjectPath="\Events\Default Work Unit\FrogJump"/>
 				<Event Id="3921870201" Name="FrogStep" ObjectPath="\Events\Default Work Unit\FrogStep"/>
 				<Event Id="1880194273" Name="FrogStick" ObjectPath="\Events\Default Work Unit\FrogStick"/>
@@ -441,6 +455,10 @@
 				<File Id="4082871" Language="SFX">
 					<ShortName>Wingflap03.wav</ShortName>
 					<Path>SFX\Wingflap03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="54157248" Language="SFX">
+					<ShortName>FoxStep3_03.wav</ShortName>
+					<Path>SFX\FoxStep3_03_1C9C67B2.wem</Path>
 				</File>
 				<File Id="56846237" Language="SFX">
 					<ShortName>WingJump01.wav</ShortName>
@@ -505,6 +523,10 @@
 				<File Id="274054376" Language="SFX">
 					<ShortName>Jump02.wav</ShortName>
 					<Path>SFX\Jump02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="279781255" Language="SFX">
+					<ShortName>FoxStep1_03.wav</ShortName>
+					<Path>SFX\FoxStep1_03_1C9C67B2.wem</Path>
 				</File>
 				<File Id="301842021" Language="SFX">
 					<ShortName>Wingflap01.wav</ShortName>
@@ -573,6 +595,10 @@
 				<File Id="705281928" Language="SFX">
 					<ShortName>FrogStep01.wav</ShortName>
 					<Path>SFX\FrogStep01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="721724998" Language="SFX">
+					<ShortName>FoxStep2_03.wav</ShortName>
+					<Path>SFX\FoxStep2_03_1C9C67B2.wem</Path>
 				</File>
 				<File Id="723316495" Language="SFX">
 					<ShortName>GenFlap1.wav</ShortName>

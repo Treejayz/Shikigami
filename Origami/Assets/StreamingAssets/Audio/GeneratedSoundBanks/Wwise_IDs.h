@@ -21,6 +21,7 @@ namespace AK
         static const AkUniqueID DEATH = 779278001U;
         static const AkUniqueID FLAP = 2931383628U;
         static const AkUniqueID FOXJUMP = 3836640104U;
+        static const AkUniqueID FOXTROT = 2412658343U;
         static const AkUniqueID FROGJUMP = 2432329107U;
         static const AkUniqueID FROGSTEP = 3921870201U;
         static const AkUniqueID FROGSTICK = 1880194273U;
