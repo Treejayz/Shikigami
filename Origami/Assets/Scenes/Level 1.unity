@@ -471,6 +471,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 212555283264784618, guid: 4f24c7f06bf4b2148ac8935856112721,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 65c5022c43130524385421d6d76435dd,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f24c7f06bf4b2148ac8935856112721, type: 2}
   m_IsPrefabParent: 0
@@ -2668,7 +2674,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1301596082
+  randomSeed: -452537581
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -6021,7 +6027,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e68fcfa8fb4fff24bba8c3cfc2041b7f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5bc7895973bef4b4190b73e258b9aa74, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9966,7 +9972,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1261130386
+  randomSeed: -110896924
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -13319,7 +13325,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e68fcfa8fb4fff24bba8c3cfc2041b7f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 307694286928b0549b83f9b39cda1b81, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -18431,6 +18437,12 @@ Prefab:
       propertyPath: randomSeed
       value: -2037883375
       objectReference: {fileID: 0}
+    - target: {fileID: 212555283264784618, guid: 4f24c7f06bf4b2148ac8935856112721,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0db597222f052994f9c9999f6445a923,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f24c7f06bf4b2148ac8935856112721, type: 2}
   m_IsPrefabParent: 0
@@ -21336,6 +21348,12 @@ Prefab:
       propertyPath: randomSeed
       value: 138603955
       objectReference: {fileID: 0}
+    - target: {fileID: 212555283264784618, guid: 4f24c7f06bf4b2148ac8935856112721,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d28768fbf3d1b37459d1d0a378ef8f84,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f24c7f06bf4b2148ac8935856112721, type: 2}
   m_IsPrefabParent: 0
@@ -22210,7 +22228,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 418067064
+  randomSeed: 1964077648
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -25563,7 +25581,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e68fcfa8fb4fff24bba8c3cfc2041b7f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 738ac83cdee6b4b4fbf417cd8d7cc1c7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -26292,6 +26310,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 744442056}
+  - component: {fileID: 744442057}
   m_Layer: 0
   m_Name: Paper Pieces
   m_TagString: Untagged
@@ -26320,6 +26339,17 @@ Transform:
   m_Father: {fileID: 1685344024}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &744442057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 744442055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a49fea046a7cb3146b29221428b5fd86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &744719589
 GameObject:
   m_ObjectHideFlags: 0
@@ -28070,6 +28100,12 @@ Prefab:
       propertyPath: randomSeed
       value: 2015356179
       objectReference: {fileID: 0}
+    - target: {fileID: 212555283264784618, guid: 4f24c7f06bf4b2148ac8935856112721,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a007a72bf4bf1344d8c279a3e46b3537,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f24c7f06bf4b2148ac8935856112721, type: 2}
   m_IsPrefabParent: 0
@@ -29940,8 +29976,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1052412785}
   - {fileID: 1300494679}
+  - {fileID: 1052412785}
   - {fileID: 1772161103}
   - {fileID: 1620467718}
   - {fileID: 1944546466}
@@ -31603,7 +31639,7 @@ Prefab:
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: e68fcfa8fb4fff24bba8c3cfc2041b7f,
+      objectReference: {fileID: 21300000, guid: 0d5b62e6015de614cb333bbc643854b7,
         type: 3}
     - target: {fileID: 198878596387548956, guid: d7147872aa3b2f848b741ee64d2b7502,
         type: 2}
@@ -36283,6 +36319,12 @@ Prefab:
       propertyPath: randomSeed
       value: 1922438536
       objectReference: {fileID: 0}
+    - target: {fileID: 212555283264784618, guid: 4f24c7f06bf4b2148ac8935856112721,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1039d0b12b8689e45a0ab148e1e90fc3,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f24c7f06bf4b2148ac8935856112721, type: 2}
   m_IsPrefabParent: 0
@@ -44051,7 +44093,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 502601850
+  randomSeed: -289980254
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -47404,7 +47446,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e68fcfa8fb4fff24bba8c3cfc2041b7f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 769c28f4c015cb446ad27c9c674e5571, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -50328,6 +50370,26 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 224538550074182172, guid: 4513a79a985c0a34bb34fbe58608b11e,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224538550074182172, guid: 4513a79a985c0a34bb34fbe58608b11e,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 224538550074182172, guid: 4513a79a985c0a34bb34fbe58608b11e,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224538550074182172, guid: 4513a79a985c0a34bb34fbe58608b11e,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4513a79a985c0a34bb34fbe58608b11e, type: 2}
   m_IsPrefabParent: 0
@@ -52946,6 +53008,12 @@ Prefab:
       propertyPath: randomSeed
       value: -245896095
       objectReference: {fileID: 0}
+    - target: {fileID: 212555283264784618, guid: 4f24c7f06bf4b2148ac8935856112721,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a16179eecbddfce439ff81371b77c3f6,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f24c7f06bf4b2148ac8935856112721, type: 2}
   m_IsPrefabParent: 0
@@ -53078,6 +53146,12 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 212555283264784618, guid: 4f24c7f06bf4b2148ac8935856112721,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7f34f1fc863ac8846b6fabbe3ccc1054,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f24c7f06bf4b2148ac8935856112721, type: 2}
   m_IsPrefabParent: 0
@@ -58383,6 +58457,12 @@ Prefab:
       propertyPath: randomSeed
       value: -1715989498
       objectReference: {fileID: 0}
+    - target: {fileID: 212555283264784618, guid: 4f24c7f06bf4b2148ac8935856112721,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 67477d0f1d061f74d8a979c5799db530,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4f24c7f06bf4b2148ac8935856112721, type: 2}
   m_IsPrefabParent: 0
@@ -61484,7 +61564,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -738139511
+  randomSeed: 334840310
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -64837,7 +64917,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e68fcfa8fb4fff24bba8c3cfc2041b7f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3d342021003bc7d42b2e68644c9a286e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

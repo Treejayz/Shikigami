@@ -20,6 +20,7 @@ public class Collectable : MonoBehaviour {
 
     private void Start()
     {
+
         transform.Rotate(0f, Random.Range(0,360), 0f);
     }
 
@@ -54,7 +55,10 @@ public class Collectable : MonoBehaviour {
     {
         switch (Type)
         {
-            case (CollectableType.PIECE):
+				case (CollectableType.PIECE):
+				if (CollectableManager.paperPieces == 0) {
+					GetComponentInParent<FirstScrapCheck> ().Display ();
+				}
                 CollectableManager.Collect(Type);
                 GetComponent<ParticleSystem>().Play();
                 GetComponent<Collider>().enabled = false;
@@ -70,10 +74,12 @@ public class Collectable : MonoBehaviour {
                 GetComponent<Collider>().enabled = false;
                 GetComponent<SpriteRenderer>().enabled = false;
                 AkSoundEngine.PostEvent("PickupCoin", gameObject);
+
                 break;
 
         };
         yield return new WaitForSeconds(1f);
         Destroy(this.gameObject);
     }
+
 }

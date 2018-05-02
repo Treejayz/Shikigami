@@ -40,7 +40,10 @@ public class Checkpoint : MonoBehaviour {
             player = other.gameObject.transform;
             ActivateCheckPoint();
         }
-		if (page3){
+		if (Page == null || this.name == "FoxCheckpoint"|| this.name == "FrogCheck") {
+
+		}
+		else if (page3){
 			CollectableManager.spellpage3pieces++;
 			if (CollectableManager.spellpage3pieces == CollectableManager.spellpage3piecemax) { 
 				CollectableManager.spellbookpages [2] = true;

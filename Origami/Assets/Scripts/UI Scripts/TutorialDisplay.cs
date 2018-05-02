@@ -29,16 +29,8 @@ public class TutorialDisplay : MonoBehaviour {
 	{
 		Color tempcoltext = displayCanvas.GetComponentInChildren<Text>().color;
 		Color tempcolimage = displayCanvas.GetComponentInChildren<Image>().color;
-		while (tempcoltext.a > 0f)
+		while (displayCanvas.GetComponentInChildren<Text>().color.a > 0f)
 		{
-			float newAlpha = displayCanvas.GetComponentInChildren<Text>().color.a - (Time.fixedDeltaTime * (1f / fadeTime));
-			if (newAlpha < 0f) { newAlpha = 0f; }
-			tempcoltext = displayCanvas.GetComponentInChildren<Text>().color;
-			tempcoltext.a = newAlpha;
-			tempcolimage = displayCanvas.GetComponentInChildren<Image>().color;
-			tempcolimage.a = newAlpha;
-			displayCanvas.GetComponentInChildren<Image>().color = tempcolimage;
-			displayCanvas.GetComponentInChildren<Text> ().color = tempcoltext;
 			yield return new WaitForFixedUpdate();
 		}
 
