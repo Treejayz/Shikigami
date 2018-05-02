@@ -80,7 +80,7 @@ public class FrogFallState : State {
         
 
         Vector3 hitNormal = hit.normal;
-        if (hit.normal.y < -0.1f) { return; }
+        if (hit.normal.y < -0.01f) { return; }
         bool wall = (Vector3.Angle(Vector3.up, hitNormal) <= wallJumpLimit);
 
 		if (!wall) {

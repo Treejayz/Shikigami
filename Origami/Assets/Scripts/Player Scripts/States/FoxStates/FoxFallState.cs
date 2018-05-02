@@ -63,24 +63,26 @@ public class FoxFallState : State {
     public override void OnColliderHit(ControllerColliderHit hit)
     {
         Vector3 hitNormal = hit.normal;
-        bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= (90 - player.slopeLimit));
-        if (!isGrounded)
+        bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= (player.slopeLimit));
+        bool iswall = (Vector3.Angle(Vector3.up, hitNormal) <= 90);
+        if (!isGrounded && iswall)
         {
             float slideX = (1f - hitNormal.y) * hitNormal.x * (1f - slideFriction);
             float slideZ = (1f - hitNormal.y) * hitNormal.z * (1f - slideFriction);
             player.Move(new Vector3(slideX, 0f, slideZ) * Time.fixedDeltaTime);
         }
-        else
+        else if (isGrounded)
         {
             if (Input.GetAxis("Ability2") != 0f)
             {
+                Character.sneaking = true;
                 character.SetState(new FoxSneakState(character));
             }
             else if (Input.GetAxis("Ability1") != 0f && (Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f))
             {
                 Character.sneaking = false;
                 character.SetState(new FoxSprintState(character, character.momentum));
-            } else
+            } else if (isGrounded)
             {
                 Character.sneaking = false;
                 character.SetState(new FoxIdleState(character));

@@ -9,7 +9,7 @@ public class CraneJumpState : State {
 
 	private float Gravity = 20f;
 	private float fastGravity = 40f;
-	private float jumpSpeed = 11f;
+	private float jumpSpeed = 12f;
 	private float currentSpeed;
 	private Vector3 direction;
 
@@ -86,21 +86,27 @@ public class CraneJumpState : State {
     public override void OnColliderHit(ControllerColliderHit hit)
     {
         Vector3 hitNormal = hit.normal;
+        /*
         if (hit.normal.y < -0.1f)
         {
             if (currentSpeed > 2f)
             {
                 currentSpeed = 2f;
             }
+            character.SetState(new CraneFallingState(character));
             return;
-        }
-        bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= (90 - player.slopeLimit));
-        if (!isGrounded)
-        {
-            player.Move(Vector3.up * Time.deltaTime);
         }
         else
         {
+            bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= (90 - player.slopeLimit));
+            if (!isGrounded)
+            {
+                player.Move(Vector3.up * Time.deltaTime);
+            }
+            else
+            {
+            }
         }
+        */
     }
 }

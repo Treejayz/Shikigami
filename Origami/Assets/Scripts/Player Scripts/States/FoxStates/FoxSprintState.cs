@@ -25,7 +25,7 @@ public class FoxSprintState : State {
     public override void OnStateEnter()
     {
         player = character.GetComponent<CharacterController>();
-        character.foxAnimator.speed = 1.58333f;
+        character.foxAnimator.SetBool("Sprinting", true);
         character.GetComponentsInChildren<ParticleSystem>()[5].Play();
         AkSoundEngine.SetRTPCValue("MusicSpeed", 1.05f);
     }
@@ -65,7 +65,7 @@ public class FoxSprintState : State {
 
     public override void OnStateExit()
     {
-        character.foxAnimator.speed = 1f;
+        character.foxAnimator.SetBool("Sprinting", false);
         character.GetComponentsInChildren<ParticleSystem>()[5].Stop();
         AkSoundEngine.SetRTPCValue("MusicSpeed", 1f);
     }

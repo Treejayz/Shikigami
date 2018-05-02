@@ -9,7 +9,7 @@ public class FoxJumpState : State {
 
     private float Gravity = 20f;
     private float fastGravity = 40f;
-    private float jumpSpeed = 11f;
+    private float jumpSpeed = 12f;
     private float currentSpeed;
     private Vector3 direction;
 

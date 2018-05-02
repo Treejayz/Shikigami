@@ -9,7 +9,7 @@ public class CraneFallingState : State {
 	private float Gravity = 30f;
 	private float maxFallSpeed = 30f;
     private float glideSpeed = 4f;
-    private float slideFriction = 0.1f;
+    private float slideFriction = 0.3f;
 
     private float fallSpeed;
 	private Vector3 direction;
@@ -97,13 +97,14 @@ public class CraneFallingState : State {
     public override void OnColliderHit(ControllerColliderHit hit)
     {
         Vector3 hitNormal = hit.normal;
-        bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= (90 - player.slopeLimit));
-        if (!isGrounded)
+        bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= (player.slopeLimit));
+        bool iswall = (Vector3.Angle(Vector3.up, hitNormal) <= 90);
+        if (!isGrounded && iswall)
         {
             float slideX = (1f - hitNormal.y) * hitNormal.x * (1f - slideFriction);
             float slideZ = (1f - hitNormal.y) * hitNormal.z * (1f - slideFriction);
 			player.Move(new Vector3(slideX, 0f, slideZ) * Time.fixedDeltaTime);
-        } else
+        } else if (isGrounded)
         {
             character.SetState(new CraneIdleState(character));
         }
