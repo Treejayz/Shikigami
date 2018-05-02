@@ -1,0 +1,191 @@
+fileFormatVersion: 2
+guid: 5ea1154772abd427c94a9ed3e066d1a3
+timeCreated: 1525229645
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: back
+    100002: HangingBoi
+    100004: Hedge_Maze_Obstacles:polySurface1
+    100006: HedgeMaze
+    100008: //RootNode
+    100010: Large_Hedge
+    100012: left
+    100014: pCube1
+    100016: pCube10
+    100018: pCube11
+    100020: pCube12
+    100022: pCube13
+    100024: pCube14
+    100026: pCube2
+    100028: pCube3
+    100030: pCube4
+    100032: pCube5
+    100034: pCube6
+    100036: pCube7
+    100038: pCube8
+    100040: pCube9
+    100042: Small_Pieces
+    100044: T_Hedge
+    400000: back
+    400002: HangingBoi
+    400004: Hedge_Maze_Obstacles:polySurface1
+    400006: HedgeMaze
+    400008: //RootNode
+    400010: Large_Hedge
+    400012: left
+    400014: pCube1
+    400016: pCube10
+    400018: pCube11
+    400020: pCube12
+    400022: pCube13
+    400024: pCube14
+    400026: pCube2
+    400028: pCube3
+    400030: pCube4
+    400032: pCube5
+    400034: pCube6
+    400036: pCube7
+    400038: pCube8
+    400040: pCube9
+    400042: Small_Pieces
+    400044: T_Hedge
+    2000000: back
+    2000002: left
+    2100000: lambert1
+    2100002: lambert2
+    2300000: HangingBoi
+    2300002: Hedge_Maze_Obstacles:polySurface1
+    2300004: Large_Hedge
+    2300006: pCube1
+    2300008: pCube10
+    2300010: pCube11
+    2300012: pCube12
+    2300014: pCube13
+    2300016: pCube14
+    2300018: pCube2
+    2300020: pCube3
+    2300022: pCube4
+    2300024: pCube5
+    2300026: pCube6
+    2300028: pCube7
+    2300030: pCube8
+    2300032: pCube9
+    2300034: T_Hedge
+    3300000: HangingBoi
+    3300002: Hedge_Maze_Obstacles:polySurface1
+    3300004: Large_Hedge
+    3300006: pCube1
+    3300008: pCube10
+    3300010: pCube11
+    3300012: pCube12
+    3300014: pCube13
+    3300016: pCube14
+    3300018: pCube2
+    3300020: pCube3
+    3300022: pCube4
+    3300024: pCube5
+    3300026: pCube6
+    3300028: pCube7
+    3300030: pCube8
+    3300032: pCube9
+    3300034: T_Hedge
+    4300000: Hedge_Maze_Obstacles:polySurface1
+    4300002: Large_Hedge
+    4300004: T_Hedge
+    4300006: HangingBoi
+    4300008: pCube1
+    4300010: pCube2
+    4300012: pCube3
+    4300014: pCube4
+    4300016: pCube5
+    4300018: pCube6
+    4300020: pCube7
+    4300022: pCube8
+    4300024: pCube9
+    4300026: pCube10
+    4300028: pCube11
+    4300030: pCube12
+    4300032: pCube13
+    4300034: pCube14
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
