@@ -221,7 +221,7 @@ RectTransform:
   m_LocalScale: {x: 4.0419164, y: 2.5224783, z: 2.5224783}
   m_Children: []
   m_Father: {fileID: 1548118626}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -633,7 +633,7 @@ Transform:
   m_Children:
   - {fileID: 1122850146}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
 --- !u!114 &312740885
 MonoBehaviour:
@@ -970,7 +970,7 @@ RectTransform:
   m_LocalScale: {x: 4.3428407, y: 1.256986, z: 1.256986}
   m_Children: []
   m_Father: {fileID: 1548118626}
-  m_RootOrder: 6
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1107,6 +1107,7 @@ GameObject:
   - component: {fileID: 1072442844}
   - component: {fileID: 1072442843}
   - component: {fileID: 1072442842}
+  - component: {fileID: 1072442846}
   m_Layer: 5
   m_Name: Level 3
   m_TagString: Untagged
@@ -1126,7 +1127,7 @@ RectTransform:
   m_Children:
   - {fileID: 23688200}
   m_Father: {fileID: 1548118626}
-  m_RootOrder: 3
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1231,6 +1232,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1072442840}
+--- !u!114 &1072442846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1072442840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc5b5c2e1a2de4c409fbabd528e02185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1122850145
 GameObject:
   m_ObjectHideFlags: 0
@@ -1594,6 +1606,7 @@ GameObject:
   - component: {fileID: 2103026187}
   - component: {fileID: 2103026186}
   - component: {fileID: 2103026185}
+  - component: {fileID: 2103026189}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -1613,7 +1626,7 @@ RectTransform:
   m_Children:
   - {fileID: 1063974426}
   m_Father: {fileID: 1548118626}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1718,6 +1731,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2103026183}
+--- !u!114 &2103026189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2103026183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc5b5c2e1a2de4c409fbabd528e02185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2106823584
 GameObject:
   m_ObjectHideFlags: 0
@@ -1730,6 +1754,7 @@ GameObject:
   - component: {fileID: 2106823588}
   - component: {fileID: 2106823587}
   - component: {fileID: 2106823586}
+  - component: {fileID: 2106823590}
   m_Layer: 5
   m_Name: Level 2
   m_TagString: Untagged
@@ -1749,7 +1774,7 @@ RectTransform:
   m_Children:
   - {fileID: 1136224404}
   m_Father: {fileID: 1548118626}
-  m_RootOrder: 2
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1854,6 +1879,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2106823584}
+--- !u!114 &2106823590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2106823584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc5b5c2e1a2de4c409fbabd528e02185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2129465573
 Prefab:
   m_ObjectHideFlags: 0
@@ -2049,7 +2085,7 @@ Prefab:
     - target: {fileID: 224503521212757712, guid: af4b16824eb5bbc499c0275bc55c9e7e,
         type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224031439495886036, guid: af4b16824eb5bbc499c0275bc55c9e7e,
         type: 2}

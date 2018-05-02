@@ -1,9 +1,11 @@
 Event	ID	Name			Wwise Object Path	Notes
 	452547817	Stop_All			\Default Work Unit\Stop_All	
 	1182958561	Cutscene			\Default Work Unit\Cutscene	
+	3753593413	Hover			\Default Work Unit\Hover	
 	3827058668	StartMusic			\Default Work Unit\StartMusic	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	177160565	hover01	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\hover01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\hover01		25756
 	801312338	CutsceneFull3	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\CutsceneFull3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\CutsceneFull3		10245964
 	876606834	MenuTheme	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\MenuTheme_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\MenuTheme		11289664
 

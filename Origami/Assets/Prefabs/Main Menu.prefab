@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114549532509381596}
   - component: {fileID: 114696247625896572}
   - component: {fileID: 114135241547785106}
+  - component: {fileID: 114684964857887644}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -42,6 +43,7 @@ GameObject:
   - component: {fileID: 114093616281503666}
   - component: {fileID: 114972803601191966}
   - component: {fileID: 114882435864229830}
+  - component: {fileID: 114727256384516428}
   m_Layer: 5
   m_Name: Options
   m_TagString: Untagged
@@ -131,6 +133,7 @@ GameObject:
   - component: {fileID: 114212411090444134}
   - component: {fileID: 114922133298376846}
   - component: {fileID: 114919600006899242}
+  - component: {fileID: 114224065817848522}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -205,6 +208,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114224065817848522
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1899039874456710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc5b5c2e1a2de4c409fbabd528e02185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114289034331768006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -321,6 +335,17 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114684964857887644
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1281358044780654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc5b5c2e1a2de4c409fbabd528e02185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114696247625896572
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -373,6 +398,17 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114727256384516428
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1321383085392218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc5b5c2e1a2de4c409fbabd528e02185, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114796818801962114
 MonoBehaviour:
   m_ObjectHideFlags: 1
