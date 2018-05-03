@@ -177,10 +177,6 @@
 					<ShortName>PillarAttack03.wav</ShortName>
 					<Path>SFX\PillarAttack03_1C9C67B2.wem</Path>
 				</File>
-				<File Id="595823866" Language="SFX">
-					<ShortName>2SecTransform01.wav</ShortName>
-					<Path>SFX\2SecTransform01_1C9C67B2.wem</Path>
-				</File>
 				<File Id="600259957" Language="SFX">
 					<ShortName>FrogStep03.wav</ShortName>
 					<Path>SFX\FrogStep03_1C9C67B2.wem</Path>
@@ -260,6 +256,10 @@
 				<File Id="1020712570" Language="SFX">
 					<ShortName>lawnmowerish.wav</ShortName>
 					<Path>SFX\lawnmowerish_F17FB28C.wem</Path>
+				</File>
+				<File Id="1022589781" Language="SFX">
+					<ShortName>2SecTransform02.wav</ShortName>
+					<Path>SFX\2SecTransform02_1C9C67B2.wem</Path>
 				</File>
 				<File Id="1030449657" Language="SFX">
 					<ShortName>Rip01.wav</ShortName>
@@ -348,10 +348,6 @@
 					<ShortName>Rip02.wav</ShortName>
 					<Path>SFX\Rip02_1C9C67B2.wem</Path>
 				</File>
-				<File Id="595823866" Language="SFX">
-					<ShortName>2SecTransform01.wav</ShortName>
-					<Path>SFX\2SecTransform01_1C9C67B2.wem</Path>
-				</File>
 				<File Id="600259957" Language="SFX">
 					<ShortName>FrogStep03.wav</ShortName>
 					<Path>SFX\FrogStep03_1C9C67B2.wem</Path>
@@ -415,6 +411,10 @@
 				<File Id="1020712570" Language="SFX">
 					<ShortName>lawnmowerish.wav</ShortName>
 					<Path>SFX\lawnmowerish_F17FB28C.wem</Path>
+				</File>
+				<File Id="1022589781" Language="SFX">
+					<ShortName>2SecTransform02.wav</ShortName>
+					<Path>SFX\2SecTransform02_1C9C67B2.wem</Path>
 				</File>
 				<File Id="1030449657" Language="SFX">
 					<ShortName>Rip01.wav</ShortName>
@@ -564,10 +564,6 @@
 					<ShortName>Stick.wav</ShortName>
 					<Path>SFX\Stick_1C9C67B2.wem</Path>
 				</File>
-				<File Id="595823866" Language="SFX">
-					<ShortName>2SecTransform01.wav</ShortName>
-					<Path>SFX\2SecTransform01_1C9C67B2.wem</Path>
-				</File>
 				<File Id="597416258" Language="SFX">
 					<ShortName>Jump01.wav</ShortName>
 					<Path>SFX\Jump01_1C9C67B2.wem</Path>
@@ -659,6 +655,10 @@
 				<File Id="989246533" Language="SFX">
 					<ShortName>FrogStep02.wav</ShortName>
 					<Path>SFX\FrogStep02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1022589781" Language="SFX">
+					<ShortName>2SecTransform02.wav</ShortName>
+					<Path>SFX\2SecTransform02_1C9C67B2.wem</Path>
 				</File>
 				<File Id="1030449657" Language="SFX">
 					<ShortName>Rip01.wav</ShortName>

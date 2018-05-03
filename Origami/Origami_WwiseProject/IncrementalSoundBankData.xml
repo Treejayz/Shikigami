@@ -5,15 +5,15 @@
 			<Language ID="393239870">
 				<File Name="CreditsBank" Hash="351097444" Timestamp="1523636891"/>
 				<File Name="Init" Hash="2295428010" Timestamp="1524685235"/>
-				<File Name="Level1SB" Hash="4101866407" Timestamp="1525389903"/>
-				<File Name="Level3SB" Hash="1811424013" Timestamp="1525389907"/>
+				<File Name="Level1SB" Hash="348346744" Timestamp="1525390890"/>
+				<File Name="Level3SB" Hash="2311471593" Timestamp="1525390890"/>
 				<File Name="MenuSB" Hash="2569396312" Timestamp="1525278880"/>
-				<File Name="PlayerSound" Hash="3536912459" Timestamp="1525389914"/>
+				<File Name="PlayerSound" Hash="1761854443" Timestamp="1525390890"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="651870423" Timestamp="1525389914"/>
+				<File Name="" Hash="651153820" Timestamp="1525390890"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
