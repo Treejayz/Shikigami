@@ -3467,6 +3467,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4853368912100964}
   - component: {fileID: 95922680334927628}
+  - component: {fileID: 114184441250146108}
   m_Layer: 0
   m_Name: Fox
   m_TagString: Untagged
@@ -9488,6 +9489,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camTrans: {fileID: 0}
   camTargetTrans: {fileID: 0}
+--- !u!114 &114184441250146108
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1768443902249832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7436eb04da416b2458e15ace85644b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114463645687156316
 MonoBehaviour:
   m_ObjectHideFlags: 1

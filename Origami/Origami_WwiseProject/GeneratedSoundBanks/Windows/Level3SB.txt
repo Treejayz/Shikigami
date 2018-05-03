@@ -37,7 +37,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	4082871	Wingflap03	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Wingflap03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFlap\Wingflap03		29074
 	30317786	shadowballhit02	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\shadowballhit02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\shadowballhit02		327076
 	54157248	FoxStep3_03	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\FoxStep3_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFoxStep\FoxStep3_03		29248
-	80407323	PlaceholderTransform	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\PlaceholderTransform_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlaceholderTransform		173744
 	95738087	BigPickup01	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\BigPickup01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\BigPickup01		341064
 	127240437	GenFlap2	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\GenFlap2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFlap\GenFlap2		167208
 	130902425	shadowball02	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\shadowball02_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\shadowball02		814284
@@ -59,6 +58,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	497579342	Victory	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Victory_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Victory		13675544
 	528329268	Rip02	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Rip02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomRip\Rip02		57364
 	534584386	PillarAttack03	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\PillarAttack03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\PillarAttack03		5644928
+	595823866	2SecTransform01	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\2SecTransform01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\2SecTransform01		352864
 	600259957	FrogStep03	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\FrogStep03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFrogStep\FrogStep03		24624
 	601640113	TimeStart	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\TimeStart_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\TimeStart		325788
 	613255974	WingJump04	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\WingJump04_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\WingJump04		179224

@@ -93,10 +93,6 @@
 					<ShortName>FoxStep3_03.wav</ShortName>
 					<Path>SFX\FoxStep3_03_1C9C67B2.wem</Path>
 				</File>
-				<File Id="80407323" Language="SFX">
-					<ShortName>PlaceholderTransform.wav</ShortName>
-					<Path>SFX\PlaceholderTransform_1C9C67B2.wem</Path>
-				</File>
 				<File Id="95738087" Language="SFX">
 					<ShortName>BigPickup01.wav</ShortName>
 					<Path>SFX\BigPickup01_1C9C67B2.wem</Path>
@@ -180,6 +176,10 @@
 				<File Id="534584386" Language="SFX">
 					<ShortName>PillarAttack03.wav</ShortName>
 					<Path>SFX\PillarAttack03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="595823866" Language="SFX">
+					<ShortName>2SecTransform01.wav</ShortName>
+					<Path>SFX\2SecTransform01_1C9C67B2.wem</Path>
 				</File>
 				<File Id="600259957" Language="SFX">
 					<ShortName>FrogStep03.wav</ShortName>
@@ -296,10 +296,6 @@
 					<ShortName>Wingflap03.wav</ShortName>
 					<Path>SFX\Wingflap03_1C9C67B2.wem</Path>
 				</File>
-				<File Id="80407323" Language="SFX">
-					<ShortName>PlaceholderTransform.wav</ShortName>
-					<Path>SFX\PlaceholderTransform_1C9C67B2.wem</Path>
-				</File>
 				<File Id="95738087" Language="SFX">
 					<ShortName>BigPickup01.wav</ShortName>
 					<Path>SFX\BigPickup01_1C9C67B2.wem</Path>
@@ -351,6 +347,10 @@
 				<File Id="528329268" Language="SFX">
 					<ShortName>Rip02.wav</ShortName>
 					<Path>SFX\Rip02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="595823866" Language="SFX">
+					<ShortName>2SecTransform01.wav</ShortName>
+					<Path>SFX\2SecTransform01_1C9C67B2.wem</Path>
 				</File>
 				<File Id="600259957" Language="SFX">
 					<ShortName>FrogStep03.wav</ShortName>
@@ -468,10 +468,6 @@
 					<ShortName>WingJump01.wav</ShortName>
 					<Path>SFX\WingJump01_1C9C67B2.wem</Path>
 				</File>
-				<File Id="80407323" Language="SFX">
-					<ShortName>PlaceholderTransform.wav</ShortName>
-					<Path>SFX\PlaceholderTransform_1C9C67B2.wem</Path>
-				</File>
 				<File Id="95738087" Language="SFX">
 					<ShortName>BigPickup01.wav</ShortName>
 					<Path>SFX\BigPickup01_1C9C67B2.wem</Path>
@@ -567,6 +563,10 @@
 				<File Id="594872895" Language="SFX">
 					<ShortName>Stick.wav</ShortName>
 					<Path>SFX\Stick_1C9C67B2.wem</Path>
+				</File>
+				<File Id="595823866" Language="SFX">
+					<ShortName>2SecTransform01.wav</ShortName>
+					<Path>SFX\2SecTransform01_1C9C67B2.wem</Path>
 				</File>
 				<File Id="597416258" Language="SFX">
 					<ShortName>Jump01.wav</ShortName>
