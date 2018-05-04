@@ -72,6 +72,7 @@
 						<ObjectRef Name="StartTime" ID="{01669140-C2D8-4C14-BD57-0A1829CD4C44}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Splash" ID="{037D6415-D390-4CF3-801C-806F3D9A4332}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="lawnmowerplatplay" ID="{AA47A543-4DD1-4E05-A275-6DEB90CB6F44}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="InitialTransform" ID="{3A553092-B513-4E9A-8DCA-FD2E47AE9C22}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

@@ -296,7 +296,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="PlaceholderTransform" ID="{78CF1061-A90D-43F8-9FCB-923550852C30}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+									<ObjectRef Name="2SecTransform02" ID="{57847591-9B49-4F32-B5AE-C1702D631376}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -546,6 +546,20 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="RandomFoxStep" ID="{08D9C4C4-5599-4C94-8CDF-951BC9287801}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="InitialTransform" ID="{3A553092-B513-4E9A-8DCA-FD2E47AE9C22}">
+					<ChildrenList>
+						<Action Name="" ID="{2317BCAE-D068-4E64-BD6B-D3D740BA5B81}" ShortID="235240653">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="3SecTransform01" ID="{CABF6E69-5C12-4E43-8A70-F9DAC70A2D9E}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

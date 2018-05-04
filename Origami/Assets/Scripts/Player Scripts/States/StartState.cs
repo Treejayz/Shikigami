@@ -58,7 +58,7 @@ public class StartState : State
                 pressed = true;
                 craneAnimator.GetComponent<Animator>().SetFloat("Speed", -1f);
                 craneAnimator.GetComponent<Animator>().Play("Crane_Fold_Slow", 0, 1f);
-                AkSoundEngine.PostEvent("Transform", player.gameObject);
+                AkSoundEngine.PostEvent("InitialTransform", player.gameObject);
             }
         }
         else if (currentTime < 3f && pressed)
