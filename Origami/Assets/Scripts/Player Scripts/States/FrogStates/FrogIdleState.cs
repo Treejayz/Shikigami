@@ -5,6 +5,7 @@ using UnityEngine;
 public class FrogIdleState : State {
 
     private CharacterController player;
+    private float time;
 
     public FrogIdleState(Character character) : base(character)
     {
@@ -16,12 +17,20 @@ public class FrogIdleState : State {
         character.frogAnimator.SetBool("Moving", false);
         character.frogAnimator.SetBool("Jumping", false);
         character.yVelocity = character.gravity;
+        time = 0f;
         // AkSoundEngine.PostEvent("FrogStick", character.gameObject);
         // POLISH GOAL - track time spent in fall or jump state. If greater than like 0.5 seconds, play sound.
     }
 
     public override void Tick()
     {
+        time += Time.deltaTime;
+        if (time > 7f)
+        {
+            character.frogAnimator.SetTrigger("Shimmy");
+            time -= 7f;
+        }
+
         if (!player.isGrounded)
         {
             character.SetState(new FrogFallState(character));
@@ -60,5 +69,9 @@ public class FrogIdleState : State {
 
     public override void OnStateExit()
     {
+        if (character.frogAnimator.GetCurrentAnimatorStateInfo(0).IsName("Frog_Shimmy"))
+        {
+            character.frogAnimator.Play("Frog_Idle");
+        }
     }
 }
