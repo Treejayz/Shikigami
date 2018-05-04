@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.29824033, g: 0.5442754, b: 0.6894373, a: 1}
+  m_IndirectSpecularColor: {r: 0.29823998, g: 0.544275, b: 0.68943566, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -14785,15 +14785,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4236049429694788, guid: 7d8834efc087f904eb2806623e4ab89e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 67.55
+      value: 69.8
       objectReference: {fileID: 0}
     - target: {fileID: 4236049429694788, guid: 7d8834efc087f904eb2806623e4ab89e, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 69.32
+      value: 75.5
       objectReference: {fileID: 0}
     - target: {fileID: 4236049429694788, guid: 7d8834efc087f904eb2806623e4ab89e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 9.2
+      value: 4.2
       objectReference: {fileID: 0}
     - target: {fileID: 4236049429694788, guid: 7d8834efc087f904eb2806623e4ab89e, type: 2}
       propertyPath: m_LocalRotation.x
@@ -14818,7 +14818,8 @@ Prefab:
     - target: {fileID: 114378297945369290, guid: 7d8834efc087f904eb2806623e4ab89e,
         type: 2}
       propertyPath: displayText
-      value: Use the mouse to look around, and WASD to move
+      value: Use the mouse or Right Thumb Stick to look around, and WASD or Left Thumb
+        Stick to move
       objectReference: {fileID: 0}
     - target: {fileID: 114378297945369290, guid: 7d8834efc087f904eb2806623e4ab89e,
         type: 2}
@@ -25728,7 +25729,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fdab70072d226d45b42e748c26a7021, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayText: Press SPACE to jump, and hold space to glide
+  displayText: Press the Spacebar or <size=26>a</size> button to jump, and hold to
+    glide
   displayCanvas: {fileID: 60347542}
   displaytime: 3
 --- !u!1001 &715538642
@@ -31943,7 +31945,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fdab70072d226d45b42e748c26a7021, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayText: Press Left Shift to Dash, so you can cross larger gaps
+  displayText: Press Left Shift or Right Trigger to Dash, so you can cross larger
+    gaps
   displayCanvas: {fileID: 60347542}
   displaytime: 3
 --- !u!1 &974942292
@@ -39267,6 +39270,7 @@ GameObject:
   - component: {fileID: 1293770351}
   - component: {fileID: 1293770358}
   - component: {fileID: 1293770359}
+  - component: {fileID: 1293770360}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -39426,6 +39430,32 @@ Skybox:
   m_GameObject: {fileID: 1293770350}
   m_Enabled: 1
   m_CustomSkybox: {fileID: 2100000, guid: 97f216ff49983e541ac56c7cb78a9c72, type: 2}
+--- !u!114 &1293770360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1293770350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 646b5bc27a658f447b1d929fd5ffbd70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 3
+  showGeneratedNormals: 0
+  offsetScale: 0.2
+  blurRadius: 18
+  edgeThresholdMin: 0.05
+  edgeThreshold: 0.2
+  edgeSharpness: 4
+  dlaaSharp: 0
+  ssaaShader: {fileID: 4800000, guid: b3728d1488b02490cbd196c7941bf1f8, type: 3}
+  dlaaShader: {fileID: 4800000, guid: 017ca72b9e8a749058d13ebd527e98fa, type: 3}
+  nfaaShader: {fileID: 4800000, guid: ce0cb2621f6d84e21a87414e471a3cce, type: 3}
+  shaderFXAAPreset2: {fileID: 4800000, guid: 6f1418cffd12146f2a83be795f6fa5a7, type: 3}
+  shaderFXAAPreset3: {fileID: 4800000, guid: c182fa94a5a0a4c02870641efcd38cd5, type: 3}
+  shaderFXAAII: {fileID: 4800000, guid: cd5b323dcc592457790ff18b528f5e67, type: 3}
+  shaderFXAAIII: {fileID: 4800000, guid: c547503fff0e8482ea5793727057041c, type: 3}
 --- !u!4 &1297973394 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4704130373710972, guid: 7d8834efc087f904eb2806623e4ab89e,
