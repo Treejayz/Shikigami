@@ -6,7 +6,7 @@ Event	ID	Name			Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	177160565	hover01	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\hover01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\hover01		25756
-	713254651	CutsceneFullWithSFX3	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\CutsceneFullWithSFX3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\CutsceneFullWithSFX3		10261324
-	801312338	CutsceneFull3	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\CutsceneFull3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\CutsceneFull3		10245964
+	181786308	CutsceneFinal	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\CutsceneFinal_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\CutsceneFinal		10261324
+	614129148	CutsceneSFXOnly	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\CutsceneSFXOnly_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\CutsceneSFXOnly		10261324
 	876606834	MenuTheme	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\MenuTheme_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\MenuTheme		11289664
 

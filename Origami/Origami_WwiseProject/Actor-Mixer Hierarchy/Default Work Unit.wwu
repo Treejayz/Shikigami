@@ -1917,6 +1917,13 @@
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<Sound Name="CutsceneFullWithSFX3" ID="{4376E1C4-3A0A-4285-9506-20C715E62D92}" ShortID="281287903">
+					<PropertyList>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
@@ -1990,6 +1997,63 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="3SecTransform01" ID="{C38A2B0C-4AD1-4BEE-BDD5-5E61AF5BDAC9}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="CutsceneFinal" ID="{0D3EF41E-468D-45DA-BCCA-0D1C890673FB}" ShortID="97663277">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{409BEEA6-2A0B-4E9C-AE93-1353CB7FE3C8}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="CutsceneFinal" ID="{9E1B4F6F-0B2D-4708-8422-F94A65F5A4C4}" ShortID="181786308">
+							<Language>SFX</Language>
+							<AudioFile>CutsceneFinal.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="CutsceneFinal" ID="{9E1B4F6F-0B2D-4708-8422-F94A65F5A4C4}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="CutsceneSFXOnly" ID="{47EDA106-1DE7-4E6D-BB7C-8C9F7534455C}" ShortID="309770446">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{A22E32AA-C0DA-43F0-973C-80269745EF90}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="CutsceneSFXOnly" ID="{F6A7CC8A-AE4D-42D0-9434-91DEBEC25587}" ShortID="614129148">
+							<Language>SFX</Language>
+							<AudioFile>CutsceneSFXOnly.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="CutsceneSFXOnly" ID="{F6A7CC8A-AE4D-42D0-9434-91DEBEC25587}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="3SecTransform02" ID="{5DB0038C-E066-4466-A7FC-5C25DB021DFA}" ShortID="82182463">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{A22E32AA-C0DA-43F0-973C-80269745EF90}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="3SecTransform02" ID="{776CBC8D-6ADF-402C-8241-722405DA57E7}" ShortID="911897531">
+							<Language>SFX</Language>
+							<AudioFile>3SecTransform02.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="3SecTransform02" ID="{776CBC8D-6ADF-402C-8241-722405DA57E7}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

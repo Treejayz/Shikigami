@@ -79,10 +79,10 @@
 				</SoundBank>
 				<SoundBank Name="MenuSB" ID="{B39FFD79-B7FD-48B2-BB6A-4120C59859C5}">
 					<ObjectInclusionList>
-						<ObjectRef Name="CutsceneFullWithSFX3" ID="{4376E1C4-3A0A-4285-9506-20C715E62D92}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="CutsceneFinal" ID="{0D3EF41E-468D-45DA-BCCA-0D1C890673FB}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="StartMusic" ID="{9B7BEF00-4298-4961-A320-200C84B71B88}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Stop_All" ID="{19A80DA9-C0F9-4BDF-80F8-B26298064795}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="CutsceneFull3" ID="{03D06C5B-646B-4CA8-A067-006BDC97CD8D}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="CutsceneSFXOnly" ID="{47EDA106-1DE7-4E6D-BB7C-8C9F7534455C}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Hover" ID="{AAF0F45F-FFFA-4E73-9F57-E1D9A5C55DB3}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

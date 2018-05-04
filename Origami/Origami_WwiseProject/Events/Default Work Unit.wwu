@@ -461,7 +461,17 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="CutsceneFullWithSFX3" ID="{4376E1C4-3A0A-4285-9506-20C715E62D92}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+									<ObjectRef Name="CutsceneFinal" ID="{0D3EF41E-468D-45DA-BCCA-0D1C890673FB}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{753B8986-EC8D-4A5B-A7DF-0F32EA5E2018}" ShortID="358461747">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CutsceneSFXOnly" ID="{47EDA106-1DE7-4E6D-BB7C-8C9F7534455C}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -559,7 +569,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="3SecTransform01" ID="{CABF6E69-5C12-4E43-8A70-F9DAC70A2D9E}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+									<ObjectRef Name="3SecTransform02" ID="{5DB0038C-E066-4466-A7FC-5C25DB021DFA}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

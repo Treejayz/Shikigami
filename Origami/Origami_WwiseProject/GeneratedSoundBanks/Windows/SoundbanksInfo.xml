@@ -26,13 +26,13 @@
 					<ShortName>hover01.wav</ShortName>
 					<Path>SFX\hover01_1C9C67B2.wem</Path>
 				</File>
-				<File Id="713254651" Language="SFX">
-					<ShortName>CutsceneFullWithSFX3.wav</ShortName>
-					<Path>SFX\CutsceneFullWithSFX3_1C9C67B2.wem</Path>
+				<File Id="181786308" Language="SFX">
+					<ShortName>CutsceneFinal.wav</ShortName>
+					<Path>SFX\CutsceneFinal_1C9C67B2.wem</Path>
 				</File>
-				<File Id="801312338" Language="SFX">
-					<ShortName>CutsceneFull3.wav</ShortName>
-					<Path>SFX\CutsceneFull3_1C9C67B2.wem</Path>
+				<File Id="614129148" Language="SFX">
+					<ShortName>CutsceneSFXOnly.wav</ShortName>
+					<Path>SFX\CutsceneSFXOnly_1C9C67B2.wem</Path>
 				</File>
 				<File Id="876606834" Language="SFX">
 					<ShortName>MenuTheme.wav</ShortName>
@@ -365,10 +365,6 @@
 					<ShortName>Coin03.wav</ShortName>
 					<Path>SFX\Coin03_1C9C67B2.wem</Path>
 				</File>
-				<File Id="661939828" Language="SFX">
-					<ShortName>3SecTransform01.wav</ShortName>
-					<Path>SFX\3SecTransform01_1C9C67B2.wem</Path>
-				</File>
 				<File Id="682674031" Language="SFX">
 					<ShortName>FrogStep04.wav</ShortName>
 					<Path>SFX\FrogStep04_1C9C67B2.wem</Path>
@@ -404,6 +400,10 @@
 				<File Id="902014820" Language="SFX">
 					<ShortName>FrogStep05.wav</ShortName>
 					<Path>SFX\FrogStep05_1C9C67B2.wem</Path>
+				</File>
+				<File Id="911897531" Language="SFX">
+					<ShortName>3SecTransform02.wav</ShortName>
+					<Path>SFX\3SecTransform02_1C9C67B2.wem</Path>
 				</File>
 				<File Id="979601126" Language="SFX">
 					<ShortName>Stick02.wav</ShortName>
