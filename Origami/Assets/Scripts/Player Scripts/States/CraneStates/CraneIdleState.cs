@@ -24,6 +24,7 @@ public class CraneIdleState : State {
             shiftHeld = false;
         }
         time = 0f;
+        character.yVelocity = character.gravity;
     }
 
     public override void Tick() {

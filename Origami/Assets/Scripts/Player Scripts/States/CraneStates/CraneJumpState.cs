@@ -22,7 +22,7 @@ public class CraneJumpState : State {
 	public override void OnStateEnter()
 	{
 		player = character.GetComponent<CharacterController>();
-		currentSpeed = jumpSpeed;
+        character.yVelocity = jumpSpeed * -1;
         character.craneAnimator.SetBool("Jumping", true);
         character.craneAnimator.Play("Crane_Jump", -1, .1f);
         AkSoundEngine.PostEvent("WingJump", character.gameObject);
@@ -46,12 +46,12 @@ public class CraneJumpState : State {
         {
             direction = new Vector3 (0f, 0f, 0f);
         }
-		if (currentSpeed > 0.0f)
+		if (character.yVelocity < 0.0f)
 		{
 			if (Input.GetAxis("Jump") != 0f) {
-				currentSpeed -= Gravity * Time.deltaTime;
+                character.yVelocity += Gravity * Time.deltaTime;
 			} else {
-				currentSpeed -= fastGravity * Time.deltaTime;
+                character.yVelocity += fastGravity * Time.deltaTime;
 			}
 
 		} else {
@@ -74,8 +74,8 @@ public class CraneJumpState : State {
 	public override void PhysicsTick() {
 		character.momentum = Vector3.Lerp(character.momentum, direction * character.moveSpeed, 0.015f);
 		player.Move(character.momentum * Time.fixedDeltaTime);
-		player.Move(Vector3.up * currentSpeed * Time.fixedDeltaTime);
-	}
+        player.Move(Vector3.down * character.yVelocity * Time.fixedDeltaTime);
+    }
 
     public override void OnStateExit()
     {

@@ -30,6 +30,7 @@ public class CraneDashState : State {
         dashEndSpeed = character.moveSpeed;
         character.canDash = false;
         character.isDashing = true;
+        character.yVelocity = 0f;
         ground = player.isGrounded;
         AkSoundEngine.PostEvent("Dash", character.gameObject);
         character.GetComponentsInChildren<ParticleSystem>()[4].Play();
@@ -73,19 +74,4 @@ public class CraneDashState : State {
         character.canDash = false;
         character.GetComponentsInChildren<ParticleSystem>()[4].Stop();
     }
-
-    /*
-    public override void OnColliderHit(ControllerColliderHit hit)
-    {
-        Vector3 hitNormal = hit.normal;
-        bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= player.slopeLimit);
-        if (!isGrounded && !player.isGrounded)
-        {
-            character.SetState(new CraneFallingState(character));
-        }
-        else
-        {
-        }
-    }
-    */
 }

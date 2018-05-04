@@ -23,7 +23,6 @@ public class CraneFallingState : State {
 	public override void OnStateEnter()
 	{
 		player = character.GetComponent<CharacterController>();
-		fallSpeed = 0.0f;
         character.craneAnimator.SetBool("Falling", true);
         if (Input.GetAxis("Ability1") != 0.0f)
         {
@@ -46,23 +45,23 @@ public class CraneFallingState : State {
 
         if (Input.GetAxis("Jump") != 0.0f)
         {
-            if (fallSpeed < glideSpeed)
+            if (character.yVelocity < glideSpeed)
             {
-                fallSpeed += Gravity * Time.deltaTime;
+                character.yVelocity += Gravity * Time.deltaTime;
             }
-            else if (fallSpeed > glideSpeed)
+            else if (character.yVelocity > glideSpeed)
             {
-                fallSpeed -= 40f * Time.deltaTime;
+                character.yVelocity -= 40f * Time.deltaTime;
             }
         } else
         {
-            if (fallSpeed < maxFallSpeed)
+            if (character.yVelocity < maxFallSpeed)
             {
-                fallSpeed += Gravity * Time.deltaTime;
+                character.yVelocity += Gravity * Time.deltaTime;
             }
-            else if (fallSpeed > maxFallSpeed)
+            else if (character.yVelocity > maxFallSpeed)
             {
-                fallSpeed = maxFallSpeed;
+                character.yVelocity = maxFallSpeed;
             }
         }
 
@@ -83,7 +82,7 @@ public class CraneFallingState : State {
 		character.momentum = Vector3.Lerp(character.momentum, direction * character.moveSpeed, 0.015f);
 		player.Move(character.momentum * Time.fixedDeltaTime);
 
-		player.Move(Vector3.down * fallSpeed * Time.fixedDeltaTime);
+		player.Move(Vector3.down * character.yVelocity * Time.fixedDeltaTime);
 	}
 
     public override void OnStateExit()

@@ -16,6 +16,7 @@ public class FoxIdleState : State {
         player = character.GetComponent<CharacterController>();
         character.foxAnimator.SetBool("Moving", false);
         time = 0f;
+        character.yVelocity = character.gravity;
     }
 
     public override void Tick()

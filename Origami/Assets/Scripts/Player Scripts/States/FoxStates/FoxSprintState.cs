@@ -14,7 +14,7 @@ public class FoxSprintState : State {
         direction = forwardtest.forward;
         direction.Normalize();
         //character.momentum = direction * sprintSpeed;
-
+        character.yVelocity = character.gravity;
     }
 
     public FoxSprintState(Character character, Vector3 moveDirection) : base(character)
@@ -27,7 +27,6 @@ public class FoxSprintState : State {
         player = character.GetComponent<CharacterController>();
         character.foxAnimator.SetBool("Sprinting", true);
         character.GetComponentsInChildren<ParticleSystem>()[5].Play();
-        AkSoundEngine.SetRTPCValue("MusicSpeed", 1.05f);
     }
 
     public override void Tick()
@@ -67,19 +66,6 @@ public class FoxSprintState : State {
     {
         character.foxAnimator.SetBool("Sprinting", false);
         character.GetComponentsInChildren<ParticleSystem>()[5].Stop();
-        AkSoundEngine.SetRTPCValue("MusicSpeed", 1f);
     }
 
-    public override void OnColliderHit(ControllerColliderHit hit)
-    {
-        Vector3 hitNormal = hit.normal;
-        bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= player.slopeLimit);
-        if (!isGrounded && !player.isGrounded)
-        {
-            character.SetState(new FoxFallState(character));
-        }
-        else
-        {
-        }
-    }
 }

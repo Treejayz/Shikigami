@@ -11,6 +11,8 @@ public class Character : MonoBehaviour {
 
     [HideInInspector]
     public Vector3 momentum = new Vector3(0f, 0f, 0f);
+    [HideInInspector]
+    public float yVelocity = 0f;
     public bool canFrog = false;
     public bool canFox = false;
 

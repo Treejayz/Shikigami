@@ -51,13 +51,13 @@ public class FrogFallState : State {
             direction = new Vector3(0f, 0f, 0f);
         }
 
-        if (fallSpeed < maxFallSpeed)
+        if (character.yVelocity < maxFallSpeed)
         {
-                fallSpeed += Gravity * Time.deltaTime;
+            character.yVelocity += Gravity * Time.deltaTime;
         }
-        else if (fallSpeed > maxFallSpeed)
+        else if (character.yVelocity > maxFallSpeed)
         {
-            fallSpeed = maxFallSpeed;
+            character.yVelocity = maxFallSpeed;
         }
 
     }
@@ -66,7 +66,7 @@ public class FrogFallState : State {
 		character.momentum = Vector3.Lerp(character.momentum, direction * character.moveSpeed, 0.015f);
 		player.Move(character.momentum * Time.fixedDeltaTime);
 
-		player.Move(Vector3.down * fallSpeed * Time.fixedDeltaTime);
+		player.Move(Vector3.down * character.yVelocity * Time.fixedDeltaTime);
 	}
 
     public override void OnStateExit()

@@ -24,6 +24,7 @@ public class CraneMovingState : State {
         {
             shiftHeld = false;
         }
+        character.yVelocity = character.gravity;
     }
 
     public override void Tick()
@@ -71,17 +72,4 @@ public class CraneMovingState : State {
 
 		player.Move(Vector3.down * character.gravity * Time.fixedDeltaTime);
 	}
-
-    public override void OnColliderHit(ControllerColliderHit hit)
-    {
-        Vector3 hitNormal = hit.normal;
-        bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= player.slopeLimit);
-        if (!isGrounded && !player.isGrounded)
-        {
-            character.SetState(new CraneFallingState(character));
-        }
-        else
-        {
-        }
-    }
 }

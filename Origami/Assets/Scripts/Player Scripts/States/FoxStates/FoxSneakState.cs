@@ -19,10 +19,10 @@ public class FoxSneakState : State {
         player = character.GetComponent<CharacterController>();
         character.frogAnimator.SetBool("Moving", true);
         Character.sneaking = true;
+        character.yVelocity = character.gravity;
         character.foxAnimator.SetBool("Sneaking", true);
         //character.foxAnimator.Play("Fox_Sneak_NRM", -1, 0.1f);
         start = Time.time;
-        AkSoundEngine.SetRTPCValue("MusicSpeed", .975f);
     }
 
     public override void Tick()
@@ -87,19 +87,5 @@ public class FoxSneakState : State {
     {
         character.foxAnimator.SetBool("Sneaking", false);
         character.foxAnimator.speed = 1f;
-        AkSoundEngine.SetRTPCValue("MusicSpeed", 1f);
-    }
-
-    public override void OnColliderHit(ControllerColliderHit hit)
-    {
-        Vector3 hitNormal = hit.normal;
-        bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= player.slopeLimit);
-        if (!isGrounded && !player.isGrounded)
-        {
-            character.SetState(new FoxFallState(character));
-        }
-        else
-        {
-        }
     }
 }

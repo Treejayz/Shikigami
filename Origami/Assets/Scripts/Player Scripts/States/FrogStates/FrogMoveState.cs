@@ -17,6 +17,7 @@ public class FrogMoveState : State {
     {
         player = character.GetComponent<CharacterController>();
         character.frogAnimator.SetBool("Moving", true);
+        character.yVelocity = character.gravity;
     }
 
     public override void Tick()
@@ -58,18 +59,4 @@ public class FrogMoveState : State {
 
 		player.Move(Vector3.down * character.gravity * Time.fixedDeltaTime);
 	}
-
-    public override void OnColliderHit(ControllerColliderHit hit)
-    {
-        Vector3 hitNormal = hit.normal;
-        bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= player.slopeLimit);
-        if (!isGrounded)
-        {
-
-        }
-        else
-        {
-            player.Move(Vector3.up * Time.deltaTime);
-        }
-    }
 }

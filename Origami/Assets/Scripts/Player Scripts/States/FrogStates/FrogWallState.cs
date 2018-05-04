@@ -31,6 +31,7 @@ public class FrogWallState : State {
 		}
         character.frogAnimator.SetBool("Moving", false);
         character.frogAnimator.SetBool("Jumping", false);
+        character.yVelocity = 0f;
 
         forwardtest.wall = true;
         CameraController.Wall(wallHit, character.transform.position);

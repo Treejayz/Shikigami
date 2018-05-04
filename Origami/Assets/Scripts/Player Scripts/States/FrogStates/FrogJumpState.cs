@@ -34,9 +34,9 @@ public class FrogJumpState : State {
     {
         player = character.GetComponent<CharacterController>();
 		if (fromWall) {
-			currentSpeed = wallJumpSpeed;
+            character.yVelocity = wallJumpSpeed * -1;
 		} else {
-		currentSpeed = jumpSpeed;
+		    character.yVelocity = jumpSpeed * -1;
 		}
         character.frogAnimator.SetBool("Jumping", true);
         character.frogAnimator.Play("Frog_FullJump", -1, 0f);
@@ -54,12 +54,12 @@ public class FrogJumpState : State {
             direction = new Vector3(0f, 0f, 0f);
         }
 
-        if (currentSpeed > 0.0f)
+        if (character.yVelocity < 0.0f)
         {
 			if (Input.GetAxis("Jump") != 0f || fromWall) {
-				currentSpeed -= Gravity * Time.deltaTime;
+                character.yVelocity += Gravity * Time.deltaTime;
 			} else {
-				currentSpeed -= fastGravity * Time.deltaTime;
+                character.yVelocity += fastGravity * Time.deltaTime;
 			}
             
         }
@@ -76,8 +76,8 @@ public class FrogJumpState : State {
 	public override void PhysicsTick() {
 		character.momentum = Vector3.Lerp(character.momentum, direction * character.moveSpeed, 0.01f);
 		player.Move(character.momentum * Time.fixedDeltaTime);
-		player.Move(Vector3.up * currentSpeed * Time.fixedDeltaTime);
-	}
+        player.Move(Vector3.down * character.yVelocity * Time.fixedDeltaTime);
+    }
 
 
     public override void OnColliderHit(ControllerColliderHit hit)

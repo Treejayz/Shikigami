@@ -77,6 +77,15 @@ public class TransformState : State
     }
     public override void Tick()
     {
+        if (character.yVelocity < 30)
+        {
+            character.yVelocity += 30 * Time.deltaTime;
+        }
+        else if (character.yVelocity > 30)
+        {
+            character.yVelocity = 30;
+        }
+
         if (currentTime < 2f)
         {
             currentTime += Time.deltaTime;
@@ -224,12 +233,18 @@ public class TransformState : State
     public override void PhysicsTick()
     {
         Vector3 target = new Vector3(0f, 0f, 0f);
-        character.momentum = Vector3.Lerp(character.momentum, target, 0.015f);
+        if (player.isGrounded)
+        {
+            character.momentum = Vector3.Lerp(character.momentum, target, 0.015f);
+        } else
+        {
+            character.momentum = Vector3.Lerp(character.momentum, target, 0.005f);
+        }
         if (character.momentum.x < 0.001f && character.momentum.x > -0.001f) { character.momentum.x = 0f; }
         if (character.momentum.z < 0.001f && character.momentum.z > -0.001f) { character.momentum.z = 0f; }
 
         player.Move(character.momentum * Time.fixedDeltaTime);
-        player.Move(Vector3.down * character.gravity * Time.fixedDeltaTime);
+        player.Move(Vector3.down * character.yVelocity * Time.fixedDeltaTime);
     }
 
     public override void OnStateExit()

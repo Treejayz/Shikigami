@@ -20,7 +20,7 @@ public class FoxJumpState : State {
     public override void OnStateEnter()
     {
         player = character.GetComponent<CharacterController>();
-        currentSpeed = jumpSpeed;
+        character.yVelocity = jumpSpeed * -1;
         character.foxAnimator.SetBool("Jumping", true);
         character.foxAnimator.Play("Fox_Jump_NRM", -1, .1f);
 
@@ -38,15 +38,15 @@ public class FoxJumpState : State {
         {
             direction = new Vector3(0f, 0f, 0f);
         }
-        if (currentSpeed > 0.0f)
+        if (character.yVelocity < 0.0f)
         {
             if (Input.GetAxis("Jump") != 0f)
             {
-                currentSpeed -= Gravity * Time.deltaTime;
+                character.yVelocity += Gravity * Time.deltaTime;
             }
             else
             {
-                currentSpeed -= fastGravity * Time.deltaTime;
+                character.yVelocity += fastGravity * Time.deltaTime;
             }
         }
         else
@@ -59,7 +59,7 @@ public class FoxJumpState : State {
     {
         character.momentum = Vector3.Lerp(character.momentum, direction * character.moveSpeed, 0.005f);
         player.Move(character.momentum * Time.fixedDeltaTime);
-        player.Move(Vector3.up * currentSpeed * Time.fixedDeltaTime);
+        player.Move(Vector3.down * character.yVelocity * Time.fixedDeltaTime);
     }
 
     public override void OnStateExit()

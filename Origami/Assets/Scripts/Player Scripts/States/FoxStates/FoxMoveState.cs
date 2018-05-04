@@ -15,6 +15,7 @@ public class FoxMoveState : State {
     {
         player = character.GetComponent<CharacterController>();
         character.foxAnimator.SetBool("Moving", true);
+        character.yVelocity = character.gravity;
     }
 
     public override void Tick()
@@ -65,16 +66,4 @@ public class FoxMoveState : State {
         player.Move(Vector3.down * character.gravity * Time.fixedDeltaTime);
     }
 
-    public override void OnColliderHit(ControllerColliderHit hit)
-    {
-        Vector3 hitNormal = hit.normal;
-        bool isGrounded = (Vector3.Angle(Vector3.up, hitNormal) <= player.slopeLimit);
-        if (!isGrounded && !player.isGrounded)
-        {
-            character.SetState(new FoxFallState(character));
-        }
-        else
-        {
-        }
-    }
 }

@@ -15,6 +15,7 @@ public class FrogIdleState : State {
         player = character.GetComponent<CharacterController>();
         character.frogAnimator.SetBool("Moving", false);
         character.frogAnimator.SetBool("Jumping", false);
+        character.yVelocity = character.gravity;
         // AkSoundEngine.PostEvent("FrogStick", character.gameObject);
         // POLISH GOAL - track time spent in fall or jump state. If greater than like 0.5 seconds, play sound.
     }
