@@ -111,6 +111,7 @@
 						<ObjectRef Name="FrogStick" ID="{994DDA88-97D8-4984-8781-A60E80A25D01}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Death" ID="{E326C055-9827-49BF-95C1-D65CC31E464C}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="FrogStep" ID="{538A09F6-2743-49E5-B2A7-1391B900666A}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="PlayerPuff" ID="{4D54732C-5F13-4A19-A602-B1761EA1505F}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="FoxJump" ID="{8FAF2597-0603-4A45-8608-587036C7DB35}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="StopShadowBall" ID="{063A744D-9A9A-4A4B-9998-65DFFE0BCC3C}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Tick" ID="{72173CC0-ECAB-4A88-BB42-0160C6FD91F5}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>

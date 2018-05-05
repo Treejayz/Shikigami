@@ -589,6 +589,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="PlayerPuff" ID="{4D54732C-5F13-4A19-A602-B1761EA1505F}">
+					<ChildrenList>
+						<Action Name="" ID="{11360009-F514-423D-8FFA-7278516070A6}" ShortID="24764209">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerPuff2" ID="{80EF2FB0-1391-469A-B77B-F0633013C553}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

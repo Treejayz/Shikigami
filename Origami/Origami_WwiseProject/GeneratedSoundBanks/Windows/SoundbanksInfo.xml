@@ -68,6 +68,7 @@
 				<Event Id="2582515549" Name="Pillar" ObjectPath="\Events\Default Work Unit\Pillar" MaxAttenuation="80.000000"/>
 				<Event Id="2933970505" Name="PlatDrop" ObjectPath="\Events\Default Work Unit\PlatDrop" MaxAttenuation="80.000000"/>
 				<Event Id="4040173943" Name="PlatSpawn" ObjectPath="\Events\Default Work Unit\PlatSpawn" MaxAttenuation="80.000000"/>
+				<Event Id="1749305239" Name="PlayerPuff" ObjectPath="\Events\Default Work Unit\PlayerPuff"/>
 				<Event Id="594977870" Name="ROOAAARRRR" ObjectPath="\Events\Default Work Unit\ROOAAARRRR"/>
 				<Event Id="3840406958" Name="ShadowBall" ObjectPath="\Events\Default Work Unit\ShadowBall" MaxAttenuation="80.000000"/>
 				<Event Id="160038168" Name="Splash" ObjectPath="\Events\Default Work Unit\Splash"/>
@@ -89,6 +90,10 @@
 				<File Id="30317786" Language="SFX">
 					<ShortName>shadowballhit02.wav</ShortName>
 					<Path>SFX\shadowballhit02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="41325519" Language="SFX">
+					<ShortName>PlayerPuff2.wav</ShortName>
+					<Path>SFX\PlayerPuff2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="54157248" Language="SFX">
 					<ShortName>FoxStep3_03.wav</ShortName>

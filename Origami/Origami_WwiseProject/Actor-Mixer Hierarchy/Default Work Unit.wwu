@@ -2082,6 +2082,25 @@
 						<ActiveSource Name="DragonDeath01" ID="{18981C49-427C-43A9-8782-DDFC55131F2C}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="PlayerPuff2" ID="{80EF2FB0-1391-469A-B77B-F0633013C553}" ShortID="939172916">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{459AA571-26D2-4CCC-9C35-BADC4941A5A6}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{A22E32AA-C0DA-43F0-973C-80269745EF90}" WorkUnitID="{2B645DEC-2821-422E-ADF4-2D2E1382CDB2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="PlayerPuff2" ID="{76007F06-FDB7-4D2C-8D06-CA146B18BB32}" ShortID="41325519">
+							<Language>SFX</Language>
+							<AudioFile>PlayerPuff2.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="PlayerPuff2" ID="{76007F06-FDB7-4D2C-8D06-CA146B18BB32}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

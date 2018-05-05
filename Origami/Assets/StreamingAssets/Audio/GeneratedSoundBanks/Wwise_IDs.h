@@ -36,6 +36,7 @@ namespace AK
         static const AkUniqueID PILLAR = 2582515549U;
         static const AkUniqueID PLATDROP = 2933970505U;
         static const AkUniqueID PLATSPAWN = 4040173943U;
+        static const AkUniqueID PLAYERPUFF = 1749305239U;
         static const AkUniqueID RESETHPMUSIC = 3000620399U;
         static const AkUniqueID ROOAAARRRR = 594977870U;
         static const AkUniqueID SHADOWBALL = 3840406958U;

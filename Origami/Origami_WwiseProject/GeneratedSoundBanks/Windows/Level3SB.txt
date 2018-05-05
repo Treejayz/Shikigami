@@ -9,6 +9,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1304366647	longPillar			\Default Work Unit\longPillar	
 	1422622395	Transform			\Default Work Unit\Transform	
 	1571412035	WindStop			\Default Work Unit\WindStop	
+	1749305239	PlayerPuff			\Default Work Unit\PlayerPuff	
 	1880194273	FrogStick			\Default Work Unit\FrogStick	
 	1942692385	Dash			\Default Work Unit\Dash	
 	2412658343	FoxTrot			\Default Work Unit\FoxTrot	
@@ -37,6 +38,7 @@ Effect plug-ins	ID	Name	Type				Notes
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	4082871	Wingflap03	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\Wingflap03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFlap\Wingflap03		29074
 	30317786	shadowballhit02	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\shadowballhit02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\shadowballhit02		327076
+	41325519	PlayerPuff2	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\PlayerPuff2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerPuff2		1441700
 	54157248	FoxStep3_03	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\FoxStep3_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFoxStep\FoxStep3_03		29248
 	95738087	BigPickup01	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\BigPickup01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\BigPickup01		341064
 	127240437	GenFlap2	C:\Users\Katadeus\Desktop\Origame\Origami-Origame\Origami\Origami_WwiseProject\.cache\Windows\SFX\GenFlap2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RandomFlap\GenFlap2		167208

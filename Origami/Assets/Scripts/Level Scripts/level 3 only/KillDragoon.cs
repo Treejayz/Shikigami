@@ -100,6 +100,7 @@ public class KillDragoon : MonoBehaviour {
         parts[1].Play();
         parts[2].Play();
         player.SetActive(false);
+        AkSoundEngine.PostEvent("PlayerPuff", particles.gameObject);
 
         yield return new WaitForSeconds(3f);
         cam.transform.position = new Vector3(-370f, 110f, 155f);
