@@ -55,9 +55,9 @@ public class Collectable : MonoBehaviour {
     {
         switch (Type)
         {
-				case (CollectableType.PIECE):
+		case (CollectableType.PIECE):
 				if (CollectableManager.paperPieces == 0) {
-					GetComponentInParent<FirstScrapCheck> ().Display ();
+					GameObject.Find ("TutorialDisplay").GetComponent<TutorialDisplay> ().AddToQueue ("Collects extra pieces of the spellbook to gain bonus knowledge about the two spirits!");
 				}
                 CollectableManager.Collect(Type);
                 GetComponent<ParticleSystem>().Play();
@@ -69,6 +69,9 @@ public class Collectable : MonoBehaviour {
                 break;
 
             case (CollectableType.SCRAP):
+				if (CollectableManager.scrapPieces == 0) {
+					GameObject.Find ("TutorialDisplay").GetComponent<TutorialDisplay> ().AddToQueue ("Gather small scraps to fix the pages of the storybook!");
+				}
                 CollectableManager.Collect(Type);
                 GetComponent<ParticleSystem>().Play();
                 GetComponent<Collider>().enabled = false;

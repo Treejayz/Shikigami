@@ -531,27 +531,64 @@ Prefab:
       propertyPath: m_SortingOrder
       value: -2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114378297945369290, guid: 7d8834efc087f904eb2806623e4ab89e, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 7d8834efc087f904eb2806623e4ab89e, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &568111084 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1479060186495628, guid: 7d8834efc087f904eb2806623e4ab89e,
+    type: 2}
+  m_PrefabInternal: {fileID: 568111083}
+--- !u!1 &568111085 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1871355580567026, guid: 7d8834efc087f904eb2806623e4ab89e,
+    type: 2}
+  m_PrefabInternal: {fileID: 568111083}
+--- !u!114 &568111086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 568111084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dd7d65a76ceb5b4a9f6d51eb624ec19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayCanvas: {fileID: 568111085}
+  displaytime: 0
+  message: It's entirely possible Toriel's said the f-word before. There's no way
+    of knowing. it's one of life's greatest mysteries
+--- !u!114 &568111087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 568111085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fdab70072d226d45b42e748c26a7021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &588073827
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2035757892}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4359155469790622, guid: 4f24c7f06bf4b2148ac8935856112721, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 12.971333
       objectReference: {fileID: 0}
     - target: {fileID: 4359155469790622, guid: 4f24c7f06bf4b2148ac8935856112721, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.73
       objectReference: {fileID: 0}
     - target: {fileID: 4359155469790622, guid: 4f24c7f06bf4b2148ac8935856112721, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -12.839364
       objectReference: {fileID: 0}
     - target: {fileID: 4359155469790622, guid: 4f24c7f06bf4b2148ac8935856112721, type: 2}
       propertyPath: m_LocalRotation.x
@@ -571,7 +608,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4359155469790622, guid: 4f24c7f06bf4b2148ac8935856112721, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 198252058229993880, guid: 4f24c7f06bf4b2148ac8935856112721,
         type: 2}
@@ -726,11 +763,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4181072171578106, guid: 45b80ecd4e0c7cd4d9d50d587a9067d2,
     type: 2}
   m_PrefabInternal: {fileID: 2071560681}
---- !u!4 &806681256 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4359155469790622, guid: 4f24c7f06bf4b2148ac8935856112721,
-    type: 2}
-  m_PrefabInternal: {fileID: 588073827}
 --- !u!1 &878887748 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1118020109444334, guid: 45b80ecd4e0c7cd4d9d50d587a9067d2,
@@ -2269,47 +2301,6 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!1 &2035757890
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2035757892}
-  - component: {fileID: 2035757891}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2035757891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2035757890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a49fea046a7cb3146b29221428b5fd86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &2035757892
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2035757890}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.971333, y: 1.73, z: -12.839364}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 806681256}
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2071560681
 Prefab:
   m_ObjectHideFlags: 0

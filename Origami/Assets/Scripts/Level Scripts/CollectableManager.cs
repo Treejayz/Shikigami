@@ -96,7 +96,7 @@ public static class CollectableManager {
     {
         switch(type)
         {
-				case Collectable.CollectableType.PIECE:
+		case Collectable.CollectableType.PIECE:
 				GameObject.Find ("PieceDisplay").GetComponent<ScrapDisplay> ().collect (Time.time);
                 paperPieces += 1;
                 MonoBehaviour.print(paperPieces);

@@ -1734,6 +1734,17 @@ GameObject:
   m_PrefabParentObject: {fileID: 1871355580567026, guid: 7d8834efc087f904eb2806623e4ab89e,
     type: 2}
   m_PrefabInternal: {fileID: 318098676}
+--- !u!114 &60347543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 60347542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fdab70072d226d45b42e748c26a7021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &64990173
 GameObject:
   m_ObjectHideFlags: 0
@@ -14856,7 +14867,8 @@ Prefab:
       propertyPath: m_SortingOrder
       value: -2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114378297945369290, guid: 7d8834efc087f904eb2806623e4ab89e, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 7d8834efc087f904eb2806623e4ab89e, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &320709058
@@ -25681,8 +25693,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 711045223}
-  - component: {fileID: 711045225}
   - component: {fileID: 711045224}
+  - component: {fileID: 711045225}
   m_Layer: 0
   m_Name: TorielTrigger (1)
   m_TagString: Untagged
@@ -25720,19 +25732,16 @@ BoxCollider:
 --- !u!114 &711045225
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114378297945369290, guid: 7d8834efc087f904eb2806623e4ab89e,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 711045222}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fdab70072d226d45b42e748c26a7021, type: 3}
+  m_Script: {fileID: 11500000, guid: 6dd7d65a76ceb5b4a9f6d51eb624ec19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayText: Press the Spacebar or <size=26>a</size> button to jump, and hold to
-    glide
   displayCanvas: {fileID: 60347542}
-  displaytime: 3
+  message: Press the Spacebar or <size=26>a</size> button to jump, and hold to glide
 --- !u!1001 &715538642
 Prefab:
   m_ObjectHideFlags: 0
@@ -26321,7 +26330,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 744442056}
-  - component: {fileID: 744442057}
   m_Layer: 0
   m_Name: Paper Pieces
   m_TagString: Untagged
@@ -26350,17 +26358,6 @@ Transform:
   m_Father: {fileID: 1685344024}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &744442057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 744442055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a49fea046a7cb3146b29221428b5fd86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &744719589
 GameObject:
   m_ObjectHideFlags: 0
@@ -31897,8 +31894,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 974436433}
-  - component: {fileID: 974436435}
   - component: {fileID: 974436434}
+  - component: {fileID: 974436435}
   m_Layer: 0
   m_Name: TorielTrigger (2)
   m_TagString: Untagged
@@ -31936,19 +31933,16 @@ BoxCollider:
 --- !u!114 &974436435
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114378297945369290, guid: 7d8834efc087f904eb2806623e4ab89e,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 974436432}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fdab70072d226d45b42e748c26a7021, type: 3}
+  m_Script: {fileID: 11500000, guid: 6dd7d65a76ceb5b4a9f6d51eb624ec19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayText: Press Left Shift or Right Trigger to Dash, so you can cross larger
-    gaps
   displayCanvas: {fileID: 60347542}
-  displaytime: 3
+  message: Press Left Shift or Right Trigger to Dash, so you can cross larger gaps
 --- !u!1 &974942292
 GameObject:
   m_ObjectHideFlags: 0
@@ -42661,7 +42655,7 @@ GameObject:
   m_PrefabParentObject: {fileID: 1043901087679176, guid: e59895e4b74763e41a6fa0a058e97bf8,
     type: 2}
   m_PrefabInternal: {fileID: 951042278}
---- !u!114 &1379935975
+--- !u!114 &1379935970
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -42669,13 +42663,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1379935969}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9fdab70072d226d45b42e748c26a7021, type: 3}
+  m_Script: {fileID: 11500000, guid: 6dd7d65a76ceb5b4a9f6d51eb624ec19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  displayText: As a frog, you can jump higher, as well as stick to walls and jump
-    off them!
   displayCanvas: {fileID: 60347542}
-  displaytime: 5
+  message: As a frog, you can jump higher, as well as stick to walls and jump off
+    them!
 --- !u!4 &1380290707 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4240680573625412, guid: 771303eacddba5d4fb0f993cb0c5d4ac,
@@ -51342,6 +51335,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 60, y: 20, z: 60}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1641905716 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1479060186495628, guid: 7d8834efc087f904eb2806623e4ab89e,
+    type: 2}
+  m_PrefabInternal: {fileID: 318098676}
+--- !u!114 &1641905718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1641905716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dd7d65a76ceb5b4a9f6d51eb624ec19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayCanvas: {fileID: 60347542}
+  message: Use the mouse or Right Thumb Stick to look around, and WASD or Left Thumb
+    Stick to move
 --- !u!4 &1642255313 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4240680573625412, guid: 771303eacddba5d4fb0f993cb0c5d4ac,

@@ -44,6 +44,9 @@ public class Checkpoint : MonoBehaviour {
 
 		}
 		else if (page3){
+			if (CollectableManager.spellpage3pieces == 0) {
+				GameObject.Find ("TutorialDisplay").GetComponent<TutorialDisplay> ().AddToQueue ("Collect Pieces of the spellbook to save your progress and defeat Kuma.");
+			}
 			CollectableManager.spellpage3pieces++;
 			if (CollectableManager.spellpage3pieces == CollectableManager.spellpage3piecemax) { 
 				CollectableManager.spellbookpages [2] = true;
