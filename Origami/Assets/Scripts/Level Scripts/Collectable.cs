@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Collectable : MonoBehaviour {
 
@@ -56,7 +57,7 @@ public class Collectable : MonoBehaviour {
         switch (Type)
         {
 		case (CollectableType.PIECE):
-				if (CollectableManager.paperPieces == 0) {
+			if (SceneManager.GetActiveScene().name != "Level 3" && CollectableManager.paperPieces == 0) {
 					GameObject.Find ("TutorialDisplay").GetComponent<TutorialDisplay> ().AddToQueue ("Collects extra pieces of the spellbook to gain bonus knowledge about the two spirits!");
 				}
                 CollectableManager.Collect(Type);
@@ -69,7 +70,7 @@ public class Collectable : MonoBehaviour {
                 break;
 
             case (CollectableType.SCRAP):
-				if (CollectableManager.scrapPieces == 0) {
+				if (SceneManager.GetActiveScene().name != "Level 3" && CollectableManager.scrapPieces == 0) {
 					GameObject.Find ("TutorialDisplay").GetComponent<TutorialDisplay> ().AddToQueue ("Gather small scraps to fix the pages of the storybook!");
 				}
                 CollectableManager.Collect(Type);
