@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -948,7 +948,7 @@ RectTransform:
   m_Children:
   - {fileID: 103790839}
   m_Father: {fileID: 1548118626}
-  m_RootOrder: 2
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1131,12 +1131,12 @@ RectTransform:
   m_Children:
   - {fileID: 23688200}
   m_Father: {fileID: 1548118626}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.000030517578, y: 0.000015258789}
-  m_SizeDelta: {x: 100, y: 25}
+  m_SizeDelta: {x: 90, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1072442842
 MonoBehaviour:
@@ -1165,9 +1165,9 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_SelectOnUp: {fileID: 2106823587}
-    m_SelectOnDown: {fileID: 3308152}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 2103026186}
+    m_SelectOnDown: {fileID: 1793737126}
+    m_SelectOnLeft: {fileID: 804165718}
+    m_SelectOnRight: {fileID: 804165718}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -1624,12 +1624,12 @@ RectTransform:
   m_Children:
   - {fileID: 1063974426}
   m_Father: {fileID: 1548118626}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 204, y: -159}
-  m_SizeDelta: {x: 100, y: 25}
+  m_SizeDelta: {x: 90, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2103026185
 MonoBehaviour:
@@ -1657,10 +1657,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 4
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 804165718}
-    m_SelectOnRight: {fileID: 0}
+    m_SelectOnUp: {fileID: 3308152}
+    m_SelectOnDown: {fileID: 804165718}
+    m_SelectOnLeft: {fileID: 2106823587}
+    m_SelectOnRight: {fileID: 2106823587}
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -1772,12 +1772,12 @@ RectTransform:
   m_Children:
   - {fileID: 1136224404}
   m_Father: {fileID: 1548118626}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 25}
+  m_SizeDelta: {x: 90, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2106823586
 MonoBehaviour:
@@ -1807,7 +1807,7 @@ MonoBehaviour:
     m_Mode: 4
     m_SelectOnUp: {fileID: 1793737126}
     m_SelectOnDown: {fileID: 1072442843}
-    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnLeft: {fileID: 2103026186}
     m_SelectOnRight: {fileID: 2103026186}
   m_Transition: 1
   m_Colors:
@@ -2122,17 +2122,17 @@ Prefab:
     - target: {fileID: 224031439495886036, guid: af4b16824eb5bbc499c0275bc55c9e7e,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 224392762734798534, guid: af4b16824eb5bbc499c0275bc55c9e7e,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 224503521212757712, guid: af4b16824eb5bbc499c0275bc55c9e7e,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 114696247625896572, guid: af4b16824eb5bbc499c0275bc55c9e7e,
         type: 2}
@@ -2218,17 +2218,17 @@ Prefab:
         type: 2}
       propertyPath: m_Navigation.m_SelectOnRight
       value: 
-      objectReference: {fileID: 2103026186}
+      objectReference: {fileID: 1793737126}
     - target: {fileID: 114696247625896572, guid: af4b16824eb5bbc499c0275bc55c9e7e,
         type: 2}
       propertyPath: m_Navigation.m_SelectOnRight
       value: 
-      objectReference: {fileID: 2103026186}
+      objectReference: {fileID: 3308152}
     - target: {fileID: 114922133298376846, guid: af4b16824eb5bbc499c0275bc55c9e7e,
         type: 2}
       propertyPath: m_Navigation.m_SelectOnRight
       value: 
-      objectReference: {fileID: 2103026186}
+      objectReference: {fileID: 1072442843}
     - target: {fileID: 114696247625896572, guid: af4b16824eb5bbc499c0275bc55c9e7e,
         type: 2}
       propertyPath: m_Navigation.m_SelectOnDown
@@ -2238,27 +2238,27 @@ Prefab:
         type: 2}
       propertyPath: m_Navigation.m_SelectOnDown
       value: 
-      objectReference: {fileID: 804165718}
+      objectReference: {fileID: 2103026186}
     - target: {fileID: 114922133298376846, guid: af4b16824eb5bbc499c0275bc55c9e7e,
         type: 2}
       propertyPath: m_Navigation.m_SelectOnDown
       value: 
-      objectReference: {fileID: 1793737126}
+      objectReference: {fileID: 3308152}
     - target: {fileID: 114922133298376846, guid: af4b16824eb5bbc499c0275bc55c9e7e,
         type: 2}
       propertyPath: m_Navigation.m_SelectOnUp
       value: 
-      objectReference: {fileID: 3308152}
+      objectReference: {fileID: 2103026186}
     - target: {fileID: 114696247625896572, guid: af4b16824eb5bbc499c0275bc55c9e7e,
         type: 2}
       propertyPath: m_Navigation.m_SelectOnUp
       value: 
-      objectReference: {fileID: 804165718}
+      objectReference: {fileID: 1072442843}
     - target: {fileID: 114972803601191966, guid: af4b16824eb5bbc499c0275bc55c9e7e,
         type: 2}
       propertyPath: m_Navigation.m_SelectOnUp
       value: 
-      objectReference: {fileID: 1072442843}
+      objectReference: {fileID: 804165718}
     - target: {fileID: 114972803601191966, guid: af4b16824eb5bbc499c0275bc55c9e7e,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -2289,6 +2289,21 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 1495755826}
+    - target: {fileID: 114696247625896572, guid: af4b16824eb5bbc499c0275bc55c9e7e,
+        type: 2}
+      propertyPath: m_Navigation.m_SelectOnLeft
+      value: 
+      objectReference: {fileID: 3308152}
+    - target: {fileID: 114972803601191966, guid: af4b16824eb5bbc499c0275bc55c9e7e,
+        type: 2}
+      propertyPath: m_Navigation.m_SelectOnLeft
+      value: 
+      objectReference: {fileID: 1793737126}
+    - target: {fileID: 114922133298376846, guid: af4b16824eb5bbc499c0275bc55c9e7e,
+        type: 2}
+      propertyPath: m_Navigation.m_SelectOnLeft
+      value: 
+      objectReference: {fileID: 1072442843}
     m_RemovedComponents:
     - {fileID: 114882435864229830, guid: af4b16824eb5bbc499c0275bc55c9e7e, type: 2}
     - {fileID: 114919600006899242, guid: af4b16824eb5bbc499c0275bc55c9e7e, type: 2}

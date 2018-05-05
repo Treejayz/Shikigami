@@ -50,39 +50,30 @@ public class BookSystem : MonoBehaviour {
 			}
 		}
 		if (active) {
+			next.gameObject.GetComponent<Button> ().enabled = true;
+			next.gameObject.GetComponent<Image> ().enabled = true;
+			prev.gameObject.GetComponent<Button> ().enabled = true;
+			prev.gameObject.GetComponent<Image> ().enabled = true;
 			Navigation nav = back.GetComponentInChildren<Button> ().navigation;
-			if (active && activepage1 == -1) {
-				nav.selectOnUp = next;
-			} else {
-				nav.selectOnUp = prev;
-			}
+			nav.selectOnUp = prev;
 			nav.selectOnRight = swapbutton;
 			nav.selectOnLeft = swapbutton;
 			back.GetComponentInChildren<Button> ().navigation = nav;
 
-			nav = swapbutton.GetComponentInChildren<Button> ().navigation;
-			if (active && activepage2 == pages.Length-1) {
-				nav.selectOnUp = prev;
-			} else {
-				nav.selectOnUp = next;
-			}
+			nav = swapbutton.GetComponentInChildren<Button> ().navigation;nav.selectOnUp = next;
 			swapbutton.GetComponentInChildren<Button> ().navigation = nav;
 
 			swapbutton.gameObject.GetComponent<Button> ().enabled = true;
 			swapbutton.gameObject.GetComponent<Image> ().enabled = true;
 			if (activepage1 <= -1) {
-				prev.gameObject.GetComponent<Button> ().enabled = false;
-				prev.gameObject.GetComponent<Image> ().enabled = false;
+				prev.gameObject.GetComponent<Button> ().interactable = false;
 			} else {
-				prev.gameObject.GetComponent<Button> ().enabled = true;
-				prev.gameObject.GetComponent<Image> ().enabled = true;
+				prev.gameObject.GetComponent<Button> ().interactable = true;
 			}
 			if (activepage2 >= pages.Length -1) {
-				next.gameObject.GetComponent<Button> ().enabled = false;
-				next.gameObject.GetComponent<Image> ().enabled = false;
+				next.gameObject.GetComponent<Button> ().interactable = false;
 			} else {
-				next.gameObject.GetComponent<Button> ().enabled = true;
-				next.gameObject.GetComponent<Image> ().enabled = true;
+				next.gameObject.GetComponent<Button> ().interactable = true;
 			}
 		} else if(!otherBook.GetComponent<BookSystem>().isactive()){
 			Navigation nav = back.GetComponentInChildren<Button> ().navigation;
@@ -105,6 +96,7 @@ public class BookSystem : MonoBehaviour {
 			activepage2++;
 			if (active && activepage2 == pages.Length-1){
 				GameObject.Find("EventSystem").GetComponent<UnityEngine.EventSystems.EventSystem> ().SetSelectedGameObject (GameObject.Find ("Previous"));
+				next.gameObject.GetComponent<Button> ().interactable = false;
 			}
 		}
 	}
@@ -114,6 +106,7 @@ public class BookSystem : MonoBehaviour {
 			activepage2--;
 			if (active && activepage1 == -1){
 				GameObject.Find("EventSystem").GetComponent<UnityEngine.EventSystems.EventSystem> ().SetSelectedGameObject (GameObject.Find ("Next"));
+				prev.gameObject.GetComponent<Button> ().interactable = false;
 			}
 		}
 	}
