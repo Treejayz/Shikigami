@@ -8,6 +8,8 @@ public class CutscenePlayer : MonoBehaviour {
     bool playing;
 
     public GameObject FUCKINGGARBAGEAGAHAHGAGA;
+
+	public GameObject other;
     float speed;
 
 	// Use this for initialization
@@ -72,7 +74,7 @@ public class CutscenePlayer : MonoBehaviour {
         AkSoundEngine.PostEvent("Cutscene", cam);
         cam.GetComponent<UnityEngine.Video.VideoPlayer>().Play();
         playing = true;
-
+		other.SetActive (false);
         for (int i = 0; i < transform.childCount; i++)
         {
             transform.GetChild(i).gameObject.SetActive(false);
