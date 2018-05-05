@@ -99,6 +99,7 @@
 						<ObjectRef Name="WingJump" ID="{DDFEB236-29F6-46B0-96D4-8DD54FCC1DAD}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="WindStop" ID="{B944F94E-E789-4730-83ED-FCDD96E9B978}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Transform" ID="{ED9DC825-B63B-4760-BA3E-C4C67AC3E5B8}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="DragoonDeath" ID="{31724FA8-4823-47BF-9D0E-E10F69760BE8}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Flap" ID="{03F77E6D-03B0-4813-9DC7-3856C98A67FA}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PlatSpawn" ID="{56D084E5-23ED-4832-B513-303487B2DEB8}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="BigPickup" ID="{1E5CAF6C-9784-483F-A6A3-1C55D33A67A9}" WorkUnitID="{3838D55C-4A81-4825-8DB4-A33597820612}" Filter="7" Origin="Manual"/>

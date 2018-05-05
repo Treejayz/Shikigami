@@ -67,6 +67,7 @@ public class KillDragoon : MonoBehaviour {
 
         // Do things over time
         dragon.GetComponentInChildren<Animator>().Play("Dragon_Roar", 0, 0f);
+        AkSoundEngine.PostEvent("DragoonDeath", dragon.gameObject);
         float currentTime = 0f;
         float t = 0f;
         while (currentTime < 3f)

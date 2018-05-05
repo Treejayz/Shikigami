@@ -54,6 +54,7 @@
 				<Event Id="2577690848" Name="BossBattleStart" ObjectPath="\Events\Default Work Unit\BossBattleStart"/>
 				<Event Id="1942692385" Name="Dash" ObjectPath="\Events\Default Work Unit\Dash"/>
 				<Event Id="779278001" Name="Death" ObjectPath="\Events\Default Work Unit\Death"/>
+				<Event Id="3871891889" Name="DragoonDeath" ObjectPath="\Events\Default Work Unit\DragoonDeath"/>
 				<Event Id="2931383628" Name="Flap" ObjectPath="\Events\Default Work Unit\Flap"/>
 				<Event Id="3836640104" Name="FoxJump" ObjectPath="\Events\Default Work Unit\FoxJump"/>
 				<Event Id="2412658343" Name="FoxTrot" ObjectPath="\Events\Default Work Unit\FoxTrot"/>
@@ -104,6 +105,10 @@
 				<File Id="130902425" Language="SFX">
 					<ShortName>shadowball02.wav</ShortName>
 					<Path>SFX\shadowball02_F17FB28C.wem</Path>
+				</File>
+				<File Id="146408753" Language="SFX">
+					<ShortName>DragonDeath01.wav</ShortName>
+					<Path>SFX\DragonDeath01_1C9C67B2.wem</Path>
 				</File>
 				<File Id="184370491" Language="SFX">
 					<ShortName>GenFlap3.wav</ShortName>

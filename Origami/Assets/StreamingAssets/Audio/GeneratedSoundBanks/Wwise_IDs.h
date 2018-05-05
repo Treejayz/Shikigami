@@ -19,6 +19,7 @@ namespace AK
         static const AkUniqueID CUTSCENE = 1182958561U;
         static const AkUniqueID DASH = 1942692385U;
         static const AkUniqueID DEATH = 779278001U;
+        static const AkUniqueID DRAGOONDEATH = 3871891889U;
         static const AkUniqueID FLAP = 2931383628U;
         static const AkUniqueID FOXJUMP = 3836640104U;
         static const AkUniqueID FOXTROT = 2412658343U;
