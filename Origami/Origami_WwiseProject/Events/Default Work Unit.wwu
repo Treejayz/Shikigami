@@ -575,6 +575,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="DragoonDeath" ID="{31724FA8-4823-47BF-9D0E-E10F69760BE8}">
+					<ChildrenList>
+						<Action Name="" ID="{A5384E75-A1BF-4E7D-AACF-B54D4F32E856}" ShortID="224930861">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DragonDeath01" ID="{802AFBFA-3C3E-4AF1-AAB7-349F68C700C7}" WorkUnitID="{162E1C97-F956-4AA0-85C6-A7FDC0CB1A2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
