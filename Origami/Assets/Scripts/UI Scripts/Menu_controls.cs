@@ -16,16 +16,22 @@ public class Menu_controls : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (GameObject.Find("EventSystem").GetComponent<EventSystem>().currentSelectedGameObject == null)
+        if (GameObject.Find("EventSystem").GetComponent<EventSystem>().currentSelectedGameObject == null)
         {
-            if (Input.anyKeyDown || Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f)
+            if (GameObject.Find("Pause Menu Overseer") == null)
             {
-                lastSelected.GetComponent<Selectable>().Select();
+                if (Input.anyKeyDown || Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f)
+                {
+                    lastSelected.GetComponent<Selectable>().Select();
+                }
             }
-        } else
+        } 
+
+        else
         {
             lastSelected = GameObject.Find("EventSystem").GetComponent<EventSystem>().currentSelectedGameObject;
         }
+
 	}
 
 	public void setMenuSelect(GameObject button){

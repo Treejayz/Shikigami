@@ -46,7 +46,7 @@ public class ShadowFire : MonoBehaviour {
                 }
                 break;
             case FireType.PILLARSTILL:
-                if (fireTime > .1f && !recharge)
+                if (fireTime > 2f && !recharge)
                 {
                     //if (Vector3.Distance(player.transform.position, playerPositionOld) < .1f)
                     if (player.GetComponent<Character>().momentum.magnitude < 1f)
