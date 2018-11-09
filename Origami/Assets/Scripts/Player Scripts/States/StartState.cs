@@ -53,7 +53,7 @@ public class StartState : State
 
         if (!pressed)
         {
-            if (Input.anyKeyDown)
+            if (Input.anyKeyDown || Input.GetAxis("Ability1") != 0f || Input.GetAxis("Ability2") != 0f || Input.GetAxis("Horizontal") != 0f || Input.GetAxis("Vertical") != 0f)
             {
                 pressed = true;
                 craneAnimator.GetComponent<Animator>().SetFloat("Speed", -1f);
