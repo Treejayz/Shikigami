@@ -15,6 +15,7 @@ public class TutorialButtons : MonoBehaviour {
     float currentAlpha = 0f;
 
     public bool needFrog = false;
+    public bool needFox = false;
     public bool onlyOnce = false;
 
     bool active = true;
@@ -38,6 +39,7 @@ public class TutorialButtons : MonoBehaviour {
         if (other.gameObject.tag == "Player" && active)
         {
             if (needFrog && !other.GetComponent<Character>().canFrog) { return; }
+            if (needFox && !other.GetComponent<Character>().canFox) { return; }
             StopAllCoroutines();
             StartCoroutine("FadeIn");
         }
