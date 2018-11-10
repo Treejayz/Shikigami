@@ -14,6 +14,11 @@ public class TutorialButtons : MonoBehaviour {
 
     float currentAlpha = 0f;
 
+    public bool needFrog = false;
+    public bool onlyOnce = false;
+
+    bool active = true;
+
     private void Start()
     {
         startColor = text.color;
@@ -30,8 +35,9 @@ public class TutorialButtons : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && active)
         {
+            if (needFrog && !other.GetComponent<Character>().canFrog) { return; }
             StopAllCoroutines();
             StartCoroutine("FadeIn");
         }
@@ -43,6 +49,7 @@ public class TutorialButtons : MonoBehaviour {
         {
             StopAllCoroutines();
             StartCoroutine("FadeOut");
+            if (onlyOnce) { active = false; }
         }
     }
 
