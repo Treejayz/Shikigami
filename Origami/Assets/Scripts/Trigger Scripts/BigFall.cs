@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TutorialButtons : MonoBehaviour {
+public class BigFall : MonoBehaviour {
+
+    public GameObject player;
 
     public Text text;
     Color startColor;
@@ -11,11 +13,18 @@ public class TutorialButtons : MonoBehaviour {
     public Image image;
     Color imageColor;
 
-
     float currentAlpha = 0f;
 
-    private void Start()
-    {
+    Character playerCharacter;
+    bool falling = false;
+    Vector3 startPos;
+
+    public bool active = false;
+
+	// Use this for initialization
+	void Start () {
+        playerCharacter = player.GetComponent<Character>();
+
         startColor = text.color;
         Color temp = startColor;
         temp.a = 0f;
@@ -25,28 +34,44 @@ public class TutorialButtons : MonoBehaviour {
         temp = imageColor;
         temp.a = 0f;
         image.color = temp;
-    }
 
+    }
+	
+	// Update is called once per frame
+	void Update () {
+        if (active)
+        {
+            if (!falling && playerCharacter.falling)
+            {
+                falling = true;
+                startPos = player.transform.position;
+            }
+            if (falling)
+            {
+                if (!playerCharacter.falling)
+                {
+                    falling = false;
+                    float fallDistance = startPos.y - player.transform.position.y;
+                    if (fallDistance > 35f)
+                    {
+                        StopAllCoroutines();
+                        StartCoroutine("Appear");
+                    }
+                }
+            }
+        }
+	}
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            StopAllCoroutines();
-            StartCoroutine("FadeIn");
+            active = true;
         }
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.tag == "Player")
-        {
-            StopAllCoroutines();
-            StartCoroutine("FadeOut");
-        }
-    }
 
-    IEnumerator FadeIn()
+    IEnumerator Appear()
     {
         Color temp;
         while (currentAlpha < 1f)
@@ -67,15 +92,12 @@ public class TutorialButtons : MonoBehaviour {
         temp = startColor;
         temp.a = currentAlpha;
         text.color = temp;
-
         temp = imageColor;
         temp.a = currentAlpha;
         image.color = temp;
-    }
 
-    IEnumerator FadeOut()
-    {
-        Color temp;
+        yield return new WaitForSeconds(3f);
+
         while (currentAlpha > 0f)
         {
             temp = startColor;
@@ -98,5 +120,4 @@ public class TutorialButtons : MonoBehaviour {
         temp.a = currentAlpha;
         image.color = temp;
     }
-
 }

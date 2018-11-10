@@ -20,6 +20,7 @@ public class FoxFallState : State {
 
     public override void OnStateEnter()
     {
+        character.falling = true;
         player = character.GetComponent<CharacterController>();
         fallSpeed = 0.0f;
         character.foxAnimator.SetBool("Jumping", true);
@@ -56,6 +57,7 @@ public class FoxFallState : State {
 
     public override void OnStateExit()
     {
+        character.falling = false;
         character.jumped = true;
         character.foxAnimator.SetBool("Jumping", false);
     }
