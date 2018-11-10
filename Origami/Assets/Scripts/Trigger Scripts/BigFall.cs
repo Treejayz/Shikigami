@@ -96,7 +96,7 @@ public class BigFall : MonoBehaviour {
         temp.a = currentAlpha;
         image.color = temp;
 
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(5f);
 
         while (currentAlpha > 0f)
         {
