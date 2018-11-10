@@ -1,0 +1,879 @@
+fileFormatVersion: 2
+guid: 2fe670a826fcc2d4c8cf447674e4a5ee
+timeCreated: 1541882245
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: big_shroom
+    100002: Custom_Tree:AL05a
+    100004: Custom_Tree:AL05a_Roots21
+    100006: Custom_Tree:AL05a_Trunk1
+    100008: lil_shroom
+    100010: Moss
+    100012: mosss
+    100014: mosss1
+    100016: mosss10
+    100018: mosss11
+    100020: mosss2
+    100022: mosss3
+    100024: mosss4
+    100026: mosss5
+    100028: mosss6
+    100030: mosss7
+    100032: mosss8
+    100034: mosss9
+    100036: pDisc1
+    100038: pDisc1 1
+    100040: pDisc1 10
+    100042: pDisc1 2
+    100044: pDisc1 3
+    100046: pDisc1 4
+    100048: pDisc1 5
+    100050: pDisc1 6
+    100052: pDisc1 7
+    100054: pDisc1 8
+    100056: pDisc1 9
+    100058: pDisc10
+    100060: pDisc10 1
+    100062: pDisc10 10
+    100064: pDisc10 2
+    100066: pDisc10 3
+    100068: pDisc10 4
+    100070: pDisc10 5
+    100072: pDisc10 6
+    100074: pDisc10 7
+    100076: pDisc10 8
+    100078: pDisc10 9
+    100080: pDisc11
+    100082: pDisc11 1
+    100084: pDisc11 10
+    100086: pDisc11 11
+    100088: pDisc11 2
+    100090: pDisc11 3
+    100092: pDisc11 4
+    100094: pDisc11 5
+    100096: pDisc11 6
+    100098: pDisc11 7
+    100100: pDisc11 8
+    100102: pDisc11 9
+    100104: pDisc13
+    100106: pDisc13 1
+    100108: pDisc13 10
+    100110: pDisc13 11
+    100112: pDisc13 2
+    100114: pDisc13 3
+    100116: pDisc13 4
+    100118: pDisc13 5
+    100120: pDisc13 6
+    100122: pDisc13 7
+    100124: pDisc13 8
+    100126: pDisc13 9
+    100128: pDisc2
+    100130: pDisc2 1
+    100132: pDisc2 10
+    100134: pDisc2 11
+    100136: pDisc2 2
+    100138: pDisc2 3
+    100140: pDisc2 4
+    100142: pDisc2 5
+    100144: pDisc2 6
+    100146: pDisc2 7
+    100148: pDisc2 8
+    100150: pDisc2 9
+    100152: pDisc3
+    100154: pDisc3 1
+    100156: pDisc3 10
+    100158: pDisc3 11
+    100160: pDisc3 2
+    100162: pDisc3 3
+    100164: pDisc3 4
+    100166: pDisc3 5
+    100168: pDisc3 6
+    100170: pDisc3 7
+    100172: pDisc3 8
+    100174: pDisc3 9
+    100176: pDisc4
+    100178: pDisc4 1
+    100180: pDisc4 10
+    100182: pDisc4 11
+    100184: pDisc4 2
+    100186: pDisc4 3
+    100188: pDisc4 4
+    100190: pDisc4 5
+    100192: pDisc4 6
+    100194: pDisc4 7
+    100196: pDisc4 8
+    100198: pDisc4 9
+    100200: pDisc5
+    100202: pDisc5 1
+    100204: pDisc5 10
+    100206: pDisc5 2
+    100208: pDisc5 3
+    100210: pDisc5 4
+    100212: pDisc5 5
+    100214: pDisc5 6
+    100216: pDisc5 7
+    100218: pDisc5 8
+    100220: pDisc5 9
+    100222: pDisc6
+    100224: pDisc6 1
+    100226: pDisc6 10
+    100228: pDisc6 11
+    100230: pDisc6 2
+    100232: pDisc6 3
+    100234: pDisc6 4
+    100236: pDisc6 5
+    100238: pDisc6 6
+    100240: pDisc6 7
+    100242: pDisc6 8
+    100244: pDisc6 9
+    100246: pDisc7
+    100248: pDisc7 1
+    100250: pDisc7 10
+    100252: pDisc7 2
+    100254: pDisc7 3
+    100256: pDisc7 4
+    100258: pDisc7 5
+    100260: pDisc7 6
+    100262: pDisc7 7
+    100264: pDisc7 8
+    100266: pDisc7 9
+    100268: pDisc8
+    100270: pDisc8 1
+    100272: pDisc8 10
+    100274: pDisc8 2
+    100276: pDisc8 3
+    100278: pDisc8 4
+    100280: pDisc8 5
+    100282: pDisc8 6
+    100284: pDisc8 7
+    100286: pDisc8 8
+    100288: pDisc8 9
+    100290: pDisc9
+    100292: pDisc9 1
+    100294: pDisc9 10
+    100296: pDisc9 2
+    100298: pDisc9 3
+    100300: pDisc9 4
+    100302: pDisc9 5
+    100304: pDisc9 6
+    100306: pDisc9 7
+    100308: pDisc9 8
+    100310: pDisc9 9
+    100312: polySurface10
+    100314: polySurface11
+    100316: polySurface12
+    100318: polySurface2
+    100320: polySurface3
+    100322: polySurface5
+    100324: polySurface6
+    100326: polySurface8
+    100328: polySurface9
+    100330: Shrooms
+    100332: transform1
+    100334: //RootNode
+    400000: big_shroom
+    400002: Custom_Tree:AL05a
+    400004: Custom_Tree:AL05a_Roots21
+    400006: Custom_Tree:AL05a_Trunk1
+    400008: lil_shroom
+    400010: Moss
+    400012: mosss
+    400014: mosss1
+    400016: mosss10
+    400018: mosss11
+    400020: mosss2
+    400022: mosss3
+    400024: mosss4
+    400026: mosss5
+    400028: mosss6
+    400030: mosss7
+    400032: mosss8
+    400034: mosss9
+    400036: pDisc1
+    400038: pDisc1 1
+    400040: pDisc1 10
+    400042: pDisc1 2
+    400044: pDisc1 3
+    400046: pDisc1 4
+    400048: pDisc1 5
+    400050: pDisc1 6
+    400052: pDisc1 7
+    400054: pDisc1 8
+    400056: pDisc1 9
+    400058: pDisc10
+    400060: pDisc10 1
+    400062: pDisc10 10
+    400064: pDisc10 2
+    400066: pDisc10 3
+    400068: pDisc10 4
+    400070: pDisc10 5
+    400072: pDisc10 6
+    400074: pDisc10 7
+    400076: pDisc10 8
+    400078: pDisc10 9
+    400080: pDisc11
+    400082: pDisc11 1
+    400084: pDisc11 10
+    400086: pDisc11 11
+    400088: pDisc11 2
+    400090: pDisc11 3
+    400092: pDisc11 4
+    400094: pDisc11 5
+    400096: pDisc11 6
+    400098: pDisc11 7
+    400100: pDisc11 8
+    400102: pDisc11 9
+    400104: pDisc13
+    400106: pDisc13 1
+    400108: pDisc13 10
+    400110: pDisc13 11
+    400112: pDisc13 2
+    400114: pDisc13 3
+    400116: pDisc13 4
+    400118: pDisc13 5
+    400120: pDisc13 6
+    400122: pDisc13 7
+    400124: pDisc13 8
+    400126: pDisc13 9
+    400128: pDisc2
+    400130: pDisc2 1
+    400132: pDisc2 10
+    400134: pDisc2 11
+    400136: pDisc2 2
+    400138: pDisc2 3
+    400140: pDisc2 4
+    400142: pDisc2 5
+    400144: pDisc2 6
+    400146: pDisc2 7
+    400148: pDisc2 8
+    400150: pDisc2 9
+    400152: pDisc3
+    400154: pDisc3 1
+    400156: pDisc3 10
+    400158: pDisc3 11
+    400160: pDisc3 2
+    400162: pDisc3 3
+    400164: pDisc3 4
+    400166: pDisc3 5
+    400168: pDisc3 6
+    400170: pDisc3 7
+    400172: pDisc3 8
+    400174: pDisc3 9
+    400176: pDisc4
+    400178: pDisc4 1
+    400180: pDisc4 10
+    400182: pDisc4 11
+    400184: pDisc4 2
+    400186: pDisc4 3
+    400188: pDisc4 4
+    400190: pDisc4 5
+    400192: pDisc4 6
+    400194: pDisc4 7
+    400196: pDisc4 8
+    400198: pDisc4 9
+    400200: pDisc5
+    400202: pDisc5 1
+    400204: pDisc5 10
+    400206: pDisc5 2
+    400208: pDisc5 3
+    400210: pDisc5 4
+    400212: pDisc5 5
+    400214: pDisc5 6
+    400216: pDisc5 7
+    400218: pDisc5 8
+    400220: pDisc5 9
+    400222: pDisc6
+    400224: pDisc6 1
+    400226: pDisc6 10
+    400228: pDisc6 11
+    400230: pDisc6 2
+    400232: pDisc6 3
+    400234: pDisc6 4
+    400236: pDisc6 5
+    400238: pDisc6 6
+    400240: pDisc6 7
+    400242: pDisc6 8
+    400244: pDisc6 9
+    400246: pDisc7
+    400248: pDisc7 1
+    400250: pDisc7 10
+    400252: pDisc7 2
+    400254: pDisc7 3
+    400256: pDisc7 4
+    400258: pDisc7 5
+    400260: pDisc7 6
+    400262: pDisc7 7
+    400264: pDisc7 8
+    400266: pDisc7 9
+    400268: pDisc8
+    400270: pDisc8 1
+    400272: pDisc8 10
+    400274: pDisc8 2
+    400276: pDisc8 3
+    400278: pDisc8 4
+    400280: pDisc8 5
+    400282: pDisc8 6
+    400284: pDisc8 7
+    400286: pDisc8 8
+    400288: pDisc8 9
+    400290: pDisc9
+    400292: pDisc9 1
+    400294: pDisc9 10
+    400296: pDisc9 2
+    400298: pDisc9 3
+    400300: pDisc9 4
+    400302: pDisc9 5
+    400304: pDisc9 6
+    400306: pDisc9 7
+    400308: pDisc9 8
+    400310: pDisc9 9
+    400312: polySurface10
+    400314: polySurface11
+    400316: polySurface12
+    400318: polySurface2
+    400320: polySurface3
+    400322: polySurface5
+    400324: polySurface6
+    400326: polySurface8
+    400328: polySurface9
+    400330: Shrooms
+    400332: transform1
+    400334: //RootNode
+    2100000: trunk
+    2100002: roots
+    2100004: mushroom_base
+    2100006: cap_1
+    2100008: cap_2
+    2100010: leaff
+    2300000: big_shroom
+    2300002: Custom_Tree:AL05a_Trunk1
+    2300004: lil_shroom
+    2300006: pDisc1
+    2300008: pDisc1 1
+    2300010: pDisc1 10
+    2300012: pDisc1 2
+    2300014: pDisc1 3
+    2300016: pDisc1 4
+    2300018: pDisc1 5
+    2300020: pDisc1 6
+    2300022: pDisc1 7
+    2300024: pDisc1 8
+    2300026: pDisc1 9
+    2300028: pDisc10
+    2300030: pDisc10 1
+    2300032: pDisc10 10
+    2300034: pDisc10 2
+    2300036: pDisc10 3
+    2300038: pDisc10 4
+    2300040: pDisc10 5
+    2300042: pDisc10 6
+    2300044: pDisc10 7
+    2300046: pDisc10 8
+    2300048: pDisc10 9
+    2300050: pDisc11
+    2300052: pDisc11 1
+    2300054: pDisc11 10
+    2300056: pDisc11 11
+    2300058: pDisc11 2
+    2300060: pDisc11 3
+    2300062: pDisc11 4
+    2300064: pDisc11 5
+    2300066: pDisc11 6
+    2300068: pDisc11 7
+    2300070: pDisc11 8
+    2300072: pDisc11 9
+    2300074: pDisc13
+    2300076: pDisc13 1
+    2300078: pDisc13 10
+    2300080: pDisc13 11
+    2300082: pDisc13 2
+    2300084: pDisc13 3
+    2300086: pDisc13 4
+    2300088: pDisc13 5
+    2300090: pDisc13 6
+    2300092: pDisc13 7
+    2300094: pDisc13 8
+    2300096: pDisc13 9
+    2300098: pDisc2
+    2300100: pDisc2 1
+    2300102: pDisc2 10
+    2300104: pDisc2 11
+    2300106: pDisc2 2
+    2300108: pDisc2 3
+    2300110: pDisc2 4
+    2300112: pDisc2 5
+    2300114: pDisc2 6
+    2300116: pDisc2 7
+    2300118: pDisc2 8
+    2300120: pDisc2 9
+    2300122: pDisc3
+    2300124: pDisc3 1
+    2300126: pDisc3 10
+    2300128: pDisc3 11
+    2300130: pDisc3 2
+    2300132: pDisc3 3
+    2300134: pDisc3 4
+    2300136: pDisc3 5
+    2300138: pDisc3 6
+    2300140: pDisc3 7
+    2300142: pDisc3 8
+    2300144: pDisc3 9
+    2300146: pDisc4
+    2300148: pDisc4 1
+    2300150: pDisc4 10
+    2300152: pDisc4 11
+    2300154: pDisc4 2
+    2300156: pDisc4 3
+    2300158: pDisc4 4
+    2300160: pDisc4 5
+    2300162: pDisc4 6
+    2300164: pDisc4 7
+    2300166: pDisc4 8
+    2300168: pDisc4 9
+    2300170: pDisc5
+    2300172: pDisc5 1
+    2300174: pDisc5 10
+    2300176: pDisc5 2
+    2300178: pDisc5 3
+    2300180: pDisc5 4
+    2300182: pDisc5 5
+    2300184: pDisc5 6
+    2300186: pDisc5 7
+    2300188: pDisc5 8
+    2300190: pDisc5 9
+    2300192: pDisc6
+    2300194: pDisc6 1
+    2300196: pDisc6 10
+    2300198: pDisc6 11
+    2300200: pDisc6 2
+    2300202: pDisc6 3
+    2300204: pDisc6 4
+    2300206: pDisc6 5
+    2300208: pDisc6 6
+    2300210: pDisc6 7
+    2300212: pDisc6 8
+    2300214: pDisc6 9
+    2300216: pDisc7
+    2300218: pDisc7 1
+    2300220: pDisc7 10
+    2300222: pDisc7 2
+    2300224: pDisc7 3
+    2300226: pDisc7 4
+    2300228: pDisc7 5
+    2300230: pDisc7 6
+    2300232: pDisc7 7
+    2300234: pDisc7 8
+    2300236: pDisc7 9
+    2300238: pDisc8
+    2300240: pDisc8 1
+    2300242: pDisc8 10
+    2300244: pDisc8 2
+    2300246: pDisc8 3
+    2300248: pDisc8 4
+    2300250: pDisc8 5
+    2300252: pDisc8 6
+    2300254: pDisc8 7
+    2300256: pDisc8 8
+    2300258: pDisc8 9
+    2300260: pDisc9
+    2300262: pDisc9 1
+    2300264: pDisc9 10
+    2300266: pDisc9 2
+    2300268: pDisc9 3
+    2300270: pDisc9 4
+    2300272: pDisc9 5
+    2300274: pDisc9 6
+    2300276: pDisc9 7
+    2300278: pDisc9 8
+    2300280: pDisc9 9
+    2300282: polySurface10
+    2300284: polySurface11
+    2300286: polySurface12
+    2300288: polySurface2
+    2300290: polySurface3
+    2300292: polySurface5
+    2300294: polySurface6
+    2300296: polySurface8
+    2300298: polySurface9
+    3300000: big_shroom
+    3300002: Custom_Tree:AL05a_Trunk1
+    3300004: lil_shroom
+    3300006: pDisc1
+    3300008: pDisc1 1
+    3300010: pDisc1 10
+    3300012: pDisc1 2
+    3300014: pDisc1 3
+    3300016: pDisc1 4
+    3300018: pDisc1 5
+    3300020: pDisc1 6
+    3300022: pDisc1 7
+    3300024: pDisc1 8
+    3300026: pDisc1 9
+    3300028: pDisc10
+    3300030: pDisc10 1
+    3300032: pDisc10 10
+    3300034: pDisc10 2
+    3300036: pDisc10 3
+    3300038: pDisc10 4
+    3300040: pDisc10 5
+    3300042: pDisc10 6
+    3300044: pDisc10 7
+    3300046: pDisc10 8
+    3300048: pDisc10 9
+    3300050: pDisc11
+    3300052: pDisc11 1
+    3300054: pDisc11 10
+    3300056: pDisc11 11
+    3300058: pDisc11 2
+    3300060: pDisc11 3
+    3300062: pDisc11 4
+    3300064: pDisc11 5
+    3300066: pDisc11 6
+    3300068: pDisc11 7
+    3300070: pDisc11 8
+    3300072: pDisc11 9
+    3300074: pDisc13
+    3300076: pDisc13 1
+    3300078: pDisc13 10
+    3300080: pDisc13 11
+    3300082: pDisc13 2
+    3300084: pDisc13 3
+    3300086: pDisc13 4
+    3300088: pDisc13 5
+    3300090: pDisc13 6
+    3300092: pDisc13 7
+    3300094: pDisc13 8
+    3300096: pDisc13 9
+    3300098: pDisc2
+    3300100: pDisc2 1
+    3300102: pDisc2 10
+    3300104: pDisc2 11
+    3300106: pDisc2 2
+    3300108: pDisc2 3
+    3300110: pDisc2 4
+    3300112: pDisc2 5
+    3300114: pDisc2 6
+    3300116: pDisc2 7
+    3300118: pDisc2 8
+    3300120: pDisc2 9
+    3300122: pDisc3
+    3300124: pDisc3 1
+    3300126: pDisc3 10
+    3300128: pDisc3 11
+    3300130: pDisc3 2
+    3300132: pDisc3 3
+    3300134: pDisc3 4
+    3300136: pDisc3 5
+    3300138: pDisc3 6
+    3300140: pDisc3 7
+    3300142: pDisc3 8
+    3300144: pDisc3 9
+    3300146: pDisc4
+    3300148: pDisc4 1
+    3300150: pDisc4 10
+    3300152: pDisc4 11
+    3300154: pDisc4 2
+    3300156: pDisc4 3
+    3300158: pDisc4 4
+    3300160: pDisc4 5
+    3300162: pDisc4 6
+    3300164: pDisc4 7
+    3300166: pDisc4 8
+    3300168: pDisc4 9
+    3300170: pDisc5
+    3300172: pDisc5 1
+    3300174: pDisc5 10
+    3300176: pDisc5 2
+    3300178: pDisc5 3
+    3300180: pDisc5 4
+    3300182: pDisc5 5
+    3300184: pDisc5 6
+    3300186: pDisc5 7
+    3300188: pDisc5 8
+    3300190: pDisc5 9
+    3300192: pDisc6
+    3300194: pDisc6 1
+    3300196: pDisc6 10
+    3300198: pDisc6 11
+    3300200: pDisc6 2
+    3300202: pDisc6 3
+    3300204: pDisc6 4
+    3300206: pDisc6 5
+    3300208: pDisc6 6
+    3300210: pDisc6 7
+    3300212: pDisc6 8
+    3300214: pDisc6 9
+    3300216: pDisc7
+    3300218: pDisc7 1
+    3300220: pDisc7 10
+    3300222: pDisc7 2
+    3300224: pDisc7 3
+    3300226: pDisc7 4
+    3300228: pDisc7 5
+    3300230: pDisc7 6
+    3300232: pDisc7 7
+    3300234: pDisc7 8
+    3300236: pDisc7 9
+    3300238: pDisc8
+    3300240: pDisc8 1
+    3300242: pDisc8 10
+    3300244: pDisc8 2
+    3300246: pDisc8 3
+    3300248: pDisc8 4
+    3300250: pDisc8 5
+    3300252: pDisc8 6
+    3300254: pDisc8 7
+    3300256: pDisc8 8
+    3300258: pDisc8 9
+    3300260: pDisc9
+    3300262: pDisc9 1
+    3300264: pDisc9 10
+    3300266: pDisc9 2
+    3300268: pDisc9 3
+    3300270: pDisc9 4
+    3300272: pDisc9 5
+    3300274: pDisc9 6
+    3300276: pDisc9 7
+    3300278: pDisc9 8
+    3300280: pDisc9 9
+    3300282: polySurface10
+    3300284: polySurface11
+    3300286: polySurface12
+    3300288: polySurface2
+    3300290: polySurface3
+    3300292: polySurface5
+    3300294: polySurface6
+    3300296: polySurface8
+    3300298: polySurface9
+    4300000: Custom_Tree:AL05a_Trunk1
+    4300002: polySurface2
+    4300004: polySurface3
+    4300006: polySurface5
+    4300008: polySurface6
+    4300010: polySurface8
+    4300012: polySurface9
+    4300014: polySurface10
+    4300016: polySurface11
+    4300018: polySurface12
+    4300020: big_shroom
+    4300022: lil_shroom
+    4300024: pDisc5
+    4300026: pDisc6
+    4300028: pDisc8
+    4300030: pDisc7
+    4300032: pDisc3
+    4300034: pDisc4
+    4300036: pDisc1
+    4300038: pDisc13
+    4300040: pDisc11
+    4300042: pDisc10
+    4300044: pDisc9
+    4300046: pDisc2
+    4300048: pDisc5
+    4300050: pDisc6
+    4300052: pDisc8
+    4300054: pDisc7
+    4300056: pDisc3
+    4300058: pDisc4
+    4300060: pDisc1
+    4300062: pDisc13
+    4300064: pDisc11
+    4300066: pDisc10
+    4300068: pDisc9
+    4300070: pDisc2
+    4300072: pDisc5
+    4300074: pDisc6
+    4300076: pDisc8
+    4300078: pDisc7
+    4300080: pDisc3
+    4300082: pDisc4
+    4300084: pDisc1
+    4300086: pDisc13
+    4300088: pDisc11
+    4300090: pDisc10
+    4300092: pDisc9
+    4300094: pDisc2
+    4300096: pDisc5
+    4300098: pDisc6
+    4300100: pDisc8
+    4300102: pDisc7
+    4300104: pDisc3
+    4300106: pDisc4
+    4300108: pDisc1
+    4300110: pDisc13
+    4300112: pDisc11
+    4300114: pDisc10
+    4300116: pDisc9
+    4300118: pDisc2
+    4300120: pDisc5
+    4300122: pDisc6
+    4300124: pDisc8
+    4300126: pDisc7
+    4300128: pDisc3
+    4300130: pDisc4
+    4300132: pDisc1
+    4300134: pDisc13
+    4300136: pDisc11
+    4300138: pDisc10
+    4300140: pDisc9
+    4300142: pDisc2
+    4300144: pDisc5
+    4300146: pDisc6
+    4300148: pDisc8
+    4300150: pDisc7
+    4300152: pDisc3
+    4300154: pDisc4
+    4300156: pDisc1
+    4300158: pDisc13
+    4300160: pDisc11
+    4300162: pDisc10
+    4300164: pDisc9
+    4300166: pDisc2
+    4300168: pDisc5
+    4300170: pDisc6
+    4300172: pDisc8
+    4300174: pDisc7
+    4300176: pDisc3
+    4300178: pDisc4
+    4300180: pDisc1
+    4300182: pDisc13
+    4300184: pDisc11
+    4300186: pDisc10
+    4300188: pDisc9
+    4300190: pDisc2
+    4300192: pDisc5
+    4300194: pDisc6
+    4300196: pDisc8
+    4300198: pDisc7
+    4300200: pDisc3
+    4300202: pDisc4
+    4300204: pDisc1
+    4300206: pDisc13
+    4300208: pDisc11
+    4300210: pDisc10
+    4300212: pDisc9
+    4300214: pDisc2
+    4300216: pDisc5
+    4300218: pDisc6
+    4300220: pDisc8
+    4300222: pDisc7
+    4300224: pDisc3
+    4300226: pDisc4
+    4300228: pDisc1
+    4300230: pDisc13
+    4300232: pDisc11
+    4300234: pDisc10
+    4300236: pDisc9
+    4300238: pDisc2
+    4300240: pDisc5
+    4300242: pDisc6
+    4300244: pDisc8
+    4300246: pDisc7
+    4300248: pDisc3
+    4300250: pDisc4
+    4300252: pDisc1
+    4300254: pDisc13
+    4300256: pDisc11
+    4300258: pDisc10
+    4300260: pDisc9
+    4300262: pDisc2
+    4300264: pDisc5
+    4300266: pDisc6
+    4300268: pDisc8
+    4300270: pDisc7
+    4300272: pDisc3
+    4300274: pDisc4
+    4300276: pDisc1
+    4300278: pDisc13
+    4300280: pDisc11
+    4300282: pDisc10
+    4300284: pDisc9
+    4300286: pDisc2
+    4300288: pDisc6
+    4300290: pDisc3
+    4300292: pDisc4
+    4300294: pDisc13
+    4300296: pDisc11
+    4300298: pDisc2
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.4
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
