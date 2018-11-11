@@ -34,6 +34,9 @@ public class CameraController : MonoBehaviour {
     private static float wallMin;
     private static float wallMax;
 
+	private static bool xInverted;
+	private static bool yInverted;
+
     // Use this for initialization
     private void Start () {
         cam = Camera.main;
@@ -42,6 +45,8 @@ public class CameraController : MonoBehaviour {
 		for (int i = 0; i < 4; i++) {
 			targetArray[i].z = cam.nearClipPlane;
 		}
+		xInverted = false;
+		yInverted = false;
 	}
 	
 	// Update is called once per frame
@@ -177,4 +182,12 @@ public class CameraController : MonoBehaviour {
     {
         onWall = false;
     }
+	public void toggleXInvert(bool invert)
+	{
+		xInverted = invert;
+	}
+	public void toggleYInvert(bool invert)
+	{
+		yInverted = invert;
+	}
 }
