@@ -22,6 +22,7 @@ public class CraneFallingState : State {
 
 	public override void OnStateEnter()
 	{
+        character.falling = true;
 		player = character.GetComponent<CharacterController>();
         character.craneAnimator.SetBool("Falling", true);
         if (Input.GetAxis("Ability1") != 0.0f)
@@ -87,6 +88,7 @@ public class CraneFallingState : State {
 
     public override void OnStateExit()
     {
+        character.falling = false;
         character.craneAnimator.SetBool("Falling", false);
         character.jumped = true;
         AkSoundEngine.PostEvent("WindStop", character.gameObject);

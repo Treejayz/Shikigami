@@ -34,6 +34,7 @@ public class FrogFallState : State {
 
     public override void OnStateEnter()
     {
+        character.falling = true;
         player = character.GetComponent<CharacterController>();
         character.frogAnimator.SetBool("Moving", false);
         fallSpeed = 0.0f;
@@ -71,6 +72,7 @@ public class FrogFallState : State {
 
     public override void OnStateExit()
     {
+        character.falling = false;
         character.frogAnimator.SetBool("Jumping", false);
         character.jumped = true;
     }

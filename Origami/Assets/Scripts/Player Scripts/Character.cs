@@ -45,6 +45,9 @@ public class Character : MonoBehaviour {
     public GameObject CraneMesh, FrogMesh, FoxMesh;
     private State currentState;
 
+    [HideInInspector]
+    public bool falling = false;
+
     private void Start()
     {
         CraneMesh = transform.GetChild(0).gameObject;
@@ -96,6 +99,7 @@ public class Character : MonoBehaviour {
 
     private void Update()
     {
+        print(jumped);
         if (Time.timeScale != 0f)
         {
             currentState.Tick();
