@@ -184,10 +184,10 @@ public class CameraController : MonoBehaviour {
     }
 	public void toggleXInvert(bool invert)
 	{
-		xInverted = invert;
+		xInverted = !xInverted;
 	}
 	public void toggleYInvert(bool invert)
 	{
-		yInverted = invert;
+		yInverted = !yInverted;
 	}
 }
