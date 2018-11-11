@@ -1089,6 +1089,11 @@
 				<Sound Name="BossfightDemo" ID="{EB982181-B736-4B76-AAEB-9B0CA2E5455A}" ShortID="218076252">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
