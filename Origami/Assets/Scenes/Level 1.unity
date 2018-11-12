@@ -24,7 +24,7 @@ RenderSettings:
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 4
+  m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 97f216ff49983e541ac56c7cb78a9c72, type: 2}
   m_HaloStrength: 0.5
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.2982402, g: 0.5442752, b: 0.6894365, a: 1}
+  m_IndirectSpecularColor: {r: 0.29824033, g: 0.5442754, b: 0.6894373, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -161,7 +161,7 @@ Light:
   serializedVersion: 8
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 0.4
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -11671,7 +11671,7 @@ Light:
   serializedVersion: 8
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.4
+  m_Intensity: 0.3
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -12578,7 +12578,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100004, guid: d0089068f87db014bb3dbc847ac89696, type: 3}
-  - {fileID: 2100006, guid: d0089068f87db014bb3dbc847ac89696, type: 3}
+  - {fileID: 2100000, guid: a8a413d768bc61a48ae3de11e8d6a7a5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -26003,7 +26003,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100004, guid: d0089068f87db014bb3dbc847ac89696, type: 3}
-  - {fileID: 2100000, guid: 2d9dbda5b71f04774bcf5c3efe590bf7, type: 2}
+  - {fileID: 2100000, guid: a8a413d768bc61a48ae3de11e8d6a7a5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -26914,7 +26914,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100004, guid: d0089068f87db014bb3dbc847ac89696, type: 3}
-  - {fileID: 2100000, guid: f84c22078002642e8b84aa96b992579c, type: 2}
+  - {fileID: 2100000, guid: a8a413d768bc61a48ae3de11e8d6a7a5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30918,7 +30918,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100004, guid: d0089068f87db014bb3dbc847ac89696, type: 3}
-  - {fileID: 2100000, guid: f84c22078002642e8b84aa96b992579c, type: 2}
+  - {fileID: 2100000, guid: a8a413d768bc61a48ae3de11e8d6a7a5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -32806,16 +32806,16 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 1
-      outSlope: 1
+      time: 0.00007069856
+      value: 0.15437168
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
     - serializedVersion: 2
       time: 1
       value: 1
-      inSlope: 1
-      outSlope: 1
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -32824,8 +32824,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 2
-      time: 0
-      value: 0
+      time: 0.0011074189
+      value: 0.1589045
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -32837,13 +32837,13 @@ MonoBehaviour:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   blueChannel:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 2
-      time: 0
-      value: 0
+      time: 0.0041676844
+      value: 0.15593456
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -32855,7 +32855,7 @@ MonoBehaviour:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   useDepthCorrection: 0
   zCurve:
     serializedVersion: 2
@@ -32929,8 +32929,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  saturation: 0.95
-  selectiveCc: 0
+  saturation: 1.31
+  selectiveCc: 1
   selectiveFromColor: {r: 1, g: 1, b: 1, a: 1}
   selectiveToColor: {r: 1, g: 1, b: 1, a: 1}
   mode: 0
@@ -39146,7 +39146,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100004, guid: d0089068f87db014bb3dbc847ac89696, type: 3}
-  - {fileID: 2100000, guid: 2d9dbda5b71f04774bcf5c3efe590bf7, type: 2}
+  - {fileID: 2100000, guid: 56d0e3c3c197d8140b9595c309ad5af7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -41201,6 +41201,10 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1050683626195830, guid: 4513a79a985c0a34bb34fbe58608b11e, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4513a79a985c0a34bb34fbe58608b11e, type: 2}
   m_IsPrefabParent: 0
@@ -42985,7 +42989,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100004, guid: d0089068f87db014bb3dbc847ac89696, type: 3}
-  - {fileID: 2100000, guid: 2d9dbda5b71f04774bcf5c3efe590bf7, type: 2}
+  - {fileID: 2100000, guid: 56d0e3c3c197d8140b9595c309ad5af7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
