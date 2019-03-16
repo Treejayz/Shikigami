@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: 2cdb232253137c845889651cfda2ce90
+timeCreated: 1525250876
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: back_
+    100002: back_tip
+    100004: //RootNode
+    100006: Crane_Model_1
+    100008: Crane_Model_2
+    100010: Crane_Model_3
+    100012: front_
+    100014: front_tip
+    100016: head_JNT
+    100018: headtip_JNT
+    100020: JNT_B
+    100022: JNT_B_Center
+    100024: JNT_D
+    100026: JNT_D_Center
+    100028: joint1
+    100030: joint10
+    100032: joint11
+    100034: joint12
+    100036: joint2
+    100038: joint3
+    100040: joint4
+    100042: joint5
+    100044: joint6
+    100046: joint7
+    100048: joint8
+    100050: joint9
+    100052: L_wing_in
+    100054: L_wing_in_tip
+    100056: L_wing_JNT
+    100058: L_wingtip_JNT
+    100060: R_wing_in
+    100062: R_wing_in_tip
+    100064: R_wing_JNT
+    100066: R_wingtip_JNT
+    100068: root_1
+    100070: root_2
+    100072: root_3
+    400000: back_
+    400002: back_tip
+    400004: //RootNode
+    400006: Crane_Model_1
+    400008: Crane_Model_2
+    400010: Crane_Model_3
+    400012: front_
+    400014: front_tip
+    400016: head_JNT
+    400018: headtip_JNT
+    400020: JNT_B
+    400022: JNT_B_Center
+    400024: JNT_D
+    400026: JNT_D_Center
+    400028: joint1
+    400030: joint10
+    400032: joint11
+    400034: joint12
+    400036: joint2
+    400038: joint3
+    400040: joint4
+    400042: joint5
+    400044: joint6
+    400046: joint7
+    400048: joint8
+    400050: joint9
+    400052: L_wing_in
+    400054: L_wing_in_tip
+    400056: L_wing_JNT
+    400058: L_wingtip_JNT
+    400060: R_wing_in
+    400062: R_wing_in_tip
+    400064: R_wing_JNT
+    400066: R_wingtip_JNT
+    400068: root_1
+    400070: root_2
+    400072: root_3
+    2100000: Claire_PaperCrane_Rig_KeyTest_Claire_PaperCrane_RefModel_CRANE_PAGE
+    4300000: Crane_Model_3
+    4300002: Crane_Model_2
+    4300004: Crane_Model_1
+    7400000: Crane_Fold_Slow_UV
+    9500000: //RootNode
+    13700000: Crane_Model_1
+    13700002: Crane_Model_2
+    13700004: Crane_Model_3
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
